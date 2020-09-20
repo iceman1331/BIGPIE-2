@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>iGEM || Timeline</title>
+	<link rel="stylesheet" href="Timeline.css">
+
+</head>
+
+<body>
+	<section class="intro">
+		<div class="container">
+			<h1>IHP Timeline<br>&darr;</h1>
+		</div>
+	</section>
+
+	<section class="timeline">
+		<ul>
+			<div class="container">
+				<p>Images below are placeholders</p>
+			</div>
+
+			<div class="container">
+				<div class="arrow">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<li>
+				<div>
+					<time>Date_1</time>
+					<img src="a1.png"><br>
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_2</time>
+					<img src="	http://lorempixel.com/400/200/abstract"><br>
+					Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_3</time>
+					<img src="description_logo_cropped.png"><br>
+					Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_4</time>
+					<img src="design_alt_cropped.png"><br>
+					In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="design_icon_cropped.png"><br>
+					<time>Date_5</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_6</time>
+					<img src="entrepreneurship_icon_cropped.png"><br>
+					In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_7</time>
+					<img src="humanpractices_icon_cropped.png"><br>
+					In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_8</time>
+					<img src="model_icon_cropped.png"><br>
+					Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_9</time>
+					<img src="patentlaw_icon_cropped.png"><br>
+					Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_9</time>
+					<img src="safety_icon_cropped.png"><br>
+					In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_10</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>Date_11</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+				</div>
+			</li>
+		</ul>
+	</section>
+	<script>
+		(function() {
+
+			'use strict';
+
+			// define variables
+			var items = document.querySelectorAll(".timeline li");
+
+			// check if an element is in viewport
+			// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+			function isElementInViewport(el) {
+				var rect = el.getBoundingClientRect();
+				return (
+					rect.top >= 0 &&
+					rect.left >= 0 &&
+					rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+					rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+				);
+			}
+
+			function callbackFunc() {
+				for (var i = 0; i < items.length; i++) {
+					if (isElementInViewport(items[i])) {
+						items[i].classList.add("in-view");
+					}
+				}
+			}
+
+			// listen for events
+			window.addEventListener("load", callbackFunc);
+			window.addEventListener("resize", callbackFunc);
+			window.addEventListener("scroll", callbackFunc);
+
+		})();
+	</script>
+
+</body></html>
