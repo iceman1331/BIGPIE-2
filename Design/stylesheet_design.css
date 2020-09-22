@@ -124,8 +124,6 @@ body {
 }
 
 .card {
-
-	cursor: help;
 	font-family: "museo-sans";
 	width: 90%;
 	display: block;
@@ -560,11 +558,11 @@ sup {
 	}
 }
 
-.collapse img{
+.collapse img {
 	width: 100%;
 }
 
-.content-collapsible img{
+.content-collapsible img {
 	width: 100%;
 }
 
@@ -1188,11 +1186,10 @@ a {
 }
 
 area {
-	cursor: url(imgs/T--IISER_Bhopal--Priscilla_cropped.png) !important, cell;
 	text-decoration: none;
 }
 
-	
+
 .pulse {
 	animation: pulse 3s infinite;
 	margin: 0 auto;
@@ -1233,3 +1230,20 @@ area {
 
 
 
+.centred-child-2 {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.centred-child-2 .img-fluid {
+	width: 50%;
+}
+
+@media(max-width:500px) {
+	.centred-child-2 .img-fluid {
+		width: 100%;
+		border: 1px solid green;
+	}
+
+}
