@@ -113,11 +113,6 @@ body {
 	}
 }
 
-.img-thumbnail {
-	border: none;
-	width: 40vw;
-}
-
 .collapsing {
 	transition: all 0.5s ease;
 	outline: none !important;
@@ -928,10 +923,6 @@ a {
 .btn > *:after {
 	right: 0;
 }
-
-
-
-
 
 
 .siphner:nth-child(odd) {

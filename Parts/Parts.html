@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no,shrink-to-fit=no" />
+	<title>Parts</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../NavBar/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.css" />
+	<link rel="stylesheet" href="Parts.css" />
+
+	<script src="../NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../NavBar/js/bootstrap.min.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../NavBar/custom-navbar.css" />
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop src="../T--IISER_Bhopal--loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-md navbar-dark scrolling-navbar py-0" id="mynav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-md-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html"> <i class="fas fa-home" style="margin-right: 20rem;"></i> <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="#">Design</a>
+							<a class="dropdown-item" href="#">Contribution</a>
+							<a class="dropdown-item" href="#">Engineering Success</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Parts Collection</a>
+							<a class="dropdown-item" href="#">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">IHP</a>
+							<a class="dropdown-item" href="#">Education</a>
+							<a class="dropdown-item" href="#">Public Engagement</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> Team
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Team</a>
+							<a class="dropdown-item" href="#">Supervisors</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosafety</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Safe by Design</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-dna"></i> Modelling
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Overview</a>
+							<a class="dropdown-item" href="#">Subsections</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-vial"></i> Entrepreneurship
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Implementation</a>
+							<a class="dropdown-item" href="#">Hardware</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<script type="text/javascript" src="../NavBar/custom-navbar.js"></script>
+	<main>
+
+		<div id="cta">
+			<div class="desc-title">
+				<h1> Parts </h1>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="table-responsive">
+
+			<table class="table table-fixed table-bordered table-striped">
+				<thead class="table-dark">
+					<tr>
+						<th class="efed-1" scope="col">#</th>
+						<th class="efed-2" scope="col">Name</th>
+						<th class="efed-3" scope="col">Type</th>
+						<th class="efed-4" scope="col">Description</th>
+						<th class="efed-5" scope="col">Length</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>BBa_K228005</td>
+						<td>Promoter</td>
+						<td>Pbad: Arabinose-Inducible Expression System </td>
+						<td>1279 nt </td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>
+							BBa_B0034
+						</td>
+						<td>RBS</td>
+						<td>#</td>
+						<td>12 nt</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td>BBa_B0015</td>
+						<td>Terminator</td>
+						<td>Bidirectional Terminator consisting of BBa_B0010 and BBa_B0012.</td>
+						<td>129 nt</td>
+					</tr>
+					<tr>
+						<th scope="row">4</th>
+						<td>BBa_K801030</td>
+						<td>Coding (NLS)</td>
+						<td>
+							SV40 NLS: Polypeptide containing SV40 nuclear localization sequence
+						</td>
+						<td>57 nt</td>
+					</tr>
+					<tr>
+						<th scope="row">5</th>
+						<td>BBa_K2871000</td>
+						<td>Export Signal Tag</td>
+						<td>Map20: T3SS export signal peptide derived from Map gene</td>
+						<td>93 nt</td>
+					</tr>
+
+					<tr>
+						<th scope="row">6</th>
+						<td>BBa_J23100</td>
+						<td>Constitutive Promoter </td>
+						<td>Can be used to tune the expression level of constitutively expressed parts
+						</td>
+						<td>35 bp</td>
+					</tr>
+					<tr>
+						<th scope="row">7</th>
+						<td>BBa_K1231001</td>
+						<td>pH sensitive promoter </td>
+						<td>GadA-RBS is a pH sensitive promoter that has been shown to initiate transcription at low pH.</td>
+						<td>264 bp</td>
+					</tr>
+					<tr>
+						<th scope="row">8</th>
+						<td>BBa_K2447000</td>
+						<td>Phosphate promoter</td>
+						<td>PhoB promoter is activated as a result of active binding of phosphorylated-PhoB, resulting in downstream expression of GFP. When a high concentration of extracellular phosphate ions is present, PhoR will dephosphorylate PhoB, and therefore inactivating it, and repressing the PhoB promoter for GFP expression.</td>
+						<td>1375 bp</td>
+					</tr>
+					<tr>
+						<th scope="row">9</th>
+						<td>BBa_K1976048</td>
+						<td>Colicin E2 DNase domain "miniColicin"</td>
+						<td>Colicin E2 is a peptide that is toxic to coliform bacteria. It is one of a group of proteins of this type, it being a nicking endonuclease. It has a corresponding activity inhibiting protein called immunity protein Im2, which is also in the registry under the name BBa_K1976027.</td>
+						<td>401 bp</td>
+					</tr>
+					<tr>
+						<th scope="row">10</th>
+						<td>BBa_K1976027</td>
+						<td>Colicin E2 immunity protein (Im2)</td>
+						<td>This part encodes for the wild-type immunity protein inhibiting the nicking DNase Colicin E2. According to molecular dynamics simulations this protein inhibits also miniColicin (BBa_K1976048 and BBa_K1976049).</td>
+						<td>261 bp</td>
+					</tr>
+					<tr>
+						<th scope="row">11</th>
+						<td>β-Catenin</td>
+						<td>Coding (Degradation Tag)</td>
+						<td>Transcription factor and an effector of the Wnt signalling pathway. It is protected from degradation by the Wnt cascade, active in our target niche.</td>
+						<td>#</td>
+					</tr>
+					<tr>
+						<th scope="row">12</th>
+						<td>Tobacco Etch Virus Protease Substrate</td>
+						<td>Coding (Protease Cleavage Site)</td>
+						<td>Contains two consecutive sites sensitive to cleavage by the Tobacco Etch Virus protease.</td>
+						<td>#</td>
+					</tr>
+					<tr>
+						<th scope="row">13</th>
+						<td>PKI Alpha Nuclear Export Signal</td>
+						<td>Coding (Nuclear export Signal)</td>
+						<td>Mediates nuclear export when tagged to the C-terminus of a nuclear protein.</td>
+						<td>#</td>
+					</tr>
+					<tr>
+						<th scope="row">14</th>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+		</div>
+
+
+		
+		<div class="container">
+			<div class="table-responsive">
+				<table class="table table-bordered table-dark">
+					<thead>
+						<tr>
+							<th class="efed-1" scope="col">#</th>
+							<th class="efed-2" scope="col">Name</th>
+							<th class="efed-3" scope="col">Type</th>
+							<th class="efed-4" scope="col">Description</th>
+							<th class="efed-5" scope="col">Length</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>PDX1</td>
+							<td>Coding(TF)</td>
+							<td>Pdx1 is a homeodomain transcription factor and is required for early <br>embryonic development of the pancreas and the<br> differentiation of endocrine cell types including β-cells.</td>
+							<td>852 nt</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>MAFA</td>
+							<td>Coding (TF)</td>
+							<td>MafA is a transcription factor that binds to the enhancer/promoter<br> region of the insulin gene and drives insulin expression in response to glucose.</td>
+							<td>1062 nt</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td class="cl-effect-3"> <a href="http://parts.igem.org/Part:BBa_K3286002">NGN3</a></td>
+							<td>Coding (TF)</td>
+							<td class="para">Ngn3 is a member of the basic helix–loop–helix transcription<br> factor family involved in the central nervous system and embryonic pancreas development.</td>
+							<td>645 nt</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2>Composite Parts Synthesised needed for THE BIG PIE</h2>
+			<p>
+				All cassettes are cloned into pGGA plasmids part of NEB’s Golden Gate Assembly Kit. The plasmid has a BSA1 sequence in opposing directions, while the fragments are flanked by BSA1 sequences on either side. Digestion with BSA1 creates overhangs on either side of the cassette and in the plasmid, the corresponding overhangs bind together allowing
+			</p>
+		</div>
+
+		<div class="container">
+			<h2>Polyprotein Expression Part</h2>
+			<p>
+				Transcription factor-mediated “reprogramming”, or “trans-differentiation”, approaches have been used to regenerate beta-like cells in vitro and in vivo. The studies have demonstrated that overexpression PDX1, NEUROG3, and/or MAFA, can reprogram the fate of various non-β-cell types into glucose responsive insulin-producing cells.
+				<br>
+				<br> PDX1, also known as insulin promoter factor 1, is a homeodomain transcription factor. PDX1 is required for early embryonic development of the pancreas and the differentiation of endocrine cell types including β-cells. In mature β-cells, depletion and reduction of PDX1 induces glucose intolerance, which suggests the critical role of PDX1 in maintaining β-cell function.PDX1 also binds to the regulatory elements and increases insulin gene transcription.
+				<br>
+				<br> NEUROG3 is a member of the basic helix–loop–helix transcription factor family involved in the central nervous system and embryonic pancreas development. Despite several studies, it remains unclear whether NEUROG3 is absolutely required for β-cell development in humans.
+				<br>
+				<br> MAFA, also known as RIPE3b1, is a member of the MAF family of basic leucine zippers. It is a transcription factor that binds to the enhancer/promoter region of the insulin gene and drives insulin expression in response to glucose. Hence, the expression levels of MAFA are critical for proper β-cell maturation. For regenerative approaches, MAFA’s expression is also important to regenerate functional and mature β-cells from pluripotent stem cells.
+
+			</p>
+
+			<h4>Cassette to be Cloned</h4>
+			<p>pGadA - RBS - TF Polyprotein - Terminator TF Polyprotein Sequence Map20 - Linker - Site - Linker - PDX1 - Linker - NLS - Linker - Site - Linker - MAFA - Linker - NLS - Linker - Site - Linker - NGN3 - Linker - NLS - Linker - Site - Linker - NES</p>
+		</div>
+		<div class="container">
+			<h2>Protease Expression Part</h2>
+			<p>TEV Protease Substrate: We’ve added a cleavage site after the secretion tag here, because Beta-Catenin’s N-terminus is important for its interaction with the factors that degrade it, and we want to make sure that it’s undisturbed. Our protease evolved to separate polyproteins in cis, so we know it can do this. We’ve put an NES at the C-terminus to make sure that it stays in the cytoplasm, since beta-catenin is a nuclear transcription factor.
+				<br>
+				<br> MAP 20: Mitochondria associated protein is a 20 amino acid long export signal peptide sequence for T3SS, which helps guide the protein sequence through the T3SS pore.
+			</p>
+			<h4>Cassette to be cloned</h4>
+			<p>pGadA- RBS- protease fusion - Terminator Protease Fusion NH2 - Map20 - Linker - Cleavage Site - Beta-Catenin - Linker - TEV Protease (S219N) - Linker - NES - COOH
+			</p>
+		</div>
+
+		<div class="container">
+			<h2> Antibody Expression Part</h2>
+			<p>The Delivery vector has a single domain antibody (sdAbs) from camelids(VHH). The antibody binds only to the LGR5 antigen present on the(crypt base columnar cells) CBCs at the base of the epithelial cell layer in the duodenum . However to improve the antibody binding to the delivery vector. We are using beta-intimin, a barrel shaped protein, because the sdAbs bound to the β-domain of intimin displayed on E Coli show higher antigen binding capacity. Thereby improving the antigen- antibody specificity and binding between the delivery vector and the target cell.
+			</p>
+
+			<h4>Cassette for Antibody</h4>
+			<p>Constitutive P- RBS - β-Intimin Base - Anti-Lgr5 VHH - Terminator</p>
+		</div>
+
+
+		<div class="container">
+			<h2>Kill Switch Expression Cassette</h2>
+			<p>Our modified probiotic is required to be active only in the duodenum of the small intestine. To ensure this we have designed a kill switch that reduces the activity of the bacteria by the time it reaches the colon and kills it as soon as it is excreted out of the human body. We propose a single gate phosphate regulated kill switch that consists of a toxin, anti-toxin and repressor system.
+			</p>
+			<h4>Cassette for Kill switch</h4>
+			<p>constP- RBS- anti-toxin-Term - P- RBS- Toxin-Terminator PhoB- antisense RNA- term</p>
+		</div>
+	</main>
+
+
+
+
+	<footer>
+
+
+
+		<div class="container">
+			<section class="pre-footer-button-container">
+				<ul class="ch-grid">
+					<li>
+						<div class="ch-item ch-img-1">
+							<div class="ch-info">
+								<a href="../Description/index.html">
+									<h3>Description</h3>
+									<p>Read More...<a href="#">Read More</a></p>
+								</a>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="ch-item ch-img-2">
+							<div class="ch-info">
+								<a href="#">
+									<h3>Design</h3>
+									<p>Read More...<a href="#">Read More</a></p>
+								</a>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="ch-item ch-img-3">
+							<div class="ch-info">
+								<h3>Parts</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="ch-item ch-img-5">
+							<div class="ch-info">
+								<h3>Human Practices</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="ch-item ch-img-6">
+							<div class="ch-info">
+								<h3>Model</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="ch-item ch-img-4">
+							<div class="ch-info">
+								<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="ch-item ch-img-7">
+							<div class="ch-info">
+								<h3>Patent <br>Law</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="ch-item ch-img-8">
+							<div class="ch-info">
+								<a href="../Biosafety/index.html">
+									<h3>Safety</h3>
+									<p>Read More...<a href="#">Read More</a></p>
+								</a>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</section>
+		</div>
+
+
+		<footer id="myfooter" style="width:100%;margin-top: 1%;">
+			<div class="container-footer" style="margin-bottom: 0;background-color: #b8dbdb;width:100%;padding-left: 10%;padding-right:10%;">
+				<div class="row ">
+					<div class="col-md-4 text-center text-md-left ">
+						<div class="py-0">
+							<h3 class="my-4 text-dark"><span>BigPie</span></h3>
+							<p class="font-weight-light text-dark">
+								A project by Indian Institute of Science Education and Research Bhopal iGEM 2020 team.
+							</p>
+							<h3 class="my-4 text-dark"><span>Contact</span></h3>
+							<p class="font-weight-italic text-dark">igem@iiserb.ac.in</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 offset-md-4 text-white my-4 text-center text-md-left ">
+						<span class=" font-weight-bold text-dark ">Follow Us!</span>
+						<div class="py-2">
+							<a href="#"><i class="fab fa-linkedin fa-2x mx-3"></i></a>
+							<br>
+							<a href="#"><i class="fab fa-instagram fa-2x text- mx-3" style="color:#c13584"></i></a>
+							<br>
+							<a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+							<br>
+							<a href="#"><i class="fab fa-facebook fa-2x mx-3"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</footer>
+	<script type="text/javascript" src=""></script>
+</body></html>
