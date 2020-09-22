@@ -5,8 +5,9 @@ body {
 	width: 100vw;
 	background-color: #ffffff;
 	box-sizing: border-box;
-
+	scroll-behavior: smooth;
 }
+
 
 body {
 	overflow-x: hidden;
