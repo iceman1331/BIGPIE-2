@@ -57,6 +57,7 @@ body {
 }
 
 #cta {
+	cursor: url('https://img.icons8.com/fluent/48/000000/cursor--v2.png');
 	width: 100%;
 	height: 600px;
 	background-attachment: fixed;
@@ -111,7 +112,10 @@ body {
 	}
 }
 
-
+.img-thumbnail {
+	border: none;
+	width: 40vw;
+}
 
 .collapsing {
 	transition: all 0.5s ease;
@@ -119,6 +123,8 @@ body {
 }
 
 .card {
+
+	cursor: help;
 	font-family: "museo-sans";
 	width: 90%;
 	display: block;
@@ -269,10 +275,11 @@ body {
 .ThreeOne {
 	padding: 5% 0 5% 5%;
 	margin-right: 0;
+	margin-bottom: 10%;
 }
 
 .ThreeTwo {
-	padding: 2% 1% 2% 0;
+	padding: 25% 1% 10% 0;
 	margin-left: 0;
 }
 
@@ -285,6 +292,7 @@ body {
 @media(max-width:500px) {
 	.ThreeOne {
 		padding: 2% 5% 0 5%;
+		margin: auto;
 	}
 
 	.ThreeTwo {
@@ -549,6 +557,14 @@ sup {
 	.centred-child video {
 		width: 100%;
 	}
+}
+
+.collapse img{
+	width: 100%;
+}
+
+.content-collapsible img{
+	width: 100%;
 }
 
 .img {
@@ -910,10 +926,11 @@ a {
 
 
 
-.siphner:nth-child(odd){
+.siphner:nth-child(odd) {
 	background-color: red;
 }
-.siphner:nth-child(odd){
+
+.siphner:nth-child(odd) {
 	background-color: green;
 }
 
@@ -962,3 +979,256 @@ a {
 	transform: translate3d(0, -105%, 0);
 	transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.chevron-holder {
+	border: 1px solid red;
+	width: 5%;
+	display: block;
+	overflow: hidden;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+@media(max-width:500px) {
+	.chevron-holder {
+		width: 15%;
+	}
+}
+
+.chevron {
+	position: absolute;
+	width: 28px;
+	height: 8px;
+	opacity: 0;
+	transform: scale3d(0.5, 0.5, 0.5);
+	animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+	animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+	animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+	content: ' ';
+	position: inherit;
+	height: 100%;
+	width: 50%;
+	background: #000;
+}
+
+.chevron:before {
+	left: 0;
+	transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+	right: 0;
+	width: 50%;
+	transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+	25% {
+		opacity: 1;
+
+	}
+
+	33% {
+		opacity: 1;
+		transform: translateY(30px);
+	}
+
+	67% {
+		opacity: 1;
+		transform: translateY(40px);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+	}
+}
+
+.pulsating-circle {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	width: 30px;
+	height: 30px;
+}
+
+@media(max-width:500px) {
+	.pulsating-circle {
+		visibility: hidden;
+	}
+}
+
+.pulsating-circle:before {
+	content: '';
+	position: relative;
+	display: block;
+	width: 300%;
+	height: 300%;
+	box-sizing: border-box;
+	margin-left: -100%;
+	margin-top: -100%;
+	border-radius: 45px;
+	background-color: #01a4e9;
+	animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.pulsating-circle:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+	animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+}
+
+@keyframes pulse-ring {
+	0% {
+		transform: scale(0.63);
+	}
+
+	80%,
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes pulse-dot {
+	0% {
+		transform: scale(0.8);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.8);
+	}
+}
+
+
+
+.modal.fade {
+	border: 1px solid red;
+}
+
+.opacity-animate3 {
+	animation: opt-animation3 0.5s;
+	-moz-animation-fill-mode: forwards -webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes opt-animation3 {
+	0% {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@-moz-keyframes opt-animation3 {
+	0% {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@-o-keyframes opt-animation3 {
+	0% {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes opt-animation3 {
+	0% {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.modalmap .btn {
+	background-color: transparent;
+	border: none;
+}
+
+area {
+	cursor: url(imgs/T--IISER_Bhopal--Priscilla_cropped.png) !important, cell;
+	text-decoration: none;
+}
+
+	
+.pulse {
+	animation: pulse 3s infinite;
+	margin: 0 auto;
+	display: table;
+	margin-top: 50px;
+	animation-direction: alternate;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(1);
+	}
+
+	50% {
+		-webkit-transform: scale(1.1);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+

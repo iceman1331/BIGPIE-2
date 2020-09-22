@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Site under construction</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no">
+
+	<link rel="stylesheet" href="../NavBar/bootstrap.min.css" />
+	<script src="../NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../NavBar/js/bootstrap.min.js" charset="utf-8"></script>
+	<script src="../NavBar/js/bootstrap.min.js" charset="utf-8"></script>
+
+</head>
+
+<style>
+	body {
+		background-color: #4e54c8;
+		height: 100vh;
+		margin: 10px;
+		padding: 10px;
+		overflow: hidden;
+		font-family: 'Product Sans', Arial, sans-serif;
+	}
+
+	div {
+		width: 50%;
+		display: block;
+		margin: auto;
+		margin-top: 5%;
+		padding: 40px;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 15em;
+	}
+
+	@media (max-width: 600px) {
+		body {
+			background-color: #4e54c8;
+
+		}
+
+		div {
+			height: 50vh;
+			background-color: transparent;
+			vertical-align: middle;
+			width: auto;
+			margin: 100px auto;
+			border-radius: 0;
+			padding: 1em;
+		}
+	}
+
+
+	.hammer1 {
+		position: relative;
+		animation: anim1 2s ease;
+		animation-iteration-count: infinite;
+		size: 30px !important;
+	}
+
+	img {
+		border-radius: 10px;
+		display: block;
+		height: auto;
+		width: 30vw;
+		margin: auto;
+		margin-top: 5px;
+	}
+
+	@media(max-width:500px) {
+		img {
+			width: 75vw;
+		}
+	}
+
+
+	@keyframes anim1 {
+		0% {
+			bottom: 0px;
+		}
+
+		25% {
+			bottom: 35px;
+		}
+
+		50% {
+			bottom: 15px;
+		}
+
+		75% {
+			bottom: 35px;
+		}
+
+		100% {
+			bottom: 0px;
+		}
+	}
+
+	.text1 {
+		text-align: center;
+		color: #FFCE31;
+		text-shadow: -1px 1px 5px #ffe7b6;
+	}
+
+	.uc {
+		text-align: center;
+		color: #89664C;
+		text-decoration: none;
+
+	}
+
+	a {
+		text-decoration: none;
+		color: #FFCE31;
+		text-shadow: -1px 1px 3px rgba(115, 115, 115, 0.85);
+	}
+
+
+
+	.ball {
+		display: block;
+		position: absolute;
+		border-radius: 100%;
+		opacity: 0.2;
+	}
+
+
+	.btn10 {
+		padding: 15px 100px;
+		margin: 10px 4px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+	}
+
+
+	.btn10 {
+		font-family: "proxima-nova", sans-serif;
+		text-transform: uppercase !important;
+		letter-spacing: 2px;
+		color: #fff;
+		cursor: hand;
+		text-align: center;
+		text-transform: capitalize;
+		height: auto;
+		width: 100%;
+		border-radius: 50px;
+		position: relative;
+		overflow: hidden !important;
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-o-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		background: transparent !important;
+		z-index: 10;
+
+	}
+
+
+	.btn10:hover {
+		border: 1px solid #071982;
+		color: #80ffd3 !important;
+	}
+
+	.btn10::before {
+		content: '';
+		width: 0%;
+		height: 100%;
+		display: block;
+		background: #071982;
+		position: absolute;
+		-ms-transform: skewX(-20deg);
+		-webkit-transform: skewX(-20deg);
+		transform: skewX(-20deg);
+		left: -10%;
+		opacity: 1;
+		top: 0;
+		z-index: -12;
+		-moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+		-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+		-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+		transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+		box-shadow: 2px 0px 14px rgba(0, 0, 0, .6);
+	}
+
+	.btn10::after {
+		content: '';
+		width: 0%;
+		height: 100%;
+		display: block;
+		background: #80ffd3;
+		position: absolute;
+		-ms-transform: skewX(-20deg);
+		-webkit-transform: skewX(-20deg);
+		transform: skewX(-20deg);
+		left: -10%;
+		opacity: 0;
+		top: 0;
+		z-index: -15;
+		-webkit-transition: all .94s cubic-bezier(.2, .95, .57, .99);
+		-moz-transition: all .4s cubic-bezier(.2, .95, .57, .99);
+		-o-transition: all .4s cubic-bezier(.2, .95, .57, .99);
+		transition: all .4s cubic-bezier(.2, .95, .57, .99);
+		box-shadow: 2px 0px 14px rgba(0, 0, 0, .6);
+	}
+
+	.btn10:hover::before,
+	.btn1O:hover::before {
+		opacity: 1;
+		width: 116%;
+	}
+
+	.btn10:hover::after,
+	.btn1O:hover::after {
+		opacity: 1;
+		width: 120%;
+	}
+	
+</style>
+
+
+<body>
+	<main>
+
+		<link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
+		<div> <img src="underconstruction.gif" alt="hammer and pick" style="height: auto;" class="hammer">
+			<h1 class="text1">COMING SOON</h1>
+			<h3 class="uc">Not all those who wander are lost...<br>
+				but the page you're looking for surely is.</h3>
+			<a class="uc btn10" style="text-decoration: none;" href="../index.html">Return Home</a>
+		</div>
+
+	</main>
+	<script type="text/javascript">
+		// Some random colors
+		const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+
+		const numBalls = 30;
+		const balls = [];
+
+		for (let i = 0; i < numBalls; i++) {
+			let ball = document.createElement("div");
+			ball.classList.add("ball");
+			ball.style.background = colors[Math.floor(Math.random() * colors.length)];
+			ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
+			ball.style.top = `${Math.floor(Math.random() * 100)}vh`;
+			ball.style.transform = `scale(${Math.random()})`;
+			ball.style.width = `${Math.random(10)}em`;
+			ball.style.height = ball.style.width;
+
+			balls.push(ball);
+			document.body.append(ball);
+		}
+
+		// Keyframes
+		balls.forEach((el, i, ra) => {
+			let to = {
+				x: Math.random() * (i % 2 === 0 ? -50 : 50),
+				y: Math.random() * 30
+			};
+
+			let anim = el.animate(
+				[{
+						transform: "translate(0, 0)"
+					},
+					{
+						transform: `translate(${to.x}rem, ${to.y}rem)`
+					}
+				], {
+					duration: (Math.random() + 1) * 5000, // random duration
+					direction: "alternate",
+					fill: "both",
+					iterations: Infinity,
+					easing: "ease-in-out"
+				}
+			);
+		});
+	</script>
+
+</body></html>
