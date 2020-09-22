@@ -1252,7 +1252,6 @@ area {
 @media(max-width:500px) {
 	.centred-child-2 .img-fluid {
 		width: 100%;
-		border: 1px solid green;
 	}
 
 }
