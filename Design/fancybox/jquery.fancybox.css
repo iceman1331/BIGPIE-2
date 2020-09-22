@@ -51,8 +51,7 @@ body.compensate-for-scrollbar {
 
 .fancybox-bg {
 	
-    background: rgb(30, 30, 30);
-    background: rgba(255,255,255,0.75);
+    background: rgb(60, 60, 60);
     opacity: 0;
     transition-duration: inherit;
     transition-property: opacity;
