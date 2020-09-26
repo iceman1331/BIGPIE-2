@@ -5,6 +5,7 @@ body {
 	width: 100vw;
 	background-color: #ffffff;
 	box-sizing: border-box;
+
 }
 
 body {
@@ -15,9 +16,10 @@ body {
 /****/
 /****/
 /**ADD TO NAVBAR MAINS**/
-.dropdown-menu{
+.dropdown-menu {
 	backdrop-filter: blur(3px);
 }
+
 /**ADD TO NAVBAR MAINS**/
 /****/
 /****/
@@ -237,6 +239,112 @@ sup {
 	}
 }
 
+.txt0 {
+	padding: 3% 1% 2% 1%;
+}
+
+.txt0 h2 {
+	text-align: center;
+}
+
+.txt1 {
+	padding: 1% 1% 1% 1%;
+}
+
+.txt2 {
+	padding: 1% 1% 1% 1%;
+}
+
+.txt3 {
+	padding: 1% 1% 1% 1%;
+}
+
+.txt4 {
+	padding: 1% 1% 1% 1%;
+}
+
+@media(max-width:500px) {
+	.txt0 {
+		padding: 3% 5% 2% 5%;
+	}
+
+	.txt0 h2 {
+		text-align: center;
+	}
+
+	.txt1 {
+		padding: 1% 5% 1% 5%;
+	}
+
+	.txt2 {
+		padding: 1% 5% 1% 5%;
+	}
+
+	.txt3 {
+		padding: 1% 5% 1% 5%;
+	}
+
+	.txt4 {
+		padding: 1% 5% 1% 5%;
+	}
+
+}
+
+
+.plasmidtxt {
+	width: 15%;
+	border-bottom: 5px solid #c5ff99;
+	margin: auto;
+	font-size: 1.5rem;
+}
+
+@media(max-width:500px){
+	.plasmidtxt{
+		width: 40%;
+	}
+}
+
+
+underline1 {
+	border-bottom: 3px solid #949bff;
+}
+
+underline2 {
+	border-bottom: 3px solid #d5a1ff;
+}
+
+underline3 {
+	border-bottom: 3px solid #ffadad;
+}
+
+underline4 {
+	border-bottom: 3px solid #ffa3d4;
+}
+
+
+.underline {
+	position: relative;
+	color: #222;
+	text-decoration: none;
+}
+
+.underline::after {
+	left: 0;
+	right: 0;
+	content: "";
+	position: absolute;
+	height: 2px;
+	background: red;
+	bottom: -1px;
+	transform: scale(0, 1);
+	transform-origin: 100% 50%;
+	transition: transform .5s ease;
+}
+
+.underline:hover::after {
+	transform: scale(1, 1);
+	transform-origin: 0% 50%;
+}
 
 
 
@@ -257,7 +365,6 @@ a:focus {
 	color: inherit;
 }
 
-/* Effect 1: Brackets */
 /* Effect 3: bottom line slides/fades in */
 .cl-effect-3 a {
 	padding: 8px 0;
@@ -358,8 +465,6 @@ a:focus {
 }
 
 
-
-
 .imgs {
 	display: block;
 	margin: auto;
@@ -369,8 +474,20 @@ a:focus {
 .imgs img {
 	display: block;
 	margin: auto;
-	border:1px solid red;
 }
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
 /*FOOTER*/
 
 footer {
@@ -378,15 +495,19 @@ footer {
 	background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
 	background: linear-gradient(59deg, #3A6073, #16222A);
 	color: white;
-	margin-top: 100px;
+	margin-top: 10px;
 }
 
 
-.foot p, h4{
+.foot p {
 	color: #fff;
 }
 
-.foot p{
+.foot h4 {
+	color: #fff;
+}
+
+.foot p {
 	padding-right: 25px;
 	text-align: start;
 }
@@ -448,6 +569,7 @@ ul.social-network li {
 .social-network a.icoLinkedin:hover {
 	background-color: #007bb7;
 }
+
 .social-network a.icoGmail:hover {
 	background-color: #B23121;
 }
@@ -509,3 +631,11 @@ ul.social-network li {
 .social-network a {
 	background-color: #F9F9F9;
 }
+
+
+
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
