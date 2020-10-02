@@ -7,19 +7,6 @@ body {
 	box-sizing: border-box;
 }
 
-/****/
-/****/
-/****/
-/**ADD TO NAVBAR MAINS**/
-.dropdown-menu{
-	backdrop-filter: blur(3px);
-}
-/**ADD TO NAVBAR MAINS**/
-/****/
-/****/
-/****/
-/****/
-/****/
 body {
 	overflow-x: hidden;
 }

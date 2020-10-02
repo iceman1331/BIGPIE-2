@@ -6,146 +6,417 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>iGEM || Timeline</title>
+
+
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.css" />
+
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+
+
+
+
 	<link rel="stylesheet" href="Timeline.css">
 
 </head>
 
 <body>
-	<section class="intro">
+
+	<div class="loader">
+		<video autoplay muted loop src="../T--IISER_Bhopal--loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-md navbar-dark scrolling-navbar py-0" id="mynav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item navbar-nav mr-auto active">
+						<a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="#">Design</a>
+							<a class="dropdown-item" href="#">Contribution</a>
+							<a class="dropdown-item" href="#">Engineering Success</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-dna"></i> Modelling
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Overview</a>
+							<a class="dropdown-item" href="#">Subsections</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Parts Collection</a>
+							<a class="dropdown-item" href="#">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosafety</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Safe by Design</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">IHP</a>
+							<a class="dropdown-item" href="#">Education</a>
+							<a class="dropdown-item" href="#">Public Engagement</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-vial"></i> Entrepreneurship
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Implementation</a>
+							<a class="dropdown-item" href="#">Hardware</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> Team
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Team</a>
+							<a class="dropdown-item" href="#">Supervisors</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+
+
+
+
+
+		<section class="intro">
+			<div class="container">
+				<h1>IHP Timeline<br>&darr;</h1>
+			</div>
+		</section>
+
+		<section class="timeline">
+			<ul>
+				<div class="container">
+					<p>Images below are placeholders</p>
+				</div>
+
+				<div class="container">
+					<div class="arrow">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<li>
+					<div>
+						<time>Date_1</time>
+						<img src="a1.png"><br>
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_2</time>
+						<img src="	http://lorempixel.com/400/200/abstract"><br>
+						Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_3</time>
+						<img src="description_logo_cropped.png"><br>
+						Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_4</time>
+						<img src="design_alt_cropped.png"><br>
+						In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="design_icon_cropped.png"><br>
+						<time>Date_5</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_6</time>
+						<img src="entrepreneurship_icon_cropped.png"><br>
+						In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_7</time>
+						<img src="humanpractices_icon_cropped.png"><br>
+						In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_8</time>
+						<img src="model_icon_cropped.png"><br>
+						Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_9</time>
+						<img src="patentlaw_icon_cropped.png"><br>
+						Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_9</time>
+						<img src="safety_icon_cropped.png"><br>
+						In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_10</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+					</div>
+				</li>
+				<li>
+					<div>
+						<time>Date_11</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+					</div>
+				</li>
+			</ul>
+		</section>
+	
+	
 		<div class="container">
-			<h1>IHP Timeline<br>&darr;</h1>
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<a href="../Description/index.html">
+								<h3>Description</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-2">
+						<div class="ch-info">
+							<a href="#">
+								<h3>Design</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-3">
+						<div class="ch-info">
+							<h3>Parts</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-5">
+						<div class="ch-info">
+							<h3>Human Practices</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-6">
+						<div class="ch-info">
+							<h3>Model</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-4">
+						<div class="ch-info">
+							<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-7">
+						<div class="ch-info">
+							<h3>Patent <br>Law</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-8">
+						<div class="ch-info">
+							<a href="../Biosafety/index.html">
+								<h3>Safety</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+	</div>
+
+
+
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
 		</div>
-	</section>
+	</footer>
+	
+	
+	
+		<script>
+			(function() {
 
-	<section class="timeline">
-		<ul>
-			<div class="container">
-				<p>Images below are placeholders</p>
-			</div>
+				'use strict';
 
-			<div class="container">
-				<div class="arrow">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</div>
+				// define variables
+				var items = document.querySelectorAll(".timeline li");
 
-			<li>
-				<div>
-					<time>Date_1</time>
-					<img src="a1.png"><br>
-					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_2</time>
-					<img src="	http://lorempixel.com/400/200/abstract"><br>
-					Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_3</time>
-					<img src="description_logo_cropped.png"><br>
-					Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_4</time>
-					<img src="design_alt_cropped.png"><br>
-					In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-				</div>
-			</li>
-			<li>
-				<div>
-					<img src="design_icon_cropped.png"><br>
-					<time>Date_5</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_6</time>
-					<img src="entrepreneurship_icon_cropped.png"><br>
-					In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_7</time>
-					<img src="humanpractices_icon_cropped.png"><br>
-					In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_8</time>
-					<img src="model_icon_cropped.png"><br>
-					Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_9</time>
-					<img src="patentlaw_icon_cropped.png"><br>
-					Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_9</time>
-					<img src="safety_icon_cropped.png"><br>
-					In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_10</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-				</div>
-			</li>
-			<li>
-				<div>
-					<time>Date_11</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-				</div>
-			</li>
-		</ul>
-	</section>
-	<script>
-		(function() {
+				// check if an element is in viewport
+				// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+				function isElementInViewport(el) {
+					var rect = el.getBoundingClientRect();
+					return (
+						rect.top >= 0 &&
+						rect.left >= 0 &&
+						rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+						rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+					);
+				}
 
-			'use strict';
-
-			// define variables
-			var items = document.querySelectorAll(".timeline li");
-
-			// check if an element is in viewport
-			// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-			function isElementInViewport(el) {
-				var rect = el.getBoundingClientRect();
-				return (
-					rect.top >= 0 &&
-					rect.left >= 0 &&
-					rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-					rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-				);
-			}
-
-			function callbackFunc() {
-				for (var i = 0; i < items.length; i++) {
-					if (isElementInViewport(items[i])) {
-						items[i].classList.add("in-view");
+				function callbackFunc() {
+					for (var i = 0; i < items.length; i++) {
+						if (isElementInViewport(items[i])) {
+							items[i].classList.add("in-view");
+						}
 					}
 				}
-			}
 
-			// listen for events
-			window.addEventListener("load", callbackFunc);
-			window.addEventListener("resize", callbackFunc);
-			window.addEventListener("scroll", callbackFunc);
+				// listen for events
+				window.addEventListener("load", callbackFunc);
+				window.addEventListener("resize", callbackFunc);
+				window.addEventListener("scroll", callbackFunc);
 
-		})();
-	</script>
+			})();
+		</script>
 
 </body></html>

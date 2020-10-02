@@ -20,15 +20,15 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="./NavBar/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/NavBar/bootstrap.min.css" />
 	<link rel="stylesheet" href="../Common/animations.css" />
 	<link rel="stylesheet" href="stylesheet_design.css" />
 
-	<script src="./NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
-	<script src="./NavBar/js/bootstrap.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
 
 	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
-	<link rel="stylesheet" href="./NavBar/custom-navbar.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
 
 
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -76,31 +76,20 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-dna"></i> Modelling
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Overview</a>
+							<a class="dropdown-item" href="#">Subsections</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-puzzle-piece"></i> Parts
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Parts Collection</a>
 							<a class="dropdown-item" href="#">Contribution</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-handshake"></i> Human Practices
-						</a>
-						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">IHP</a>
-							<a class="dropdown-item" href="#">Education</a>
-							<a class="dropdown-item" href="#">Public Engagement</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-users"></i> Team
-						</a>
-						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Team</a>
-							<a class="dropdown-item" href="#">Supervisors</a>
-							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -115,11 +104,12 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-dna"></i> Modelling
+							<i class="fas fa-handshake"></i> Human Practices
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Overview</a>
-							<a class="dropdown-item" href="#">Subsections</a>
+							<a class="dropdown-item" href="#">IHP</a>
+							<a class="dropdown-item" href="#">Education</a>
+							<a class="dropdown-item" href="#">Public Engagement</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -131,11 +121,23 @@
 							<a class="dropdown-item" href="#">Hardware</a>
 						</div>
 					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> Team
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Team</a>
+							<a class="dropdown-item" href="#">Supervisors</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+
+
 				</ul>
 			</div>
 		</nav>
 	</header>
-	<script type="text/javascript" src="../NavBar/custom-navbar.js"></script>
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
 
 
 
@@ -187,7 +189,7 @@
 
 			<area shape="rect" coords="817, 119, 1068, 239" title="Part 3" href="#plasmid3" onmouseover="writeText('Part_3')" />
 
-			<area shape="rect" coords="803, 260, 1038, 388" title="Part 4" href="#plasmid4" onmouseover="writeText('Part_4')"/>
+			<area shape="rect" coords="803, 260, 1038, 388" title="Part 4" href="#plasmid4" onmouseover="writeText('Part_4')" />
 		</map>
 
 		<h4 id="desc" class="text-center" style="">Some Description here...</h4>
@@ -242,7 +244,7 @@
 		</div>
 	</div>
 
-	
+
 
 
 
@@ -773,32 +775,59 @@
 		</div>
 	</div>
 
-	<footer id="myfooter" style="width:100%;margin-top: 1%;">
-		<div class="container-footer" style="margin-bottom: 0;background-color: #b8dbdb;width:100%;padding-left: 10%;padding-right:10%;">
-			<div class="row ">
-				<div class="col-md-4 text-center text-md-left ">
-					<div class="py-0">
-						<h3 class="my-4 text-dark"><span>BigPie</span></h3>
-						<p class="font-weight-light text-dark">
-							A project by Indian Institute of Science Education and Research Bhopal iGEM 2020 team.
-						</p>
-						<h3 class="my-4 text-dark"><span>Contact</span></h3>
-						<p class="font-weight-italic text-dark">igem@iiserb.ac.in</p>
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
 					</div>
 				</div>
 
-				<div class="col-md-4 offset-md-4 text-white my-4 text-center text-md-left ">
-					<span class=" font-weight-bold text-dark ">Follow Us!</span>
-					<div class="py-2">
-						<a href="#"><i class="fab fa-linkedin fa-2x mx-3"></i></a><br>
-						<a href="#"><i class="fab fa-instagram fa-2x text- mx-3" style="color:#c13584"></i></a><br>
-						<a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a><br>
-						<a href="#"><i class="fab fa-facebook fa-2x mx-3"></i></a>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</footer>
+
 
 
 

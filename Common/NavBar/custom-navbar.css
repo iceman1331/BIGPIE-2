@@ -10,6 +10,10 @@
 	}
 }
 
+.dropdown-menu{
+	backdrop-filter: blur(4px);
+}
+
 .dropdown-toggle::after {
 	transition: transform 0.15s linear;
 }
