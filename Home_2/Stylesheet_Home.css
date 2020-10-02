@@ -313,3 +313,42 @@ body {
 	background: #f00;
 	border: 0 solid #f00;
 }
+
+
+
+.sad {
+	padding: 2% 0 0 0;
+	height: 90vh;
+	transition: 1s ease;
+	display: block;
+	margin: auto;
+	margin-bottom: 2%;
+}
+
+.sad:hover {
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.sad img {
+	display: block;
+	height: 95vh;
+	width: auto;
+	margin: auto;
+}
+
+@media(max-width:500px) {
+	.sad {
+		height: auto;
+	}
+
+	.sad img {
+		height: auto;
+		width: auto;
+	}
+}
+
+
+.bigpie{
+	font-size: 5rem;
+	text-decoration: 10px underline;
+}
