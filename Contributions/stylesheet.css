@@ -70,7 +70,7 @@ body {
 }
 
 .disclaimer {
-	border-left: 2px solid red;
+	border-left: 2px solid rgba(255,76,76,0.9);
 	padding: 2px 5px 2px 15px;
 }
 
@@ -99,11 +99,11 @@ span {
 	/*  gradient background allows us to use css only & re-position it  */
 	background: -webkit-linear-gradient(#999, #999) center 1.09em no-repeat;
 	background: linear-gradient(#999, #999) center 1.09em no-repeat;
-	/*  can precisely control size in relation to the text  */
-	background-size: 85% 1px;
+	/*  can precisely control size in relation to the text  */ 
+	background-size: 65% 2px;
 	/*  now the underline supports transitions  */
-	-webkit-transition: .2s ease;
-	transition: .2s ease;
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
 }
 
 span:hover {
@@ -244,7 +244,7 @@ span:hover {
 	font-size: 1.05rem;
 	font-family: 'Roboto Black', sans-serif;
 	letter-spacing: 1px;
-	color: red;
+	color:rgba(0,33,71,0.65);
 }
 
 
