@@ -113,6 +113,11 @@ span:hover {
 
 
 
+.card-img {
+	width: 30%;
+	display: block;
+	border: 1px solid red;
+}
 
 /*----  Main Style  ----*/
 .card-head {
@@ -142,7 +147,7 @@ span:hover {
 
 #cards_landscape_wrap-2 .card-flyer {
 	border-radius: 5px;
-	width: 50%;
+	width: 60%;
 	cursor: default;
 	display: block;
 	margin: auto;
@@ -223,6 +228,7 @@ span:hover {
 
 #cards_landscape_wrap-2 .card-flyer .text-box h6 {
 	margin: 0 auto auto 5px;
+	display: block;
 	text-align: center;
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -233,7 +239,6 @@ span:hover {
 
 #cards_landscape_wrap-2 .card-flyer .text-box h7 {
 	margin: 5px 0 0 0;
-	;
 	display: block;
 	text-align: center;
 	font-size: 1.05rem;
@@ -259,13 +264,71 @@ span:hover {
 	color: #000000;
 }
 
-.guide-doc{
+.guide-doc {
 	display: block;
 	margin: auto;
 }
-embed{
+
+embed {
 	display: block;
 	margin: auto;
 	width: 80%;
 	height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+.img-thumbnail {
+	border: none;
+	width: 200px;
+	height: 200px;
+}
+
+
+
+
+
+.ileft{
+}
+
+.iright{
+}
+
+
+
+
+
+div.parent {
+	display: table;
+	padding: 5px;
+	width: 100%;
+	/* you can change/remove margin */
+
+}
+
+div.text {
+	vertical-align: middle;
+	display: table-cell;
+	text-align: justify;
+}
+
+div.parent .img {
+	vertical-align: middle;
+	display: table-cell;
+	width: 150px;
+	/* you can change width */
+}
+
+div.img img {
+	width: 100%;
+	/* you can change height */
+	vertical-align: middle;
 }

@@ -13,18 +13,22 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Home</title>
-	<link rel="preload" href="Videos/loader.mp4" as="video">
+	<link rel="preload" href="T--IISER_Bhopal--loader.mp4" as="video">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-	<link rel="stylesheet" href="bootstrap.min.css" />
-	<link rel="stylesheet" href="flickity.css" />
+	<link rel="stylesheet" href="Common/fontawesome/css/all.min.css">
+	<script src="Common/fontawesome/js/all.min.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="stylesheet_home.css" />
-	<link rel="stylesheet" href="Pre-footer_buttons/footer_button_style.css" />
-	<link rel="stylesheet" href="NavBar/custom-navbar.css" />
+	<link rel="stylesheet" href="Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="Common/flickity.css" />
+	<link rel="stylesheet" href="Common/animations.css" />
 
-	<script src="NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
-	<script src="NavBar/bootstrap.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="home/stylesheet_home.css" />
+
+	<script src="Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="Common/NavBar/js/bootstrap.min.js" charset="utf-8"></script>
+	
+	<link rel="stylesheet" href="Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="Common/NavBar/custom-navbar.css" />
 
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -33,7 +37,7 @@
 
 <body>
 	<div class="plasmid-loader">
-		<video autoplay muted loop src="Videos/loader.mp4"></video>
+		<video autoplay muted loop src="T--IISER_Bhopal--loader.mp4"></video>
 	</div>
 
 	<!--Loader-->
@@ -53,15 +57,15 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="https://iceman1331.github.io/homepage_2/"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#"> <i class="fas fa-home" style="margin-right: 10rem;"></i> <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-project-diagram"></i> Project
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="https://iceman1331.github.io/Description/index.html">Description</a>
-							<a class="dropdown-item" href="#">Design</a>
+							<a class="dropdown-item" href="Description/index.html">Description</a>
+							<a class="dropdown-item" href="Design/index.html">Design</a>
 							<a class="dropdown-item" href="#">Contribution</a>
 							<a class="dropdown-item" href="#">Engineering Success</a>
 						</div>
@@ -92,17 +96,17 @@
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Team</a>
 							<a class="dropdown-item" href="#">Supervisors</a>
-							<a class="dropdown-item" href="#">Attributors</a>
+							<a class="dropdown-item" href="Collaborations/index.html">Attributors</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-biohzard"></i> Safety
+							<i class="fas fa-biohazard"></i> Safety
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Biosafety</a>
-							<a class="dropdown-item" href="#">Biosecurity</a>
-							<a class="dropdown-item" href="#">Safe by Design</a>
+							<a class="dropdown-item" href="Biosafety/index.html">Biosafety</a>
+							<a class="dropdown-item" href="Biosafety/index.html">Biosecurity</a>
+							<a class="dropdown-item" href="Biosafety/index.html">Safe by Design</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -128,13 +132,16 @@
 		</nav>
 	</header>
 
+	<script type="text/javascript" src="Common/NavBar/custom-navbar.js"></script>
+	
+
 	<div class="videoWrapper">
-		<video autoplay muted src="Videos/Diabetes_2.mp4"></video>
+		<video autoplay muted src="home/Videos/T--IISER_Bhopal--Diabetes.mp4"></video>
 	</div>
 
 	<div class="animatedParent animateOnce" style="white-space: nowrap;">
 		<div class="scary">
-			<div class="animated fadeInLeft  delay-500">
+			<div class="animated fadeInLeft delay-500">
 				Diabetes:
 				A chronic disease<br>
 				has impacted over<br>
@@ -142,7 +149,7 @@
 				worldwide!<br>
 			</div>
 			<div class="animated fadeIn">
-				<video autoplay loop muted playsinline src="Videos/Globe_pin_man_fff.mp4" style=""></video>
+				<video autoplay loop muted playsinline src="home/Videos/T--IISER_Bhopal--Globe_pin_man_fff.mp4" style=""></video>
 			</div>
 		</div>
 	</div>
@@ -154,21 +161,15 @@
 	</div>
 
 
-
-
-
-
-
-
 	<div class="container">
 		<div class="animatedParent animateOnce">
 			<div class="centred-child">
 				<div class="animated fadeInRight">
 					<div class="insulin-production-img">
-						<h1 style="padding-top: 0;margin-top: 20px;">Diabetes and Insulin Production</h1>
+						<h1>Diabetes and Insulin Production</h1>
 
-						<div class="img" style="width: 100%;margin-left:1%;">
-							<img src="insulin%20production.png">
+						<div class="img img-fluid" >
+							<img src="home/T--IISER_Bhopal--insulin_production.png">
 						</div>
 					</div>
 				</div>
@@ -176,12 +177,13 @@
 		</div>
 	</div>
 
+	<div class="container-fluid">
 	<div class="animatedParent animateOnce">
 		<div class="animated fadeIn">
 			<div class="primary-carousel-container">
 				<div class="pie-slider" data-flickity='{ "wrapAround": true , "autoPlay": 4500, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": true}'>
 
-					<div class="carousel-cell" style="background-image:url(stats2.png);background-size: cover;">
+					<div class="carousel-cell" style="background-image:url(home/T--IISER_Bhopal--stats2.png);background-size: cover;">
 						<div class="overlay"></div>
 						<div class="inner">
 							<h3 class="subtitle">Every inhabited continent is facing a diabetes epidemic.</h3>
@@ -190,7 +192,7 @@
 						</div>
 					</div>
 
-					<div class="carousel-cell" style="background-image:url(Age.png);">
+					<div class="carousel-cell" style="background-image:url(home/T--IISER_Bhopal--Age.png);">
 						<div class="overlay"></div>
 						<div class="inner">
 							<h3 class="subtitle">In 2016, an estimated 1.6 million deaths were directly caused by diabetes.</h3>
@@ -199,14 +201,14 @@
 						</div>
 					</div>
 
-					<div class="carousel-cell" style="background-image:url(stats5.png);">
+					<div class="carousel-cell" style="background-image:url(home/T--IISER_Bhopal--stats5.png);">
 						<div class="overlay"></div>
 						<div class="inner">
 							<h2 class="title">1 in every 6 child born is affected by Diabetes.</h2>
 						</div>
 					</div>
 
-					<div class="carousel-cell" style="background-image:url(stats6.png);background-size: cover;">
+					<div class="carousel-cell" style="background-image:url(home/T--IISER_Bhopal--stats6.png);background-size: cover;">
 						<div class="overlay"></div>
 						<div class="inner">
 							<h3 class="subtitle">More than 1.1 million </h3>
@@ -217,17 +219,19 @@
 			</div>
 		</div>
 	</div>
+	</div>
 
 	<div class="animatedParent animateOnce">
 		<div class="centred-child" style="margin-top: 30px;">
 			<div class="animated fadeInLeft">
 				<div class="sad img" style="width: 90%;">
-					<img src="sad_quotes.png">
+					<img src="home/T--IISER_Bhopal--sad_quotes.png">
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<!--
 	<div class="animatedParent animateOnce" data-sequence='500'>
 		<div class="container">
 			<h1 class="animated fadeInLeft" data-id='1' style="text-align: center;font-size: 1.5rem;">Introducing</h1>
@@ -236,17 +240,26 @@
 			</div>
 		</div>
 	</div>
+	-->
+	<div class="animatedParent animateOnce">
+		<h1 class="animated fadeIn" style="text-align: center;font-size: 1.5rem;">Introducing</h1>
+		<h1 class="animated fadeIn" style="text-align: center;color:;font-size:3rem;padding: 0;margin: 0;">BigPie</h1>
+	</div>
+
 
 	<div class="container">
 		<p style="color: #000;font-size: 1.5rem;text-align: center;">We are creating a pill containing enhanced probiotic bacteria capable of producing insulin in-vivo. To help diabetes patients and replace insulin injections. </p>
 	</div>
 
-	<div class="container">
-		<div class="animatedParent animateOnce">
-			<div class="centred-child" style="margin-top: 30px;">
-				<div class="animated fadeInRight">
+
+
+	<div class="animatedParent animateOnce">
+		<div class="container">
+			<div class="animated fadeInRight">
+				<div class="centred-child" style="margin-top: 30px;">
+
 					<div class="desc">
-						<img src="desc_newest.png">
+						<img src="home/T--IISER_Bhopal--desc_newest.png">
 					</div>
 				</div>
 			</div>
@@ -261,10 +274,10 @@
 				<li>
 					<div class="ch-item ch-img-1">
 						<div class="ch-info" href="www.google.com">
-							<a href="https://iceman1331.github.io/Description/index.html" target="_blank">
+							<a href="./Description/index.html">
 								<h3>Description</h3>
+								<p>Read More...</p>
 							</a>
-							<p>Read More...</p>
 						</div>
 					</div>
 				</li>
@@ -272,10 +285,12 @@
 
 				<li>
 					<div class="ch-item ch-img-2">
-						<div class="ch-info">
-							<h3>Design</h3>
-							<p>Read More...<a href="#">Read More</a></p>
-						</div>
+						<a href="./Design/index.html">
+							<div class="ch-info">
+								<h3>Design</h3>
+								<p>Read More...<a href="">Read More</a></p>
+							</div>
+						</a>
 					</div>
 				</li>
 
@@ -327,8 +342,10 @@
 				<li>
 					<div class="ch-item ch-img-8">
 						<div class="ch-info">
-							<h3>Safety</h3>
-							<p>Read More...<a href="#">Read More</a></p>
+							<a href="./Biosafety/index.html">
+								<h3>Safety</h3>
+								<p>Read More...<a>Read More</a></p>
+							</a>
 						</div>
 					</div>
 				</li>
@@ -393,7 +410,7 @@
 	</script>
 
 
-	<script src="flickity.pkgd.min.js"></script>
+	<script src="home/flickity.pkgd.min.js"></script>
 
 	<script>
 		var options = {
@@ -425,9 +442,8 @@
 
 	</script>
 
-	<script type="text/javascript" src="NavBar/custom-navbar.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="css3-animate-it.js"></script>
+
+	<script src="home/css3-animate-it.js"></script>
 
 </body>
 
