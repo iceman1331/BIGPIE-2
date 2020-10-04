@@ -137,7 +137,6 @@ span:hover {
 .card-img {
 	width: 30%;
 	display: block;
-	border: 1px solid red;
 }
 
 /*----  Main Style  ----*/
@@ -168,7 +167,7 @@ span:hover {
 
 #cards_landscape_wrap-2 .card-flyer {
 	border-radius: 5px;
-	width: 60%;
+	width: 70%;
 	cursor: default;
 	display: block;
 	margin: auto;
