@@ -2,25 +2,22 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	width: 100vw;
+	width: 100%;
 	background-color: #ffffff;
 	box-sizing: border-box;
-	font-size: 100%;
-	height: 1000%;
-	
+	font-size: 100%;	
 }
 
 body {
 	overflow-x: hidden;
 }
 
-
 #cta {
 	width: 100%;
 	height: 600px;
 	background-attachment: fixed;
-	background-image: url(parts.png);
-	background-position: bottom;
+	background-image: url(contributions.png);
+	background-position: top left;
 	opacity: 1;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -37,7 +34,6 @@ body {
 		width: 100%;
 	}
 }
-
 
 .desc-title {
 	display: block;
@@ -60,7 +56,7 @@ body {
 	}
 
 	.desc-title h1 {
-		font-size: 3.25rem;
+		font-size: 2.25rem;
 		color: #ffff;
 		padding-bottom: 10%;
 	}
