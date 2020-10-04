@@ -254,6 +254,7 @@ span:hover {
 
 .patent p {
 	font-size: 1.25rem;
+	letter-spacing: 1px;
 	font-family: 'Lato', sans-serif;
 	color: #000000;
 }
