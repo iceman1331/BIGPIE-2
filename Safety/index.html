@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
 	<meta charset="UTF-8" />
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#85C1E9">
+
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<title>Home</title>
-	<link rel="preload" href="T--IISER_Bhopal--loader.mp4" as="video">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no,shrink-to-fit=no" />
+	<title>Contributions</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="Common/bootstrap.min.css" />
-	<link rel="stylesheet" href="Common/flickity.min.css" />
-	<link rel="stylesheet" href="Common/animations.css" />
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.css" />
+	<link rel="stylesheet" href="stylesheet.css" />
 
-	<link rel="stylesheet" href="Home_2/Stylesheet_Home.css" />
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
 
-	<script src="Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
-	<script src="Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
 
-	<link rel="stylesheet" href="Common/Pre-footer_buttons/footer_button_style.css" />
-	<link rel="stylesheet" href="Common/NavBar/custom-navbar.css" />
 
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<div class="loader">
-		<video autoplay muted loop src="T--IISER_Bhopal--loader.mp4"></video>
+<div class="loader">
+		<video autoplay muted loop src="../T--IISER_Bhopal--loader.mp4"></video>
 	</div>
 
 	<!--Loader-->
@@ -128,140 +130,24 @@
 						</div>
 					</li>
 
+
+
 				</ul>
 			</div>
 		</nav>
-		<script type="text/javascript" src="Common/NavBar/custom-navbar.js"></script>
 	</header>
 
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+	
 	<main>
-
-		<div class="videoWrapper">
-			<video autoplay muted src="Home_2/Videos/T--IISER-Bhopal--Diabetes.mp4"></video>
-		</div>
-
-		<div class="animatedParent animateOnce" style="white-space: nowrap;">
-			<div class="scary">
-				<div class="animated fadeInLeft delay-500">
-					Diabetes:
-					A chronic disease<br>
-					has impacted over<br>
-					463 million people<br>
-					worldwide!<br>
-				</div>
-				<div class="animated fadeIn">
-					<video autoplay loop muted playsinline src="Home_2/Videos/T--IISER_Bhopal--Globe_pin_man_fff.mp4"></video>
-				</div>
+	
+		<div id="cta">
+			<div class="desc-title">
+				<h1> Contributions </h1>
 			</div>
 		</div>
-
-		<!--
-		<div class="container">
-			<div class="patient_counter">Dibetics since you visited this page
-				<pat id="counter">0</pat>
-			</div>
-		</div>
-		-->
-
-		<div class="container-fluid">
-			<div class="animatedParent animateOnce">
-				<div class="animated fadeInLeft">
-					<div class="container">
-						<h1 style="text-align: center;">Diabetes and Insulin Production</h1>
-						<img class="img-fluid" src="Home_2/T--IISER_Bhopal--insulin_production.png">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="animatedParent animateOnce">
-			<div class="animated fadeIn">
-				<div class="primary-carousel-container">
-					<div class="pie-slider" data-flickity='{ "wrapAround": true , "autoPlay": 4500, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": true}'>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats2.png);background-size: cover;">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h3 class="subtitle">Every inhabited continent is facing a diabetes epidemic.</h3>
-								<h2 class="title">642 million patients estimated by 2040</h2>
-								<a href="https://www.who.int/health-topics/diabetes" target="_blank" class="btn">Tell me more</a>
-							</div>
-						</div>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--Age.png);">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h3 class="subtitle">In 2016, an estimated 1.6 million deaths were directly caused by diabetes.</h3>
-								<h2 class="title"> 2.2 million deaths were attributable to high blood glucose in 2012.
-								</h2>
-							</div>
-						</div>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats5.png);">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h2 class="title">1 in every 6 child born is affected by Diabetes.</h2>
-							</div>
-						</div>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats6.png);background-size: cover;">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h3 class="subtitle">More than 1.1 million </h3>
-								<h2 class="title">children &amp; adolescents are living with type 1 diabetes</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container-fluid">
-
-			<div class="animatedParent animateOnce">
-				<div class="animated fadeInLeft">
-					<img class="img-fluid sad img" src="Home_2/T--IISER_Bhopal--sad_quotes.png">
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container-fluid">
-			<div class="animatedParent animateOnce">
-				<div class="animated fadeInLeft">
-					<div class="container">
-						<h1 class="text-center">Introducing</h1>
-					</div>
-				</div>
-				<div class="animated fadeIn">
-					<div class="container">
-						<h1 class="text-center bigpie">BigPie</h1>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<p class="text-center">We are creating a pill containing enhanced probiotic bacteria<br> capable of producing insulin in-vivo. To help diabetes patients and replace insulin injections. </p>
-			</div>
-		</div>
-
-
-
-		<div class="container">
-			<div class="animatedParent animateOnce">
-				<div class="container-fluid">
-					<div class="animated fadeIn">
-						<img class="img-fluid" src="Home_2/T--IISER_Bhopal--desc_newest.png">
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
 	</main>
-
+	
 	<div class="container">
 		<section class="pre-footer-button-container">
 			<ul class="ch-grid">
@@ -347,6 +233,9 @@
 		</section>
 	</div>
 
+
+
+
 	<footer class="mainfooter" role="contentinfo">
 		<div class="footer-middle">
 			<div class="container">
@@ -399,40 +288,7 @@
 			</div>
 		</div>
 	</footer>
+	<script type="text/javascript" src=""></script>
+</body>
 
-
-
-
-	<script src="Common/flickity.pkgd.min.js"></script>
-
-	<script>
-		var options = {
-			accessibility: true,
-			pageDots: true,
-			setGallerySize: false,
-		};
-
-		var carousel = document.querySelector('[data-carousel]');
-		var slides = document.getElementsByClassName('carousel-cell');
-		var flkty = new Flickity(carousel, options);
-
-		flkty.on('scroll', function() {
-			flkty.slides.forEach(function(slide, i) {
-				var image = slides[i];
-				var x = (slide.target + flkty.x) * -1 / 3;
-				image.style.backgroundPosition = x + 'px';
-			});
-		});
-	</script>
-	<!--
-	<script>
-		video.addEventListener('loadedmetadata', function() {
-			if (video.buffered.length === 0) return;
-
-			var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
-			console.log(bufferedSeconds + ' seconds of video are ready to play!');
-		});
-	</script>
-	-->
-	<script src="Common/css3-animate-it.js"></script>
-</body></html>
+</html>

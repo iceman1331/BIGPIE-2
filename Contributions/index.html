@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 
 <head>
 	<meta charset="UTF-8" />
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#85C1E9">
+
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<title>Home</title>
-	<link rel="preload" href="T--IISER_Bhopal--loader.mp4" as="video">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no,shrink-to-fit=no" />
+	<title>Contributions</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="Common/bootstrap.min.css" />
-	<link rel="stylesheet" href="Common/flickity.min.css" />
-	<link rel="stylesheet" href="Common/animations.css" />
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.css" />
+	<link rel="stylesheet" href="stylesheet.css" />
 
-	<link rel="stylesheet" href="Home_2/Stylesheet_Home.css" />
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
 
-	<script src="Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
-	<script src="Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
 
-	<link rel="stylesheet" href="Common/Pre-footer_buttons/footer_button_style.css" />
-	<link rel="stylesheet" href="Common/NavBar/custom-navbar.css" />
 
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<div class="loader">
-		<video autoplay muted loop src="T--IISER_Bhopal--loader.mp4"></video>
+		<video autoplay muted loop src="../T--IISER_Bhopal--loader.mp4"></video>
 	</div>
 
 	<!--Loader-->
@@ -45,6 +47,7 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
+
 	</script>
 
 	<header>
@@ -128,139 +131,215 @@
 						</div>
 					</li>
 
+
+
 				</ul>
 			</div>
 		</nav>
-		<script type="text/javascript" src="Common/NavBar/custom-navbar.js"></script>
 	</header>
+
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
 
 	<main>
 
-		<div class="videoWrapper">
-			<video autoplay muted src="Home_2/Videos/T--IISER-Bhopal--Diabetes.mp4"></video>
-		</div>
-
-		<div class="animatedParent animateOnce" style="white-space: nowrap;">
-			<div class="scary">
-				<div class="animated fadeInLeft delay-500">
-					Diabetes:
-					A chronic disease<br>
-					has impacted over<br>
-					463 million people<br>
-					worldwide!<br>
-				</div>
-				<div class="animated fadeIn">
-					<video autoplay loop muted playsinline src="Home_2/Videos/T--IISER_Bhopal--Globe_pin_man_fff.mp4"></video>
-				</div>
+		<div id="cta">
+			<div class="desc-title">
+				<h1> Contributions </h1>
 			</div>
 		</div>
-
-		<!--
-		<div class="container">
-			<div class="patient_counter">Dibetics since you visited this page
-				<pat id="counter">0</pat>
-			</div>
-		</div>
-		-->
-
-		<div class="container-fluid">
-			<div class="animatedParent animateOnce">
-				<div class="animated fadeInLeft">
-					<div class="container">
-						<h1 style="text-align: center;">Diabetes and Insulin Production</h1>
-						<img class="img-fluid" src="Home_2/T--IISER_Bhopal--insulin_production.png">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="animatedParent animateOnce">
-			<div class="animated fadeIn">
-				<div class="primary-carousel-container">
-					<div class="pie-slider" data-flickity='{ "wrapAround": true , "autoPlay": 4500, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": true}'>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats2.png);background-size: cover;">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h3 class="subtitle">Every inhabited continent is facing a diabetes epidemic.</h3>
-								<h2 class="title">642 million patients estimated by 2040</h2>
-								<a href="https://www.who.int/health-topics/diabetes" target="_blank" class="btn">Tell me more</a>
-							</div>
-						</div>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--Age.png);">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h3 class="subtitle">In 2016, an estimated 1.6 million deaths were directly caused by diabetes.</h3>
-								<h2 class="title"> 2.2 million deaths were attributable to high blood glucose in 2012.
-								</h2>
-							</div>
-						</div>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats5.png);">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h2 class="title">1 in every 6 child born is affected by Diabetes.</h2>
-							</div>
-						</div>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats6.png);background-size: cover;">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h3 class="subtitle">More than 1.1 million </h3>
-								<h2 class="title">children &amp; adolescents are living with type 1 diabetes</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container-fluid">
-
-			<div class="animatedParent animateOnce">
-				<div class="animated fadeInLeft">
-					<img class="img-fluid sad img" src="Home_2/T--IISER_Bhopal--sad_quotes.png">
-				</div>
-			</div>
-		</div>
-
-
-		<div class="container-fluid">
-			<div class="animatedParent animateOnce">
-				<div class="animated fadeInLeft">
-					<div class="container">
-						<h1 class="text-center">Introducing</h1>
-					</div>
-				</div>
-				<div class="animated fadeIn">
-					<div class="container">
-						<h1 class="text-center bigpie">BigPie</h1>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<p class="text-center">We are creating a pill containing enhanced probiotic bacteria<br> capable of producing insulin in-vivo. To help diabetes patients and replace insulin injections. </p>
-			</div>
-		</div>
-
-
-
-		<div class="container">
-			<div class="animatedParent animateOnce">
-				<div class="container-fluid">
-					<div class="animated fadeIn">
-						<img class="img-fluid" src="Home_2/T--IISER_Bhopal--desc_newest.png">
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
 	</main>
+
+
+
+
+
+	<div class="container disclaimer">
+		<p>
+			Due to the limitations created by COVID19. Our project has been remote this year, with zero lab access. But keeping in mind the challenges we faced during the design and implementation stages of our project. We decided to focus on providing teams with literature that is not only useful but enables them to improve their project in a practical manner. Our data seeks to improve the iGEM projects in the lab and their real world implementation. Keeping this in mind we have tackled problems that we ourselves faced during the workings of our project.
+
+		</p>
+	</div>
+
+
+	<!-- Topic Cards -->
+	<div id="cards_landscape_wrap-2">
+		<div class="row">
+			<div class="container">
+				
+				<div class="col-xs-12">
+					
+					<div class="card-head">
+						<h3><span>New Information for existing Parts</span></h3>
+					</div>
+					<div class="card-flyer">
+						<div class="text-box">
+							<div class="text-container">
+								<h6>BBa_K1639008</h6>
+								<div class="container">
+									<h7>TEV protease<br>
+										Tobacco Etch Virus nuclear-inclusion-a endopeptidase</h7>
+								</div>
+
+
+								<p>
+									<b>Function</b><br>
+									Tobacco Etch Virus nuclear-inclusion-a endopeptidase (TEV protease) is a highly sequence-specific cysteine protease from Tobacco Etch Virus (TEV). It is frequently used for the controlled cleavage of fusion proteins in vitro and in vivo.
+								</p>
+								<p>
+									<b>How are we using it?</b><br>
+									We are using it to separate our effector transcription factors (PDX1, MAFA, and NGN3) in the cytoplasm of the intestinal crypt cells stoichiometrically.
+									<br>
+								<p>
+									<b>Our Contribution</b><br>
+									TEV protease can be delivered with the genes of interest as a fusion protein to construct multi-gene circuits with a single vector.<sup>3</sup>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12">
+
+					<div class="card-flyer">
+						<div class="text-box">
+							<div class="text-container">
+								<h6>BBa_K2871000</h6>
+								<div class="container">
+									<h7>Map20</h7>
+								</div>
+
+								<p>
+									<b>Function</b><br>
+									Map20 is a signal sequence which encodes for a signal peptide which is used as an N-terminal tag for a protein to be translocated by the Escherichia coli type-3-secretion system (T3SS). This 20 amino acid signal peptide derived from the map gene is sufficient to direct proteins to the type-3-secretion system (T3SS) pathway.
+								</p>
+
+								<p>
+									<b>How are we using it?</b><br>
+									We are using the Map20 signal peptide to target our polyprotein to the T3SS pathway.
+								</p>
+
+								<p>
+									<b>Our Contribution</b><br>
+									Map20 is the signal sequence of Map protein, encoded in a chromosomal pathogenicity island called locus for enterocyte effacement (LEE) and mediates secretion and translocation in a type III-dependent but chaperone-independent manner.<sup>1</sup>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12">
+
+					<div class="card-flyer">
+						<div class="text-box">
+							<div class="text-container">
+								<h6>BBa_K817000</h6>
+								<div class="container">
+									<h7>GLP-1 - Glucagon-like peptide-1</h7>
+								</div>
+
+								<p>
+									<b>Function</b><br>
+									Glucagon-like peptide-1 (GLP-1) is a peptide hormone and is derived from proglucagon. It is an incretin molecule therefore, it can decrease the blood sugar levels in a glucose-dependent manner by stimulating the secretion of insulin.
+								</p>
+
+								<p>
+									<b> Our Contribution</b><br>
+									GLP-1 has a half life of about 1-2 minutes in humans as it is actively degraded by dipeptidyl peptidase 4 (DPP4). DPP-4 resistant GLP-1 analogues and DPP-4 inhibitors are used as therapeutic agents for type-2 diabetes management.
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12">
+
+					<div class="card-flyer">
+						<div class="text-box">
+							<div class="text-container">
+								<h6>BBa_K3096030</h6>
+								<div class="container">
+									<h7>Exendin-4</h7>
+								</div>
+
+								<p>
+									<b>Function</b><br>
+									Exendin-4 is a glucagon-like peptide 1 (GLP-1) receptor agonist and was discovered in the venom of Heloderma suspectum. Exendin-4 has a considerably higher intravenous half-life in humans (26 minutes) than GLP-1 and can be used for the treatment of type-2 diabetes mellitus.<sup>1</sup>
+
+								</p>
+
+								<p>
+									<b>Our Contribution</b><br>
+									Recent reports revealed its role in suppression of PI3K/Akt/mTOR pathway and inhibition of enzalutamide induced invasion and migration of prostate cancer cells.2 Exendin-4 and enzalutamide treatment might be beneficial for patients with advanced prostate cancer.3
+									<sup>3</sup>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-xs-12">
+
+					<div class="card-flyer">
+						<div class="text-box">
+							<div class="text-container">
+								<h6>BBa_K2871004</h6>
+								<div class="container">
+									<h7>CesT : Tir Chaperone</h7>
+								</div>
+
+
+								<p>
+									<b>Function</b><br>
+									CesT is a chaperone that facilitates secretion of effector proteins like Map and Tir by E. Coli Type-3 secretion system (T3SS).<sup>1</sup>
+								</p>
+
+								<p>
+									<b>Our Contribution</b><br>
+									Recent studies have reported its role in reprogramming of gene expression in bacteria attached to its host cell via inhibition of a post transcriptional regulator Carbon storage regulator A (CsrA)<sup>3</sup>. Translocation of a major effector protein Tir is dependent on CesT. CesT is liberated after translocation of Tir protein<sup>2,3</sup>. The liberated CesT reprograms the gene expression in host-attached bacteria as it binds to and inhibits the post transcriptional regulator CsrA.<sup>3</sup>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-xs-12">
+
+					<div class="card-flyer" style="width: 30%;">
+						<div class="text-box">
+							<div class="image-box">
+								<img src="https://cdn.pixabay.com/photo/2018/04/09/19/55/low-poly-3305284_960_720.jpg" alt="" />
+							</div>
+							<div class="text-container">
+								<h6>Title 02</h6>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container patent">
+	
+			<h3>Patent Guide for Indian Teams<grq>!</grq></h3>
+			<p>
+			THE BIG PIE is a project aimed to provide an alternate therapy for insulin dependent Diabetes Patients. Our pill iBeta is relevant to the healthcare and pharmaceutical industries. Considering the reach of our product we decided to find out the patenting process of our pill. However iGEM mainly contained patent guidelines for American and European teams. Drawing inspiration from these teams we spoke with Indian patent officers to help us understand the patenting procedure for our pill in our country.
+
+			Our interactions with patent officers and information from the drug development guidelines has made us aware that our pill iBeta is a novel therapeutic using lab modified bacteria and hence would be classified as a “New Drug”. Keeping in mind the policies and regulations for lab modified bacteria and synthetic biology in India, we decided to create a patent guide for all future Indian iGEM teams that would be interested in taking their project beyond the lab.
+			Hope this helps you all!
+			</p>
+	
+	</div>
+
+
 
 	<div class="container">
 		<section class="pre-footer-button-container">
@@ -347,6 +426,9 @@
 		</section>
 	</div>
 
+
+
+
 	<footer class="mainfooter" role="contentinfo">
 		<div class="footer-middle">
 			<div class="container">
@@ -399,40 +481,13 @@
 			</div>
 		</div>
 	</footer>
-
-
-
-
-	<script src="Common/flickity.pkgd.min.js"></script>
+	<script type="text/javascript" src=""></script>
 
 	<script>
-		var options = {
-			accessibility: true,
-			pageDots: true,
-			setGallerySize: false,
-		};
 
-		var carousel = document.querySelector('[data-carousel]');
-		var slides = document.getElementsByClassName('carousel-cell');
-		var flkty = new Flickity(carousel, options);
-
-		flkty.on('scroll', function() {
-			flkty.slides.forEach(function(slide, i) {
-				var image = slides[i];
-				var x = (slide.target + flkty.x) * -1 / 3;
-				image.style.backgroundPosition = x + 'px';
-			});
-		});
 	</script>
-	<!--
-	<script>
-		video.addEventListener('loadedmetadata', function() {
-			if (video.buffered.length === 0) return;
 
-			var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
-			console.log(bufferedSeconds + ' seconds of video are ready to play!');
-		});
-	</script>
-	-->
-	<script src="Common/css3-animate-it.js"></script>
-</body></html>
+
+</body>
+
+</html>

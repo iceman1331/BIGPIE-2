@@ -1,0 +1,259 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#cta {
+	width: 100%;
+	height: 600px;
+	background-attachment: fixed;
+	background-image: url(contributions.png);
+	background-position: top left;
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	margin-bottom: 5%;
+}
+
+@media(max-width:600px) {
+	#cta {
+		height: auto;
+		background-attachment: scroll;
+		background-position: center;
+		background-image: ;
+		width: 100%;
+	}
+}
+
+.desc-title {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding-top: 25%;
+}
+
+.desc-title h1 {
+	color: #fff;
+	font-size: 6rem;
+	font-weight: 100;
+	font-family: 'Lato', sans-serif;
+}
+
+@media(max-width:600px) {
+	.desc-title {
+		padding-top: 50%;
+	}
+
+	.desc-title h1 {
+		font-size: 2.25rem;
+		color: #ffff;
+		padding-bottom: 10%;
+	}
+}
+
+@media(max-width:360px) {
+	.desc-title h1 {
+		font-size: 3rem;
+	}
+}
+
+.disclaimer {
+	border-left: 2px solid red;
+	padding: 2px 5px 2px 15px;
+}
+
+.disclaimer p {
+	margin: 0 auto auto 0;
+	padding: 0;
+	font-size: 1.25rem;
+	font-family: 'Lato', sans-serif;
+	color: #000000;
+}
+
+
+h3 {
+	padding: 0;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+span {
+	/*  shadows render better in certain browsers than text, first rule is for older browser support  */
+	color: #333;
+	color: transparent;
+	text-shadow: 0 0 #333, .08em 0 0 #fff, 0 0, -.08em 0 0 #fff;
+	/*  gradient background allows us to use css only & re-position it  */
+	background: -webkit-linear-gradient(#999, #999) center 1.09em no-repeat;
+	background: linear-gradient(#999, #999) center 1.09em no-repeat;
+	/*  can precisely control size in relation to the text  */
+	background-size: 85% 1px;
+	/*  now the underline supports transitions  */
+	-webkit-transition: .2s ease;
+	transition: .2s ease;
+}
+
+span:hover {
+	/*  backgrounds won't size larger than 100%  */
+	background-size: 95% 1px;
+}
+
+
+
+
+/*----  Main Style  ----*/
+.card-head {
+	margin: 5% auto 0 auto;
+	text-transform: none;
+}
+
+.card-head h3 {
+	text-transform: none;
+	padding: 0;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+#cards_landscape_wrap-2 {
+	background: #F7F7F7;
+}
+
+#cards_landscape_wrap-2 .container {
+	display: block;
+}
+
+#cards_landscape_wrap-2 a {
+	text-decoration: none;
+	outline: none;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+	border-radius: 5px;
+	width: 50%;
+	cursor: default;
+	display: block;
+	margin: auto;
+}
+
+@media(max-width:500px) {
+	#cards_landscape_wrap-2 .card-flyer {
+		border-radius: 5px;
+		width: 96%;
+		cursor: default;
+		display: block;
+		margin: auto;
+	}
+
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box {
+	background: #ffffff;
+	overflow: hidden;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+	border-radius: 5px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+	-webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	-ms-transition: all .9s ease;
+	width: 100%;
+	height: 200px;
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+	opacity: 0.7;
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box {}
+
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+	padding: 30px 18px;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+	background: #FFFFFF;
+	margin: auto;
+	margin-top: 50px;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover {
+	background: #fff;
+	box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	margin-top: 50px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+	margin: 10px auto auto 0;
+	padding: 0;
+	font-size: 1rem;
+	font-family: 'Lato', sans-serif;
+	color: #000000;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+	margin: 0 auto auto 5px;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: 'Roboto Black', sans-serif;
+	letter-spacing: 1px;
+	color: #00acc1;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box h7 {
+	margin: 5px 0 0 0;
+	;
+	display: block;
+	text-align: center;
+	font-size: 1.05rem;
+	font-family: 'Roboto Black', sans-serif;
+	letter-spacing: 1px;
+	color: red;
+}
+
+
+
+.patent {
+	margin: 5% auto auto auto;
+}
+
+.patent .grq {
+	color: green;
+}
+
+.patent p {
+	font-size: 1.25rem;
+	font-family: 'Lato', sans-serif;
+	color: #000000;
+}
