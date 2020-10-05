@@ -142,7 +142,13 @@ h4 {
 	font-weight: 400;
 	letter-spacing: 1.4px;
 }
-
+.text-light{
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+	line-height: 30px;
+	font-size: 19.8px;
+	text-align: center;
+}
 p {
 	font-family: 'Lato', sans-serif;
 	text-align: justify;
@@ -188,7 +194,7 @@ sup {
 }
 
 .txt0 {
-	padding: 3% 1% 2% 1%;
+	padding: 3% 5% 2% 5%;
 }
 
 .txt0 h2 {
@@ -196,19 +202,19 @@ sup {
 }
 
 .txt1 {
-	padding: 1% 1% 1% 1%;
+	padding: 1% 5% 1% 5%;
 }
 
 .txt2 {
-	padding: 1% 1% 1% 1%;
+	padding: 1% 5% 1% 5%;
 }
 
 .txt3 {
-	padding: 1% 1% 1% 1%;
+	padding: 1% 5% 1% 5%;
 }
 
 .txt4 {
-	padding: 1% 1% 1% 1%;
+	padding: 1% 5% 1% 5%;
 }
 
 @media(max-width:500px) {
