@@ -11,10 +11,6 @@ body {
 	overflow-x: hidden;
 }
 
-.col {
-	background-color: red;
-}
-
 /*Loader*/
 .loader {
 	display: flex;
@@ -349,7 +345,6 @@ body {
 	margin: 0 10% 0 10%;
 	border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
 	border-image-slice: 1;
-
 }
 
 .underline-small {
@@ -367,11 +362,6 @@ body {
 	left: calc(50% - 8%);
 	text-align: center;
 	bottom: -10px;
-	/*   another way you can achieve this
-  Check this link: 
-  https://goo.gl/GgRdjz
-  
-  */
 
 }
 
@@ -1124,43 +1114,6 @@ area {
 }
 
 
-.pulse {
-	animation: pulse 3s infinite;
-	margin: 0 auto;
-	display: table;
-	margin-top: 50px;
-	animation-direction: alternate;
-	-webkit-animation-name: pulse;
-	animation-name: pulse;
-}
-
-@-webkit-keyframes pulse {
-	0% {
-		-webkit-transform: scale(1);
-	}
-
-	50% {
-		-webkit-transform: scale(1.1);
-	}
-
-	100% {
-		-webkit-transform: scale(1);
-	}
-}
-
-@keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
-
-	50% {
-		transform: scale(1.1);
-	}
-
-	100% {
-		transform: scale(1);
-	}
-}
 
 
 
@@ -1236,3 +1189,81 @@ img.zoom-img {
 }
 
 .zoom:hover {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Pulsating clickable bacteria*/
+.avatar {
+  position: relative;
+}
+
+.avatar img {
+  border-radius: 9999px;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes cycle-colors {
+  0% { border-color: hsl(0, 100%, 50%); }
+  25% { border-color: hsl(90, 100%, 50%); }
+  50% { border-color: hsl(180, 100%, 50%); }
+  75% { border-color: hsl(270, 100%, 50%); }
+  100% { border-color: hsl(360, 100%, 50%); }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.avatar::before,
+.avatar::after {
+  animation: pulse 3s linear infinite, cycle-colors 5s linear infinite;
+  border: #fff solid 8px;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  content: ' ';
+  height: 140%;
+  left: -20%;
+  opacity: .5;
+  position: absolute;
+  top: -20%;
+  transform: scale(0.414);
+  width: 140%;
+  z-index: 1;
+}
+
+.avatar::after {
+  animation-delay: 5s;
+}
+.avatar:hover::before,
+.avatar:hover::after {
+  animation: pulse 2s linear infinite, cycle-colors 3s linear infinite;
+}
+
+.avatar:hover::after {
+  animation-delay: 0.5s;
+}
+
+/*----*/

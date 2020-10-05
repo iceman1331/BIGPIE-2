@@ -17,7 +17,7 @@ body {
 	width: 100%;
 	height: 600px;
 	background-attachment: fixed;
-	background-image: url(c-3.jpg);
+	background-image: url(puzzle%20contributions-2.jpg);
 	background-position:center;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -278,24 +278,11 @@ embed {
 }
 
 
-
-
-
-
-
-
-
-
-
 .img-thumbnail {
 	border: none;
 	width: 200px;
 	height: 200px;
 }
-
-
-
-
 
 .ileft{
 }
@@ -303,9 +290,7 @@ embed {
 .iright{
 }
 
-
-
-
+/*img-thubs*/
 
 div.parent {
 	display: table;
@@ -332,4 +317,113 @@ div.img img {
 	width: 100%;
 	/* you can change height */
 	vertical-align: middle;
+}
+
+
+
+
+
+.prev-next{
+	padding: 5%;
+	
+	
+}
+
+.prev-next a{
+	text-decoration: none;
+}
+
+button {
+  position: relative;
+  display:block;
+  height: 45px;
+  width: 25%;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #383736;
+  border-radius: 4px;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+.fade2:before{
+  content:"";
+  position:absolute;
+  color:#383736;
+  left: 88%;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+}
+
+.fade2:hover:before{
+  left:91%;
+  opacity:1;
+
+}
+
+.fade2:hover {
+  border: 0px #fff solid;
+  -webkit-transform: scale(1.04,1.04);
+  -webkit-transition: border 0.3s ease-out;
+  -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide:after{
+  content:"Engineering success >";
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  text-align:center;
+  -webkit-transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide:before {
+  content:"Read more →";
+  height:100%;
+  width:100%;
+  position:absolute;
+  color:#383736;
+  left:-100%;
+  opacity: 0;
+  -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide:hover{
+  background:#383736;
+}
+
+.slide:hover:before{
+  left:0;
+  opacity:1;
+  color:#fff;
+}
+.slide:hover:after{
+  left:100%;
+  opacity:0;
+}
+
+.slide.left:hover{
+  background:none;
+}
+
+.slide.left:before {
+  left:100%;
+  color:#383736;
+  -webkit-transition: all 425ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide.left:hover:before{
+  left:0;
 }
