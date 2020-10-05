@@ -107,6 +107,9 @@ body {
 	}
 }
 
+.blank-space{
+	padding:5% 0 5% 0;
+}
 
 .patient_counter {
 	padding: 10px 0 0 0;
