@@ -1213,57 +1213,78 @@ img.zoom-img {
 
 /*Pulsating clickable bacteria*/
 .avatar {
-  position: relative;
+	position: relative;
 }
 
 .avatar img {
-  border-radius: 9999px;
-  position: relative;
-  z-index: 2;
+	display: block;
+	border-radius: 9999px;
+	z-index: 2;
+	border-radius: 1000px;
+	width: 1200px;
+	max-width: 100%;
+	height: auto;
 }
 
 @keyframes cycle-colors {
-  0% { border-color: hsl(0, 100%, 50%); }
-  25% { border-color: hsl(90, 100%, 50%); }
-  50% { border-color: hsl(180, 100%, 50%); }
-  75% { border-color: hsl(270, 100%, 50%); }
-  100% { border-color: hsl(360, 100%, 50%); }
+	0% {
+		border-color: hsl(0, 100%, 50%);
+	}
+
+	25% {
+		border-color: hsl(90, 100%, 50%);
+	}
+
+	50% {
+		border-color: hsl(180, 100%, 50%);
+	}
+
+	75% {
+		border-color: hsl(270, 100%, 50%);
+	}
+
+	100% {
+		border-color: hsl(360, 100%, 50%);
+	}
 }
 
 @keyframes pulse {
-  to {
-    opacity: 0;
-    transform: scale(1);
-  }
+	to {
+		opacity: 0;
+		transform: scale(0.75);
+	}
 }
 
 .avatar::before,
 .avatar::after {
-  animation: pulse 3s linear infinite, cycle-colors 5s linear infinite;
-  border: #fff solid 8px;
-  border-radius: 9999px;
-  box-sizing: border-box;
-  content: ' ';
-  height: 140%;
-  left: -20%;
-  opacity: .5;
-  position: absolute;
-  top: -20%;
-  transform: scale(0.414);
-  width: 140%;
-  z-index: 1;
+	box-sizing: border-box;
+	content: ' ';
+	height: 140%;
+	width: 140%;
+	left: -20%;
+	top: -25%;
+	border: #fff solid 8px;
+	border-radius: 9999px;
+	position: absolute;
+	
+	opacity: .5;
+	transform: scale(0.414);
+	z-index: 1;
+	animation: pulse 3s linear infinite, cycle-colors 5s linear infinite;
+
 }
 
 .avatar::after {
-  animation-delay: 5s;
+	animation-delay: 5s;
 }
+
 .avatar:hover::before,
 .avatar:hover::after {
-  animation: pulse 2s linear infinite, cycle-colors 3s linear infinite;
+	animation: pulse 2s linear infinite, cycle-colors 3s linear infinite;
 }
 
 .avatar:hover::after {
-  animation-delay: 0.5s;
+	animation-delay: 0.5s;
 }
 
 /*----*/
