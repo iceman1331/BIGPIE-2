@@ -96,12 +96,12 @@ body {
 		font-size: 3.25rem;
 		color: #ffff;
 		padding-bottom: 10%;
-		padding-left: 17%;	
+		padding-left: 17%;
 	}
 }
 
 @media(max-width:360px) {
-	
+
 	.desc-title h1 {
 		font-size: 3rem;
 	}
@@ -142,8 +142,8 @@ body {
 	font-family: "museo-sans";
 }
 
-area{
-	 outline: none;
+area {
+	outline: none;
 }
 
 .btn-block {}
@@ -1113,9 +1113,6 @@ a {
 	border: none;
 }
 
-area {
-	text-decoration: none;
-}
 
 
 
@@ -1205,12 +1202,10 @@ img.zoom-img {
 
 
 
-.clickable{
-	
-}
+.clickable {}
 
 
-.clickable img{
+.clickable img {
 	display: block;
 	z-index: 2;
 	border-radius: 1000px;
