@@ -52,16 +52,14 @@ body {
 }
 
 #cta {
-	cursor: url('https://img.icons8.com/fluent/48/000000/cursor--v2.png');
 	width: 100vw;
-	height: 100vh;
+	height: 95vh;
 	background-attachment: fixed;
 	background-image: url(Design-1.png);
 	background-position: bottom left;
 	opacity: 1;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 	z-index: 1;
 }
 
