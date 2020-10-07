@@ -1,0 +1,546 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#cta {
+	width: 100%;
+	height: 600px;
+	background-attachment: fixed;
+	background-image: url(ent-1.png);
+	background-position: top left;
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	margin-bottom: 5%;
+}
+
+@media(max-width:600px) {
+	#cta {
+		height: auto;
+		background-attachment: scroll;
+		background-position: center;
+		background-image: ;
+		width: 100%;
+	}
+}
+
+.desc-title {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding-top: 25%;
+}
+
+.desc-title h1 {
+	color: #fff;
+	font-size: 6rem;
+	font-weight: 500;
+	font-family: 'Lato', sans-serif;
+	-webkit-text-stroke: 2px rgba(178, 34, 34, 0.5);
+}
+
+@media(max-width:600px) {
+	.desc-title {
+		padding-top: 50%;
+	}
+
+	.desc-title h1 {
+		font-size: 2.25rem;
+		-webkit-text-stroke: 1px red;
+		color: #ffff;
+		font-weight: 300;
+		padding-bottom: 10%;
+	}
+}
+
+@media(max-width:360px) {
+	.desc-title h1 {
+		font-size: 3rem;
+	}
+}
+
+
+
+.img-thumbnail {
+	border: 1px solid red;
+	text-align: center;
+	width: 25%;
+}
+
+.img-thumbnail p {
+	color: #000;
+}
+
+.imgbuttons {
+	width: 100%;
+	border-radius: 100%;
+	transition: 0.5s all ease;
+}
+
+.imgbuttons:hover {
+	filter: drop-shadow(8px 8px 10px gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------Hover Overlay text Effect--------- */
+
+.overlay-item {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.overlay-item .mask {
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	text-align: center;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.overlay-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	x-margin-right: auto;
+	x-margin-left: auto;
+}
+
+.overlay-item h3 {
+	text-align: center;
+	position: relative;
+	padding: 1%;
+	margin: 0px auto 20px auto;
+	display: block;
+	background-color: #333;
+	color: #fff;
+}
+
+.overlay-item p {
+	text-align: left;
+}
+
+.overlay-item a.btn {
+	margin: 10px 0;
+}
+
+.overlay-effect img {
+	-webkit-transform: scaleY(1);
+	-moz-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+}
+
+.overlay-effect .mask {
+	background-color: rgba(255, 255, 255, 0.3);
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.overlay-effect h3 {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.overlay-effect p {
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+.overlay-effect a.btn {
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+.overlay-effect:hover img {
+	-webkit-transform: scale(10);
+	-moz-transform: scale(10);
+	-o-transform: scale(10);
+	-ms-transform: scale(10);
+	transform: scale(10);
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.overlay-effect:hover .mask {
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.overlay-effect:hover h3,
+.overlay-effect:hover p,
+.overlay-effect:hover a.btn {
+
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+
+.parallax {
+	height: auto;
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+	background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+	background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 9;
+}
+
+.parallax-inner {
+	padding-top: 3%;
+	padding-bottom: 4%;
+	display: block;
+	margin-left: auto;
+	margin-top: auto;
+}
+
+
+.parallax-inner-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+he1 {
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+@media(max-width:400px) {
+	he1 {
+		font-size: 1rem;
+	}
+}
+
+
+
+.underline-small {
+	display: block;
+	position: relative;
+
+}
+
+.underline-small::after {
+	content: '';
+	height: 2px;
+	width: 15%;
+	background: #fff;
+	position: absolute;
+	left: calc(50% - 8%);
+	text-align: center;
+	bottom: -10px;
+
+}
+
+
+
+/**/
+/**/
+/**/
+
+
+
+span {
+	/*  shadows render better in certain browsers than text, first rule is for older browser support  */
+	color: #333;
+	color: transparent;
+	text-shadow: 0 0 #333, .08em 0 0 #fff, 0 0, -.08em 0 0 #fff;
+	/*  gradient background allows us to use css only & re-position it  */
+	background: -webkit-linear-gradient(#999, #999) center 1.09em no-repeat;
+	background: linear-gradient(#999, #999) center 1.09em no-repeat;
+	/*  can precisely control size in relation to the text  */
+	background-size: 65% 2px;
+	/*  now the underline supports transitions  */
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
+}
+
+span:hover {
+	/*  backgrounds won't size larger than 100%  */
+	background-size: 95% 1px;
+}
+
+
+
+.card-img {
+	width: 30%;
+	display: block;
+}
+
+/*----  Main Style  ----*/
+.card-head {
+	margin: 5% auto 0 auto;
+	text-transform: none;
+}
+
+.card-head h3 {
+	text-transform: none;
+	padding: 0;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+
+#cards_landscape_wrap-2 {
+	background: #F7F7F7;
+}
+
+#cards_landscape_wrap-2 .container {
+	display: block;
+}
+
+#cards_landscape_wrap-2 a {
+	text-decoration: none;
+	outline: none;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+	border-radius: 5px;
+	width: 50%;
+	cursor: default;
+	display: block;
+	margin: auto;
+}
+
+@media(max-width:500px) {
+	#cards_landscape_wrap-2 .card-flyer {
+		border-radius: 5px;
+		width: 96%;
+		cursor: default;
+		display: block;
+		margin: auto;
+	}
+
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box {
+	background: #ffffff;
+	overflow: hidden;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+	border-radius: 5px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .image-box img {
+	-webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	-ms-transition: all .9s ease;
+	width: 100%;
+	height: 200px;
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img {
+	opacity: 0.7;
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box {}
+
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container {
+	padding: 30px 18px;
+}
+
+#cards_landscape_wrap-2 .card-flyer {
+	background: #FFFFFF;
+	margin: auto;
+	margin-top: 50px;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+
+#cards_landscape_wrap-2 .card-flyer:hover {
+	background: #fff;
+	box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	margin-top: 50px;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box p {
+	margin: 10px auto auto 0;
+	padding: 0;
+	font-size: 1rem;
+	font-family: 'Lato', sans-serif;
+	color: #000000;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box h6 {
+	margin: 0 auto auto 5px;
+	display: block;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: 'Roboto Black', sans-serif;
+	letter-spacing: 1px;
+	color: #00acc1;
+}
+
+#cards_landscape_wrap-2 .card-flyer .text-box h7 {
+	margin: 5px 0 0 0;
+	display: block;
+	text-align: center;
+	font-size: 1.05rem;
+	font-family: 'Roboto Black', sans-serif;
+	letter-spacing: 1px;
+	color: rgba(0, 33, 71, 0.65);
+}
+
+
+
+.img-thumbnail {
+	border: none;
+	width: 200px;
+	height: 200px;
+}
+
+.ileft {}
+
+.iright {}
+
+/*img-thubs*/
+
+div.parent {
+	display: table;
+	padding: 5px;
+	width: 100%;
+	/* you can change/remove margin */
+
+}
+
+div.text {
+	vertical-align: middle;
+	display: table-cell;
+	text-align: justify;
+}
+
+div.parent .img {
+	vertical-align: middle;
+	display: table-cell;
+	width: 150px;
+	/* you can change width */
+}
+
+div.img img {
+	width: 100%;
+	/* you can change height */
+	vertical-align: middle;
+}
+
