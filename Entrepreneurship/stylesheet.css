@@ -403,11 +403,12 @@ span:hover {
 
 #cards_landscape_wrap-2 .card-flyer {
 	border-radius: 5px;
-	width: 50%;
+	width: 90%;
 	cursor: default;
 	display: block;
 	margin: auto;
 }
+
 
 @media(max-width:500px) {
 	#cards_landscape_wrap-2 .card-flyer {
