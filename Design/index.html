@@ -26,7 +26,8 @@
 
 	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
 	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
-
+	<script src="Smooth/moveTo.min.js" charset="utf-8"></script>
+	
 	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
 	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
 
@@ -39,6 +40,29 @@
 
 
 <body>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const easeFunctions = {
+				easeInQuad: function(t, b, c, d) {
+					t /= d;
+					return c * t * t + b;
+				},
+				easeOutQuad: function(t, b, c, d) {
+					t /= d;
+					return -c * t * (t - 2) + b;
+				}
+			}
+			const moveTo = new MoveTo({
+				ease: 'easeInQuad'
+			}, easeFunctions);
+			const triggers = document.getElementsByClassName('js-trigger');
+			for (var i = 0; i < triggers.length; i++) {
+				moveTo.registerTrigger(triggers[i]);
+			}
+		});
+	</script>
+	
 	<div class="loader">
 		<video autoplay muted loop src="../T--IISER_Bhopal--loader.mp4"></video>
 	</div>
@@ -172,13 +196,13 @@
 	<div class="container clickable">	
 		<img src="imgs/T--IISER_Bhopal--clickable_design.png" id="map-image"  alt="" usemap="#map" class="" />
 		<map name="map" class="modalmap">
-			<area class="" shape="circle" coords="479, 257, 77" title="Part 1" href="#plasmid1" onmouseover="writeText('Part_1')" />
+			<area class="js-trigger" shape="circle" coords="479, 257, 77" title="Part 1" href="#plasmid1" onmouseover="writeText('Part_1')" />
 
-			<area shape="circle" coords="674, 260, 77" title="Part 2" href="#plasmid4" onmouseover="writeText('Part_2')" />
+			<area class="js-trigger" shape="circle" coords="674, 260, 77" title="Part 2" href="#plasmid4" onmouseover="writeText('Part_2')" />
 
-			<area shape="rect" coords="817, 119, 1068, 239" title="Part 3" href="#plasmid2" onmouseover="writeText('Part_3')" />
+			<area class="js-trigger" shape="rect" coords="817, 119, 1068, 239" title="Part 3" href="#plasmid2" onmouseover="writeText('Part_3')" />
 
-			<area shape="rect" coords="803, 260, 1038, 388" title="Part 4" href="#plasmid3" onmouseover="writeText('Part_4')" />
+			<area class="js-trigger" shape="rect" coords="803, 260, 1038, 388" title="Part 4" href="#plasmid3" onmouseover="writeText('Part_4')" />
 		</map>
 		
 		<h4 id="desc" class="text-center" style="">Some Description here...</h4>

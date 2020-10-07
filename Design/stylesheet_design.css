@@ -142,6 +142,10 @@ body {
 	font-family: "museo-sans";
 }
 
+area{
+	 outline: none;
+}
+
 .btn-block {}
 
 .btn {
