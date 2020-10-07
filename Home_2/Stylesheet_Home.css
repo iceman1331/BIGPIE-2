@@ -2,10 +2,9 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	width:100%;
+	width: 100%;
 	background-color: #ffffff;
 	box-sizing: border-box;
-	scroll-behavior: smooth;
 }
 
 /*Loader*/
@@ -70,7 +69,7 @@ body {
 }
 
 .scary {
-	content: ="";
+	content: "";
 	font-size: 1.75rem;
 	font-weight: 600;
 	display: flex;
@@ -108,13 +107,13 @@ body {
 	}
 }
 
-.blank-space{
-	padding:5% 0 5% 0;
+.blank-space {
+	padding: 5% 0 5% 0;
 }
 
 .patient_counter {
 	padding: 10px 0 0 0;
-	margin:10px 0 0 0;
+	margin: 10px 0 0 0;
 	color: #000;
 	display: block;
 	white-space: nowrap;
@@ -137,7 +136,6 @@ body {
 		font-size: 0.75rem;
 	}
 }
-
 
 @-webkit-keyframes colorchange {
 	0% {
@@ -196,8 +194,6 @@ body {
 	}
 }
 
-
-
 .primary-carousel-container {
 	background-color: #000;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -229,9 +225,9 @@ body {
 	overflow: hidden;
 }
 
-@media(max-width:500px){
-	.pie-slider{
-		height:50vh;
+@media(max-width:500px) {
+	.pie-slider {
+		height: 50vh;
 	}
 }
 
@@ -242,11 +238,11 @@ body {
 	background-size: contain;
 	background-position: center;
 }
-@media(max-width:500px){
+
+@media(max-width:500px) {
 	.pie-slider .carousel-cell {
 		height: 50vh;
 	}
-	
 }
 
 .pie-slider .carousel-cell .inner {
@@ -318,8 +314,6 @@ body {
 	border: 0 solid #f00;
 }
 
-
-
 .sad {
 	padding: 2% 0 0 0;
 	height: 90vh;
@@ -351,8 +345,14 @@ body {
 	}
 }
 
-
-.bigpie{
+.bigpie {
 	font-size: 5rem;
 	text-decoration: 10px underline;
+}
+
+@media(max-width:500px) {
+	.bigpie {
+		font-size: 5rem;
+		text-decoration: 10px underline;
+	}
 }
