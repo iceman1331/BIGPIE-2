@@ -301,6 +301,7 @@ he1 {
 span {
 	/*  shadows render better in certain browsers than text, first rule is for older browser support  */
 	color: #333;
+	cursor: default;
 	color: transparent;
 	text-shadow: 0 0 #333, .08em 0 0 #fff, 0 0, -.08em 0 0 #fff;
 	/*  gradient background allows us to use css only & re-position it  */
@@ -315,7 +316,7 @@ span {
 
 span:hover {
 	/*  backgrounds won't size larger than 100%  */
-	background-size: 95% 1px;
+	background-size: 95% 2px;
 }
 
 
@@ -362,12 +363,8 @@ span:hover {
 
 @media(max-width:500px) {
 	#cards_landscape_wrap-2 .card-flyer {
-		border-radius: 5px;
 		width: 96%;
-		cursor: default;
-		display: block;
-		margin: auto;
-	}
+		}
 
 }
 
@@ -503,7 +500,7 @@ div.img img {
 	margin-bottom: 2%;
 }
 .cardA {
-	cursor: pointer;
+	cursor: default;
 	padding: 2% 3% 2% 3%;
 	box-shadow: 0 8px 6px -6px black;
 	border-radius: 10px;
@@ -522,7 +519,7 @@ div.img img {
 }
 
 .cardB {
-	cursor: pointer;
+	cursor: default;
 	padding: 2% 3% 6% 3%;
 	box-shadow: 0 8px 6px -6px black;
 	border-radius: 10px;

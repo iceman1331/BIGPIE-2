@@ -1,3 +1,6 @@
+.navbar{
+
+}
 .navbar .nav-item {
 	margin: 1px 8px 1px 8px;
 	position: relative;
@@ -6,7 +9,7 @@
 
 @media(max-width:500px) {
 	.navbar .nav-item {
-	
+		
 	}
 }
 
