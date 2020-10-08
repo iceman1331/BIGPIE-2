@@ -72,56 +72,6 @@ body {
 }
 
 
-
-.img-thumbnail {
-	border: 1px solid red;
-	text-align: center;
-	width: 25%;
-}
-
-.img-thumbnail p {
-	color: #000;
-}
-
-.imgbuttons {
-	width: 100%;
-	border-radius: 100%;
-	transition: 0.5s all ease;
-}
-
-.imgbuttons:hover {
-	filter: drop-shadow(8px 8px 10px gray);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------Hover Overlay text Effect--------- */
 
 .overlay-item {
@@ -546,6 +496,47 @@ div.img img {
 }
 
 
+/*Interview cards*/
+.icards{
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+.cardA {
+	cursor: pointer;
+	padding: 2% 3% 2% 3%;
+	box-shadow: 0 8px 6px -6px black;
+	border-radius: 10px;
+	transition: 0.5s all ease;
+	-webkit-box-shadow: -2px 0px 5px 3px rgba(0, 0, 0, 0.26);
+	-moz-box-shadow: -2px 0px 5px 3px rgba(0, 0, 0, 0.26);
+	box-shadow: -2px 0px 5px 3px rgba(0, 0, 0, 0.26);
+
+}
+
+
+.cardA:hover {
+	-webkit-box-shadow: -2px 0px 5px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: -2px 0px 5px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: -2px 0px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cardB {
+	cursor: pointer;
+	padding: 2% 3% 6% 3%;
+	box-shadow: 0 8px 6px -6px black;
+	border-radius: 10px;
+	transition: 0.5s all ease;
+	-webkit-box-shadow: 1px 0px 5px 3px rgba(0, 0, 0, 0.26);
+	-moz-box-shadow: 1px 0px 5px 3px rgba(0, 0, 0, 0.26);
+	box-shadow: 1px 0px 5px 3px rgba(0, 0, 0, 0.26);
+}
+
+.cardB:hover {
+	-webkit-box-shadow: 2px 0px 5px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 2px 0px 5px 3px rgba(0, 0, 0, 0.5);
+	box-shadow: 2px 0px 5px 3px rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -580,23 +571,14 @@ div.img img {
 
 
 
-
-
-
-
-
-
-
-
-
-.grid-ctr{
+.grid-ctr {
 	margin: 5% auto 10% auto;
 	padding: 4%;
 }
 
 
 .grid {
-	
+
 	display: inline-grid;
 	margin: auto;
 	width: 29%;
@@ -624,7 +606,7 @@ div.img img {
 .grid figure img {
 	position: relative;
 	display: block;
-	width: 90%;	
+	width: 90%;
 	opacity: 1;
 }
 
@@ -683,8 +665,7 @@ div.img img {
 
 
 
-figure.effect-jazz {
-	}
+figure.effect-jazz {}
 
 figure.effect-jazz img {
 	opacity: 0.9;
