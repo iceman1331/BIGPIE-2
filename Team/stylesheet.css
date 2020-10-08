@@ -205,7 +205,7 @@ Movie information
 	padding: 1.2em 1.4em;
 	margin: 2px 0 0;
 	font-weight: 700;
-	color: #666;
+	color: #000;
 	line-height: 1.4em;
 	border-top: 10px solid #555;
 }
@@ -245,15 +245,15 @@ Posters and still images
 **************************************/
 
 .scene:nth-child(1) .movie .poster {
-  background-image:  url(contributions.png);
+  background-image:  url(MCU/thor.jpg);
 }
 
 .scene:nth-child(2) .poster {
-  background-image:  url(contributions.png);
+  background-image:  url(MCU/black_widow.jpg);
 }
 
 .scene:nth-child(3) .poster {
-  background-image:  url(contributions.png);
+  background-image:  url(MCU/ironman.jpg);
 }
 
 .scene:nth-child(1) .info header {
