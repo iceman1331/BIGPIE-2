@@ -250,30 +250,22 @@ p {
 	border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
 .collapsible {
-	background-color: ;
+	background-color:;
 	color: #000;
 	cursor: pointer;
 	padding: 18px;
-	width: 100%;
+	width: 50%;
+	display: block;
+	margin: auto;
 	border: none;
-	text-align: left;
-	outline: none;
 	text-align: center;
-	font-size: 15px;
+	font-size: 1.5rem;
 }
 
 .active,
 .collapsible:hover {
-	background-color: ;
+	background-color:;
 }
 
 .content {
@@ -282,4 +274,5 @@ p {
 	overflow: hidden;
 	transition: max-height 2s ease-out;
 	background-color: #f1f1f1;
+	background-color: #fff;
 }
