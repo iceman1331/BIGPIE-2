@@ -45,10 +45,11 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
+
 	</script>
 
-		<header>
-		<nav class="navbar smart-scroll fixed-top navbar-expand-md navbar-light scrolling-navbar py-0" id="mynav">
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-md navbar-dark scrolling-navbar py-0" id="mynav">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -140,16 +141,15 @@
 		<div class="blank-space">
 		</div>
 
-
 		<div class="container-fluid">
-			<div class="animatedParent animateOnce" data-sequence='500'>
+			<div class="animatedParent animateOnce" data-sequence='1000'>
 				<div class="animated fadeIn" data-id="1">
 					<div class="container">
 						<h1 class="text-center">Introducing</h1>
 					</div>
 				</div>
-				
-				
+
+
 				<div class="animated fadeIn slower" data-id="2">
 					<div class="container">
 						<div class="text-center bigpie">
@@ -159,10 +159,13 @@
 				</div>
 
 
-				<div class="animated fadeInLeft slow" data-id="3">
+				
+				<div class="animated pulse" data-id="3">
+				<div class="animated fadeInDownShort slowest" data-id="3">
 					<div class="container text-center">
 						<ttext class=""><b>B</b>eta cells <b>I</b>n <b>G</b>ut <b>P</b>roducing <b>I</b>nsulin using <b>E</b>.coli</ttext>
 					</div>
+				</div>
 				</div>
 
 
@@ -173,9 +176,107 @@
 				</div>
 			</div>
 		</div>
+		
+		
+<div class="blank-space">
+		</div>
+
+		<div class="container typewritter">
+			<div class="word"></div>
+		</div>
+		<script>
+			var words = ['The BIGPIE', 'Beta cells in the gut producing insulin using E. coli'],
+				part,
+				i = 0,
+				offset = 0,
+				len = words.length,
+				forwards = true,
+				skip_count = 0,
+				skip_delay = 15,
+				speed = 60;
+			var wordflick = function() {
+				setInterval(function() {
+					if (forwards) {
+						if (offset >= words[i].length) {
+							++skip_count;
+							if (skip_count == skip_delay) {
+								forwards = false;
+								skip_count = 0;
+							}
+						}
+					} else {
+						if (offset == 0) {
+							forwards = true;
+							i++;
+							offset = 0;
+							if (i >= len) {
+								i = 0;
+							}
+						}
+					}
+					part = words[i].substr(0, offset);
+					if (skip_count == 0) {
+						if (forwards) {
+							offset++;
+						} else {
+							offset--;
+						}
+					}
+					$('.word').text(part);
+				}, speed);
+			};
+
+			$(document).ready(function() {
+				wordflick();
+			});
+
+		</script>
+		<div class="container text-center">
+			<h1>
+				<div class="animation">
+					<span>The</span>
+					<span class="first "><tbig>B</tbig></span>
+					<span class="oh">
+						<span class="second">eta</span>
+					</span>
+					
+					<span class="oh">
+						<span class="second">cells</span>
+					</span>
+					
+					<span class="first">I</span>
+					<span class="oh">
+						<span class="second">n</span>
+					</span>
+					
+					<span class="first">G</span>
+					<span class="oh">
+						<span class="second">ut</span>
+					</span>
+					
+					<span class="first">P</span>
+					<span class="oh">
+						<span class="second">roducing</span>
+					</span>
+					<span class="first">I</span>
+					<span class="oh">
+						<span class="second">nsulin</span>
+					</span>
+					
+					<span class="oh">
+						<span class="second">using</span>
+					</span>
+					<br>
+					<span class="first">E</span>
+					<span class="oh">
+						<span class="second">.coli</span>
+					</span>
+				</div>
+			</h1>
+		</div>
 
 
-
+		
 		<div class="container">
 			<div class="animatedParent animateOnce">
 				<div class="container-fluid">
@@ -446,6 +547,7 @@
 				image.style.backgroundPosition = x + 'px';
 			});
 		});
+
 	</script>
 	<!--
 	<script>
@@ -457,5 +559,8 @@
 		});
 	</script>
 	-->
+
 	<script src="Common/css3-animate-it.js"></script>
-</body></html>
+</body>
+
+</html>

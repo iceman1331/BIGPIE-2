@@ -1,14 +1,16 @@
 @font-face {
-  font-family:"Hp Simplified";
-  src: url(../Common/Font/hp-simplified.ttf) format("truetype");
+	font-family: "Hp Simplified";
+	src: url(../Common/Font/hp-simplified.ttf) format("truetype");
 }
+
 @font-face {
-  font-family:"Anne";
-  src: url("../Common/Font/Penelope%20Anne.ttf") format("truetype");
+	font-family: "Anne";
+	src: url("../Common/Font/Penelope%20Anne.ttf") format("truetype");
 }
+
 @font-face {
-  font-family:"Champagne";
-  src: url("../Common/Font/Champagne%20&%20Limousines.ttf") format("truetype");
+	font-family: "Champagne";
+	src: url("../Common/Font/Champagne%20&%20Limousines.ttf") format("truetype");
 }
 
 html,
@@ -21,7 +23,7 @@ body {
 	background-image: url()
 }
 
-.dark{
+.dark {
 	background-color: #fff;
 }
 
@@ -339,7 +341,7 @@ body {
 }
 
 /*-----Custom fonts-----*/
-tbig{
+tbig {
 	font-family: Hp Simplified;
 	line-height: 100%;
 	-moz-osx-font-smoothing: grayscale;
@@ -349,8 +351,8 @@ tbig{
 	letter-spacing: .05em
 }
 
-tpie{
-	font-family: Anne; 
+tpie {
+	font-family: Anne;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased !important;
 	-moz-font-smoothing: antialiased !important;
@@ -358,7 +360,7 @@ tpie{
 	letter-spacing: .05em
 }
 
-.bigpietext{
+.bigpietext {
 	line-height: 180%;
 	font-size: 25px;
 	font-weight: 100;
@@ -371,39 +373,134 @@ tpie{
 	letter-spacing: .03em;
 }
 
-ttext{
+ttext {
 	font-family: Champagne;
 	font-size: 3rem;
 }
 
-ttext b{
+ttext b {
 	font-family: Champagne;
 	font-weight: 1000;
 	color: #000;
 }
 
-ttext b:nth-child(1){
+ttext b:nth-child(1) {
 	color: #000;
 }
-ttext b:nth-child(2){
+
+ttext b:nth-child(2) {
 	color: #000;
 }
-ttext b:nth-child(3){
+
+ttext b:nth-child(3) {
 	color: #000;
 }
-ttext b:nth-child(4){
+
+ttext b:nth-child(4) {
 	color: #000;
 }
-ttext b:nth-child(5){
+
+ttext b:nth-child(5) {
 	color: #000;
 }
-ttext b:nth-child(6){
+
+ttext b:nth-child(6) {
 	color: #611320;
 }
 
-@media(max-width:500px){
-	ttext{
-		font-size:1.5rem;
+@media(max-width:500px) {
+	ttext {
+		font-size: 1.5rem;
 		margin-bottom: 10%;
 	}
 }
+
+
+.typewritter {
+	height: 10vh;
+	border: 2px solid red;
+	display: block;
+	text-align: center;
+}
+.word {
+	font-family: Champagne;
+	color: #000;
+	font-size: 3rem;
+	font-family: Hp Simplified;
+	line-height: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+	letter-spacing: .05em
+}
+
+
+
+
+
+
+
+
+
+
+ .animation {
+	 text-align: center;
+	 color: #000;
+	 display: inline-block;
+	 animation: pieFadeIn 1.5s forwards;
+	 opacity: 0;
+	 transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+}
+ .first {
+	 display: inline-block;
+	 animation: firstSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	 position: relative;
+}
+ .oh {
+	 display: inline-flex;
+	 overflow: hidden;
+}
+ .second {
+	 
+	 animation: secondSpan 3.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	 z-index: -1;
+	 display: inline-block;
+}
+ @keyframes pieFadeIn {
+	 0% {
+		 opacity: 0;
+		 transform: scale(1);
+	}
+	 50% {
+		 opacity: 1;
+		 transform: scale(1.1);
+	}
+	 100% {
+		 transform: scale(1);
+		 opacity: 1;
+	}
+}
+ @keyframes firstSpan {
+	 0% {
+		 transform: translateX(50%);
+	}
+	 60% {
+		 transform: translateX(50%);
+	}
+	 100% {
+		 transform: translateX(0%);
+	}
+}
+ @keyframes secondSpan {
+	 0% {
+		 transform: translateX(-100%);
+	}
+	 60% {
+		 transform: translateX(-100%);
+	}
+	 100% {
+		 transform: translateX(0%);
+	}
+}
+
