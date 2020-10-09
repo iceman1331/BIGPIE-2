@@ -45,7 +45,6 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
-
 	</script>
 
 	<header>
@@ -138,13 +137,98 @@
 			<video autoplay muted src="Home_2/Videos/T--IISER-Bhopal--Diabetes.mp4"></video>
 		</div>
 
+
 		<div class="blank-space">
 		</div>
+
+		<div class="animatedParent animateOnce" data-sequence='1000' style="white-space: nowrap;">
+			<div class="scary">
+				<div class="animated fadeInLeft" data-id="1">
+					Diabetes:
+					A chronic disease<br>
+					has impacted over<br>
+					463 million people<br>
+					worldwide!<br>
+				</div>
+				<div class="animated fadeIn slowest" data-id="2">
+					<video autoplay loop muted playsinline src="Home_2/Videos/T--IISER_Bhopal--Globe_pin_man_fff.mp4"></video>
+				</div>
+			</div>
+		</div>
+
+		<div class="blank-space">
+		</div>
+
+		<div class="animatedParent animateOnce">
+			<div class="animated fadeIn">
+				<div class="primary-carousel-container">
+					<div class="pie-slider" data-flickity='{ "wrapAround": true , "autoPlay": 4500, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": true}'>
+
+						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats2.png);background-size: cover;">
+							<div class="overlay"></div>
+							<div class="inner">
+								<h2 class="title">642 million patients estimated by 2040</h2>
+								<a href="https://www.who.int/health-topics/diabetes" target="_blank" class="btn">Tell me more</a>
+							</div>
+						</div>
+
+						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--Age.png);">
+							<div class="overlay"></div>
+							<div class="inner">
+								<h2 class="title"> IN 2016, OVER 1.6 MILLION PEOPLE DIED DUE TO DIABETES
+								</h2>
+							</div>
+						</div>
+
+						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats5.png);">
+							<div class="overlay"></div>
+							<div class="inner">
+								<h2 class="title">1 in every 6 child born is affected by Diabetes.</h2>
+							</div>
+						</div>
+
+						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats6.png);background-size: cover;">
+							<div class="overlay"></div>
+							<div class="inner">
+								<h3 class="subtitle">More than 1.1 million </h3>
+								<h2 class="title">children &amp; adolescents are living with type 1 diabetes</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container-fluid">
+			<div class="animatedParent animateOnce">
+				<div class="animated fadeInLeft">
+					<img class="img-fluid sad img" src="Home_2/T--IISER_Bhopal--sad_quotes.png">
+				</div>
+			</div>
+		</div>
+
+
+		<div class="animatedParent animateOnce">
+			<div class="animated fadeInUp">
+				<div class="container-fluid">
+					<div class="container">
+						<h1 style="text-align: center;">Diabetes and Insulin Production</h1>
+						<img class="img-fluid" src="Home_2/T--IISER_Bhopal--insulin_production.png">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="blank-space">
+		</div>
+
 
 		<div class="container-fluid">
 			<div class="animatedParent animateOnce" data-sequence='1000'>
 				<div class="animated fadeIn" data-id="1">
 					<div class="container">
+						<h1 class="text-center">But we have a solution</h1>
 						<h1 class="text-center">Introducing</h1>
 					</div>
 				</div>
@@ -153,19 +237,21 @@
 				<div class="animated fadeIn slower" data-id="2">
 					<div class="container">
 						<div class="text-center bigpie">
-							<tpie>The</tpie><tbig>BIG</tbig><tpie>Pie</tpie>
+							<tpie>The</tpie>
+							<tbig>BIG</tbig>
+							<tpie>Pie</tpie>
 						</div>
 					</div>
 				</div>
 
 
-				
+
 				<div class="animated pulse" data-id="3">
-				<div class="animated fadeInDownShort slowest" data-id="3">
-					<div class="container text-center">
-						<ttext class=""><b>B</b>eta cells <b>I</b>n <b>G</b>ut <b>P</b>roducing <b>I</b>nsulin using <b>E</b>.coli</ttext>
+					<div class="animated fadeInDownShort slowest" data-id="3">
+						<div class="container text-center">
+							<ttext class=""><b>B</b>eta cells <b>I</b>n <b>G</b>ut <b>P</b>roducing <b>I</b>nsulin using <b>E</b>.coli</ttext>
+						</div>
 					</div>
-				</div>
 				</div>
 
 
@@ -176,9 +262,14 @@
 				</div>
 			</div>
 		</div>
-		
-		
-<div class="blank-space">
+
+
+		<div class="blank-space">
+		</div>
+
+
+
+		<div class="blank-space">
 		</div>
 
 		<div class="container typewritter">
@@ -229,31 +320,32 @@
 			$(document).ready(function() {
 				wordflick();
 			});
-
 		</script>
 		<div class="container text-center">
 			<h1>
 				<div class="animation">
 					<span>The</span>
-					<span class="first "><tbig>B</tbig></span>
+					<span class="first ">
+						<tbig>B</tbig>
+					</span>
 					<span class="oh">
 						<span class="second">eta</span>
 					</span>
-					
+
 					<span class="oh">
 						<span class="second">cells</span>
 					</span>
-					
+
 					<span class="first">I</span>
 					<span class="oh">
 						<span class="second">n</span>
 					</span>
-					
+
 					<span class="first">G</span>
 					<span class="oh">
 						<span class="second">ut</span>
 					</span>
-					
+
 					<span class="first">P</span>
 					<span class="oh">
 						<span class="second">roducing</span>
@@ -262,7 +354,7 @@
 					<span class="oh">
 						<span class="second">nsulin</span>
 					</span>
-					
+
 					<span class="oh">
 						<span class="second">using</span>
 					</span>
@@ -276,11 +368,12 @@
 		</div>
 
 
-		
+
 		<div class="container">
 			<div class="animatedParent animateOnce">
 				<div class="container-fluid">
-					<div class="animated fadeIn">
+					<div class="text-center animated fadeIn">
+						<h1>Some Cheesy title and description</h1>
 						<img class="img-fluid" src="Home_2/T--IISER_Bhopal--desc_newest.png">
 					</div>
 				</div>
@@ -289,20 +382,6 @@
 
 
 
-		<div class="animatedParent animateOnce" data-sequence='500' style="white-space: nowrap;">
-			<div class="scary">
-				<div class="animated fadeInLeft" data-id="1">
-					Diabetes:
-					A chronic disease<br>
-					has impacted over<br>
-					463 million people<br>
-					worldwide!<br>
-				</div>
-				<div class="animated fadeIn slowest" data-id="2">
-					<video autoplay loop muted playsinline src="Home_2/Videos/T--IISER_Bhopal--Globe_pin_man_fff.mp4"></video>
-				</div>
-			</div>
-		</div>
 
 
 
@@ -318,66 +397,9 @@
 		</div>
 		-->
 
-		<div class="animatedParent animateOnce">
-			<div class="animated fadeInUp">
-				<div class="container-fluid">
-					<div class="container">
-						<h1 style="text-align: center;">Diabetes and Insulin Production</h1>
-						<img class="img-fluid" src="Home_2/T--IISER_Bhopal--insulin_production.png">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="animatedParent animateOnce">
-			<div class="animated fadeIn">
-				<div class="primary-carousel-container">
-					<div class="pie-slider" data-flickity='{ "wrapAround": true , "autoPlay": 4500, "pauseAutoPlayOnHover": false, "prevNextButtons": false, "pageDots": true}'>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats2.png);background-size: cover;">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h2 class="title">642 million patients estimated by 2040</h2>
-								<a href="https://www.who.int/health-topics/diabetes" target="_blank" class="btn">Tell me more</a>
-							</div>
-						</div>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--Age.png);">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h2 class="title"> IN 2016, OVER 1.6 MILLION PEOPLE DIED DUE TO DIABETES
-								</h2>
-							</div>
-						</div>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats5.png);">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h2 class="title">1 in every 6 child born is affected by Diabetes.</h2>
-							</div>
-						</div>
-
-						<div class="carousel-cell" style="background-image:url(Home_2/T--IISER_Bhopal--stats6.png);background-size: cover;">
-							<div class="overlay"></div>
-							<div class="inner">
-								<h3 class="subtitle">More than 1.1 million </h3>
-								<h2 class="title">children &amp; adolescents are living with type 1 diabetes</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 
-		<div class="container-fluid">
 
-			<div class="animatedParent animateOnce">
-				<div class="animated fadeInLeft">
-					<img class="img-fluid sad img" src="Home_2/T--IISER_Bhopal--sad_quotes.png">
-				</div>
-			</div>
-		</div>
 
 
 
@@ -547,7 +569,6 @@
 				image.style.backgroundPosition = x + 'px';
 			});
 		});
-
 	</script>
 	<!--
 	<script>
@@ -560,7 +581,9 @@
 	</script>
 	-->
 
-	<script src="Common/css3-animate-it.js"></script>
-</body>
+	<script>
 
-</html>
+	</script>
+
+	<script src="Common/css3-animate-it.js"></script>
+</body></html>
