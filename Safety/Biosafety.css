@@ -194,24 +194,34 @@ ol ol {
 	margin-left: 2em;
 }
 
-.rounded-list a {
+.rounded-list ah {
+	cursor: default;
 	position: relative;
 	display: block;
-	padding: .4em .4em .4em 2em;
+	padding: .4em .8em .4em 2em;
 	*padding: .4em;
 	margin: .5em 0;
 	background: #ddd;
-	color: #444;
-	text-decoration: none;
 	border-radius: .3em;
 	transition: all .5s ease-out;
+	
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+	font-weight: 300;
+	color: #000;
+	font-size: 19.8px;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+	letter-spacing: .03em;
 }
 
-.rounded-list a:hover {
+.rounded-list ah:hover {
 	background: #eee;
 }
 
-.rounded-list a:before {
+.rounded-list ah:before {
 	content: counter(li);
 	counter-increment: li;
 	position: absolute;
@@ -227,4 +237,30 @@ ol ol {
 	font-weight: bold;
 	border-radius: 2em;
 	transition: all .3s ease-out;
+}
+
+
+/*-------for Padding-----------*/
+.smain{
+	padding-bottom: 10%;
+	margin-left:5% ;
+	margin-right:5% ;
+	padding: 5% 10% 10% 10%;
+}
+
+.cfr{
+	padding: 5% 10% 5% 10%;
+}
+.cfr1{
+	padding: 5% 10% 1% 10%;	
+}
+.cfrmiddle{
+	padding: 1% 10% 1%% 10%;	
+}
+
+.cfr2{
+	padding: 1% 10% 5% 10%;
+}
+.cfr3{
+	padding: 1% 10% 5% 10%;	
 }
