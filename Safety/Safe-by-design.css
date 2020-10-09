@@ -16,8 +16,8 @@ body {
 	width: 100%;
 	height: 600px;
 	background-attachment: fixed;
-	background-image: url(safety.png);
-	background-position: bottom right;
+	background-image: url(s3.png);
+	background-position: bottom;
 	opacity: 1;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -71,12 +71,9 @@ body {
 
 .parallax {
 	height: auto;
-	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-	background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-
+	background-color: greenyellow;
+	background-color: #75B8C8;
+	
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
