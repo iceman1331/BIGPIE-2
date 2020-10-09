@@ -155,9 +155,9 @@ tbody {
 tbody .para {}
 
 
-
+/*
 .efed-1 {
-	width: 5%;
+	width: 15%;
 }
 
 .efed-2 {
@@ -176,7 +176,7 @@ tbody .para {}
 .efed-5 {
 	width: 10%;
 }
-
+*/
 h2 {
 	text-transform: none;
 	color: #000;
@@ -275,4 +275,28 @@ p {
 	transition: max-height 2s ease-out;
 	background-color: #f1f1f1;
 	background-color: #fff;
+}
+
+.ldr{
+	font-size: 1rem;
+	color: #000;
+	font-weight: 800;
+}
+
+.ldr2{
+	font-size: 1rem;
+	color: #000;
+	font-weight: 800;
+	text-transform: none;
+}
+
+.cdr{
+	margin: 5% auto 5% auto;
+}
+.cdr2{
+	margin: 2% auto 5% auto;
+}
+
+.blank{
+	padding: 5%;
 }
