@@ -131,7 +131,7 @@ p {
 }
 
 
-h2 {
+h3 {
 	text-transform: none;
 	color: #000;
 	font-family: 'Merriweather', serif;
@@ -321,9 +321,18 @@ box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.5);
 
 
 .cdr{
-	margin: 8% 10% 5% 10%;
+	margin: 5% 10% 5% 10%;
+}
+
+.cdl{
+	margin: 1%;
 }
 
 .maincdr{
 	margin: 0 15% 8% 15%;
+}
+
+.cf5{
+	margin-left: 2%;
+	margin-top: 1%;
 }

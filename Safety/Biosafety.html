@@ -14,7 +14,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no,shrink-to-fit=no" />
-	<title>Contributions</title>
+	<title>Biosafety</title>
 	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
@@ -22,7 +22,7 @@
 
 	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
 	<link rel="stylesheet" href="../Common/animations.css" />
-	<link rel="stylesheet" href="stylesheet.css" />
+	<link rel="stylesheet" href="Biosafety.css" />
 
 	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
 	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
@@ -37,7 +37,7 @@
 </head>
 
 <body>
-<div class="loader">
+	<div class="loader">
 		<video autoplay muted loop src="../T--IISER_Bhopal--loader.mp4"></video>
 	</div>
 
@@ -47,6 +47,7 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
+
 	</script>
 
 	<header>
@@ -138,16 +139,109 @@
 	</header>
 
 	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
-	
+
 	<main>
-	
+
 		<div id="cta">
 			<div class="desc-title">
-				<h1> Contributions </h1>
+				<h1> BioSafety </h1>
 			</div>
 		</div>
 	</main>
-	
+
+	<div class="container">
+		<p>
+			The use of Genetically modified organisms or GMOs is widely accepted and has revolutionised our approach to real world problems. The objective of synthetic biology work is to create massive results with GMOs, without compromising the safety or security of any of the stakeholders involved in the process. But a major aspect of work with GMOs is Biosafety.
+		</p>
+	</div>
+
+
+	<section class="parallax" style="opacity: 1;">
+		<div class="parallax-inner">
+			<he1>What is Biosafety?</he1>
+		</div>
+	</section>
+
+	<div class="container">
+		<p>
+			Biosafety as defined by the International Convention held in Geneva, refers to “principles, technologies, practices, and measures implemented to prevent the accidental release of, or unintentional exposure to pathogenic agents”.
+			Hence, as iGEM’ers and synthetic biologists, the onus is on us to ensure that our modified bacteria are not only useful but also well contained, safe and have a benign impact on the user in any detrimental manner.
+		</p>
+		<p>
+			Biocontainment strategies involving risk based approaches by analysing the pathogen type allow us to contain the pathogen we are working with, thus protecting the workers and preventing unintended release of the pathogens from the labs
+		</p>
+		<p>
+			( Warning :DO NOT ever fool around labs, you never know what you can do !). Depending on the risk type, pathogen type and various other factors, the required safety protocols and regulations are put in place to prevent unintentional release or exposure to the pathogen being worked with.
+		</p>
+	</div>
+
+	<section class="parallax" style="opacity: 1;">
+		<div class="parallax-inner">
+			<he1>Project Strategies</he1>
+		</div>
+	</section>
+	<div class="container">
+		<p>
+			The objective of our project is to provide an alternative treatment to diabetes patients without impacting their health or well-being while preventing the release of our modified bacteria into the environment.
+		</p>
+	</div>
+	<!---Collapsible-->
+	<div class="container">
+		<p>
+			Reorganisation of code to prevent horizontal gene transfer.
+		</p>
+		<p>
+			The human gut is colonised by millions of bacteria. A major concern with our proposed probiotic THE BIG PIE, is its release into the small intestine, which could enable horizontal gene transfer, resulting in lab made plasmids interacting with other natural bacteria present in the gut microbiome .Keeping this in mind, we propose to use chromosomal integration of our parts in the final probiotic bacteria that we will introduce into the pills. The integration of our genetic circuits and cassettes into the chromosome will remove any possibility of horizontal gene transfer.
+		</p>
+	</div>
+
+	<div class="container">
+		<h3>KILL SWITCH</h3>
+		<p>
+			Our modified probiotic is required to be active only in the duodenum of the small intestine. To ensure this we have designed a kill switch that reduces the activity of the bacteria by the time it reaches the colon and kills it as soon as it is excreted out of the human body. (Yeah just like the mosquito racquet, the insect dies before reaching the other end of the mesh)
+		</p>
+		<p>
+			We propose <i>a single gate phosphate regulated kill switch</i> that consists of a toxin, anti-toxin and repressor system.
+		</p>
+	</div>
+
+	<div class="container">
+		<h3>Toxin/Antitoxin Mechanism</h3>
+		<p>By using one of the most widely sought kill switch mechanisms, we have a constitutively expressed toxin and anti-toxin placed under two different promoters. (Hey, not the job promoters XD)</p>
+
+		<h3>The Toxin</h3>
+		<p>Colicin E2 DNase domain "miniColicin" BBa_K1976048, can degrade Host DNA while posing little threat to the gut microbiota. In the meanwhile, the Anti- toxin : Immunity protein (Im2) can suppress the activity of the toxin, thereby allowing the bacteria to survive in normal conditions.</p>
+	</div>
+	<div class="container">
+		<img class="img-fluid" src="flowchart.png">
+	</div>
+
+	<div class="container">
+		<h2>The Repressor System</h2>
+		<p>We express an anti-sense RNA molecule under a phosphate sensitive promoter PhoB. The anti-sense RNa is transcribed under low phosphate conditions and binds to the anti-toxin thereby suppressing its activity. The free toxin molecules in the bacteria environment increase the toxicity and kill the modified bacteria.</p>
+	</div>
+
+	<div class="container">
+		<h2>Environment Phases</h2>
+
+		<ol class="rounded-list">
+			<li><a href="">Transportation : Inside the pill the bacteria are freeze-dried and stored in a phosphate rich environment. The bacteria is inactive. The phosphate promoter is not active.</a></li>
+			<li><a href="">Stomach : Post ingestion, the bacteria inside the pill are carried to the stomach in a phosphate rich environment. The bacteria released in the stomach are still maintained in phosphate rich surroundings. Hence the phosphate promoter PhoB is still inactive.
+				</a></li>
+			<li><a href="">Small Intestine: Due to high phosphate in the duodenum, the bacteria is able to bind to the mucosal walls and translate actively till it completes the reprogramming of crypt cells to beta like cells..
+				</a>
+			<li><a href="">Colon: The phosphate is absorbed in the small intestine leaving a low phosphate condition in this region that allows PhoB to be activated and transcribe the anti-sense RNA,which binds to the antitoxin. Toxin in the bacteria starts increasing and the bacteria starts dying.
+				</a>
+			<li><a href="">Excreted: The phosphate concentration further drops increasing PhoB activity, more antisense RNA binds with anti-toxin. Most of the bacteria is dead by the time it is released into the environment.
+				</a>
+			</li>
+		</ol>
+
+
+	</div>
+
+
+
 	<div class="container">
 		<section class="pre-footer-button-container">
 			<ul class="ch-grid">
