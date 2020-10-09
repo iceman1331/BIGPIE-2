@@ -246,7 +246,7 @@ sup {
 
 
 .plasmidtxt {
-	width: 15%;
+	width: 18%;
 	border-bottom: 5px solid #c5ff99;
 	margin: auto;
 	font-size: 1.5rem;
@@ -258,6 +258,13 @@ sup {
 	}
 }
 
+linker{
+	color: red;
+}
+
+site{
+	color: blueviolet;
+}
 
 underline1 {
 	border-bottom: 3px solid #949bff;
