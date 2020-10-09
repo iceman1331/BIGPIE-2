@@ -254,7 +254,7 @@ body {
 	margin-bottom: 40px;
 	margin-left: 60px;
 	margin-right: 60px;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.75);
 }
 
 @media(max-width:500px) {
