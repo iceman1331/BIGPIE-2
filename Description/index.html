@@ -15,29 +15,32 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Description</title>
-	<link rel="preload" href="loader.mp4" as="video">
-	
+	<link rel="preload" href="../Common/T--IISER_Bhopal--Loader.mp4" as="video">
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-
 	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
-	<link rel="stylesheet" href="../Common/flickity.css" />
+	<link rel="stylesheet" href="../Common/flickity.min.css" />
 	<link rel="stylesheet" href="../Common/animations.css" />
 	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
 	<link rel="stylesheet" href="styles.css" />
 	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
-
-
+	
 	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
 	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+
+	<script src="CounterUp/jquery.countup.min.js" charset="utf-8"></script>
+	
 
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -52,90 +55,91 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
+
 	</script>
 
-		<header>
-			<nav class="navbar smart-scroll fixed-top navbar-expand-md navbar-dark scrolling-navbar py-0" id="mynav">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item navbar-nav mr-auto active">
-							<a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
-						</li>
-					</ul>
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fas fa-project-diagram"></i> Project
-							</a>
-							<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../Description/index.html">Description</a>
-								<a class="dropdown-item" href="../Design/index.html">Design</a>
-								<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
-								<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fas fa-puzzle-piece"></i> Parts
-							</a>
-							<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
-								<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fas fa-handshake"></i> Human Practices
-							</a>
-							<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
-								<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
-								<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fas fa-users"></i> About Us
-							</a>
-							<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../Team/index.html">Team</a>
-								<a class="dropdown-item" href="../coming_soon/coming_soon.html">Supervisors</a>
-								<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fas fa-biohazard"></i> Safety
-							</a>
-							<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
-								<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
-								<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fa fa-gavel"></i> Judging Forms
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fa fa-cog"></i> Implementation
-							</a>
-							<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
-								<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
-								<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
-								<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-md navbar-dark scrolling-navbar py-0" id="mynav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item navbar-nav mr-auto active">
+						<a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Team/index.html">Team</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Supervisors</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
+							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
 	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
 
@@ -147,66 +151,72 @@
 		</div>
 	</div>
 
+	<countr></countr>
+
+
+
+
+
 	<div class="animatedParent animateOnce">
 		<div class="animated fadeInLeft">
 			<div class="content">
 				<div class="container">
-				<div class="container-2">
-					<h1 class="text">Global Crisis</h1>
-					<p>
-						Diabetes mellitus is a chronic metabolic illness caused due to insufficient insulin production in the pancreas or abnormal insulin regulation in the body. This hormone is essential to regulate blood glucose levels in the body. Insufficient insulin can lead to kidney failures, blindness, nerve damage and even death etc.
-					</p>
-					<p>
-						There are currently 150-200 million insulin-dependent patients but due to expensive treatments, most diabetes patients remain untreated. The dependence on insulin is on the rise and it is estimated that the global economic burden due to diabetes will be 2.5 trillion dollars by 2030. With such numbers on the rise. It is imperative to create an alternative treatment, which is cheaper, patient-friendly and convenient to use.<sup>[1]</sup>
-					</p>
+					<div class="container-2">
+						<h1 class="text">Global Crisis</h1>
+						<p>
+							Diabetes mellitus is a chronic metabolic illness caused due to insufficient insulin production in the pancreas or abnormal insulin regulation in the body. This hormone is essential to regulate blood glucose levels in the body. Insufficient insulin can lead to kidney failures, blindness, nerve damage and even death etc.
+						</p>
+						<p>
+							There are currently 150-200 million insulin-dependent patients but due to expensive treatments, most diabetes patients remain untreated. The dependence on insulin is on the rise and it is estimated that the global economic burden due to diabetes will be 2.5 trillion dollars by 2030. With such numbers on the rise. It is imperative to create an alternative treatment, which is cheaper, patient-friendly and convenient to use.<sup>[1]</sup>
+						</p>
 
-					<div class="centred-child">
-						<div class="img" style="height:94%; width:94%;">
-							<img src="Combined_1.png" alt="" />
-							<img class="img-fluid" src="map-2.png" alt="" />
-							<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+						<div class="centred-child">
+							<div class="img" style="height:94%; width:94%;">
+								<img src="Combined_1.png" alt="" />
+								<img class="img-fluid" src="map-2.png" alt="" />
+								<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+							</div>
 						</div>
-					</div>
 
-					<div class="collapsible-container">
-						<button class="collapsible" style="outline: none;">More</button>
-						<div class="content-collapsible-2">
-							<div>
+						<div class="collapsible-container">
+							<button class="collapsible" style="outline: none;">More</button>
+							<div class="content-collapsible-2">
 								<div>
-									<p>
-										<br>
-										<b>Type 1 diabetes</b><br>
-										Type 1 diabetes’ onset usually during childhood. It is believed to be an autoimmune condition. Where the immune system mistakenly attacks and destroys the beta cells in insulin producing pancreas. There may be both genetic and environmental reasons. Lifestyle factors do not play arole. <br>
-										<br>
-										<b>Type 1 diabetes</b><br>
-										Type 2 diabetes starts as insulin resistance. This means your body can’t use insulin efficiently. This stimulates your pancreas to produce more insulin until it can no longer keep up with demand. Insulin production decreases, which leads to high blood sugar.
-										The exact cause of type 2 diabetes is unknown. Contributing factors may include:
-									</p>
-									<div class="p-linklist" style="text-align: left;">
-										<li>
-											genetics
-										</li>
-										<li>
-											lack of exercise
-										</li>
-										<li>
-											being overweight
-										</li>
-										<li>
-											There may also be other health factors and environmental reasons.
-										</li>
-									</div>
+									<div>
+										<p>
+											<br>
+											<b>Type 1 diabetes</b><br>
+											Type 1 diabetes’ onset usually during childhood. It is believed to be an autoimmune condition. Where the immune system mistakenly attacks and destroys the beta cells in insulin producing pancreas. There may be both genetic and environmental reasons. Lifestyle factors do not play arole. <br>
+											<br>
+											<b>Type 1 diabetes</b><br>
+											Type 2 diabetes starts as insulin resistance. This means your body can’t use insulin efficiently. This stimulates your pancreas to produce more insulin until it can no longer keep up with demand. Insulin production decreases, which leads to high blood sugar.
+											The exact cause of type 2 diabetes is unknown. Contributing factors may include:
+										</p>
+										<div class="p-linklist" style="text-align: left;">
+											<li>
+												genetics
+											</li>
+											<li>
+												lack of exercise
+											</li>
+											<li>
+												being overweight
+											</li>
+											<li>
+												There may also be other health factors and environmental reasons.
+											</li>
+										</div>
 
-									<div class="button_know" align="center">
-										<a class="external_knowmore" href="https://www.healthline.com/health/diabetes/types-of-diabetes#causes" target="_blank" rel="nofollow">
-											<span>Read more</span><br>
-										</a>
+										<div class="button_know" align="center">
+											<a class="external_knowmore" href="https://www.healthline.com/health/diabetes/types-of-diabetes#causes" target="_blank" rel="nofollow">
+												<span>Read more</span><br>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		</div>
@@ -216,50 +226,53 @@
 		<div class="animated fadeInRightShort">
 			<div class="content" style="background-color:#f2f2f2;">
 				<div class="container">
-				<div class="container-2">
-					<h1 class="text">Epidemic in India</h1>
-					<p class="text">
-						India has the highest population of diabetics in the world. With over 1.2 Billion people, India is estimated to have over 70 million patients. About 58% of diabetics remain untreated and 76% of diabetics cases cannot be controlled, leading to multiple organ failures and even death.<sup>[4]</sup> Diabetes is taking a huge toll on the Indian economy and healthcare. However, none of the current treatments is sufficient to bring about a pivotal change in the situation. Over 1 million Indians die due to diabetes each year. Over 1/3rd of Diabetics in the country suffer from renal failures. As per our interactions with experts the biggest issue in India with any form of conventional insulin therapies is the variation in insulin absorption rates administered to each person. The dependence and challenges due to an inaccessible form of treatment for this widespread lifestyle disorder has been a key driving force in our decision to work on diabetes.
-					</p>
+					<div class="container-2">
+						<h1 class="text">Epidemic in India</h1>
+						<p class="text">
+							India has the highest population of diabetics in the world. With over 1.2 Billion people, India is estimated to have over 70 million patients. About 58% of diabetics remain untreated and 76% of diabetics cases cannot be controlled, leading to multiple organ failures and even death.<sup>[4]</sup> Diabetes is taking a huge toll on the Indian economy and healthcare. However, none of the current treatments is sufficient to bring about a pivotal change in the situation. Over 1 million Indians die due to diabetes each year. Over 1/3rd of Diabetics in the country suffer from renal failures. As per our interactions with experts the biggest issue in India with any form of conventional insulin therapies is the variation in insulin absorption rates administered to each person. The dependence and challenges due to an inaccessible form of treatment for this widespread lifestyle disorder has been a key driving force in our decision to work on diabetes.
+						</p>
 
-					<div class="centred-child">
-						<div class="img">
-							<div class="img-desc"><strong style="font-weight:900;">Image III: </strong>image description.</div>
+						<div class="centred-child">
+							<div class="img">
+								<div class="img-desc"><strong style="font-weight:900;">Image III: </strong>image description.</div>
+							</div>
 						</div>
-					</div>
 
-					<div class="counter-middle">
-						<div class="counting-sec">
-							<div class="counter-inner-width">
+						
 
-								<div class="col">
-									<i class="fas fa-chart-line"></i>
-									<h6>
-										<div class="num">134,000,000</div>
-									</h6>
-									Diabetes cases projected in India by 2045.
+						<div class="counter-middle">
+							<div class="counting-sec">
+								<div class="counter-inner-width">
+
+									<div class="col">
+										<i class="fas fa-chart-line"></i>
+										<h6>
+											<div class="counters"><span class="counter large">134,000,000</span></div>
+											<countr></countr>
+										</h6>
+										Diabetes cases projected in India by 2045.
+									</div>
+
+									<div class="col">
+										<i class="fas fa-syringe" style="transform: rotate(270deg);"></i>
+										<h6>
+											<div class="counters"> <span class="counter">4</span></div>
+										</h6>
+										out of 10 Diabetics <br> use insulin injections In India and Gulf.
+									</div>
+
+									<div class="col">
+										<i class="far fa-hospital"></i>
+										<h6 style="white-space:pre-line;">
+											<div class="counters"><span class="counter">76</span>%</div>
+										</h6>
+										Indian diabetics per 100 have uncontrolled diabetes.
+									</div>
+
 								</div>
-
-								<div class="col">
-									<i class="fas fa-syringe" style="transform: rotate(270deg);"></i>
-									<h6>
-										<div class="num"> 4</div>
-									</h6>
-									out of 10 Diabetics <br> use insulin injections In India and Gulf.
-								</div>
-
-								<div class="col">
-									<i class="far fa-hospital"></i>
-									<h6 style="white-space:pre-line;">
-										<div class="num">76</div>
-									</h6>
-									Indian diabetics per 100 have uncontrolled diabetes.
-								</div>
-
 							</div>
 						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		</div>
@@ -269,27 +282,27 @@
 		<div class="animated fadeInLeft">
 			<div class="content">
 				<div class="container">
-				<div class="container-2">
-					<h1 class="text">Current Treatments</h1>
-					<p class="text">
-						Current diabetes treatments aim to supplement insulin requirements through therapies involving injections, pills, GLP markers bla bla bla.However, most treatments are expensive and inconvenient for a long-term disease like diabetes.
-					</p>
+					<div class="container-2">
+						<h1 class="text">Current Treatments</h1>
+						<p class="text">
+							Current diabetes treatments aim to supplement insulin requirements through therapies involving injections, pills, GLP markers bla bla bla.However, most treatments are expensive and inconvenient for a long-term disease like diabetes.
+						</p>
 
-					<p>In India, insulin injections are the most widespread form of diabetes treatment and are administered at a frequency of 2 to 4 times a day.<sup>[2]</sup> Despite the existence of alternate diabetes medicines and treatments. The only one that is commonly used is insulin injections. This form of treatment is expensive, inconvenient and often unsafe.
-					</p>
+						<p>In India, insulin injections are the most widespread form of diabetes treatment and are administered at a frequency of 2 to 4 times a day.<sup>[2]</sup> Despite the existence of alternate diabetes medicines and treatments. The only one that is commonly used is insulin injections. This form of treatment is expensive, inconvenient and often unsafe.
+						</p>
 
-					<div class="centred-child" style="margin-top: 30px;">
-						<div class="img">
-							<img src="syringe.png">
-							<div class="img-desc"><strong style="font-weight:900;">Image IV: </strong>image description.</div>
-						</div>
+						<div class="centred-child" style="margin-top: 30px;">
+							<div class="img">
+								<img src="syringe.png">
+								<div class="img-desc"><strong style="font-weight:900;">Image IV: </strong>image description.</div>
+							</div>
 
-						<div class="img">
-							<img src="costgraph.png" style="height: 250px;width:250px;">
-							<div class="img-desc"><strong style="font-weight:900;">Image V: </strong>image description.</div>
+							<div class="img">
+								<img src="costgraph.png" style="height: 250px;width:250px;">
+								<div class="img-desc"><strong style="font-weight:900;">Image V: </strong>image description.</div>
+							</div>
 						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		</div>
@@ -321,28 +334,28 @@
 		<div class="animated fadeIn">
 			<div class="content" style="background-color:#fffff;">
 				<div class="container">
-				<div class="container-2">
-					<h1 class="text">Our Solution</h1>
-					<p class="text">
-						Unlike other forms of insulin treatment that focus on administering insulin externally to patients through injections. We are focusing on the root cause -- insulin deficiency in diabetes patients is due to damaged beta cells in the pancreas.
+					<div class="container-2">
+						<h1 class="text">Our Solution</h1>
+						<p class="text">
+							Unlike other forms of insulin treatment that focus on administering insulin externally to patients through injections. We are focusing on the root cause -- insulin deficiency in diabetes patients is due to damaged beta cells in the pancreas.
 
-						BIG PIE aims to replace damaged beta cells in the pancreas with functional beta islet-like cells capable of insulin production in-vivo.
+							BIG PIE aims to replace damaged beta cells in the pancreas with functional beta islet-like cells capable of insulin production in-vivo.
 
-						We propose creating an enhanced probiotic bacteria capable of transforming intestinal crypt cells into insulin-producing, glucose-responsive beta-islet like cells.
-					</p>
+							We propose creating an enhanced probiotic bacteria capable of transforming intestinal crypt cells into insulin-producing, glucose-responsive beta-islet like cells.
+						</p>
 
-					<p>This is based on the principle of transdifferentiation which involves reprogramming one cell type into another.
+						<p>This is based on the principle of transdifferentiation which involves reprogramming one cell type into another.
 
-						We intend to clone an FDA approved probiotic Ecoli Nissle, with transcription factors, essential for insulin production. These three factors will be injected into the newly differentiated intestinal crypt cells, with the aid of ‘molecular syringe’ called EPEC T3SS, found in gram-negative bacteria. The attachment and injection of the polypeptides into the cells will reprogram them allowing insulin production in the gut. Thus compensating for the lack of β islet cells in the pancreas.
-					</p>
+							We intend to clone an FDA approved probiotic Ecoli Nissle, with transcription factors, essential for insulin production. These three factors will be injected into the newly differentiated intestinal crypt cells, with the aid of ‘molecular syringe’ called EPEC T3SS, found in gram-negative bacteria. The attachment and injection of the polypeptides into the cells will reprogram them allowing insulin production in the gut. Thus compensating for the lack of β islet cells in the pancreas.
+						</p>
 
-					<div class="centred-child">
-						<div class="img" style="height:94%; width:94%;">
-							<img src="desc_newest.png">
-							<div class="img-desc"><strong style="font-weight:900;">Image V: </strong>image description.</div>
+						<div class="centred-child">
+							<div class="img" style="height:94%; width:94%;">
+								<img src="desc_newest.png">
+								<div class="img-desc"><strong style="font-weight:900;">Image V: </strong>image description.</div>
+							</div>
 						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		</div>
@@ -519,6 +532,14 @@
 			time: 1500
 		});
 	</script>
+		<script>
+		$('.counter').countUp({
+			'time': 2000,
+			'delay': 10
+		});
+
+	</script>
+
 
 	<script>
 		/*Button reveal*/
@@ -537,9 +558,12 @@
 			});
 		}
 		/*Button reveal*/
+
 	</script>
 
 	<script src="../Common/flickity.pkgd.min.js"></script>
 	<script src="../Common/css3-animate-it.js"></script>
 
-</body></html>
+</body>
+
+</html>

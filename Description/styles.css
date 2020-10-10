@@ -26,7 +26,6 @@ body {
 	}
 }
 
-
 #cta {
 	width: 100%;
 	height: 600px;
@@ -200,14 +199,29 @@ sup {
 	color: #fff;
 }
 
-/*Counter*/
-.counter-middle {
+/*Counter-New*/
+/*Counter-New*/
+
+.counters {
+	font-size: 2rem;
 	margin: 1%;
 	display: block;
 	font-family: "montserrat", sans-serif;
 	width: 100%;
 	overflow: hidden;
 }
+
+
+@media(max-width:500px){ 
+.counters {
+	font-size: 1.5rem;
+	}
+}
+
+/*Counter-New*/
+/*Counter-New*/
+/*Counter*/
+.counter-middle {}
 
 @media(max-width:500px) {
 	.counter-middle {
@@ -231,7 +245,7 @@ sup {
 .counter-inner-width {
 	max-width: 100%;
 	margin: auto;
-	display: flex;
+	display: inline-block;
 }
 
 @media(max-width:500px) {
@@ -243,13 +257,13 @@ sup {
 .counter-inner-width .col {
 	flex: 1;
 	text-align: center;
-	padding: 0%;
 	font-size: 1rem;
 	color: #000;
 	text-transform: uppercase;
 }
 
 @media(max-width:500px) {
+	
 	.counter-inner-width .col {
 		font-size: 0.5rem;
 	}
@@ -306,7 +320,6 @@ external_knowmore {
 	background: linear-gradient(to right, #67b26b, #4ca2cb);
 	border: none;
 	color: #FFFFFF;
-
 }
 
 .external_knowmore span {
@@ -335,11 +348,6 @@ external_knowmore {
 }
 
 
-
-
-/**/
-/**/
-
 .collapsible-container {
 	display: block;
 	margin: auto;
@@ -361,7 +369,6 @@ external_knowmore {
 	font-size: 15px;
 	transition: 1s;
 }
-
 
 .collapsible:hover {
 	background-color: #555;
@@ -396,4 +403,33 @@ external_knowmore {
 	border-right: 1px solid #555;
 	transition: max-height 0.5s ease-out;
 	background-color: rgba(153, 187, 255, 0.5);
+}
+
+
+/*------Counter------*/
+@property --num {
+	syntax: "<integer>";
+	initial-value: 134;
+	inherits: false;
+}
+
+countr {
+	counter-reset: num var(--num);
+	animation: counter 12s ease;
+	font: 800 40px system-ui;
+	padding: 2rem;
+}
+
+countr::after {
+	content: counter(num);
+}
+
+@keyframes counter {
+	from {
+		--num: 0;
+	}
+
+	to {
+		--num: 134;
+	}
 }
