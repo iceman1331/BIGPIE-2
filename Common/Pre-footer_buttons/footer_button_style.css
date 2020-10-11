@@ -86,47 +86,47 @@
 }
 
 .ch-img-1 {
-	background-image: url(imgs/description_logo_cropped.png);
+	background-image: url(https://2020.igem.org/wiki/images/d/df/T--IISER_Bhopal--THEBIGPIE-PreFooterDescription.png);
 	background-position: center;
 	background-origin: border-box;
 }
 
 .ch-img-2 {
-	background-image: url(imgs/design_alt_cropped.png);
+	background-image: url(https://2020.igem.org/wiki/images/d/d3/T--IISER_Bhopal--THEBIGPIE-PreFooterDesign.png);
 	background-position: center;
 	background-origin: border-box;
 }
 
 .ch-img-3 {
-	background-image: url(imgs/design_icon_cropped.png);
+	background-image: url(https://2020.igem.org/wiki/images/2/27/T--IISER_Bhopal--THEBIGPIE-PreFooterParts.png);
 	background-position: bottom;
 	background-origin: border-box;
 }
 
 .ch-img-4 {
-	background-image: url(imgs/entrepreneurship_icon_cropped.png);
+	background-image: url(https://2020.igem.org/wiki/images/f/f3/T--IISER_Bhopal--THEBIGPIE-PreFooterEntrepreneurship.png);
 	background-position: center;
 	background-origin: border-box;
 }
 
 .ch-img-5 {
-	background-image: url(imgs/humanpractices_icon_cropped.png);
+	background-image: url(https://2020.igem.org/wiki/images/6/63/T--IISER_Bhopal--THEBIGPIE-PreFooterHumanPractices.png);
 	background-position: center;
 	background-origin: border-box;
 }
 
 .ch-img-6 {
-	background-image: url(imgs/model_icon_cropped.png);
+	background-image: url(https://2020.igem.org/wiki/images/1/16/T--IISER_Bhopal--THEBIGPIE-PreFooterModelling.png);
 	background-position: right;
 }
 
 .ch-img-7 {
-	background-image: url(imgs/patentlaw_icon_cropped.png);
+	background-image: url(https://2020.igem.org/wiki/images/e/eb/T--IISER_Bhopal--THEBIGPIE-PreFooterPatentLaw.png);
 	background-position: top;
 }
 
 .ch-img-8 {
-	background-image: url(imgs/safety_icon_cropped.png);
+	background-image: url(https://2020.igem.org/wiki/images/c/c7/T--IISER_Bhopal--THEBIGPIE-PreFooterSafety.png);
 	background-position: center;
 	background-origin: border-box;
 	background-repeat: no-repeat;
@@ -269,10 +269,6 @@ footer a:hover {
 	font-size: 1rem;
 	font-family: ;
 }
-
-
-
-
 /*SOCİAL İCONS*/
 
 /* footer social icons */
