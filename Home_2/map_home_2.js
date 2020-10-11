@@ -2036,7 +2036,6 @@
 		circle.propertyFields.stroke = "color";
 		circle.propertyFields.strokeWidth = 30;
 
-
 		var circle2 = imageSeries.mapImages.template.createChild(am4core.Circle);
 		circle2.radius = 2;
 		circle2.fillOpacity = 0.5;
@@ -2050,12 +2049,9 @@
 		circle.propertyFields.fill = "color";
 
 
-
-
 		circle2.events.on("inited", function (event) {
 			animateBullet(event.target);
 		})
-
 
 		function animateBullet(circle) {
 			var animation = circle.animate([{
@@ -2066,13 +2062,11 @@
 				property: "opacity",
 				from: 1,
 				to: 0
-			}], 1000, am4core.ease.circleOut);
+			}], 1500, am4core.ease.circleOut);
 			animation.events.on("animationended", function (event) {
 				animateBullet(event.target.object);
 			})
 		}
-
-
 
 
 		/*
