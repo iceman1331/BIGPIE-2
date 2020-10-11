@@ -24,6 +24,8 @@
 		title.text = "[bold font-size: 20] Diabetes | A global issue [/]\n";
 		title.textAlign = "middle";
 
+		//To change individual colors for bubbles use code below in country id
+		/*"color": "#de4c4f"*/
 
 		var latlong = {
 			"AD": {
@@ -988,11 +990,15 @@
 			}
 		};
 
+
+				//To change individual colors for bubbles use code below in country id
+		/*"color": "#de4c4f"*/
 		var mapData = [{
 				"id": "AF",
 				"name": "Afghanistan",
 				"value": 32358260,
-				"color": chart.colors.getIndex(0)
+				"color": chart.colors.getIndex(0),
+				 "fill": am4core.color("#fff")
 			},
 			{
 				"id": "AL",
@@ -2021,6 +2027,7 @@
 		polygonSeries.exclude = ["AQ"];
 		polygonSeries.useGeodata = true;
 
+
 		var imageSeries = chart.series.push(new am4maps.MapImageSeries());
 		imageSeries.data = mapData;
 		imageSeries.dataFields.value = "value";
@@ -2074,6 +2081,7 @@
 		*/
 		circle.tooltipText = "{name}:[bold]{value}[/]";
 		circle.tooltipHTML = "<b><span style='font-size:15px;'>{name}</span><br><b>D Patients: {value}</b>";
+
 
 		imageSeries.heatRules.push({
 			"target": circle,
