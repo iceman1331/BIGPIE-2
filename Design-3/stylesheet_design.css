@@ -57,8 +57,9 @@ body {
 
 #cta {
 	width: 100%;
-	height: 400px;
-	background-image: url(./imgs/banner.jpg);
+	height: 600px;
+	background-image: url(./imgs/Design-1.png);
+    background-attachment: fixed;
 	background-position: bottom;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -81,7 +82,7 @@ body {
 	width: 100%;
 	text-align: center;
 	margin: auto;
-	padding-top: 16%;
+	padding-top: 25%;
 }
 
 .desc-title h1 {
@@ -153,13 +154,28 @@ body {
 }
 
 .ZeroOne {
-	padding: 5% 20% 0 20%;
+	padding: 5% 15% 0 15%;
 	margin: auto;
 }
 
+.clickable img {
+	display: block;
+	z-index: 2;
+	border-radius: 1000px;
+	width: 1200px;
+	max-width: 100%;
+	height: auto;
+    border-style: none;
+}
+
 .ZeroTwo {
-	padding: 1% 20% 0 20%;
+	padding: 1% 15% 0 15%;
 	margin: auto;
+}
+
+.ZeroTwoOne {
+    font-size: 25px;
+    font-weight: 400;
 }
 
 @media(max-width:500px) {
@@ -273,6 +289,7 @@ body {
 }
 
 .TwoTwo {
+    margin-bottom: 10%;
 }
 
 @media(max-width:500px) {
@@ -292,11 +309,11 @@ body {
 }
 
 .ThreeOne {
-	padding: 5% 0% 0% 0%;
+	padding: 2% 0%;
 }
 
 .video {
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 }
 
 .img-desc {
@@ -388,6 +405,7 @@ body {
 
 }
 
+/*
 .underline-small::after {
 	content: '';
 	height: 2px;
@@ -397,20 +415,24 @@ body {
 	left: calc(50% - 8%);
 	text-align: center;
 	bottom: -10px;
-	/*   another way you can achieve this
+	   another way you can achieve this
   Check this link: 
   https://goo.gl/GgRdjz
   
-  */
+  
 
 }
+*/
 
 .parallax {
 	height: auto;
-	background-color: #75B8C8;
+    background-image: linear-gradient(to right, #68e2ff , #66a6ff);
+/*	background-color: #75B8C8;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 
 .parallax-inner {
@@ -1194,7 +1216,8 @@ area {
 }
 
 .centred-child-2 .img-fluid {
-	width: 65%;
+    padding-top: 12%;
+	width: 100%;
 }
 
 @media(max-width:500px) {

@@ -154,3 +154,44 @@ svg {
 		background: #fff;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+/*----------Map--------------*/
+/*----------Map--------------*/
+/*----------Map--------------*/
+.ammap2{
+	border: 2px solid red;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px
+}
+
+
+
+#globe {
+  cursor: move;  
+}
+
+#current {
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+  margin-left: 4%;
+  margin-top: 4%;
+}
+
+
+
+/*----------Map--------------*/
+/*----------Map--------------*/
+/*----------Map--------------*/

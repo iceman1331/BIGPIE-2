@@ -49,44 +49,6 @@ body {
 	background-size: cover;
 }
 
-.scary {
-	content: "";
-	font-size: 1.75rem;
-	font-weight: 600;
-	display: flex;
-	color: #000;
-	padding: 0 5% 0 5%;
-	vertical-align: middle;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	text-align: center;
-	/*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
-}
-
-.scary video {
-	width: 55vw;
-	height: auto;
-	border-radius: 100%;
-	margin-left: 10px;
-}
-
-@media(max-width:500px) {
-	.scary {
-		color: #000;
-		padding: 5.5% 2% 0 2%;
-		font-size: 0.75rem;
-		text-align: center;
-		margin-bottom: 0;
-		padding-bottom: 0;
-		margin-left: 0px;
-		border: none;
-	}
-
-	.scary video {
-		width: 50vw;
-	}
-}
 
 .blank-space {
 	padding: 2% 0 2% 0;
@@ -506,3 +468,81 @@ ttext b:nth-child(6) {
 
 
 
+
+
+
+
+
+
+
+.scary2 {
+	content: "";
+	font-size: 1.75rem;
+	font-weight: 600;
+	display: flex;
+	color: #000;
+	padding: 0 5% 0 5%;
+	vertical-align: middle;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+	border:2px solid red;
+	/*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
+}
+
+@media(max-width:500px) {
+	.scary2 {
+		color: #000;
+		padding: 5.5% 2% 0 2%;
+		font-size: 0.75rem;
+		text-align: center;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		margin-left: 0px;
+		border: none;
+	}
+
+}
+
+
+.scary{
+}
+
+
+/*----------Map--------------*/
+/*----------Map--------------*/
+/*----------Map--------------*/
+.ammap2{
+	border: 2px solid red;
+	width: 100%;
+	display: block;
+	
+	
+}
+
+#chartdiv {
+	border: 2px solid red;
+  width: 100%;
+  height: 500px;
+	cursor: move;
+}
+
+
+
+#globe {
+  cursor: move;  
+}
+
+#current {
+  position: absolute;
+  color: white;
+  font-family: sans-serif;
+  margin-left: 4%;
+  margin-top: 4%;
+}
+
+
+
+/*----------Map--------------*/
+/*----------Map--------------*/
+/*----------Map--------------*/
