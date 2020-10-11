@@ -517,8 +517,11 @@ ttext b:nth-child(6) {
 @media(max-width:500px) {
 	.scary {
 		color: #000;
+		display: block;
 		padding: 5.5% 2% 0 2%;
+		padding:6% 0 12% 0;
 		font-size: 0.75rem;
+		border: 15px solid red;
 		text-align: center;
 		margin-bottom: 0;
 		padding-bottom: 0;
@@ -556,7 +559,7 @@ ttext b:nth-child(6) {
 
 	#chartdiv {
 		width: 100%;
-		height: 200px;
+		height: 250px;
 	}
 }
 

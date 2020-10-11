@@ -45,6 +45,7 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
+
 	</script>
 
 	<header>
@@ -141,50 +142,55 @@
 		<div class="blank-space">
 		</div>
 
-		<div class="scary">
-			<div class="animatedParent animateOnce" data-sequence='500' style="white-space: nowrap;">
-				<div class="animated fadeInLeft" data-id="1">
-					Diabetes:
-				</div>
-				<div class="animated fadeInLeft" data-id="2">
-					A chronic disease<br>
-				</div>
-				<div class="animated fadeInLeft" data-id="3">
-					has impacted over<br>
-				</div>
-				<div class="animated fadeInLeft" data-id="4">
-					463 million people<br>
-				</div>
-				<div class="animated fadeInLeft" data-id="5">
-					worldwide!<br>
-				</div>
-			</div>
+		<div class="animatedParent animateOnce">
 
 
-			<div class="container ammap2">
-				
-				<div id="chartdiv"></div>
-				<h2>Patient density</h2>
+			<div class="scary">
+				<div class="animatedParent animateOnce" data-sequence='500' style="white-space: nowrap;">
+					<div class="animated fadeInLeft" data-id="1">
+						Diabetes:
+					</div>
+					<div class="animated fadeInLeft" data-id="2">
+						A chronic disease<br>
+					</div>
+					<div class="animated fadeInLeft" data-id="3">
+						has impacted over<br>
+					</div>
+					<div class="animated fadeInLeft" data-id="4">
+						463 million people<br>
+					</div>
+					<div class="animated fadeInLeft" data-id="5">
+						worldwide!<br>
+					</div>
+				</div>
+
+				<div class="container-fluid">
+					<div class="container ammap2">
+						<div id="chartdiv"></div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
-		
+
 		<script src="Home_2/Amcharts/core.js"></script>
 		<script src="Home_2/Amcharts/maps.js"></script>
-		
-		
+
+
 		<script src="Home_2/Amcharts/worldHigh.js"></script>
 		<script src="Home_2/Amcharts/worldLow.js"></script>
 		<script src="Home_2/Amcharts/themes/dark.js"></script>
 		<script src="Home_2/Amcharts/themes/material.js"></script>
 		<script src="Home_2/Amcharts/themes/animated.js"></script>
-		
+
 		<script type="text/javascript" src="Home_2/map_home_2.js"></script>
 
 
 
 		<div class="blank-space">
-		</div><div class="blank-space">
+		</div>
+		<div class="blank-space">
 		</div>
 
 		<div class="animatedParent animateOnce">
@@ -256,7 +262,7 @@
 
 
 		<div class="container-fluid">
-			<div class="animatedParent animateOnce" data-sequence='1000' data-appear-top-offset='-150'>
+			<div class="animatedParent animateOnce" data-sequence='1000' data-appear-top-offset='-200'>
 				<div class="animated fadeIn" data-id="1">
 					<div class="container">
 						<h1 class="text-center">But we have a solution</h1>
@@ -264,7 +270,7 @@
 				</div>
 				<div class="animated fadeIn" data-id="2">
 					<div class="container">
-					<h1 class="text-center">Introducing</h1>
+						<h1 class="text-center">Introducing</h1>
 					</div>
 				</div>
 
@@ -353,6 +359,7 @@
 			$(document).ready(function() {
 				wordflick();
 			});
+
 		</script>
 		<div class="container text-center">
 			<h1>
@@ -602,6 +609,7 @@
 				image.style.backgroundPosition = x + 'px';
 			});
 		});
+
 	</script>
 	<!--
 	<script>
@@ -619,4 +627,6 @@
 	</script>
 
 	<script src="Common/css3-animate-it.js"></script>
-</body></html>
+</body>
+
+</html>
