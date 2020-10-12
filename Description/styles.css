@@ -205,16 +205,17 @@ sup {
 .counters {
 	font-size: 2rem;
 	margin: 1%;
-	display: block;
+	display: inline-block;
 	font-family: "montserrat", sans-serif;
 	width: 100%;
 	overflow: hidden;
 }
 
 
-@media(max-width:500px){ 
-.counters {
-	font-size: 1.5rem;
+@media(max-width:500px) {
+	.counters {
+		font-size: 1.5rem;
+		display: block;
 	}
 }
 
@@ -263,7 +264,7 @@ sup {
 }
 
 @media(max-width:500px) {
-	
+
 	.counter-inner-width .col {
 		font-size: 0.5rem;
 	}
@@ -406,30 +407,34 @@ external_knowmore {
 }
 
 
-/*------Counter------*/
-@property --num {
-	syntax: "<integer>";
-	initial-value: 134;
-	inherits: false;
+
+
+
+
+
+
+
+
+.icon{
+	font-size: 3rem;
+	text-align: center;
 }
 
-countr {
-	counter-reset: num var(--num);
-	animation: counter 12s ease;
-	font: 800 40px system-ui;
-	padding: 2rem;
+
+
+.counters {
+	font-size: 2rem;
+	margin: 1%;
+	display: inline-block;
+	font-family: "montserrat", sans-serif;
+	width: 100%;
+	overflow: hidden;
 }
 
-countr::after {
-	content: counter(num);
-}
 
-@keyframes counter {
-	from {
-		--num: 0;
-	}
-
-	to {
-		--num: 134;
+@media(max-width:500px) {
+	.counters {
+		font-size: 1.5rem;
+		display: block;
 	}
 }

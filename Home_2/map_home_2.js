@@ -1,31 +1,29 @@
-		/**
-		 * ---------------------------------------
-		 * This demo was created using amCharts 4.
-		 * 
-		 * For more information visit:
-		 * https://www.amcharts.com/
-		 * 
+		/*** ---------------------------------------
+		 * World map created using amCharts 4.
 		 * Documentation is available at:
 		 * https://www.amcharts.com/docs/v4/
 		 * ---------------------------------------
 		 */
-
+		//Animated
+am4internal_webpackJsonp(["ab45"],{lhmh:function(t,e,i){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var n=i("aCit"),a=function(t){Object(n.b)(t,"SpriteState")&&(t.transitionDuration=400),Object(n.b)(t,"Component")&&(t.rangeChangeDuration=500,t.interpolationDuration=500,t.sequencedInterpolation=!1,Object(n.b)(t,"SankeyDiagram")&&(t.sequencedInterpolation=!0),Object(n.b)(t,"FunnelSeries")&&(t.sequencedInterpolation=!0)),Object(n.b)(t,"Chart")&&(t.defaultState.transitionDuration=2e3,t.hiddenState.transitionDuration=1e3),Object(n.b)(t,"Tooltip")&&(t.animationDuration=400,t.defaultState.transitionDuration=400,t.hiddenState.transitionDuration=400),Object(n.b)(t,"Scrollbar")&&(t.animationDuration=500),Object(n.b)(t,"Series")&&(t.defaultState.transitionDuration=1e3,t.hiddenState.transitionDuration=700,t.hiddenState.properties.opacity=1,t.showOnInit=!0),Object(n.b)(t,"MapSeries")&&(t.hiddenState.properties.opacity=0),Object(n.b)(t,"PercentSeries")&&(t.hiddenState.properties.opacity=0),Object(n.b)(t,"FunnelSlice")&&(t.defaultState.transitionDuration=800,t.hiddenState.transitionDuration=1e3,t.hiddenState.properties.opacity=1),Object(n.b)(t,"Slice")&&(t.defaultState.transitionDuration=700,t.hiddenState.transitionDuration=1e3,t.hiddenState.properties.opacity=1),Object(n.b)(t,"Preloader")&&(t.hiddenState.transitionDuration=2e3),Object(n.b)(t,"Column")&&(t.defaultState.transitionDuration=700,t.hiddenState.transitionDuration=1e3,t.hiddenState.properties.opacity=1),Object(n.b)(t,"Column3D")&&(t.hiddenState.properties.opacity=0)};window.am4themes_animated=a}},["lhmh"]);
+		//Animated	
+		//Dark
+am4internal_webpackJsonp(["356d"],{"J7F+":function(t,e,c){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var b=c("aCit"),r=c("8ZqG"),o=function(t){Object(b.b)(t,"InterfaceColorSet")&&(t.setFor("stroke",Object(r.c)("#000000")),t.setFor("fill",Object(r.c)("#2b2b2b")),t.setFor("primaryButton",Object(r.c)("#6794dc").lighten(-.2)),t.setFor("primaryButtonHover",Object(r.c)("#6771dc").lighten(-.2)),t.setFor("primaryButtonDown",Object(r.c)("#68dc75").lighten(-.2)),t.setFor("primaryButtonActive",Object(r.c)("#68dc75").lighten(-.2)),t.setFor("primaryButtonText",Object(r.c)("#FFFFFF")),t.setFor("primaryButtonStroke",Object(r.c)("#6794dc")),t.setFor("secondaryButton",Object(r.c)("#3b3b3b")),t.setFor("secondaryButtonHover",Object(r.c)("#3b3b3b").lighten(.1)),t.setFor("secondaryButtonDown",Object(r.c)("#3b3b3b").lighten(.15)),t.setFor("secondaryButtonActive",Object(r.c)("#3b3b3b").lighten(.15)),t.setFor("secondaryButtonText",Object(r.c)("#bbbbbb")),t.setFor("secondaryButtonStroke",Object(r.c)("#3b3b3b").lighten(-.2)),t.setFor("grid",Object(r.c)("#bbbbbb")),t.setFor("background",Object(r.c)("#000000")),t.setFor("alternativeBackground",Object(r.c)("#ffffff")),t.setFor("text",Object(r.c)("#ffffff")),t.setFor("alternativeText",Object(r.c)("#000000")),t.setFor("disabledBackground",Object(r.c)("#bbbbbb"))),Object(b.b)(t,"Scrollbar")&&(t.background.fillOpacity=.4,t.thumb.background.fillOpacity=.5)};window.am4themes_dark=o}},["J7F+"]);
+		//Dark
+		//Material
+am4internal_webpackJsonp(["8593"],{d66p:function(c,t,e){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var b=e("aCit"),o=e("8ZqG"),n=function(c){Object(b.b)(c,"ColorSet")&&(c.list=[Object(o.c)("#F44336"),Object(o.c)("#E91E63"),Object(o.c)("#9C27B0"),Object(o.c)("#673AB7"),Object(o.c)("#3F51B5"),Object(o.c)("#2196F3"),Object(o.c)("#03A9F4"),Object(o.c)("#00BCD4"),Object(o.c)("#009688"),Object(o.c)("#4CAF50"),Object(o.c)("#8BC34A"),Object(o.c)("#CDDC39"),Object(o.c)("#FFEB3B"),Object(o.c)("#FFC107"),Object(o.c)("#FF9800"),Object(o.c)("#FF5722"),Object(o.c)("#795548"),Object(o.c)("#9E9E9E"),Object(o.c)("#607D8B")],c.minLightness=.2,c.maxLightness=.7,c.reuse=!0),Object(b.b)(c,"ResizeButton")&&(c.background.cornerRadiusTopLeft=20,c.background.cornerRadiusTopRight=20,c.background.cornerRadiusBottomLeft=20,c.background.cornerRadiusBottomRight=20),Object(b.b)(c,"Tooltip")&&(c.animationDuration=800)};window.am4themes_material=n}},["d66p"]);
+		//Material
 		// Themes begin
 		am4core.useTheme(am4themes_dark);
 		am4core.useTheme(am4themes_material);
 		am4core.useTheme(am4themes_animated);
 		// Themes end
-
 		// Create map instance
 		var chart = am4core.create("chartdiv", am4maps.MapChart);
-
 
 		var title = chart.titles.create();
 		title.text = "[bold font-size: 20] Diabetes | A global issue [/]\n";
 		title.textAlign = "middle";
-
-		//To change individual colors for bubbles use code below in country id
-		/*"color": "#de4c4f"*/
 
 		var latlong = {
 			"AD": {
@@ -989,9 +987,7 @@
 				"longitude": 30
 			}
 		};
-
-
-				//To change individual colors for bubbles use code below in country id
+		//To change individual colors for bubbles use code below in country id
 		/*"color": "#de4c4f"*/
 		var mapData = [{
 				"id": "AF",
@@ -2010,23 +2006,18 @@
 			}
 		];
 
-		// Add lat/long information to data
 		for (var i = 0; i < mapData.length; i++) {
 			mapData[i].latitude = latlong[mapData[i].id].latitude;
 			mapData[i].longitude = latlong[mapData[i].id].longitude;
 		}
-
 		// Set map definition
 		chart.geodata = am4geodata_worldLow;
-
 		// Set projection
 		chart.projection = new am4maps.projections.Miller();
-
 		// Create map polygon series
 		var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 		polygonSeries.exclude = ["AQ"];
 		polygonSeries.useGeodata = true;
-
 
 		var imageSeries = chart.series.push(new am4maps.MapImageSeries());
 		imageSeries.data = mapData;
@@ -2055,7 +2046,6 @@
 		circle.propertyFields.stroke = "color";
 		circle.propertyFields.fill = "color";
 
-
 		circle2.events.on("inited", function (event) {
 			animateBullet(event.target);
 		})
@@ -2074,14 +2064,11 @@
 				animateBullet(event.target.object);
 			})
 		}
-
-
 		/*
 		circle.tooltipHTML = "<b><span style='font-size:15px;'>{name}</span> <br><b>Population:</b> {pop}<br><b>African Diaspora: </b>{dias}<br><b>Percent:</b>{Pc}";
 		*/
 		circle.tooltipText = "{name}:[bold]{value}[/]";
 		circle.tooltipHTML = "<b><span style='font-size:15px;'>{name}</span><br><b>D Patients: {value}</b>";
-
 
 		imageSeries.heatRules.push({
 			"target": circle,
