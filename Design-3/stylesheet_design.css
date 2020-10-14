@@ -60,7 +60,7 @@ body {
 	height: 600px;
 	background-image: url(./imgs/Design-1.png);
     background-attachment: fixed;
-	background-position: bottom;
+	background-position: bottom 75px right 0px;
 	opacity: 1;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -188,12 +188,14 @@ body {
 	}
 }
 
+/*
 .OneOne {
-	padding: 2% 0%;
+	padding: 2px 0%;
 }
+*/
 
 .OneOneA {
-	padding: 3% 0 5% 0%;
+	padding-top: 100px;
 }
 
 .OneOneA .card {
@@ -234,12 +236,14 @@ body {
 	transform: rotate(180deg);
 } 
 
+/*
 .OneTwo {
     padding-top: 7%;
 }
+*/
 
 .OneTwo img {
-	width: 80%;
+	width: 60%;
 	display: block;
 	margin: auto;
 }
@@ -273,23 +277,26 @@ body {
 }
 
 
+/*
 .TwoZero {
-	padding: 2% 0%;
+	padding: 2px 0%;
 }
+*/
 
 /* .TwoOne {	 
  } */
 
 .colp-containerOne {
-	padding: 0 0 5% 0;
+	padding: 0 0 20px 0;
+    padding-top: 125px;
 }
 
 .colp-containerTwo {
-	padding: 0 0 5% 0;
+	padding: 0 0 20px 0;
 }
 
 .TwoTwo {
-    margin-bottom: 10%;
+    margin-bottom: 20px;
 }
 
 @media(max-width:500px) {
@@ -308,9 +315,11 @@ body {
 
 }
 
+/*
 .ThreeOne {
 	padding: 2% 0%;
 }
+*/
 
  /* .video{
 	border: 1px solid black;
@@ -321,14 +330,17 @@ body {
 }
 
 .ThreeTwo {
-	padding: 15% 0% 0% 0%;
-	margin-left: 0;
+	padding-top: 80px;
 }
 
 .ThreeTwo img {
 	display: block;
 	margin: auto;
 	width: 80%;
+}
+
+.accordion {
+    padding-bottom: 20px;
 }
 
 @media(max-width:500px) {
@@ -374,11 +386,12 @@ body {
 }
 
 .FiveOne {
-	padding: 0 5% 0 5%;
+    padding-top: 60px;
+	padding-bottom: 20px;
 }
 
 .FiveTwo {
-	padding: 0 5% 0 0;
+	padding-bottom: 20px;
 }
 
 @media(max-width:500px) {
@@ -426,12 +439,13 @@ body {
 
 .parallax {
 	height: auto;
-    background-image: linear-gradient(to right, #68e2ff , #66a6ff);
+/*    background-color: #3bbcff;*/
+    background-image: linear-gradient(to right, #4d9eff , #3b9fff);
 /*	background-color: #75B8C8;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -1217,7 +1231,7 @@ area {
 }
 
 .centred-child-2 .img-fluid {
-    padding-top: 12%;
+/*    padding-top: 12%;*/
 	width: 100%;
 }
 
