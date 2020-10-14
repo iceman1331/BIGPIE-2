@@ -200,7 +200,6 @@ sup {
 }
 
 /*Counter-New*/
-/*Counter-New*/
 
 .counters {
 	font-size: 2rem;
@@ -216,80 +215,6 @@ sup {
 	.counters {
 		font-size: 1.5rem;
 		display: block;
-	}
-}
-
-/*Counter-New*/
-/*Counter-New*/
-/*Counter*/
-.counter-middle {}
-
-@media(max-width:500px) {
-	.counter-middle {
-		padding: 0;
-	}
-}
-
-.counting-sec {
-	margin: auto;
-	padding: 1% 0;
-	width: 80%;
-}
-
-@media(max-width:500px) {
-	.counting-sec {
-		width: 100%;
-		margin-top: auto;
-	}
-}
-
-.counter-inner-width {
-	max-width: 100%;
-	margin: auto;
-	display: inline-block;
-}
-
-@media(max-width:500px) {
-	.counter-inner-width {
-		max-width: 100%;
-	}
-}
-
-.counter-inner-width .col {
-	flex: 1;
-	text-align: center;
-	font-size: 1rem;
-	color: #000;
-	text-transform: uppercase;
-}
-
-@media(max-width:500px) {
-
-	.counter-inner-width .col {
-		font-size: 0.5rem;
-	}
-}
-
-.counter-inner-width .col i {
-	font-size: 3rem;
-	color: #333;
-}
-
-@media(max-width:500px) {
-	.counter-inner-width .col i {
-		font-size: 2rem;
-	}
-}
-
-.counter-inner-width .num {
-	font-size: 2rem;
-	margin: 20px 0;
-}
-
-@media(max-width:500px) {
-	.counter-inner-width .num {
-		font-size: 1.5rem;
-		margin: 5px 0;
 	}
 }
 
@@ -406,18 +331,10 @@ external_knowmore {
 	background-color: rgba(153, 187, 255, 0.5);
 }
 
-
-
-
-
-
-
-
-
-
 .icon{
 	font-size: 3rem;
 	text-align: center;
+	color: #336699;
 }
 
 

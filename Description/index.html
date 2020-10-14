@@ -26,15 +26,14 @@
 	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
 	<link rel="stylesheet" href="styles.css" />
 	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
-
-	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
-
-	<script src="CounterUp/jquery.waypoints.min.js"></script>
+	<link rel="stylesheet" href="../Common/jquery.fancybox.min.css" />
+	
 
 	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
-
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
 	<script src="CounterUp/jquery.countup.min.js" charset="utf-8"></script>
-
+	<script src="CounterUp/jquery.waypoints.min.js"></script>
+	
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 
@@ -139,7 +138,6 @@
 
 	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
 
-
 	<div id="cta">
 		<div class="desc-title">
 			<h1> Description </h1>
@@ -161,8 +159,11 @@
 
 						<div class="centred-child">
 							<div class="img" style="height:94%; width:94%;">
-								<img src="Combined_1.png" alt="" />
-								<img class="img-fluid" src="map-2.png" alt="" />
+
+								<a href="map-2.png" data-fancybox data-caption="Image description">
+									<img src="Combined_1.png" alt="" />
+								</a>
+
 								<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
 							</div>
 						</div>
@@ -238,7 +239,7 @@
 									<h6>
 										<div class="counters"> <span class="counter">4</span> of <span class="counter">10</span></div>
 									</h6>
-									<p class="text-center">out of 10 Diabetics use insulin injections In India and Gulf.
+									<p class="text-center">Diabetics use insulin injections In India and Gulf.
 									</p>
 								</div>
 								<div class="col-sm">
@@ -515,6 +516,7 @@
 			'time': 2500,
 			'delay': 5
 		});
+
 	</script>
 
 
@@ -535,9 +537,14 @@
 			});
 		}
 		/*Button reveal*/
+
 	</script>
 
 	<script src="../Common/flickity.pkgd.min.js"></script>
 	<script src="../Common/css3-animate-it.js"></script>
+	
+	<script src="../Common/jquery.fancybox.min.js" charset="utf-8"></script>
 
-</body></html>
+</body>
+
+</html>
