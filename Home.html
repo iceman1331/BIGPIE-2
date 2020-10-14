@@ -22,8 +22,6 @@
 	<link rel="stylesheet" href="Common/flickity.min.css" />
 	<link rel="stylesheet" href="Common/animations.css" />
 
-
-
 	<script src="Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
 	<script src="Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
 
@@ -34,6 +32,8 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 <style>
 </style>
@@ -49,7 +49,6 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
-		
 	</script>
 
 	<header>
@@ -66,8 +65,7 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-project-diagram"></i>
-							<navtabs class="nav2"> Project</navtabs>
+							<i class="fas fa-project-diagram"></i> Project
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="../Description/index.html">Description</a>
@@ -97,8 +95,7 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-users"></i>
-							<navtab class="nav2">About Us</navtab>
+							<i class="fas fa-users"></i> About Us
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="../Team/index.html">Team</a>
@@ -155,7 +152,7 @@
 					<div class="container">
 						<div class="container">
 							<div class="container">
-								<h1 style="text-align: center;">Diabetes and Insulin Production</h1>
+								<h1 style="text-align: center;">How is Diabetes caused</h1>
 								<img class="img-fluid" src="Home_2/T--IISER_Bhopal--insulin_production.png">
 							</div>
 						</div>
@@ -168,28 +165,7 @@
 
 		<div class="blank-space">
 		</div>
-		<!-- Only need the section-container because the full-page view of the codepen sandbox doesn't play nice with the last-child pseudo selector and the section elements. -->
 
-		<!--
-<div class="section-container">
-  <section>
-    <h1>Each section...</h1>
-  </section>
-  <section>
-  </section>
-  <section>
-    <h1>Go ahead...</h1>
-  </section>
-  <section>
-    <h1>Keep scrolling...</h1>
-  </section>
-  <section>
-    <h1>Ok, thats it.</h1>
-  </section>
-</div>
--->
-
-		<!-- The one thing you have to remember about this method of slanting sections is to have all content within the section inside of an element or else it will be slanted just like its section container (doesn't apply to last section). -->
 
 
 
@@ -273,8 +249,6 @@
 			</div>
 		</div>
 
-
-
 		<div class="blank-space">
 		</div>
 
@@ -288,7 +262,7 @@
 				</div>
 				<div class="animated fadeIn" data-id="2">
 					<div class="container">
-						<h1 class="text-center">Introducing</h1>
+						<h1 class="text-center sol3">Introducing</h1>
 					</div>
 				</div>
 
@@ -301,13 +275,16 @@
 					</div>
 				</div>
 
-
-
-				<div class="animated pulse" data-id="3">
-					<div class="animated fadeInDownShort slowest" data-id="4">
-						<div class="container text-center">
-							<ttext class=""><b>B</b>eta cells <b>I</b>n <b>G</b>ut <b>P</b>roducing <b>I</b>nsulin using <b>E</b>.coli</ttext>
+				<div class="animated fadeInLeft slow" data-id="4">
+					<div class="container">
+						<div class="text-center pieLine">
 						</div>
+					</div>
+				</div>
+
+				<div class="animated fadeInDownShort slowest" data-id="5">
+					<div class="container text-center">
+						<ttext class=""><b>B</b>eta cells <b>I</b>n <b>G</b>ut <b>P</b>roducing <b>I</b>nsulin using <b>E</b>.coli</ttext>
 					</div>
 				</div>
 
@@ -373,26 +350,6 @@
 		</div>
 		<div class="blank-space">
 		</div>
-
-
-
-
-
-
-
-
-		<!--
-		<div class="container">
-			<div class="patient_counter">Dibetics since you visited this page
-				<pat id="counter">0</pat>
-			</div>
-		</div>
-		-->
-
-
-
-
-
 
 
 
@@ -533,7 +490,6 @@
 					</div>
 				</div>
 
-
 			</div>
 		</div>
 	</footer>
@@ -549,11 +505,11 @@
 			pageDots: true,
 			setGallerySize: false,
 		};
-		
+
 		var carousel = document.querySelector('[data-carousel]');
 		var slides = document.getElementsByClassName('carousel-cell');
 		var flkty = new Flickity(carousel, options);
-		
+
 		flkty.on('scroll', function() {
 			flkty.slides.forEach(function(slide, i) {
 				var image = slides[i];
@@ -561,7 +517,6 @@
 				image.style.backgroundPosition = x + 'px';
 			});
 		});
-		
 	</script>
 	<!--
 	<script>
@@ -574,10 +529,6 @@
 	</script>
 	-->
 
-	<script>
-
-
-	</script>
 
 	<script src="Common/css3-animate-it.js"></script>
 </body></html>

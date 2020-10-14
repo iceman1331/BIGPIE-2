@@ -148,30 +148,23 @@
 		</div>
 	</main>
 
-
-	<div class="writer-container">
-		<div id="tbigpie">
-			<h1>The Bigpie</h1>
-		</div>
-	</div>
-	<svg viewbox="0 0 100 100">
-		<defs>
-			<filter id="f" x="0" y="0" width="1" height="1" primitiveUnits="objectBoundingBox">
-				<feSpecularLighting surfaceScale="1" specularConstant="100" specularExponent="2" result="lighting">
-					<animate id="a" attributeName="lighting-color" values="gold;lime;magenta;gold" dur="0.125s" repeatDur="1s"></animate>
-					<animate dur="5s" repeatCount="indefinite" begin="a.end"></animate>
-					<fePointLight x="0.5" y="0.5" z="-1000">
-						<animate attributeName="x" values="-3;-3;3;3;-3" dur="5s" repeatcount="indefinite"></animate>
-						<animate attributeName="y" values="-3;3;3;-3;-3" dur="5s" repeatcount="indefinite"></animate>
-					</fePointLight>
-				</feSpecularLighting>
-				<feComposite in="SourceGraphic" in2="lighting" type="xor"></feComposite>
-			</filter>
-		</defs>
-		<text id="txt" filter="url(#f)" y="50" dominant-baseline="middle" x="50" text-anchor="middle" fill="#000">BIGPIE</text>
-	</svg>
+	<div id="chartdiv"></div>
+	
+	<script src="Amcharts/core.js"></script>
+<script src="Amcharts/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+<script src="Amcharts/worldLow.js"></script>
+<script src="Amcharts/themes/animated.js"></script>
+<script src="Amcharts/themes/dark.js"></script>
+<script src="Amcharts/themes/material.js"></script>
+<script src="Home.js"></script>
+<script src="map_home_2.js"></script>
+	
 
 
+	
+	
+	
 	<!---MAP-->
 	<!---MAP-->
 	<!---MAP-->
@@ -180,29 +173,9 @@
 	
 	
 
-	<div class='animatedParent'>
-		<div class="animated bounceInDown">
-			<div class="container ammap2">
-				<div id="chartdiv"></div>
-			</div>
-		</div>
-	</div>
-
-
-	<script src="../Home_2/Amcharts/core.js"></script>
-	<script src="../Home_2/Amcharts/maps.js"></script>
-	<script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
 	
 
-	<script src="../Home_2/Amcharts/themes/kelly.js"></script>
-	<script src="../Home_2/Amcharts/themes/dark.js"></script>
-	<script src="../Home_2/Amcharts/themes/spiritedaway.js"></script>
 
-	<script src="../Home_2/Amcharts/themes/frozen.js"></script>
-	<script src="../Home_2/Amcharts/themes/material.js"></script>
-	
-	<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-	<script type="text/javascript" src="map_home.js"></script>
 
 	
 	<!--Dark+materia-->
