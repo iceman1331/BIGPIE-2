@@ -159,27 +159,31 @@
 			</div>
 
 	<div class="row">
+<!--
 		<div class="col-sm-3" style="padding:2% 0 0 20%;">
 			<div class="pulsating-circle"></div>
 		</div>
-		<div class="col-sm-6" style="text-align: center;">
+-->
+		<div class="col-sm-6 offset-sm-3" style="text-align: center;">
 			<h3>Click on the <strong><u>Parts</u></strong> below</h3>
 		</div>
+<!--
 		<div class="col-sm-3" style="padding:2% 10% 0 5%;">
 			<div class="pulsating-circle"></div>
 		</div>
+-->
 	</div>
 
-	<div class="container" style="margin-top: 0;">
-		<img src="imgs/T--IISER_Bhopal--clickable_design.png" id="map-image" style="width: 1200px; max-width: 100%; height: auto;" alt="" usemap="#map" class="" />
+	<div class="container clickable">
+		<img src="imgs/T--IISER_Bhopal--clickable_design.png" id="map-image" alt="" usemap="#map" class="" />
 		<map name="map" class="modalmap">
-			<area class="" shape="circle" coords="479, 257, 77" title="Part 1" href="#plasmid1" onmouseover="writeText('Part_1')" />
+			<area class="js-trigger" shape="circle" coords="479, 257, 77" title="Part 1" href="#plasmid1" onmouseover="writeText('Part_1')" />
 
-			<area shape="circle" coords="674, 260, 77" title="Part 2" href="#plasmid2" onmouseover="writeText('Part_2')" />
+			<area class="js-trigger" shape="circle" coords="674, 260, 77" title="Part 2" href="#plasmid4" onmouseover="writeText('Part_2')" />
 
-			<area shape="rect" coords="817, 119, 1068, 239" title="Part 3" href="#plasmid3" onmouseover="writeText('Part_3')" />
+			<area class="js-trigger" shape="rect" coords="817, 119, 1068, 239" title="Part 3" href="#plasmid2" onmouseover="writeText('Part_3')" />
 
-			<area shape="rect" coords="803, 260, 1038, 388" title="Part 4" href="#plasmid4" onmouseover="writeText('Part_4')" />
+			<area class="js-trigger" shape="rect" coords="803, 260, 1038, 388" title="Part 4" href="#plasmid3" onmouseover="writeText('Part_4')" />
 		</map>
 
 		<h4 id="desc" class="text-center" style="">Some Description here...</h4>
@@ -198,7 +202,7 @@
 
 	<div class="ZeroTwo">
         <h1 class="text hr1" style="text-align: center;">Project Principle</h1>
-		<p class="text" style="text-align: center;">
+		<p>
             Our project is based on the principle of “transdifferentiation”. We intend to reprogram a set of the newly differentiated intestinal crypt cells in the duodenum(gut) to β-islet-like cells, capable of glucose-responsive insulin secretion.
         </p>
     </div>
@@ -213,16 +217,15 @@
 	</div>
 
 	<div class="ZeroTwo">
-				<p class="text">
-					Previously transdifferentiation has been performed in human organoids and mice models with the aid of adenovirus vectors: a viral delivery system. But due to the pathogenic nature of viruses and the risks associated with them
-					(mutagenesis, oncogenesis<sup>1</sup> and immunogenicity<sup>2</sup>). We decided to replace the viral vector with a probiotic bacterial vector that is safely accepted into the host.
-				</p>
-				<p style="text-align: center;">Keeping in mind these aspects our design stands on <b>4 pillars</b> which form the backbone of our work.</p>
-			</div>
+        <p class="text">
+            Previously transdifferentiation has been performed in human organoids and mice models with the aid of adenovirus vectors: a viral delivery system. But due to the pathogenic nature of viruses and the risks associated with them (mutagenesis, oncogenesis and immunogenicity). We decided to replace the viral vector with a probiotic bacterial vector that is safely accepted into the host.
+            </p>
+        <p class="ZeroTwoOne">Keeping in mind these aspects our design stands on <b>4 pillars</b> which form the backbone of our work.</p>
+	</div>
 
 	<section class="parallax" style="opacity: 1;">
-		<div class="parallax-inner">
-			<he1 id="plasmid2" class="underline-small">Vector for Transport and Delivery</he1>
+		<div class="parallax-inner" id="plasmid1">
+			<he1 class="underline-small">Vector for Transport and Delivery</he1>
 		</div>
 	</section>
 
@@ -334,7 +337,7 @@
 	</div>
 
 	<section class="parallax" style="opacity: 0.9;">
-		<div class="parallax-inner">
+		<div class="parallax-inner" id="plasmid2">
 			<he1 id="coli" class="underline-small">Attachment and Injection of Proteins</he1>
 		</div>
 	</section>
@@ -354,8 +357,8 @@
                 <div class="centred-child-2">
                     <div class='animatedParent animateOnce'>
 					   <div class="animated bounceInLeft container">
-					       <a href="imgs/T--IISER_Bhopal--t3ss.png" data-fancybox data-caption="Image description">
-						      <img src="imgs/T--IISER_Bhopal--t3ss.png" class="img-fluid" alt="Responsive image">
+					       <a href="imgs/T--IISER_Bhopal--tfs.png" data-fancybox data-caption="Image description">
+						      <img src="imgs/T--IISER_Bhopal--tfs.png" class="img-fluid" alt="Responsive image">
 					       </a>
 					       <div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
                         </div>
@@ -444,7 +447,7 @@
 	</div>
 
 	<section class="parallax" style="opacity: 0.9;">
-		<div class="parallax-inner">
+		<div class="parallax-inner" id="plasmid3">
 			<he1 class="underline-small">Targeting System</he1>
 		</div>
 	</section>
@@ -596,7 +599,7 @@
 	</div>
 
 	<section class="parallax" style="opacity: 0.9;">
-		<div class="parallax-inner">
+		<div class="parallax-inner" id="plasmid4">
 			<he1 class="underline-small">Biosafety Mechanism</he1>
 		</div>
 	</section>
