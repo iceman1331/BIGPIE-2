@@ -426,12 +426,6 @@ ttext b:nth-child(6) {
 
 
 
-
-
-
-
-
-
 .animation {
 	text-align: center;
 	color: #000;
@@ -519,7 +513,7 @@ ttext b:nth-child(6) {
 	font-weight: 800;
 	display: flex;
 	color: #000;
-	padding: 0 5% 0 5%;
+	padding: 5% 5% 5% 5%;
 	vertical-align: middle;
 	align-items: center;
 	height: 100%;
@@ -530,7 +524,8 @@ ttext b:nth-child(6) {
 	-webkit-font-smoothing: antialiased !important;
 	-moz-font-smoothing: antialiased !important;
 	text-rendering: optimizelegibility !important;
-	letter-spacing: .05em
+	letter-spacing: .05em;
+	background-color: rgba(0,0,0,0.05);
 	/*box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);*/
 }
 
