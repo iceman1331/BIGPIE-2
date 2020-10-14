@@ -236,15 +236,20 @@ body {
 
 .pie-slider .carousel-cell .inner .btn {
 	border: 1px solid #fff;
-	padding: 14px 18px;
+	padding: 5px 9px;
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.8rem;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	color: #fff;
 	text-decoration: none;
-	transition: all 0.2s ease;
+	transition: all 1s ease;
 }
+.pie-slider .carousel-cell .inner .btn:hover {
+	background-color: #fff;
+	color:#000;
+}
+
 
 
 .pie-slider .flickity-page-dots {
@@ -577,7 +582,6 @@ ttext b:nth-child(6) {
 /*----------Map--------------*/
 /*----------Map--------------*/
 
-
 .atlas{	
 	display: block;
 	width:90%;
@@ -585,4 +589,6 @@ ttext b:nth-child(6) {
 	float: right;
 }
 
-sections-2
+.pill{
+	font-size: 2.25rem;
+}

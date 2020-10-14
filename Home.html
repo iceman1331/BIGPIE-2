@@ -22,18 +22,21 @@
 	<link rel="stylesheet" href="Common/flickity.min.css" />
 	<link rel="stylesheet" href="Common/animations.css" />
 
-	<link rel="stylesheet" href="Home_2/Stylesheet_Home.css" />
+	
 
 	<script src="Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
 	<script src="Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
 
 	<link rel="stylesheet" href="Common/Pre-footer_buttons/footer_button_style.css" />
 	<link rel="stylesheet" href="Common/NavBar/custom-navbar.css" />
+	
+	<link rel="stylesheet" href="Home_2/Stylesheet_Home.css" />
 
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 </head>
-
+<style>
+	</style>
 <body>
 	<div class="loader">
 		<video autoplay muted loop src="Common/T--IISER_Bhopal--Loader.mp4"></video>
@@ -62,7 +65,7 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-project-diagram"></i> Project
+							<i class="fas fa-project-diagram"></i><navtabs class="nav2"> Project</navtabs>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="../Description/index.html">Description</a>
@@ -92,7 +95,7 @@
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-users"></i> About Us
+							<i class="fas fa-users"></i> <navtab class="nav2">About Us</navtab>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="../Team/index.html">Team</a>
@@ -138,9 +141,54 @@
 			<video autoplay muted src="Home_2/Videos/T--IISER-Bhopal--Diabetes.mp4"></video>
 		</div>
 
+		<div class="blank-space">
+		</div><div class="blank-space">
+		</div>
+		
+			<div class="animatedParent animateOnce">
+			<div class="animated fadeInUp">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="container">
+							<div class="container">
+								<h1 style="text-align: center;">Diabetes and Insulin Production</h1>
+								<img class="img-fluid" src="Home_2/T--IISER_Bhopal--insulin_production.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="blank-space">
 		</div>
+		<!-- Only need the section-container because the full-page view of the codepen sandbox doesn't play nice with the last-child pseudo selector and the section elements. -->
+
+		<!--
+<div class="section-container">
+  <section>
+    <h1>Each section...</h1>
+  </section>
+  <section>
+  </section>
+  <section>
+    <h1>Go ahead...</h1>
+  </section>
+  <section>
+    <h1>Keep scrolling...</h1>
+  </section>
+  <section>
+    <h1>Ok, thats it.</h1>
+  </section>
+</div>
+-->
+
+<!-- The one thing you have to remember about this method of slanting sections is to have all content within the section inside of an element or else it will be slanted just like its section container (doesn't apply to last section). -->
+		
+		
+		<div class="blank-space">
+		</div>
+		
 
 		<div class="scary">
 			<div class="animatedParent animateOnce" data-sequence='500' style="white-space: nowrap;">
@@ -225,20 +273,7 @@
 			</div>
 		</div>
 
-		<div class="animatedParent animateOnce">
-			<div class="animated fadeInUp">
-				<div class="container-fluid">
-					<div class="container">
-						<div class="container">
-							<div class="container">
-								<h1 style="text-align: center;">Diabetes and Insulin Production</h1>
-								<img class="img-fluid" src="Home_2/T--IISER_Bhopal--insulin_production.png">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+	
 
 		<div class="blank-space">
 		</div>
@@ -261,9 +296,7 @@
 				<div class="animated fadeIn slower" data-id="3">
 					<div class="container">
 						<div class="text-center bigpie">
-							<tpie>The</tpie>
-							<tbig>BIG</tbig>
-							<tpie>Pie</tpie>
+							<tpie>The</tpie><tbig>BIG</tbig><tpie>Pie</tpie>
 						</div>
 					</div>
 				</div>
@@ -281,7 +314,7 @@
 
 				<div class="animated fadeIn slowest" data-id="5">
 					<div class="container bigpietext">
-						<p class="text-center">We are creating a pill containing enhanced probiotic bacteria
+						<p class="text-center pill">We are creating a pill containing enhanced probiotic bacteria
 							<br> capable of producing insulin in-vivo. To help diabetes patients and replace insulin injections. </p>
 					</div>
 				</div>
