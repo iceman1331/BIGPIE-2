@@ -895,6 +895,7 @@ a {
 	height: 100%;
 	width: 2px;
 	background-color: #252525;
+	background-color: #fff;	
 }
 
 .btn > *:before {
@@ -985,5 +986,4 @@ a {
 	.centred-child-2 .img-fluid {
 		width: 100%;
 	}
-
 }
