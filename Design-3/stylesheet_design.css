@@ -72,7 +72,7 @@ body {
 		height: auto;
 		background-attachment: scroll;
 		background-position: center;
-		background-image: ;
+		/* background-image: ; */
 		width: 100%;
 	}
 }
@@ -145,7 +145,7 @@ body {
 	font-family: "museo-sans";
 }
 
-.btn-block {}
+/* .btn-block {} */
 
 .btn {
 	text-transform: none;
@@ -277,8 +277,8 @@ body {
 	padding: 2% 0%;
 }
 
-.TwoOne {	
-}
+/* .TwoOne {	 
+ } */
 
 .colp-containerOne {
 	padding: 0 0 5% 0;
@@ -312,9 +312,9 @@ body {
 	padding: 2% 0%;
 }
 
-.video {
-/*	border: 1px solid black;*/
-}
+ /* .video{
+	border: 1px solid black;
+} */
 
 .img-desc {
     margin-bottom: 5%;
@@ -1107,7 +1107,8 @@ a {
 
 .opacity-animate3 {
 	animation: opt-animation3 0.5s;
-	-moz-animation-fill-mode: forwards -webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
 
@@ -1281,4 +1282,4 @@ img.zoom-img {
 	transition: 0.25s all;
 }
 
-.zoom:hover {}
+/* .zoom:hover {} */
