@@ -1311,3 +1311,26 @@ img.zoom-img {
 }
 
 /* .zoom:hover {} */
+
+
+.parta{
+	outline: none;
+}
+
+.img3{
+	border: 1px solid red;
+	transition: all 0.5s ease;
+}
+
+.img3:hover{
+	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+.inj{
+	margin: auto;
+	width: 80%;
+	height: 80%;
+}
+

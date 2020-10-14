@@ -18,6 +18,11 @@
 	src: url("Made%2520Tommy/MADE%20TOMMY%20ExtraBold_PERSONAL%20USE.otf") format("truetype");
 }
 
+@font-face {
+	font-family: "G";
+	src: url("fonts/Gilroy-Light.otf") format("truetype");
+}
+
 html,
 body {
 	margin: 0;
@@ -502,11 +507,6 @@ ttext b:nth-child(6) {
 
 
 
-
-
-
-
-
 .scary {
 	content: "";
 	font-size: 1.5rem;
@@ -585,5 +585,12 @@ ttext b:nth-child(6) {
 }
 
 .pill{
-	font-size: 2.1rem;
+	font-family: Lato;
+	font-family: Helvetica;
+	font-size: 39.6px;
+	color: rgba(0,0,0,1);
+}
+
+.sol2{
+	font-size: 1.5rem;
 }
