@@ -18,7 +18,6 @@
 	src: url("Made%2520Tommy/MADE%20TOMMY%20ExtraBold_PERSONAL%20USE.otf") format("truetype");
 }
 
-
 html,
 body {
 	margin: 0;
@@ -145,6 +144,9 @@ body {
 
 .primary-carousel-container {
 	background-color: #000;
+
+	display: block;
+	margin: auto;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	-webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -508,7 +510,7 @@ ttext b:nth-child(6) {
 
 .scary {
 	content: "";
-	font-size: 1.75rem;
+	font-size: 1.5rem;
 	font-weight: 800;
 	display: flex;
 	color: #000;
@@ -516,11 +518,9 @@ ttext b:nth-child(6) {
 	vertical-align: middle;
 	align-items: center;
 	height: 100%;
-	text-align: left;
+	text-align: center;
 	letter-spacing: 0.1em;
-	line-height: normal;
-	font-family: Tommy, sans-serif;
-	
+	line-height: normal;	
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased !important;
 	-moz-font-smoothing: antialiased !important;
@@ -576,3 +576,13 @@ ttext b:nth-child(6) {
 /*----------Map--------------*/
 /*----------Map--------------*/
 /*----------Map--------------*/
+
+
+.atlas{	
+	display: block;
+	width:90%;
+	top: 50%;	
+	float: right;
+}
+
+sections-2
