@@ -59,7 +59,7 @@ body {
 	width: 100%;
 	height: 600px;
 	background-image: url(./imgs/Design-1.png);
-	background-attachment: fixed;
+  background-attachment: fixed;
 	background-position: bottom 75px right 0px;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -169,7 +169,7 @@ body {
 	width: 1200px;
 	max-width: 100%;
 	height: auto;
-	border-style: none;
+  border-style: none;
 }
 
 .ZeroTwo {
@@ -178,7 +178,7 @@ body {
 }
 
 .ZeroTwoOne {
-	font-size: 25px;
+  font-size: 25px;
 	font-weight: 400;
 }
 
@@ -191,8 +191,6 @@ body {
 		padding: 1% 8% 0 8%;
 	}
 }
-
-
 
 .OneOneA {
 	padding-top: 100px;
@@ -240,10 +238,9 @@ body {
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	transform: rotate(180deg);
-}
 
 .OneTwo img {
-	width: 70%;
+  width: 70%;
 	display: block;
 	margin: auto;
 }
@@ -276,7 +273,6 @@ body {
 
 }
 
-
 .colp-containerOne {
 	padding: 0 0 20px 0;
 	padding-top: 125px;
@@ -287,7 +283,7 @@ body {
 }
 
 .TwoTwo {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media(max-width:500px) {
@@ -306,7 +302,6 @@ body {
 
 }
 
-
 .img-desc {
 	margin-bottom: 5%;
 }
@@ -322,7 +317,7 @@ body {
 }
 
 .accordion {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 @media(max-width:500px) {
@@ -367,7 +362,7 @@ body {
 }
 
 .FiveOne {
-	padding-top: 60px;
+  padding-top: 60px;
 	padding-bottom: 20px;
 }
 
@@ -385,6 +380,19 @@ body {
 	}
 }
 
+.blankspace {
+	padding: 2% 15% 2% 15%;
+	border-bottom: 5px solid red;
+	margin: 0 5% 0 5%;
+	border-image: linear-gradient(to right, rgb(0, 210, 255), rgb(58, 123, 213));
+	border-image-slice: 1;
+}
+
+.underline-small {
+	display: block;
+	position: relative;
+
+}
 
 .parallax {
 	height: auto;
@@ -984,7 +992,181 @@ a {
 	transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/*chevron*/
+.pulsating-circle {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	width: 30px;
+	height: 30px;
+}
 
+@media(max-width:500px) {
+	.pulsating-circle {
+		visibility: hidden;
+	}
+}
+
+.pulsating-circle:before {
+	content: '';
+	position: relative;
+	display: block;
+	width: 300%;
+	height: 300%;
+	box-sizing: border-box;
+	margin-left: -100%;
+	margin-top: -100%;
+	border-radius: 45px;
+	background-color: #01a4e9;
+	animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.pulsating-circle:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+	animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+}
+
+@keyframes pulse-ring {
+	0% {
+		transform: scale(0.63);
+	}
+
+	80%,
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes pulse-dot {
+	0% {
+		transform: scale(0.8);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.8);
+	}
+}
+
+
+
+.modal.fade {
+	border: 1px solid red;
+}
+
+.opacity-animate3 {
+	animation: opt-animation3 0.5s;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes opt-animation3 {
+	0% {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@-moz-keyframes opt-animation3 {
+	0% {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@-o-keyframes opt-animation3 {
+	0% {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes opt-animation3 {
+	0% {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.modalmap .btn {
+	background-color: transparent;
+	border: none;
+}
+
+area {
+	text-decoration: none;
+}
+
+
+.pulse {
+	animation: pulse 3s infinite;
+	margin: 0 auto;
+	display: table;
+	margin-top: 50px;
+	animation-direction: alternate;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(1);
+	}
+
+	50% {
+		-webkit-transform: scale(1.1);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
 
 .centred-child-2 {
 	display: block;
@@ -993,7 +1175,6 @@ a {
 }
 
 .centred-child-2 .img-fluid {
-	/*    padding-top: 12%;*/
 	width: 100%;
 }
 
@@ -1018,6 +1199,3 @@ a {
 -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
 }
-
-
-
