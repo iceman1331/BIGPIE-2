@@ -1,9 +1,15 @@
 .navbar{
+	transition: all 250ms ease;
+	height: 10%;
+	background-color: rgba(255, 219, 130, 0.25);
 }
+
+
 .navbar .nav-item {
-	margin: 1px 8px 1px 8px;
+	margin: 1px 2px 1px 2px;
+	margin: 1px;
 	position: relative;
-	font-size: 1rem;
+	font-size: 1.05rem;
 }
 
 @media(max-width:500px) {
@@ -93,6 +99,7 @@
 	/* IE */
 	background-color: rgb(255, 219, 130);
 	background-color: rgba(255, 219, 130, 0.95);
+	
 
 }
 
