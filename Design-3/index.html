@@ -29,6 +29,7 @@
 
 	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
 	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+	<script src="Smooth/moveTo.min.js" charset="utf-8"></script>
 
 
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -40,7 +41,7 @@
 
 <body>
 	<div class="loader">
-		<video autoplay muted loop src="../T--IISER_Bhopal--loader.mp4"></video>
+		<video autoplay muted loop src="../Common/T--IISER_Bhopal--Loader.mp4"></video>
 	</div>
 
 	<!--Loader-->
@@ -52,7 +53,7 @@
 	</script>
 
 	<header>
-		<nav class="navbar smart-scroll fixed-top navbar-expand-md navbar-dark scrolling-navbar py-0" id="mynav">
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -69,18 +70,9 @@
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="../Description/index.html">Description</a>
-							<a class="dropdown-item" href="#">Design</a>
-							<a class="dropdown-item" href="#">Contribution</a>
-							<a class="dropdown-item" href="#">Engineering Success</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-dna"></i> Modelling
-						</a>
-						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Overview</a>
-							<a class="dropdown-item" href="#">Subsections</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -88,18 +80,8 @@
 							<i class="fas fa-puzzle-piece"></i> Parts
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Parts Collection</a>
-							<a class="dropdown-item" href="#">Contribution</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-biohazard"></i> Safety
-						</a>
-						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../Biosafety/index.html">Biosafety</a>
-							<a class="dropdown-item" href="../Biosafety/index.html">Biosecurity</a>
-							<a class="dropdown-item" href="../Biosafety/index.html">Safe by Design</a>
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
@@ -107,85 +89,78 @@
 							<i class="fas fa-handshake"></i> Human Practices
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">IHP</a>
-							<a class="dropdown-item" href="#">Education</a>
-							<a class="dropdown-item" href="#">Public Engagement</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-vial"></i> Entrepreneurship
+							<i class="fas fa-users"></i> About Us
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Implementation</a>
-							<a class="dropdown-item" href="#">Hardware</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-users"></i> Team
-						</a>
-						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Team</a>
-							<a class="dropdown-item" href="#">Supervisors</a>
+							<a class="dropdown-item" href="../Team/index.html">Team</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Supervisors</a>
 							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
 						</div>
 					</li>
-
-
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
+							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</nav>
 	</header>
+
 	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
 
 	<div id="cta">
 		<div class="desc-title">
-			<h1> Design </h1>
+			<h1 class="bulb"> Design </h1>
 		</div>
 	</div>
 
 	<div class="ZeroOne">
-				<h1 class="text hr1" style="text-align: center;">
-					Project Overview
-				</h1>
-				<p>
-					The BIG PIE is a biological delivery system created to allow insulin production in-vivo(within the body). The objective of BIG PIE is to compensate for the decreased/defective β-islet cells in the pancreas of diabetes patients.
-					<br>
-					By working as an innate alternative and replacing the need for external sources of insulin in diabetes patients.
-					The design of this project has been refined constantly to create a delivery system which is effective, reliable and most importantly safe by design.
-				</p>
-
+		<p>
+			The BIG PIE is a biological delivery system created to allow insulin production in-vivo(within the body). The objective of BIG PIE is to compensate for the decreased/defective β-islet cells in the pancreas of diabetes patients.
+			<br>
+			By working as an innate alternative and replacing the need for external sources of insulin in diabetes patients.
+			The design of this project has been refined constantly to create a delivery system which is effective, reliable and most importantly safe by design.
+		</p>
 			</div>
-
-	<div class="row">
-<!--
-		<div class="col-sm-3" style="padding:2% 0 0 20%;">
-			<div class="pulsating-circle"></div>
-		</div>
--->
-<!--
-		<div class="col-sm-6 offset-sm-3" style="text-align: center;">
-			<h3>Click on the <strong><u>Parts</u></strong> below</h3>
-		</div>
--->
-<!--
-		<div class="col-sm-3" style="padding:2% 10% 0 5%;">
-			<div class="pulsating-circle"></div>
-		</div>
--->
-	</div>
-
-	<div class="container clickable">
+  <div class="container clickable img3">
 		<img src="imgs/T--IISER_Bhopal--clickable_design.png" id="map-image" alt="" usemap="#map" class="" />
 		<map name="map" class="modalmap">
-			<area class="js-trigger" shape="circle" coords="479, 257, 77" title="Part 1" href="#plasmid1" onmouseover="writeText('Part_1')" />
+			<area class="js-trigger parta" shape="circle" coords="479, 257, 77" title="Part 1" href="#plasmid1" onmouseover="writeText('Part_1')" />
 
-			<area class="js-trigger" shape="circle" coords="674, 260, 77" title="Part 2" href="#plasmid4" onmouseover="writeText('Part_2')" />
+			<area class="js-trigger parta" shape="circle" coords="674, 260, 77" title="Part 2" href="#plasmid4" onmouseover="writeText('Part_2')" />
 
-			<area class="js-trigger" shape="rect" coords="817, 119, 1068, 239" title="Part 3" href="#plasmid2" onmouseover="writeText('Part_3')" />
+			<area class="js-trigger parta" shape="rect" coords="817, 119, 1068, 239" title="Part 3" href="#plasmid2" onmouseover="writeText('Part_3')" />
 
-			<area class="js-trigger" shape="rect" coords="803, 260, 1038, 388" title="Part 4" href="#plasmid3" onmouseover="writeText('Part_4')" />
+			<area class="js-trigger parta" shape="rect" coords="803, 260, 1038, 388" title="Part 4" href="#plasmid3" onmouseover="writeText('Part_4')" />
 		</map>
 
 		<h4 id="desc" class="text-center">Some Description here...</h4>
@@ -203,11 +178,11 @@
 	</script>
 
 	<div class="ZeroTwo">
-        <h1 class="text hr1" style="text-align: center;">Project Principle</h1>
+<h1 class="text hr1" style="text-align: center;">Project Principle</h1>
 		<p>
-            Our project is based on the principle of “transdifferentiation”. We intend to reprogram a set of the newly differentiated intestinal crypt cells in the duodenum(gut) to β-islet-like cells, capable of glucose-responsive insulin secretion.
-        </p>
-    </div>
+			Our project is based on the principle of “transdifferentiation”. We intend to reprogram a set of the newly differentiated intestinal crypt cells in the duodenum(gut) to β-islet-like cells, capable of glucose-responsive insulin secretion.
+		</p>
+	</div>
 
 	<div class="centred-child">
 		<div class="img">
@@ -219,10 +194,10 @@
 	</div>
 
 	<div class="ZeroTwo">
-        <p class="text">
-            Previously transdifferentiation has been performed in human organoids and mice models with the aid of adenovirus vectors: a viral delivery system. But due to the pathogenic nature of viruses and the risks associated with them (mutagenesis, oncogenesis and immunogenicity). We decided to replace the viral vector with a probiotic bacterial vector that is safely accepted into the host.
-            </p>
-        <p class="ZeroTwoOne">Keeping in mind these aspects our design stands on <b>4 pillars</b> which form the backbone of our work.</p>
+  <p class="text">
+			Previously transdifferentiation has been performed in human organoids and mice models with the aid of adenovirus vectors: a viral delivery system. But due to the pathogenic nature of viruses and the risks associated with them (mutagenesis, oncogenesis and immunogenicity). We decided to replace the viral vector with a probiotic bacterial vector that is safely accepted into the host.
+		</p>
+		<p class="ZeroTwoOne">Keeping in mind these aspects our design stands on <b>4 pillars</b> which form the backbone of our work.</p>
 	</div>
 
 	<section class="parallax" style="opacity: 0.9;">
@@ -233,15 +208,15 @@
 
 	<div class="row">
 		<div class="col-sm-10 offset-sm-1">
-            <div class="OneOne">
+  <div class="OneOne">
 				<p class="text">
 					In order to reduce the risk involved in the delivery system. We are using an FDA approved probiotic bacteria E.coli Nissle 1917. The bacteria will be cloned with plasmids expressing an EPEC derived molecular syringe called T3SS along with the 3 transcription factors of our choice PDX1, MAFA and NGN3 which will be maintained in the form of a single linear polypeptide lead by an export signal peptide called Map 20.
 					E.coli nissle is a nonpathogenic Gram-negative strain used in the therapies of many gastrointestinal disorders including diarrhea, irritable bowel syndrome etc and hence would convenience be able to reach the crypt cells in the duodenum of the small intestine.
 				</p>
 			</div>
-        </div>
-        <div class="col-sm-5 offset-sm-1">
-            <div class="accordion OneOneA" id="whycoli">
+  </div>
+		<div class="col-sm-5 offset-sm-1">
+			<div class="accordion OneOneA" id="whycoli">
 				<div class="card">
 					<div class="card-header" id="headingOne">
 						<h2 class="mb-0">
@@ -279,7 +254,7 @@
 					</div>
 				</div>
 			</div>
-        </div>
+  </div>
 		<div class="col-sm-5">
 			<div class="OneTwo">
 				<div class='animatedParent animateOnce'>
@@ -300,7 +275,6 @@
 	</section>
 
 	<div class="row">
-
 		<div class="col-sm-10 offset-sm-1">
 			<div class="TwoZero">
 				<p class="text text-justify">
@@ -311,96 +285,104 @@
 
 		<div class="col-sm-5 offset-sm-1">
 			<div class="TwoOne">
-                <div class="centred-child-2">
-                    <div class='animatedParent animateOnce'>
-					   <div class="animated bounceInLeft container">
-					       <a href="imgs/design_%20Vector%20delivery%20.png" data-fancybox data-caption="Image description">
-						      <img src="imgs/design_%20Vector%20delivery%20.png" class="img-fluid" alt="Responsive image">
-					       </a>
-					       <div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
-                        </div>
-                    </div>
+<div class="centred-child-2">
+					<div class='animatedParent animateOnce'>
+						<div class="animated fadeInLeft container">
+							<a href="imgs/T--IISER_Bhopal--t3ss.png" data-fancybox data-caption="Image description">
+								<img class="img-fluid" src="imgs/T--IISER_Bhopal--t3ss.png" alt="" />
+							</a>
+							<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-        
+
 		<div class="col-sm-5">
-            <div class="colp-containerOne collapsible-container">
-					<button class="collapsible-coli" style="outline: none;">Some text heading</button>
-					<div class="content-collapsible">
+  <div class="colp-containerOne collapsible-container">
+				<button class="collapsible-coli" style="outline: none;">Protein Translocation across T3SS</button>
+				<div class="content-collapsible">
+					<div>
+						<br>
+						<p>
+							Proteins are delivered by T3SS in a two-step process. Firstly, contact with the intestinal epithelial cells triggers the secretion of the T3SS hydrophobic ‘translocon’ protein, which inserts itself into the cell membrane forming a pore. This creates a continuous path between the bacterial and eukaryotic cytoplasm through the lumen of the needle and pore. Due to the small dimensions of the channel the effector proteins are unfolded during its passage. The proteins are introduced into the T3SS with the aid of MAP20, a short N terminal export signal tag. The chaperone CesT helps maintain the polypeptide in a partially unfolded state to facilitate delivery through the secretion channel of T3SS. Both the protein unfolding and secretion are powered through a combination of ATPase activity and the proton motive force. (Ref. 12). The factors will be translocated across the T3SS membrane and delivered into the cytoplasm of the undifferentiated crypt cells where they will fold into their native states and get translocated into the nucleus, and exert their functions.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="colp-containerTwo collapsible-container">
+				<button class="collapsible-coli" style="outline: none;">Introducing Polyprotein sequence</button>
+				<div class="content-collapsible">
+					<div>
 						<div>
-							<div>
+							<p>
 								<br>
-								<p>
-									Proteins are delivered by T3SS in a two-step process. Firstly, contact with the intestinal epithelial cells triggers the secretion of the T3SS hydrophobic ‘translocon’ protein, which inserts itself into the cell membrane forming a pore. This creates a continuous path between the bacterial and eukaryotic cytoplasm through the lumen of the needle and pore. Due to the small dimensions of the channel the effector proteins are unfolded during its passage. The proteins are introduced into the T3SS with the aid of MAP20, a short N terminal export signal tag. The chaperone CesT helps maintain the polypeptide in a partially unfolded state to facilitate delivery through the secretion channel of T3SS. Both the protein unfolding and secretion are powered through a combination of ATPase activity and the proton motive force. (Ref. 12). The factors will be translocated across the T3SS membrane and delivered into the cytoplasm of the undifferentiated crypt cells where they will fold into their native states and get translocated into the nucleus, and exert their functions.
-								</p>
+								Studies have demonstrated that overexpression PDX1, NEUROG3, and/or MAFA, can reprogram the fate of various non-β cell types into glucose responsive insulin-producing cells. Here’s an explanation of every part of our plasmid construct.
+							</p>
+
+							<p>
+								<b>MAP 20</b><br> Mitochondria associated protein is a 20 amino acid long export signal peptide sequence for T3SS, which helps guide the protein sequence through the T3SS pore.
+								<br>
+								<br>
+								<b>TMV Protease Substrate</b><br>Protease cleavage sites are required to separate and activate the transcription factors in the cytosol of the effector cells.
+								<br>
+								<br>
+								<b>PDX1</b><br> is a homeodomain transcription factor and is required for early embryonic development of the pancreas and differentiation of endocrine cell types including β cells. It plays a critical role in maintaining β-cell function.
+								<br>
+								<br>
+								<b>NEUROG3</b><br>is a member of the basic helix–loop–helix transcription factor family involved in the central nervous system and embryonic pancreas development.
+								<br>
+								<br>
+								<b>MAFA</b><br> also known as RIPE3b1, is a member of the MAF family of basic leucine zippers. It is a transcription factor that binds to the enhancer/promoter region of the insulin gene and drives insulin expression in response to glucose. For regenerative approaches, MAFA’s expression is also important to regenerate functional and mature β cells from pluripotent stem cells.
+							</p>
+							<p>
+								<b>Interaction among PDX1, NEUROG3, and MAFA</b>
+								Transcription factors PDX1, NEUROG3, and MAFA are also mutually interacted/regulated during the pancreatic developmental process. PDX1 regulates the expression of NEUROG3 and MAFA in the development and reprogramming processes.
+							</p>
+
+							<div class="centred-child">
+
+								<a href="imgs/design_%20Vector%20delivery%20.png" data-fancybox data-caption="Image description">
+									<img src="imgs/design_%20Vector%20delivery%20.png" class="img-fluid" alt="Responsive image">
+								</a>
+
 							</div>
+
+							<div class="button_know" align="center">
+								<a class="external_knowmore" href="https://stemcellres.biomedcentral.com/articles/10.1186/s13287-017-0694-z" target="_blank" rel="nofollow">
+									<span>Read more</span><br>
+								</a>
+							</div>
+							<br>
 						</div>
 					</div>
 				</div>
-            <div class="colp-containerTwo collapsible-container">
-					<button class="collapsible-coli" style="outline: none;">Introducing Polyprotein sequence</button>
-					<div class="content-collapsible">
+  </div>
+			<div class="colp-containerTwo collapsible-container">
+				<button class="collapsible-coli" style="outline: none;">How Proteins Survive in Host Environments?</button>
+				<div class="content-collapsible">
+					<div>
 						<div>
-							<div>
-								<p>
-									<br>
-									Studies have demonstrated that overexpression PDX1, NEUROG3, and/or MAFA, can reprogram the fate of various non-β cell types into glucose responsive insulin-producing cells. Here’s an explanation of every part of our plasmid construct.
-								</p>
+							<br>
+							<p>
+								As per literature the proteins PDX, MAFA and NGN3 have been able to survive in human organoids and gut cells in mice. There is no protease action on these proteins as they are pre-existent in the gut, in lower concentrations. The presence of these transcription factors at high concentrations will influence the regulatory pathways to produce insulin in the reprogrammed gut cells, while ensuring survival of the transcription factors as they are not considered foreign in the gut cells.
+							</p>
 
-								<p>
-									<b>MAP 20</b><br> Mitochondria associated protein is a 20 amino acid long export signal peptide sequence for T3SS, which helps guide the protein sequence through the T3SS pore.
-									<br>
-									<br>
-									<b>TMV Protease Substrate</b><br>Protease cleavage sites are required to separate and activate the transcription factors in the cytosol of the effector cells.
-									<br>
-									<br>
-									<b>PDX1</b><br> is a homeodomain transcription factor and is required for early embryonic development of the pancreas and differentiation of endocrine cell types including β cells. It plays a critical role in maintaining β-cell function.
-									<br>
-									<br>
-									<b>NEUROG3</b><br>is a member of the basic helix–loop–helix transcription factor family involved in the central nervous system and embryonic pancreas development.
-									<br>
-									<br>
-									<b>MAFA</b><br> also known as RIPE3b1, is a member of the MAF family of basic leucine zippers. It is a transcription factor that binds to the enhancer/promoter region of the insulin gene and drives insulin expression in response to glucose. For regenerative approaches, MAFA’s expression is also important to regenerate functional and mature β cells from pluripotent stem cells.
-								</p>
-								<p>
-									<b>Interaction among PDX1, NEUROG3, and MAFA</b>
-									Transcription factors PDX1, NEUROG3, and MAFA are also mutually interacted/regulated during the pancreatic developmental process. PDX1 regulates the expression of NEUROG3 and MAFA in the development and reprogramming processes.
-								</p>
-
-								<div class="centred-child">
-									<a href="imgs/T--IISER_Bhopal--tfs.png" data-fancybox data-caption="Image description">
-										<img src="imgs/T--IISER_Bhopal--tfs.png" alt="" />
-									</a>
-									<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
-								</div>
-
-								<div class="button_know" align="center">
-									<a class="external_knowmore" href="https://stemcellres.biomedcentral.com/articles/10.1186/s13287-017-0694-z" target="_blank" rel="nofollow">
-										<span>Read more</span><br>
-									</a>
-								</div>
-								<br>
-
+							<div class="centred-child">
+								<a href="imgs/T--IISER_Bhopal--tfs.png" data-fancybox data-caption="Image description">
+									<img src="imgs/T--IISER_Bhopal--tfs.png" alt="" />
+								</a>
+								<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
 							</div>
+
+
+
+
 						</div>
 					</div>
 				</div>
-            <div class="colp-containerTwo collapsible-container">
-					<button class="collapsible-coli" style="outline: none;">How Proteins Survive in Host Environments?</button>
-					<div class="content-collapsible">
-						<div>
-							<div>
-								<br>
-								<p>
-									As per literature the proteins PDX, MAFA and NGN3 have been able to survive in human organoids and gut cells in mice. There is no protease action on these proteins as they are pre-existent in the gut, in lower concentrations. The presence of these transcription factors at high concentrations will influence the regulatory pathways to produce insulin in the reprogrammed gut cells, while ensuring survival of the transcription factors as they are not considered foreign in the gut cells.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+  </div>
 		</div>
-        
 	</div>
 
 	<section class="parallax" style="opacity: 0.9;">
@@ -415,12 +397,12 @@
 				<p class="text">
 					There were a number of strategies thought of for the targeting system. But we finally decided on a three step targeting system. To ensure absolute accuracy and specificity in the attachment of our delivery vector to the target cell. It was imperative that transdifferentiation occurs specifically and only in the undifferentiated crypt cells of the duodenum.
 				</p>
-            </div>
-        </div>
+			</div>
+		</div>
 
 		<div class="col-sm-5 offset-sm-1">
 			<div class="ThreeTwo">
-                <div class="accordion" id="cellbindingA">
+    <div class="accordion" id="cellbindingA">
 					<div class="card">
 						<div class="card-header" id="headingOne">
 							<h2 class="mb-0">
@@ -537,21 +519,21 @@
 
 			</div>
 		</div>
-        
-        <div class="col-sm-5">
-            <div class='animatedParent animateOnce'>
-                <div class="animated bounceInRight container">
-                    <div class="video">
-                        <a data-fancybox data-width="640" data-height="360" href="imgs/T--IISER_Bhopal--Desc_video.mp4">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <video autoplay muted playsinline id="video" preload="auto" src="imgs/T--IISER_Bhopal--Desc_video.mp4" class="embed-responsive-item"></video>
-                            </div>
-			             </a>
-                    </div>
-                    <div class="img-desc"><strong style="font-weight:900;">Video I: </strong>image description.</div>
-                </div>
-            </div>
-        </div>
+
+		<div class="col-sm-5">
+			<div class='animatedParent animateOnce'>
+				<div class="animated bounceInRight container">
+					<div class="video">
+						<a data-fancybox data-width="640" data-height="360" href="imgs/T--IISER_Bhopal--Desc_video.mp4">
+							<div class="embed-responsive embed-responsive-16by9">
+								<video autoplay muted playsinline id="video" preload="auto" src="imgs/T--IISER_Bhopal--Desc_video.mp4" class="embed-responsive-item"></video>
+							</div>
+						</a>
+					</div>
+					<div class="img-desc"><strong style="font-weight:900;">Video I: </strong>image description.</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<section class="parallax" style="opacity: 0.9;">
@@ -561,26 +543,28 @@
 	</section>
 
 	<div class="row">
-        <div class="col-sm-10 offset-sm-1">
-            <div class="FourZero">
-                <p class="text text-justify">
-                    With the usage of Genetically modified Organisms (GMOs) safety is a major concern. The usage of genetically modified bacteria has led to several claims and arguments about the unwarranted impacts on not only the consumer but also our surroundings. Keeping in mind this safety aspect at every step. We have made design considerations for the biosafety mechanism, which will ensure not only the safety of the microbiome in the gut of the host, the patient consuming the pill but also the environment in which the pills’ contents will be released.
-                </p>
-            </div>
-        </div>
-        <div class="col-sm-5 offset-sm-1">
-			<div class="FourOne">
-                <div class='animatedParent animateOnce'>
-					<div class="animated bounceInLeft container">
-                        <a href="imgs/T--IISER_Bhopal--killswitch_design.png" data-fancybox data-caption="Image description">
-                            <img src="imgs/T--IISER_Bhopal--killswitch_design.png" class="img-fluid float-right" alt="" />
-                        </a>
-                    </div>
-                </div>
+  <div class="col-sm-10 offset-sm-1">
+			<div class="FourZero">
+				<p class="text text-justify">
+					With the usage of Genetically modified Organisms (GMOs) safety is a major concern. The usage of genetically modified bacteria has led to several claims and arguments about the unwarranted impacts on not only the consumer but also our surroundings. Keeping in mind this safety aspect at every step. We have made design considerations for the biosafety mechanism, which will ensure not only the safety of the microbiome in the gut of the host, the patient consuming the pill but also the environment in which the pills’ contents will be released.
+				</p>
 			</div>
 		</div>
-        <div class="col-sm-5">
-            <div class="FiveOne collapsible-container">
+		
+		<div class="col-sm-5 offset-sm-1">
+			<div class="FourOne">
+				<div class='animatedParent animateOnce'>
+					<div class="animated bounceInLeft">
+						<a href="imgs/T--IISER_Bhopal--killswitch_design.png" data-fancybox data-caption="Image description">
+							<img src="imgs/T--IISER_Bhopal--killswitch_design.png" class="img-fluid float-right" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-sm-5">
+			<div class="FiveOne collapsible-container">
 				<button class="collapsible-coli" style="outline: none;">Kill switch to regulate colonisation of the small intestine</button>
 				<div class="content-collapsible">
 					<br>
@@ -610,7 +594,7 @@
 					<div style="text-align: center;">. .</div>
 				</div>
 			</div>
-            <div class="FiveTwo collapsible-container">
+      <div class="FiveTwo collapsible-container">
 				<button class="collapsible-coli" style="outline: none;">Reorganisation of code to prevent horizontal gene transfer.</button>
 				<div class="content-collapsible">
 					<div>
@@ -847,7 +831,7 @@
 		}
 		/*Button reveal*/
 	</script>
-    
+
 	<script>
 		/*Button reveal*/
 		var coll = document.getElementsByClassName("collapsible-coli-large");
@@ -875,6 +859,28 @@
 			console.log(bufferedSeconds + ' seconds of video are ready to play!');
 		});
 	</script>
+	<script>
+		//Smooth scroll
+		document.addEventListener('DOMContentLoaded', function() {
+			const easeFunctions = {
+				easeInQuad: function(t, b, c, d) {
+					t /= d;
+					return c * t * t + b;
+				},
+				easeOutQuad: function(t, b, c, d) {
+					t /= d;
+					return -c * t * (t - 2) + b;
+				}
+			}
+			const moveTo = new MoveTo({
+				ease: 'easeInQuad'
+			}, easeFunctions);
+			const triggers = document.getElementsByClassName('js-trigger');
+			for (var i = 0; i < triggers.length; i++) {
+				moveTo.registerTrigger(triggers[i]);
+			}
+		});
+	</script>
 
 	<script src="../Common/css3-animate-it.js"></script>
 
@@ -882,5 +888,4 @@
 	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
 	<script src="fancybox/jquery.fancybox.min.js"></script>
 
-</body>
-</html>
+</body></html>
