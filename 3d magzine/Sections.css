@@ -1,0 +1,109 @@
+/* Hide checkbox and reset styles */
+input[type="checkbox"] {
+	appearance: initial; 
+	-webkit-appearance: initial; 
+	-moz-appearance:initial;
+	border-top-left-radius: 10px; 
+	border:0; margin: 0; outline: none; 
+	width: 30px; height: 30px; 
+	z-index: 1; 
+}
+
+
+/* Menu icon */
+input::after { 
+	border-top-left-radius: 10px;
+	content: '\2255'; 
+	display: block; 
+	font: 25pt/30px 'georgia'; 
+	text-indent: 10px; 	
+	transition-delay: .25s;
+	width: 100%; height: 100%;
+}
+
+#page{
+	background: url(../Home_2/imgs/New/description_logo.png) #ebebeb center/cover; 
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	transition: all .3s linear; 
+	width: 100%; height: 100%;
+}
+
+
+/* When menu is open, transform the page */
+input:checked ~ #page { 
+	clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 92%);
+	transform: translateX(40%) rotateY(10deg) scale(0.8); 
+	transform-origin: right center;
+	transition: all .3s linear; 
+	
+} 
+
+input:checked::after { 
+	background: #1e3232; 
+	content: '\00d7'; 
+	color: #ebebeb; 
+	transition-delay: -.1s;
+} 
+
+#menu, #page, input{ position: absolute; }
+
+#wrapper {
+	background: linear-gradient(45deg, black, darkslategrey); 
+	border-radius: 10px; 
+	box-shadow: 0 0 20px lightgrey; 
+	margin: auto; margin-top: calc(50vh - 250px);
+	overflow: hidden; 
+	position: relative; 
+	width: 300px; height: 500px; 
+}
+
+ul {
+	background: linear-gradient(#fef8a5 20%, powderblue); 
+	background-clip: text; 
+	-webkit-background-clip: text; 
+	font: bold 15pt/30pt 'fugaz one'; 
+	margin-top: 50px;
+}
+
+h2 {
+	width: max-content; position: absolute;
+	font: 15pt 'contrail one'; word-spacing: 10px;
+}
+
+h2:nth-of-type(1) {
+	transform: rotate(-90deg); transform-origin: bottom left;
+	left: calc(50vw - 160px); bottom: calc(50vh - 250px);
+} 
+
+h2:nth-of-type(2) {
+	transform: rotate(90deg); transform-origin: top left;
+	left: calc( 50vw + 180px); top: calc(50vh -  250px);
+}
+
+mark {background: #fef8a5;} 
+
+p{
+	margin: 20% 41% auto 10px;
+	color: #fff;
+	text-align: justify;
+}
+
+.readmore2{
+	border:1px solid red;
+	margin: 15% auto 5% auto;
+}
+
+
+.chead{
+	color: #fff;
+	text-align: center;
+}
+
+
+
+
+.part2{
+	border: 10px solid red;
+	width: 100%;
+}
+

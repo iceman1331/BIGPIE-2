@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Sections.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+
+<body>
+
+<div id=wrapper>
+	<input type=checkbox> 
+	<div id=menu>
+		<div class="readmore1"></div>
+		<h1 class="chead">Design
+		</h1>
+		<p>The BIG PIE aims to replace the need for insulin injections with a probiotic alternative that produces beta-like cells inside the body. Our iBETA aims to help the patient tackle diabetes conveniently, comfortably but most importantly safely. To understand the details of our design stage which aims to maximise the safety and accuracy of our pill.
+					</p>
+		<div class="readmore2"></div>
+	</div>
+	<div id=page></div>
+</div>
+
+
+	
+	<script type="text/javascript" src=""></script>
+	<script>
+	document.querySelector("#page").addEventListener('click', (e, checkbox = document.querySelector('input'))=>{ 
+			if(checkbox.checked) { checkbox.checked = false; e.stopPropagation(); }
+		});
+	</script>
+</body>
+
+</html>
