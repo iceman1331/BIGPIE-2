@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="Common/NavBar/custom-navbar.css" />
 
 	<link rel="stylesheet" href="Home_2/Stylesheet_Home.css" />
+	
 
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -143,10 +144,16 @@
 	<main>
 
 
+		<link rel="stylesheet" href="Common/Smooth/moveTo.min.js" />
 		<div class="videoWrapper">
 			<video autoplay muted src="Home_2/Videos/T--IISER-Bhopal--Diabetes.mp4"></video>
+			<a href="#how" class="js-trigger">
+				<div href="#how" id="scrollIndicator">
+					<i></i>
+				</div>
+			</a>
 		</div>
-		<div class="mouse"></div>
+
 
 
 
@@ -162,7 +169,7 @@
 						<div class="container">
 							<div class="container">
 								<h1 style="text-align: center;">How is Diabetes caused?</h1>
-								<img class="img-fluid" src="Home_2/T--IISER_Bhopal--insulin_production.png">
+								<img id="how" class="img-fluid" src="Home_2/T--IISER_Bhopal--insulin_production.png">
 							</div>
 						</div>
 					</div>
@@ -262,6 +269,8 @@
 		<div class="blank-space">
 		</div>
 
+		
+		<div><a href="#now" class="js-trigger"> Hello <area href="#now" class="js-trigger"></a></div>
 
 		<div class="container-fluid">
 			<div class="animatedParent animateOnce" data-sequence='1000' data-appear-top-offset='-200'>
@@ -335,9 +344,7 @@
 		</div>
 
 
-		<div class="container-fluid">
-
-		</div>
+		
 		<div class="blank-space">
 		</div>
 		<div class="blank-space">
@@ -470,11 +477,11 @@
 
 
 
-		<div class="container-fluid alpha">
+		<div class="container-fluid alpha" id="now">
 			<div class='animatedParent' data-sequence='500'>
 
 				<div class="row One">
-					<div class="col-sm-4 text-center animated fadeInLeft slow"  data-id="1">
+					<div class="col-sm-4 text-center animated fadeInLeft slow" data-id="1">
 						<img class="img-fluid align-middle" src="Home_2/imgs/New/design_alt.png">
 					</div>
 
@@ -748,41 +755,30 @@
 	</script>
 	-->
 
+
+
 	<script>
-		//Ripple button
-		;
-		(function($, window, document, undefined) {
-
-			'use strict';
-
-			var $ripple = $('.js-ripple');
-
-			$ripple.on('click.ui.ripple', function(e) {
-
-				var $this = $(this);
-				var $offset = $this.parent().offset();
-				var $circle = $this.find('.c-ripple__circle');
-
-				var x = e.pageX - $offset.left;
-				var y = e.pageY - $offset.top;
-
-				$circle.css({
-					top: y + 'px',
-					left: x + 'px'
-				});
-
-				$this.addClass('is-active');
-
-			});
-
-
-			$ripple.on('animationend webkitAnimationEnd oanimationend MSAnimationEnd', function(e) {
-				$(this).removeClass('is-active');
-			});
-
-		})(jQuery, window, document);
+		//Smooth scroll
+		document.addEventListener('DOMContentLoaded', function() {
+			const easeFunctions = {
+				easeInQuad: function(t, b, c, d) {
+					t /= d;
+					return c * t * t + b;
+				},
+				easeOutQuad: function(t, b, c, d) {
+					t /= d;
+					return -c * t * (t - 2) + b;
+				}
+			}
+			const moveTo = new MoveTo({
+				ease: 'easeInQuad'
+			}, easeFunctions);
+			const triggers = document.getElementsByClassName('js-trigger');
+			for (var i = 0; i < triggers.length; i++) {
+				moveTo.registerTrigger(triggers[i]);
+			}
+		});
 	</script>
-
 
 
 
