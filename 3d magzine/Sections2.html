@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Sections2.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+
+<body>
+	<div id=wrapper>
+	<input type=checkbox>
+	<div id=menu class="content">
+		<h1 class="headeing">Human practices</h1>
+	<div class="icontainer">
+		<i></i>
+	<i></i>
+	<i></i>
+		</div>
+		<p class="para2">
+		As a project on therapeutics track we wanted to make our product as useful for the end-user as possible. Our HP interactions were diverse ranging from technical assistance to better our project, safety assistance to ensure the protection and convenience of the patient, market requirements and competition. Every step of our project has been thoroughly vetted and guided by experts and users who were well versed with our project and have actively shared their opinions to improve it. To know more about the human story of our project.
+		</p>
+	</div>
+	<div id=page></div>
+</div>
+	<script type="text/javascript" src=""></script>
+	<script>
+	document.querySelector("#page").addEventListener('click', (e, checkbox = document.querySelector('input'))=>{ 
+	if(checkbox.checked) { checkbox.checked = false; e.stopPropagation(); }
+});
+	</script>
+</body>
+
+</html>

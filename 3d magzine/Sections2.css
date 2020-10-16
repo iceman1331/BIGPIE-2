@@ -1,0 +1,72 @@
+#page{
+	width: 100%; height: 100%;
+	background: url(../Home_2/imgs/New/humanpractices_icon.png) #0b674c center/contain;
+	background-repeat: no-repeat;
+	background-color: #66aabb;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
+	transition: all .3s linear; 
+
+}
+
+input[type="checkbox"] { /* menu control */
+	width: 30px; height: 30px; z-index: 1; margin: 0; outline: none; border: none;
+	appearance: initial; -webkit-appearance: initial; -moz-appearance:initial; 
+	border-top-left-radius: 10px;
+}
+
+input::after { /* menu icon */
+	display: block; content: '\2255'; 
+	font: bold 20pt/35px 'georgia'; text-indent: 10px; 
+	border-top-left-radius: 10px; 
+	transition-delay: .25s;
+} 
+
+input:checked ~ #page { /* when menu is open, transform the page */
+	transform: translateX(40%) rotateY(10deg) scale(0.8)  ; transform-origin: right center;
+	transition: all .3s linear; 
+	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+}
+
+input:checked::after { content: '\00d7'; color: #ebebeb; background: #04271d; transition-delay: -.1s;} 
+
+
+#menu, #page, input{ position: absolute; }
+
+#wrapper {
+	width: 80vw; height: 500px; position: relative;
+	margin: auto; margin-top: 50px;
+	box-shadow: 0 0 20px lightgrey; border-radius: 10px; 
+	background: linear-gradient(45deg, black, #0b674c); 
+	overflow: hidden;
+}
+
+#menu {
+	width: 600px; 
+	margin: 45px 10px 10px 45px; 
+}
+.icontainer{
+	margin: auto;
+	text-align: center;
+}
+i {
+	display: inline-block;
+	width: 30px; height: 30px;
+	background-color: #d7e59f;
+	margin: 10px; 
+	border-radius: 50%;
+	text-align: center;
+} 
+
+@media (max-width: 1200px){
+	#wrapper{ height: 50vw; }
+	#menu {width: 35vw;} 
+	i{width: 2vw; height: 2vw; margin: 2.5vw;}
+}
+
+.content{
+	color: #fff;
+}
+
+.headeing{
+	text-align: center;
+}
