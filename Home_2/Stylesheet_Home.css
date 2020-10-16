@@ -726,7 +726,7 @@ ttext b:nth-child(6) {
 	line-height: 30.8px;
 	color: rgb(61, 61, 61);
 	margin: auto;
-	margin: 5% auto auto auto;
+	margin: 5% auto 5% auto;
 }
 
 .button-label {
@@ -768,8 +768,9 @@ ttext b:nth-child(6) {
 	content: "";
 	width: 5px;
 	height: 100%;
+	
+	
 	background: #4cc9f0;
-	background: #ccff66;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -779,6 +780,7 @@ ttext b:nth-child(6) {
 	width: 100%;
 	content: "Design";
 	color: #000;
+	background: #ccff66;
 	font-size: 1.2em;
 	white-space: nowrap;
 	overflow: hidden;
@@ -812,8 +814,8 @@ ttext b:nth-child(6) {
 	content: "";
 	width: 5px;
 	height: 100%;
-	background: #4cc9f0;
-	background: #66aabb;
+	
+	background: #ffe625;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -823,6 +825,7 @@ ttext b:nth-child(6) {
 	width: 100%;
 	content: "HP";
 	color: #000;
+	background: #4cc9f0;
 	font-size: 1.2em;
 	white-space: nowrap;
 	overflow: hidden;
@@ -857,7 +860,7 @@ ttext b:nth-child(6) {
 	width: 5px;
 	height: 100%;
 	background: #4cc9f0;
-	background-color: #b8dbdb;
+	background-color: #373737;
 	
 	position: absolute;
 	top: 0;
@@ -868,6 +871,7 @@ ttext b:nth-child(6) {
 	width: 100%;
 	content: "IMPLEMENTATION";
 	color: #000;
+	background-color: #b8dbdb;
 	font-size: 1.2em;
 	white-space: nowrap;
 	overflow: hidden;
@@ -901,7 +905,8 @@ ttext b:nth-child(6) {
 	content: "";
 	width: 5px;
 	height: 100%;
-	background: rgba(255, 255, 3, 1);
+	
+	background: #373737;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -911,6 +916,7 @@ ttext b:nth-child(6) {
 	width: 100%;
 	content: "Safety";
 	color: #000;
+	background: rgba(255, 250, 3, 1);
 	font-size: 1.2em;
 	white-space: nowrap;
 	overflow: hidden;
