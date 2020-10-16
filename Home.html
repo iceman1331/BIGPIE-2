@@ -30,7 +30,7 @@
 
 	<link rel="stylesheet" href="Home_2/Stylesheet_Home.css" />
 	<script src="Common/Smooth/moveTo.min.js" charset="utf-8"></script>
-	
+
 
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -270,7 +270,7 @@
 		<div class="blank-space">
 		</div>
 
-		
+
 
 		<div class="container-fluid">
 			<div class="animatedParent animateOnce" data-sequence='1000' data-appear-top-offset='-200'>
@@ -344,7 +344,7 @@
 		</div>
 
 
-		
+
 		<div class="blank-space">
 		</div>
 		<div class="blank-space">
@@ -564,7 +564,9 @@
 
 
 
-
+		<div class='scrolltop js-trigger' href="#">
+			<div class='scroll icon'><i class="fas fa-rocket" aria-hidden="true"></i></div>
+		</div>
 
 
 		<div class="blank-space">
@@ -779,6 +781,25 @@
 			}
 		});
 	</script>
-	
+
+	<script>
+		//Scroll to top
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1000) {
+				$('.scrolltop:hidden').stop(true, true).fadeIn();
+			} else {
+				$('.scrolltop').stop(true, true).fadeOut();
+			}
+		});
+		$(function() {
+			$(".scroll").click(function() {
+				$("html,body").animate({
+					scrollTop: $(".top").offset().top
+				}, "1000");
+				return false
+			})
+		})
+	</script>
+
 	<script src="Common/css3-animate-it.js"></script>
 </body></html>

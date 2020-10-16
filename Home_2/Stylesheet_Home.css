@@ -1021,3 +1021,68 @@ ttext b:nth-child(6) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  scroll css section here*/
+.scrolltop .icon {
+    font-size: 2.5rem;
+    text-align: center;
+    transform: rotate(-45deg);
+   	color: #336699;
+	margin: auto;
+	margin-left: 5%;
+}
+
+.scrolltop {
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: none;
+}
+
+@media(max-width:500px){
+	.scrolltop {
+    display: none;
+}
+
+}
