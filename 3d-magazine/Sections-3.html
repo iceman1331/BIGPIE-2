@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" href="Sections-3.css">
+	<link rel="stylesheet" href="Ripple.css">
+	<link rel="icon" type="image/x-icon" href="" />
+</head>
+
+<body>
+
+	<div class="centerflipcards">
+		<div class="square-flip">
+			<div class='square' style="background-color: #66aabb" data-image="../Home_2/imgs/New/description_logo.png">
+				<div class="square-container">
+					<div class="align-center"><img width="80%" src="" class="boxshadow" alt=""></div>
+					<h2 class="textshadow">PROJECT DESIGN</h2>
+					<h3 class="textshadow"></h3>
+				</div>
+				<div class="flip-overlay"></div>
+			</div>
+			<div class='square2' data-image="../Design-3/T--IISER_Bhopal--design.png">
+				<div class="square-container2">
+					<div class="align-center"></div>
+					<h2>Project design</h2>
+					<p>The BIG PIE aims to replace the need for insulin injections with a probiotic alternative that produces beta-like cells inside the body. Our iBETA aims to help the patient tackle diabetes conveniently, comfortably but most importantly safely. To understand the details of our design stage which aims to maximise the safety and accuracy of our pill.
+					</p>
+					<a href="Looks_like_we_are_lost--->Go_back"  class="boxshadow kallyas-button">Read</a>
+
+				</div>
+				<div class="flip-overlay"></div>
+			</div>
+		</div>
+
+		<div class="square-flip">
+			<img src="">
+			<div class='square' data-image="../Home_2/imgs/New/humanpractices_icon.png">
+				<div class="square-container">
+					<div class="align-center"><img src="" class="boxshadow" alt=""></div>
+					<h2 class="textshadow">HUMAN PRACTICES</h2>
+				</div>
+				<div class="flip-overlay"></div>
+			</div>
+			<div class='square2' data-image="../Team/contributions.png">
+				<div class="square-container2">
+					<div class="align-center"></div>
+					<p>
+						As a project on therapeutics track we wanted to make our product as useful for the end-user as possible. Our HP interactions were diverse ranging from technical assistance to better our project, safety assistance to ensure the protection and convenience of the patient, market requirements and competition. Every step of our project has been thoroughly vetted and guided by experts and users who were well versed with our project and have actively shared their opinions to improve it. To know more about the human story of our project.
+					</p>
+					<a href="Looks_like_we_are_lost--->Go_back"  class="boxshadow kallyas-button">Read</a>
+				</div>
+				<div class="flip-overlay"></div>
+			</div>
+		</div>
+
+		<div class="square-flip">
+			<img src="">
+			<div class='square' data-image="../Home_2/imgs/New/safety_icon.png">
+				<div class="square-container">
+					<div class="align-center"><img width="50%" src="" class="boxshadow" alt=""></div>
+					<h2 class="textshadow">SAFETY</h2>
+				</div>
+				<div class="flip-overlay"></div>
+			</div>
+			<div class='square2' data-image="../Safety/S4.png">
+				<div class="square-container2">
+					<div class="align-center"></div>
+					<h2>Safety</h2>
+					<p>
+						Safety is an essential part of iGEM. As a therapeutic, we had to consider all possible safety issues the project has presented. We have tried our utmost to tackle every single one of the safety issues that could arise from introducing our genetically modified bacteria into the human body and then the environment.
+					</p>
+					<a href="Looks_like_we_are_lost--->Go_back" class="boxshadow kallyas-button">Read</a>
+				</div>
+				<div class="flip-overlay"></div>
+			</div>
+		</div>
+
+
+	</div>
+	<div class="blankspace">
+		<h1>Blank</h1>
+	</div>
+
+
+
+	<div class="ctr">
+		<div class="image"></div>
+		<div class="image2"></div>
+		<div class="image3"></div>
+	</div>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js">
+	</script>
+
+	<script type="text/javascript" src=""></script>
+	<script>
+		$(document).ready(function() {
+			$('.image').ripples('show');
+		});
+		
+		$(document).ready(function() {
+			$('.image2').ripples('show');
+		});
+		
+		$(document).ready(function() {
+			$('.image3').ripples('show');
+		});
+
+	</script>
+
+
+
+
+
+	<script type="text/javascript" src=""></script>
+	<script>
+		jQuery(document).ready(function($) {
+
+			//Count nr. of square classes
+			var countSquare = $('.square').length;
+
+			//For each Square found add BG image
+			for (i = 0; i < countSquare; i++) {
+				var firstImage = $('.square').eq([i]);
+				var secondImage = $('.square2').eq([i]);
+
+				var getImage = firstImage.attr('data-image');
+				var getImage2 = secondImage.attr('data-image');
+
+				firstImage.css('background-image', 'url(' + getImage + ')');
+				secondImage.css('background-image', 'url(' + getImage2 + ')');
+			}
+
+		});
+
+	</script>
+</body>
+
+</html>

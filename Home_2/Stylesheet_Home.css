@@ -406,6 +406,7 @@ ttext b:nth-child(6) {
 
 .wikiextra {
 	margin: 5% auto 5% auto;
+	margin: auto;
 }
 
 .extra {
@@ -413,7 +414,6 @@ ttext b:nth-child(6) {
 	-webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
 	box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.3);
-	border-radius: 5px;
 	transition: all 0.5s ease;
 	cursor: default;
 }
@@ -425,12 +425,15 @@ ttext b:nth-child(6) {
 }
 
 .extra:nth-child(1) {
-	border-left: 5px solid #04e762;
+	border-left: 2px solid #04e762;
+	border-bottom: 2px solid #04e762;
 	background-color: rgba(4, 231, 98, 0.1);
 }
 
 .extra:nth-child(2) {
 	border-right: 5px solid #f5b700;
+	border-right: 2px solid #04e762;
+	border-bottom: 2px solid #04e762;
 	background-color: rgba(0, 161, 228, 0.1);
 }
 
@@ -440,11 +443,14 @@ ttext b:nth-child(6) {
 
 .extra:nth-child(3) {
 	border-left: 5px solid #f0544f;
+		border-left: 2px solid #04e762;
+	border-bottom: 2px solid #04e762;
+
 	background-color: rgba(171, 235, 210, 0.5);
 }
 
 .extra:nth-child(4) {
-	border-right: 5px solid #dc0073;
+	border-right: 2px solid #04e762;
 	background-color: rgba(245, 183, 0, 0.1);
 }
 
@@ -676,379 +682,236 @@ ttext b:nth-child(6) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-.mouse {
-	background: #4e5559 linear-gradient(transparent 0%, transparent 50%, #fff 50%, #fff 100%);
-	position: absolute;
-	width: 52px;
-	height: 88px;
-	left: 50%;
-	top: 90%;
-	opacity: 0.25;
-	border-radius: 100px;
-	background-size: 100% 200%;
-	animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
+.child{
+	margin: auto;
+	padding: 10% 5% 10% 5%;
 }
 
-@media(max-width:500px) {
-	.mouse {
-		display: none;
-	}
+.One {
+	background-color: #ccff66;
 }
-
-.mouse:before,
-.mouse:after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+.One .child{
 	margin: auto;
 }
 
-.mouse:before {
-	width: 46px;
-	height: 82px;
-	background-color: #222a30;
-	border-radius: 100px;
+.Two {
+	background-color: #66aabb;
+}
+.Two .child{
+	margin: auto;
 }
 
-.mouse:after {
-	background-color: #fff;
-	width: 10px;
-	height: 10px;
-	border-radius: 100%;
-	animation: trackBallSlide 5s linear infinite;
+.Three {
+	background-color: #b8dbdb;
+}
+.Three .child{
+	margin: auto;
 }
 
-@keyframes colorSlide {
-	0% {
-		background-position: 0% 100%;
-	}
-
-	20% {
-		background-position: 0% 0%;
-	}
-
-	21% {
-		background-color: #4e5559;
-	}
-
-	29.99% {
-		background-color: #fff;
-		background-position: 0% 0%;
-	}
-
-	30% {
-		background-color: #4e5559;
-		background-position: 0% 100%;
-	}
-
-	50% {
-		background-position: 0% 0%;
-	}
-
-	51% {
-		background-color: #4e5559;
-	}
-
-	59% {
-		background-color: #fff;
-		background-position: 0% 0%;
-	}
-
-	60% {
-		background-color: #4e5559;
-		background-position: 0% 100%;
-	}
-
-	80% {
-		background-position: 0% 0%;
-	}
-
-	81% {
-		background-color: #4e5559;
-	}
-
-	90%,
-	100% {
-		background-color: #fff;
-	}
+.Four {
+	background-color: rgba(255, 255, 3, 0.5);
+}
+.Four .child{
+	margin: auto;
 }
 
-@keyframes trackBallSlide {
-	0% {
-		opacity: 1;
-		transform: scale(1) translateY(-20px);
-	}
-
-	6% {
-		opacity: 1;
-		transform: scale(0.9) translateY(5px);
-	}
-
-	14% {
-		opacity: 0;
-		transform: scale(0.4) translateY(40px);
-	}
-
-	15%,
-	19% {
-		opacity: 0;
-		transform: scale(0.4) translateY(-20px);
-	}
-
-	28%,
-	29.99% {
-		opacity: 1;
-		transform: scale(1) translateY(-20px);
-	}
-
-	30% {
-		opacity: 1;
-		transform: scale(1) translateY(-20px);
-	}
-
-	36% {
-		opacity: 1;
-		transform: scale(0.9) translateY(5px);
-	}
-
-	44% {
-		opacity: 0;
-		transform: scale(0.4) translateY(40px);
-	}
-
-	45%,
-	49% {
-		opacity: 0;
-		transform: scale(0.4) translateY(-20px);
-	}
-
-	58%,
-	59.99% {
-		opacity: 1;
-		transform: scale(1) translateY(-20px);
-	}
-
-	60% {
-		opacity: 1;
-		transform: scale(1) translateY(-20px);
-	}
-
-	66% {
-		opacity: 1;
-		transform: scale(0.9) translateY(5px);
-	}
-
-	74% {
-		opacity: 0;
-		transform: scale(0.4) translateY(40px);
-	}
-
-	75%,
-	79% {
-		opacity: 0;
-		transform: scale(0.4) translateY(-20px);
-	}
-
-	88%,
-	100% {
-		opacity: 1;
-		transform: scale(1) translateY(-20px);
-	}
+.alpha .row img{
+	margin: 20% auto 20% auto;
 }
 
-@keyframes nudgeMouse {
-	0% {
-		transform: translateY(0);
-	}
-
-	20% {
-		transform: translateY(8px);
-	}
-
-	30% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(8px);
-	}
-
-	60% {
-		transform: translateY(0);
-	}
-
-	80% {
-		transform: translateY(8px);
-	}
-
-	90% {
-		transform: translateY(0);
-	}
+.alpha p {
+	font-family: Merriweather, serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: auto;
+	margin: 5% auto auto auto;
 }
 
-@keyframes nudgeText {
-	0% {
-		transform: translateY(0);
-	}
-
-	20% {
-		transform: translateY(2px);
-	}
-
-	30% {
-		transform: translateY(0);
-	}
-
-	50% {
-		transform: translateY(2px);
-	}
-
-	60% {
-		transform: translateY(0);
-	}
-
-	80% {
-		transform: translateY(2px);
-	}
-
-	90% {
-		transform: translateY(0);
-	}
+.button-label {
+	height: 100%;
+	width: 5px;
+	background: #f4a261;
+	z-index: 2;
 }
 
-@keyframes colorText {
-	21% {
-		color: #4e5559;
-	}
+.button-text {
+	font-size: 1.2em;
+	color: #6f6f6ff2;
+}
 
-	30% {
-		color: #fff;
-	}
-
-	51% {
-		color: #4e5559;
-	}
-
-	60% {
-		color: #fff;
-	}
-
-	81% {
-		color: #4e5559;
-	}
-
-	90% {
-		color: #fff;
-	}
+/*ButtonA*/
+.buttonA {
+	font-family: "Poppins", sans-serif;
+	width: 200px;
+	height: 45px;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 0px 2px 14px -7px rgba(0, 0, 0, 0.2);
+	position: relative;
 }
 
 
-/** * Component: Button * -------------------------------------------------- */
- .c-button {
-	 -webkit-appearance: none;
-	 position: relative;
-	 display: inline-block;
-	 padding: 12px 24px;
-	 margin: 0;
-	 vertical-align: middle;
-	 overflow: visible;
-	 color: #fff;
-	 font: inherit;
-	 font-size: 14px;
-	 line-height: 20px;
-	 font-weight: 400;
-	 text-align: center;
-	 letter-spacing: 1px;
-	 background: transparent;
-	 border: 0;
-	 border-radius: 5px;
-	 user-select: none;
-	 transition: all 0.2s ease;
+.buttonA::before {
+	width: 50px;
+	transition: width 0.5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
- .c-button:hover, .c-button:focus {
-	 outline: 0;
-	 text-decoration: none;
+
+.buttonA::before {
+	content: "";
+	width: 5px;
+	height: 100%;
+	background: #4cc9f0;
+	background: #ccff66;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
- .c-button:not(:disabled) {
-	 cursor: pointer;
+
+.buttonA:hover::before {
+	width: 100%;
+	content: "Design";
+	color: #000;
+	font-size: 1.2em;
+	white-space: nowrap;
+	overflow: hidden;
 }
-/** * Mixin: Button Modifier * -------------------------------------------------- */
- .c-button--purple {
-	 background: #967adc;
-	 text-shadow: 2px 2px 0 #7652d1;
+
+
+/*ButtonB*/
+.buttonB {
+	font-family: "Poppins", sans-serif;
+	width: 200px;
+	height: 45px;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 0px 2px 14px -7px rgba(0, 0, 0, 0.2);
+	position: relative;
 }
- .c-button--purple:hover {
-	 background: #8666d7;
+
+
+.buttonB::before {
+	width: 50px;
+	transition: width 0.5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-/** * Component: Button * Modifier: Purple * -------------------------------------------------- */
-/** * Component: Button * Modifier: Blue * -------------------------------------------------- */
- .c-button--blue {
-	 background: #4a89dc;
-	 background: rgba(74,137,220,0.0);
-	 color: #000;
-	 transition: 0.5s all ease;
+
+.buttonB::before {
+	content: "";
+	width: 5px;
+	height: 100%;
+	background: #4cc9f0;
+	background: #66aabb;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
- .c-button--blue:hover {
-	 color: #fff;
-	 background: #357bd8;
+
+.buttonB:hover::before {
+	width: 100%;
+	content: "HP";
+	color: #000;
+	font-size: 1.2em;
+	white-space: nowrap;
+	overflow: hidden;
 }
-/** * Component: Button * Modifier: Red * -------------------------------------------------- */
- .c-button--red {
-	 background: #e9573f;
-	 text-shadow: 2px 2px 0 #dc3519;
+
+
+/*ButtonC*/
+.buttonC {
+	font-family: "Poppins", sans-serif;
+	width: 200px;
+	height: 45px;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 0px 2px 14px -7px rgba(0, 0, 0, 0.2);
+	position: relative;
 }
- .c-button--red:hover {
-	 background: #e64328;
+
+
+.buttonC::before {
+	width: 50px;
+	transition: width 0.5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-/** * Utility: Ripple * -------------------------------------------------- */
- .c-ripple {
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 width: 100%;
-	 height: 100%;
-	 overflow: hidden;
-	 background: transparent;
+
+.buttonC::before {
+	content: "";
+	width: 5px;
+	height: 100%;
+	background: #4cc9f0;
+	background-color: #b8dbdb;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
 }
- .c-ripple__circle {
-	 position: absolute;
-	 top: 50%;
-	 left: 50%;
-	 transform: translate(-50%, -50%);
-	 opacity: 0;
-	 width: 0;
-	 height: 0;
-	 border-radius: 50%;
-	 background-color: rgba(255, 255, 255, 0.5);
+
+.buttonC:hover::before {
+	width: 100%;
+	content: "IMPLEMENTATION";
+	color: #000;
+	font-size: 1.2em;
+	white-space: nowrap;
+	overflow: hidden;
 }
- .c-ripple.is-active .c-ripple__circle {
-	 animation: a-ripple 0.4s ease-in;
+
+/*ButtonD*/
+
+.buttonD {
+	font-family: "Poppins", sans-serif;
+	width: 200px;
+	height: 45px;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 0px 2px 14px -7px rgba(0, 0, 0, 0.2);
+	position: relative;
 }
-/** * Animation: Ripple * -------------------------------------------------- */
- @keyframes a-ripple {
-	 0% {
-		 opacity: 0;
-	}
-	 25% {
-		 opacity: 1;
-	}
-	 100% {
-		 width: 200%;
-		 padding-bottom: 200%;
-		 opacity: 0;
-	}
+
+
+.buttonD::before {
+	width: 50px;
+	transition: width 0.5s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonD::before {
+	content: "";
+	width: 5px;
+	height: 100%;
+	background: rgba(255, 255, 3, 1);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.buttonD:hover::before {
+	width: 100%;
+	content: "Safety";
+	color: #000;
+	font-size: 1.2em;
+	white-space: nowrap;
+	overflow: hidden;
 }
