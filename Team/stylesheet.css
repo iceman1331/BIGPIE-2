@@ -193,7 +193,11 @@ Movie information
 	height: 195px;
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+	margin: auto;
+	display: block;
+	margin: auto 5% auto 5%;
 }
 
 .info header h1 {
@@ -252,7 +256,7 @@ Posters and still images
 **************************************/
 
 .scene:nth-child(1) .movie .poster {
-	background-image: url(MCU/thor.jpg);
+	background-image: url(A1.jpg);
 }
 
 .scene:nth-child(2) .poster {
@@ -264,7 +268,7 @@ Posters and still images
 }
 
 .scene:nth-child(1) .info header {
-	background-image: url(contributions.png);
+	background-image: url(A2_crop.jpg);
 }
 
 .scene:nth-child(2) .info header {
@@ -458,5 +462,36 @@ ul.nacc li p {
 -moz-box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.5);
 box-shadow: 4px 3px 16px 0px rgba(0,0,0,0.5);
 }
+/*---Tabs end here---*/
+/*---Tabs end here---*/
+/*---Tabs end here---*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+.nameMem{
+	font-size: 1rem;
+	text-align: center;
+	margin: 0;
+	text-transform: none;
+}
+.memdetails{
+	color: #000;
+	margin: 0;
+	text-align: center;
+	
+}
+
+.li{
+	color: #000;
+	font-size: 0.5rem;
+}
