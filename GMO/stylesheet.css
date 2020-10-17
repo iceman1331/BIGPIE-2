@@ -1,4 +1,10 @@
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 html,
 body {
 	margin: 0;
@@ -6,13 +12,14 @@ body {
 	width: 100%;
 	background-color: #ffffff;
 	box-sizing: border-box;
-	font-size: 100%;	
+	font-size: 100%;
 }
-
+.navbar {
+	color: red;
+}
 body {
 	overflow-x: hidden;
 }
-
 #cta {
 	width: 100%;
 	height: 600px;
@@ -26,7 +33,6 @@ body {
 	z-index: 1;
 	margin-bottom: 5%;
 }
-
 @media(max-width:600px) {
 	#cta {
 		height: auto;
@@ -36,16 +42,6 @@ body {
 		width: 100%;
 	}
 }
-
-.cfg{
-	color: red;
-}
-
-.text-content{
-	margin: auto 4% auto 4%;
-}
-
-
 .desc-title {
 	display: block;
 	width: 100%;
@@ -53,7 +49,6 @@ body {
 	margin: auto;
 	padding-top: 25%;
 }
-
 .desc-title h1 {
 	color: #fff;
 	font-size: 4.5rem;
@@ -61,27 +56,22 @@ body {
 	backdrop-filter: blur(2px);
 	font-family: 'Lato', sans-serif;
 }
-
 @media(max-width:600px) {
 	.desc-title {
 		padding-top: 50%;
 	}
-
 	.desc-title h1 {
 		font-size: 2.25rem;
 		color: #ffff;
 		padding-bottom: 10%;
 	}
 }
-
 @media(max-width:360px) {
 	.desc-title h1 {
 		font-size: 3rem;
 	}
 }
-
-
- .content p{
+.content p {
 	font-family: Merriweather, serif;
 	font-size: 17.6px;
 	font-weight: 400;
@@ -89,335 +79,402 @@ body {
 	color: rgb(61, 61, 61);
 	margin: auto;
 	margin: 5% auto 5% auto;
-	
-	
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased !important;
 	-moz-font-smoothing: antialiased !important;
 	text-rendering: optimizelegibility !important;
 	letter-spacing: .05em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.blank{
+.blank {
 	padding: 10%;
 }
 
+.text-content {
+	padding: 7%;
+	
+}
 
 
-
-
-.GreatGMO{
+.GreatGMO {
 	display: block;
 	margin: auto;
 }
-
-@media(max-width:950px){
-	.GreatGMO{
-	display: none;
-	margin: auto;
-}
-
+@media(max-width:950px) {
+	.GreatGMO {
+		display: none;
+		margin: auto;
+	}
 }
 
 /*---3d Mag-----*/
+
 .cube {
-	 perspective: 1200px;
-	 transform-style: preserve-3D;
-	 position: absolute;
-	 left: 0;
-	 right: 0;
-	 margin: auto;
-	 width: 180px;
-	 height: 280px;
-	 transition: all 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
-	 top: 10px;
-	 transform: rotateY(0deg) rotateX(40deg) rotateZ(-20deg) scale(1);
+	perspective: 1200px;
+	transform-style: preserve-3D;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 180px;
+	height: 280px;
+	transition: all 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
+	top: 10px;
+	transform: rotateY(0deg) rotateX(40deg) rotateZ(-20deg) scale(1);
 }
- .cube_inner {
-	 width: 210px;
-	 height: 280px;
-	 transform-style: preserve-3d;
+.cube_inner {
+	width: 210px;
+	height: 280px;
+	transform-style: preserve-3d;
 }
- .cube_inner div {
-	 position: absolute;
-	 width: 210px;
-	 height: 280px;
-	 background: #ff2ba2;
-	 transform-origin: 50% 50%;
+.cube_inner div {
+	position: absolute;
+	width: 210px;
+	height: 280px;
+	background: #ff2ba2;
+	transform-origin: 50% 50%;
 }
- .cube_inner div.cube_front {
-	 transform-origin: 1px 0px;
-	 backface-visibility: hidden;
-	 transform: translateZ(6px);
-	 transition: transform 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
-	 
-	 background: url('GMO-Cover.JPG');
-	 
-	 background-size: cover !important;
+.cube_inner div.cube_front {
+	transform-origin: 1px 0px;
+	backface-visibility: hidden;
+	transform: translateZ(6px);
+	transition: transform 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
+	background: url('GMO-Cover.JPG');
+	background-size: cover !important;
 }
- .cube_inner div.page_left {
-	 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
-	 transform-origin: 1px 0px;
-	 transition: transform 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
-	 transform: translateZ(5px -1);
-	 
-	 background: url('GMO-page-1.png');
-	 
-	 background-size: cover !important;
+.cube_inner div.page_left {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+	transform-origin: 1px 0px;
+	transition: transform 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
+	transform: translateZ(5px -1);
+	background: url('GMO-page-1.png');
+	background-size: cover !important;
 }
- .cube_inner div.page_right {
-	 transform: translateZ(4px);
-	 
-	 background: url('GMO-intro-2.JPG')	;
-	 
-	 background-size: cover !important;
+.cube_inner div.page_right {
+	transform: translateZ(4px);
+	background: url('GMO-intro-2.JPG');
+	background-size: cover !important;
 }
- .cube_inner div.cube_back {
-	 transform: translateZ(- 5px);
-	 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+.cube_inner div.cube_back {
+	transform: translateZ(- 5px);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
- .cube_inner div.cube_left {
-	 width: 10px;
-	 transform: rotateY(90deg) translateZ(-5px);
-	 background-color: #062738;
+.cube_inner div.cube_left {
+	width: 10px;
+	transform: rotateY(90deg) translateZ(-5px);
+	background-color: #062738;
 }
- .cube_inner div.cube_right {
-	 width: 10px;
-	 transform: rotateY(90deg) translateZ(210px -5px);
-	 background-color: #d80079;
+.cube_inner div.cube_right {
+	width: 10px;
+	transform: rotateY(90deg) translateZ(210px -5px);
+	background-color: #d80079;
 }
- .cube_inner div.cube_top {
-	 height: 10px;
-	 transform: rotateX(90deg) translateZ(5px);
-	 background-color: #b00063;
+.cube_inner div.cube_top {
+	height: 10px;
+	transform: rotateX(90deg) translateZ(5px);
+	background-color: #b00063;
 }
- .cube_inner div.cube_bottom {
-	 height: 10px;
-	 transform: rotateX(90deg) translateZ(- 275px);
-	 background-color: #fff;
+.cube_inner div.cube_bottom {
+	height: 10px;
+	transform: rotateX(90deg) translateZ(- 275px);
+	background-color: #fff;
 }
- hr {
-	 background: #09d4fb;
-	 width: 16px;
-	 float: left;
-	 height: 2px;
-	 border: none;
+hr {
+	background: #09d4fb;
+	width: 16px;
+	float: left;
+	height: 2px;
+	border: none;
 }
- .box {
-	 background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/wood_panels.png');
-	 background-size: cover;
-	 width: 500px;
-	 background-color: #e8cbb1;
-	 background-blend-mode: difference;
-	 height: 400px;
-	 display: block;
-	 position: relative;
-	 left: 0;
-	 right: 0;
-	 margin: auto;
-	 transition: width 1s cubic-bezier(0.815, 0.005, 0.18, 1.005), background-color 1s cubic-bezier(0.815, 0.005, 0.18, 1.005), background-position 0.6s 0.51s ease;
-	 transform: translateY(-50%);
+.box {
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/wood_panels.png');
+	background-size: cover;
+	width: 500px;
+	background-color: #e8cbb1;
+	background-blend-mode: difference;
+	height: 400px;
+	display: block;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	transition: width 1s cubic-bezier(0.815, 0.005, 0.18, 1.005), background-color 1s cubic-bezier(0.815, 0.005, 0.18, 1.005), background-position 0.6s 0.51s ease;
+	transform: translateY(-50%);
 }
- .box:hover {
-	 width: 660px;
-	 background-position: -300px 0px;
+.box:hover {
+	width: 660px;
+	background-position: -300px 0px;
 }
- .box:hover .cube {
-	 transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateY(50px) translateX(-220px);
+.box:hover .cube {
+	transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1) translateY(50px) translateX(-220px);
 }
- .box:hover .cube .cube_front {
-	 transform: translateZ(5px) rotatey(-179deg);
+.box:hover .cube .cube_front {
+	transform: translateZ(5px) rotatey(-179deg);
 }
- .box:hover .cube .page_left {
-	 transform: translateZ(5px) rotatey(-180deg);
+.box:hover .cube .page_left {
+	transform: translateZ(5px) rotatey(-180deg);
 }
- .box:hover .description {
-	 left: 426px;
-	 top: -10px;
-	 height: 160px;
-	 width: 200px;
+.box:hover .description {
+	left: 426px;
+	top: -10px;
+	height: 160px;
+	width: 200px;
 }
- .box:hover .pink {
-	 transform: scale(1) rotate(-10deg);
-	 transition: all 0.7s 0.3s cubic-bezier(0.815, 0.005, 0.18, 1.005);
+.box:hover .pink {
+	transform: scale(1) rotate(-10deg);
+	transition: all 0.7s 0.3s cubic-bezier(0.815, 0.005, 0.18, 1.005);
 }
- .box:hover .holder {
-	 width: 700px;
+.box:hover .holder {
+	width: 700px;
 }
- .box:hover .big {
-	 opacity: 1;
-	 top: 180px;
-	 left: 180px;
+.box:hover .big {
+	opacity: 1;
+	top: 180px;
+	left: 180px;
 }
- .box:hover .button {
-	 z-index: 3;
-	 bottom: 82px;
-	 left: 510px;
-	 background: #298aaf;
+.box:hover .button {
+	z-index: 3;
+	bottom: 82px;
+	left: 510px;
+	background: #298aaf;
 }
- .box .pink {
-	 position: absolute;
-	 transition: all 0.7s 0s cubic-bezier(0.815, 0.005, 0.18, 1.005);
-	 width: 80px;
-	 border-radius: 100px;
-	 height: 62px;
-	 z-index: 2;
-	 background: black;
-	 color: white;
-	 left: 160px;
-	 top: 22px;
-	 font-family: georgia;
-	 text-align: center;
-	 line-height: 20px;
-	 padding: 18px 0px 0px 0px;
-	 box-shadow: 0px 0px 0px black;
-	 transform: scale(0) rotate(-80deg);
+.box .pink {
+	position: absolute;
+	transition: all 0.7s 0s cubic-bezier(0.815, 0.005, 0.18, 1.005);
+	width: 80px;
+	border-radius: 100px;
+	height: 62px;
+	z-index: 2;
+	background: black;
+	color: white;
+	left: 160px;
+	top: 22px;
+	font-family: georgia;
+	text-align: center;
+	line-height: 20px;
+	padding: 18px 0px 0px 0px;
+	box-shadow: 0px 0px 0px black;
+	transform: scale(0) rotate(-80deg);
 }
- .box .holder {
-	 transition: all 1s 0.2s;
-	 overflow: hidden;
-	 width: 500px;
-	 height: 400px;
-	 background: transparent;
-	 position: absolute;
+.box .holder {
+	transition: all 1s 0.2s;
+	overflow: hidden;
+	width: 500px;
+	height: 400px;
+	background: transparent;
+	position: absolute;
 }
- .box .big {
-	 background: #47e1ff;
-	 padding: 20px;
-	 transition: all 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
-	 position: absolute;
-	 opacity: 1;
-	 z-index: 2;
-	 top: -136px;
-	 left: 90px;
-	 width: 370px;
+.box .big {
+	background: #47e1ff;
+	padding: 20px;
+	transition: all 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
+	position: absolute;
+	opacity: 1;
+	z-index: 2;
+	top: -136px;
+	left: 90px;
+	width: 370px;
 }
- .box .big hr {
-	 background: white;
+.box .big hr {
+	background: white;
 }
- .box .big h1 {
-	 font-family: georgia;
-	 font-size: 20px;
-	 margin: 0;
-	 font-weight: normal;
-	 color: #583447;
+.box .big h1 {
+	font-family: georgia;
+	font-size: 20px;
+	margin: 0;
+	font-weight: normal;
+	color: #583447;
 }
- .box .big p {
-	 clear: left;
-	 margin: 0;
-	 font-size: 12px;
-	 font-family: georgia;
-	 opacity: 0.8;
-	 color: #583447;
+.box .big p {
+	clear: left;
+	margin: 0;
+	font-size: 12px;
+	font-family: georgia;
+	opacity: 0.8;
+	color: #583447;
 }
- .box .button {
-	 background: #09d4fb;
-	 position: absolute;
-	 bottom: 14px;
-	 cursor: pointer;
-	 transition: bottom 1s cubic-bezier(0.815, 0.005, 0.18, 1.005), left 1s cubic-bezier(0.815, 0.005, 0.18, 1.005), box-shadow 1s, background-color 1s;
-	 z-index: 4;
-	 left: 360px;
-	 padding: 10px 24px;
-	 color: white;
-	 box-shadow: 0px 0px 0px #f31893;
-	 border-radius: 100px;
-	 font-family: georgia;
-	 font-size: 12px;
+.box .button {
+	background: #09d4fb;
+	position: absolute;
+	bottom: 14px;
+	cursor: pointer;
+	transition: bottom 1s cubic-bezier(0.815, 0.005, 0.18, 1.005), left 1s cubic-bezier(0.815, 0.005, 0.18, 1.005), box-shadow 1s, background-color 1s;
+	z-index: 4;
+	left: 360px;
+	padding: 10px 24px;
+	color: white;
+	box-shadow: 0px 0px 0px #f31893;
+	border-radius: 100px;
+	font-family: georgia;
+	font-size: 12px;
 }
- .box .description {
-	 transition: all 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
-	 background: black;
-	 position: absolute;
-	 height: 86px;
-	 z-index: 1;
-	 top: 240px;
-	 width: 400px;
-	 color: white;
-	 left: 0px;
-	 padding: 22px;
+.box .description {
+	transition: all 1s cubic-bezier(0.815, 0.005, 0.18, 1.005);
+	background: black;
+	position: absolute;
+	height: 86px;
+	z-index: 1;
+	top: 240px;
+	width: 400px;
+	color: white;
+	left: 0px;
+	padding: 22px;
 }
-
- .box .description h1 {
-	 font-family: georgia;
-	 font-weight: normal;
-	 padding: 0;
-	 margin: 0;
-	 color: #fff;
-	 line-height: 15px;
-	 font-size: 13px;
+.box .description h1 {
+	font-family: georgia;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	line-height: 15px;
+	font-size: 13px;
 }
- .box .description p {
-	 clear: left;
-	 font-family: georgia;
-	 margin: 0;
-	 padding: 0;
-	 line-height: 0;
-	 font-weight: normal;
-	 font-size: 12px;
-	 color: #fff;
-	 opacity: 0.8;
+.box .description p {
+	clear: left;
+	font-family: georgia;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+	font-weight: normal;
+	font-size: 12px;
+	color: #fff;
+	opacity: 0.8;
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*---PDF-holder*/
+
 .guide-doc {
 	display: block;
 	margin: auto;
 }
-
 embed {
 	display: block;
 	margin: auto;
 	width: 80%;
 	height: 120vh;
 }
-
 .smallpdf {
 	display: none;
 }
-
 @media(max-width:500px) {
 	embed {
 		display: none;
 	}
-
 	.smallpdf {
 		display: block;
 		margin: auto;
 		text-align: center;
 	}
-
 	.smallpdf a {
 		color: #336699;
 		text-decoration: none;
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.prev-next {
+	display: block;
+}
+@media(max-width:500px) {
+	.prev-next {
+		display: none;
+	}
+}
+.buttons-coll {
+	width: 90%;
+	margin: 25px auto;
+	margin-bottom: 0;
+	text-align: center;
+}
+button {
+	margin: 20px;
+	margin-bottom: 0;
+}
+.custom-btn {
+	padding: 10px 25px;
+	font-weight: 500;
+	background: transparent;
+	outline: none !important;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+/**** BTN No. 14 ****/
+
+.btn-14 {
+	float: right;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+}
+.btn-14:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+.btn-14:hover {
+	color: #fff;
+}
+.btn-14:hover:after {
+	left: 0;
+	width: 100%;
+}
+.btn-14:active {
+	top: 2px;
+}
+
+/**** BTN No. 15 ****/
+
+.btn-15 {
+	float: left;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+	content: "";
+}
+.btn-15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+.btn-15:hover {
+	color: #fff;
+}
+.btn-15:hover:after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+.btn-15:active {
+	top: 2px;
+}
