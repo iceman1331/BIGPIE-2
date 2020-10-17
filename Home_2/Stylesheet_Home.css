@@ -443,7 +443,6 @@ ttext b:nth-child(6) {
 
 /*ButtonA*/
 .buttonA {
-	font-family: "Poppins", sans-serif;
 	width: 200px;
 	height: 45px;
 	padding: 0;
@@ -489,7 +488,6 @@ ttext b:nth-child(6) {
 
 /*ButtonB*/
 .buttonB {
-	font-family: "Poppins", sans-serif;
 	width: 200px;
 	height: 45px;
 	padding: 0;
@@ -534,7 +532,6 @@ ttext b:nth-child(6) {
 
 /*ButtonC*/
 .buttonC {
-	font-family: "Poppins", sans-serif;
 	width: 200px;
 	height: 45px;
 	padding: 0;
@@ -580,7 +577,6 @@ ttext b:nth-child(6) {
 /*ButtonD*/
 
 .buttonD {
-	font-family: "Poppins", sans-serif;
 	width: 200px;
 	height: 45px;
 	padding: 0;
