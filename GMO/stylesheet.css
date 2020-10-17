@@ -19,7 +19,7 @@ body {
 	background-attachment: fixed;
 	background-image: url(contributions.png);
 	background-image: url(GMOA.jpg);
-	background-position: top left;
+	background-position: center;
 	opacity: 1;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -53,6 +53,7 @@ body {
 	color: #fff;
 	font-size: 4.5rem;
 	font-weight: 1000;
+	backdrop-filter: blur(2px);
 	font-family: 'Lato', sans-serif;
 }
 
