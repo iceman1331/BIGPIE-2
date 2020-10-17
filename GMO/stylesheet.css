@@ -38,8 +38,13 @@ body {
 }
 
 .cfg{
-	
+	color: red;
 }
+
+.text-content{
+	margin: auto 4% auto 4%;
+}
+
 
 .desc-title {
 	display: block;
@@ -177,7 +182,7 @@ body {
  .cube_inner div.page_right {
 	 transform: translateZ(4px);
 	 
-	 background: url('GMO-intro.JPG');
+	 background: url('GMO-intro-2.JPG')	;
 	 
 	 background-size: cover !important;
 }
@@ -353,7 +358,7 @@ body {
 	 padding: 0;
 	 margin: 0;
 	 color: #fff;
-	 line-height: 12px;
+	 line-height: 15px;
 	 font-size: 13px;
 }
  .box .description p {
