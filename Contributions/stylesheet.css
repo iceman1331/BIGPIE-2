@@ -72,8 +72,7 @@ body {
 }
 
 .disclaimer {
-	border-left: 2px solid rgba(255, 76, 76, 0.9);
-	padding: 2px 5px 2px 15px;
+	padding: 2px 5px 5% 15px;
 }
 
 .disclaimer p {
