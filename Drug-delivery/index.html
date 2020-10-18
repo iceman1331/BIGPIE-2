@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no, shrink-to-fit=no" />
+	<title>Drug delivery</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="../Common/fontawesome/css/all.min.css">
+	<script src="../Common/fontawesome/js/all.min.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="../Common/animations.css" />
+
+	<link rel="stylesheet" href="stylesheet.css" />
+
+	<script src="../Common/jquery.fancybox.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="../Common/jquery.fancybox.min.css" />
+
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop src="../Common/T--IISER_Bhopal--Loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<a class="navbar-brand" href="../index.html"><img width="50px" src="../Common/logo.png">The BIGPIE</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
+							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Team/index.html">Team</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+
+	<main>
+		<div id="cta">
+			<div class="desc-title">
+				<h1> Drug Delivery </h1>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="container main-text">
+				<h1 class="text-center">Capsule for delivery - iBETA</h1>
+				<p>
+					IHP: Capsule delivery being a major part of our IHP turned out much different from what we had envisioned it. While the capsule had started out as a simple delivery system which would release our drug in the duodenum directly. Discussion with Dr Devaraj helped us ascertain the exact point of drug release, choose the corresponding capsule and helped us improve the efficiency of our drug by advising us to use muco-penetrative formulations which helped more bacteria cross the mucosa and reach the crypt cells. She also advised on the prescription timing for the patients based on the type of capsule we’ve created.
+				</p>
+
+				<div class="container text-center">
+					<a href="PEG-2.JPG" data-fancybox data-caption="PEGylation">
+						<img class="img-fluid" src="PEG-2.JPG">
+					</a>
+				</div>
+
+				<div class="alert alert-success text-center" role="alert">
+					<h4 class="alert-heading">#PRESCRIPTION - CONSUME THE CAPSULE BEFORE YOUR MEAL</h4>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="container main-text">
+				<h2 class="text-center">Biomanufacturing</h2>
+				<h3>MUCO PENETRATIVE FORMULATION</h3>
+				<p>
+					Microcapsule properties include charge and hydrophobicity. These have a great influence on their behavior of penetrating through mucus. As a consequence, to prepare microcapsule with a sufficiently hydrophilic and uncharged surface to effectively minimize the adhesive interactions between mucin and microcapsule by reducing hydrophobic or electrostatic interactions, show promise prospect on mucus penetrating.
+				</p>
+				<p>
+					In order to reach the crypt cells in the duodenum, we need our drug delivery system to penetrate the mucosa.
+				</p>
+				<p>
+					Microcapsules are usually charged and hydrophobic which allows them to attach to the mucosa in the crypts in the gut. We are preparing a microsphere which is hydrophilic and uncharged. These properties reduce the adhesion between the (mucins) surface of the mucosa and the sphere. Thus allowing improved mucosal penetration.
+				</p>
+
+				<div class="container text-center">
+					<a href="microshperes.png" data-fancybox data-caption="Microshperes">
+						<img class="img-fluid" src="microshperes.png">
+					</a>
+				</div>
+
+				<h4>Step 1</h4>
+
+				<div class="container">
+					<div class="row">
+
+						<div class="col-sm-4">
+							<div class="container text-center">
+								<a href="mol-1.png" data-fancybox data-caption="mol-1">
+									<img class="img-fluid" src="mol-1.png">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<p>
+								<b>Formation of Polymeric Microspheres</b>
+								Polymeric microsphere drug carriers are spherical particles in the size range of several to hundreds of microns. They can protect unstable drugs during administration. They release the drug over time, providing a prolonged therapeutic effect and reducing the dosing frequency. In addition, microspheres allow for the targeted drug delivery of potent drugs at reduced concentrations, minimizing systemic exposure and adverse side effects.
+							</p>
+
+						</div>
+					</div>
+				</div>
+
+				<p>
+					Microspheres are biodegradable polymers such as poly(lactide-co-glycolide) (PLGA). These polymers degrade in vivo by hydrolysis of their ester backbone into non-toxic products, which are excreted by the kidneys or eliminated as CO2 and water through biochemical pathways. PLGA microspheres have been widely used to encapsulate drug molecules and have been used as long-acting, sustained-release pharmaceutical formulations. There are several drug-loaded PLGA microspheres approved by the FDA and marketed for clinical use. When drug-loaded PLGA microspheres are administered, the PLGA polymer starts to degrade in vivo, and as it degrades the drug molecules are gradually released from the microspheres.
+				</p>
+
+				<div class="container text-center">
+					<a href="emulsification%20PEGylation.png" data-fancybox data-caption="emulsification PEGylation">
+						<img class="img-fluid" src="emulsification%20PEGylation.png">
+					</a>
+				</div>
+
+				<p>
+					<b>Emulsification Process - Emulsification can be used to prepare drug-loaded polymeric microspheres. </b><br>
+					In a single emulsion, the polymer - PLGA is dissolved in a solvent that is not miscible with water. The E. coli Nissle is emulsified in an aqueous solution containing a surfactant or a polymeric stabilizer. Emulsification can be completed by a mechanical stirrer. After the oil-in water emulsion is formed, the solvent is removed by extraction. The particles can be washed to remove the surfactant and possible unincorporated drug molecules.
+				</p>
+				<p>Following is a typical protocol for preparing PLGA microspheres using a single-emulsion process: </p>
+
+				<ol>
+					<li>Prepare a 5% PLGA solution by dissolving PLGA polymer with an L/G ratio of 50/50, COOH terminated, and inherent viscosity of 0.55–0.75 dL/g (additional PLGA polymers may be substituted) in methylene chloride.</li>
+					<li>Prepare a 1% solution of polyvinyl alcohol (PVA) (Mw 85,000–124,000, 87–89% hydrolyzed) solution in DI water.</li>
+					<li>Mix 5 mL of the 5% PLGA solution prepared in Step 1 with 100 mL of the 1% PVA solution prepared in Step 2 in a 500 mL beaker.</li>
+					<li>Homogenize the mixture of the PLGA and PVA solutions by using High Speed Homogenizer for 2 min.</li>
+					<li>Stir the resulting emulsion at 400 rpm on a stir plate in a fume hood for 3 h to allow the methylene chloride to evaporate.</li>
+					<li>Wash the microspheres three times using refrigerated centrifugation and lyophilize.</li>
+				</ol>
+
+				<h4>Step 2</h4>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-9">
+							<p>
+								<b>PEGylation of microspheres</b>
+								PEG (Polyethylene Glycol), US FDA - approved polymer is the most prominent noninteracting polymer used for muco-penetrative formulation of drug delivery. It is highly abundant as coating material when no or very limited interactions of assemblies with environmental molecules is desired. The PEG‐coating equips the microspheres with an electrically neutral, hydrophilic surface, which prevents hydrophobic and electrostatic interactions with the mucus.
+							</p>
+						</div>
+						<div class="col-sm-3 align-middle">
+							<div class="container text-center bad-image">
+								<a href="mol-2.png" data-fancybox data-caption="mol-2">
+									<img class="img-fluid align-middle" src="mol-2.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h4>PEG 2000</h4>
+				<p>
+					Coating microspheres with low molecular weight (MW) PEG is the most widely studied mucus penetrating strategy. Research has shown that coating with a high density of low MW PEG can reduce the interactions between microspheres and mucus. The experimental results showed that low MW (e.g. 2 kDa) and high-density (e.g. 65–70%) PEG coating can facilitate the NPs to pass through mucus.
+				</p>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="container text-center">
+								<a href="Core.png" data-fancybox data-caption="Some core">
+									<img class="img-fluid" src="Core.png">
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="container text-center">
+								<a href="I3.png" data-fancybox data-caption="PEGylated microspheres penetrate the mucus layer to reach epithelial cells">
+									<img class="img-fluid" src="I3.png">
+								</a>
+								<p class="text-center">PEGylated microspheres penetrate the mucus layer to reach epithelial cells</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<h3>FREEZE DRYING/Lyophilisation</h3>
+				<p>
+					This is a dehydration process. The process is performed by freezing probiotics in the presence of carrier material at low temperatures, followed by sublimation of the water to gas under vacuum. One of the most important advantages is the water phase transition and oxidation are avoided. In order to improve the probiotic activity upon freeze-drying and also stabilize them during storage, there is addition of cryoprotectants. Freeze-drying is a very expensive technology, it is probably most often used to dry probiotics.
+				</p>
+
+				<h4>Procedure -</h4>
+				<div class="container text-center">
+					<a href="Final-product.JPG" data-fancybox data-caption="Procedure">
+						<img class="img-fluid" src="Final-product.JPG">
+					</a>
+				</div>
+
+				<h2 class="text-center">HPMC CAPSULE</h2>
+				<h4 class="text-center">Capsule Name - ACGCAPS<sup>TM</sup> HD</h4>
+
+				<ul>
+					<li>Delays release of formulation by up to 60 minutes or until the capsules is in the intestine (i.e. pH > 5.5)</li>
+					<li>Eliminates the need for additional protective coating of formulation or capsule</li>
+					<li>Made from natural plant sourced cellulose</li>
+					<li>Ideal choice for products like probiotics and enzymes to prevent degradation</li>
+					<li>Easier and more convenient way to develop a modified release product</li>
+					<li>Meets the functional, cultural and dietary preferences &amp; compliances</li>
+				</ul>
+
+				<h4>CAPSULE SIZE CHART</h4>
+				<p>After our experimental trials interpret the amount of dosage required for a patient, we will use the capsule to incorporate the microspheres as per the standard size chart given below.</p>
+
+				<div class="container text-center">
+					<a href="Capsule-size.JPG" data-fancybox data-caption="Capsule size">
+						<img src="Capsule-size.JPG">
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container main-text">
+			<table class="table align-middle table-bordered table-responsive-lg">
+				<thead class="thead-dark main-text text-center table-success">
+					<tr>
+						<th scope="col">Size</th>
+						<th scope="col">000</th>
+						<th scope="col">00</th>
+						<th scope="col">0</th>
+						<th scope="col">1</th>
+						<th scope="col">2</th>
+						<th scope="col">3</th>
+						<th scope="col">4</th>
+						<th scope="col">5</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Density<br> 0.6 g/ml</th>
+						<td>822 mg</td>
+						<td>570 mg</td>
+						<td>408 mg</td>
+						<td>300 mg</td>
+						<td>222 mg</td>
+						<td>180 mg</td>
+						<td>126 mg</td>
+						<td>78 mg</td>
+					</tr>
+					<tr>
+						<th scope="row">Density <br>0.8 g/ml
+						</th>
+						<td>1096 mg</td>
+						<td>760 mg</td>
+						<td>544 mg</td>
+						<td>400 mg</td>
+						<td>296 mg</td>
+						<td>240 mg</td>
+						<td>168 mg</td>
+						<td>104 mg</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							Density<br> 1 g/ml
+						</th>
+						<td>1370 mg</td>
+						<td>950 mg</td>
+						<td>680 mg</td>
+						<td>500 mg</td>
+						<td>370 mg</td>
+						<td>300 mg</td>
+						<td>210 mg</td>
+						<td>130 mg</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							Density<br> 1.2 g/ml
+						</th>
+						<td>1644 mg</td>
+						<td>1140 mg</td>
+						<td>816 mg</td>
+						<td>600 mg</td>
+						<td>444 mg</td>
+						<td>360 mg</td>
+						<td>252 mg</td>
+						<td>156 mg</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+		<div class="container references">
+			<h3>References</h3>
+			<ol>
+				<li>
+					L.E.Garcia-Amezquita, J.Welti-Chanes, F.T.Vergara-Balderas, D.Bermúdez-Aguirre. Freeze-drying: The Basic Process.
+					<a href="">https://doi.org/10.1016/B978-0-12-384947-2.00328-7</a>
+				</li>
+				<li>
+					Essi Taipaleenmäki Brigitte Städler (2020) Recent Advancements in Using Polymers for Intestinal Mucoadhesion and Mucopenetration. <a href="">https://doi.org/10.1002/mabi.201900342</a>
+				</li>
+				<li>
+					Lengyel, M.; Kállai-Szabó, N.; Antal, V.; Laki, A.J.; Antal, I. Microparticles, Microspheres, and Microcapsules for Advanced Drug Delivery. Sci. Pharm. 2019, 87, 20. <a href="">http://dx.doi.org/10.3390/scipharm87030020</a>
+				</li>
+				<li>
+					Min Liu, Jian Zhang, Wei Shan, Yuan Huang (2015) Developments of mucus penetrating nanoparticles. Asian Journal of Pharmaceutical Sciences. <a href="">https://doi.org/10.1016/j.ajps.2014.12.007</a>
+				</li>
+				<li>
+					Y.Y. Wang, S.K. Lai, J.S. Suk, et al. Addressing the PEG mucoadhesivity paradox to engineer nanoparticles that “slip” through the human mucus barrier Angew Chem Int Ed Engl, 47 (2008), pp. 9726-9729.
+					<a href="https://doi.org/10.1002/anie.200803526">https://doi.org/10.1002/anie.200803526</a>
+				</li>
+				<li>
+					<a href="https://www.sigmaaldrich.com/technical-documents/articles/materials-science/polyethylene-glycol-selection-guide.html">
+						Polyethylene glycol selection guide.
+					</a>
+				</li>
+
+				<li><a href="http://informahealthcare.com/doi/abs/10.3109/03639045.2010.546801">
+						http://informahealthcare.com/doi/abs/10.3109/03639045.2010.546801
+					</a>
+				</li>
+				<li>
+					<a href="https://doi.org/10.3389/fmicb.2016.00494">https://doi.org/10.3389/fmicb.2016.00494</a>
+				</li>
+
+				<li>
+					<a href="https://capsuline.com/pages/empty-capsule-size-chart">Empty capsule size chart</a>
+				</li>
+				<li>
+					<a href="https://www.acg-world.com/">ACG-World.</a>
+				</li>
+				<li>
+					<a href="https://healthcare.evonik.com/product/health-care/en/products/pharmaceutical-excipients/delayed-release/">Evonik Industries. </a>
+				</li>
+				<li>
+					<a href="https://www.capsulcn.com/different-types-of-capsules-guide">Different types of pill guide</a>
+				</li>
+				<li>
+					<a href="https://www.capsulcn.com/empty-capsule-size-chart">Five different types of Pills</a>
+				</li>
+				<li>
+					<a href="https://www.intechopen.com/books/probiotics/encapsulation-technology-to-protect-probiotic-bacteria">Technology to protect probiotic bacteria.</a>
+				</li>
+			</ol>
+
+		</div>
+
+
+
+	</main>
+
+
+	<div class="container-fluid prev-next">
+		<div class="buttons-coll">
+			<a href="..">
+				<button class="custom-btn btn-15">← Preliminary Research</button>
+			</a>
+			<a href="..">
+				<button class="custom-btn btn-14">Entrepreneurship → </button>
+			</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<a href="../Description/index.html">
+								<h3>Description</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-2">
+						<div class="ch-info">
+							<a href="#">
+								<h3>Design</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-3">
+						<div class="ch-info">
+							<h3>Parts</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-5">
+						<div class="ch-info">
+							<h3>Human Practices</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-6">
+						<div class="ch-info">
+							<h3>Model</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-4">
+						<div class="ch-info">
+							<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-7">
+						<div class="ch-info">
+							<h3>Patent <br>Law</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-8">
+						<div class="ch-info">
+							<a href="../Biosafety/index.html">
+								<h3>Safety</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+	</div>
+
+
+
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fas fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fas fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fas fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fas fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	
+	
+	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="../Common/css3-animate-it.js"></script>
+</body></html>

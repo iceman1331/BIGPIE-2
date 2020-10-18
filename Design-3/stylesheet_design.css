@@ -59,7 +59,7 @@ body {
 	width: 100%;
 	height: 600px;
 	background-image: url(./imgs/Design-1.png);
-  background-attachment: fixed;
+    background-attachment: fixed;
 	background-position: bottom 75px right 0px;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body {
 }
 
 .bulb {
-	margin-left: 20%;
+	margin-left: 13%;
 }
 
 .collapsing {
@@ -193,7 +193,7 @@ body {
 }
 
 .OneOneA {
-	padding-top: 100px;
+	padding-top: 80px;
 }
 
 .OneOneA .card {
@@ -238,12 +238,13 @@ body {
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	transform: rotate(180deg);
+}
 
 .OneTwo img {
   width: 70%;
-	display: block;
-	margin: auto;
-}
+  display: block;
+  margin: auto; 
+} 
 
 .OneTwo .container {
 	padding-left: 0;
@@ -273,13 +274,21 @@ body {
 
 }
 
+.colp-containerZero {
+    padding: 60px 0 20px 0;
+}
+
 .colp-containerOne {
 	padding: 0 0 20px 0;
-	padding-top: 125px;
+	padding-top: 75px;
 }
 
 .colp-containerTwo {
 	padding: 0 0 20px 0;
+}
+
+.TwoZero {
+    margin: 10px 70px 0 70px;
 }
 
 .TwoTwo {
@@ -300,10 +309,6 @@ body {
 		margin: auto;
 	}
 
-}
-
-.img-desc {
-	margin-bottom: 5%;
 }
 
 .ThreeTwo {
@@ -396,9 +401,7 @@ body {
 
 .parallax {
 	height: auto;
-	/*    background-color: #3bbcff;*/
 	background-image: linear-gradient(to right, #4d9eff, #3b9fff);
-	/*	background-color: #75B8C8;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
@@ -475,23 +478,6 @@ h1 {
 	margin-bottom: 16px;
 }
 
-r {
-	font-size: 2.5rem;
-	color: #001132;
-}
-
-r-2 {
-	font-size: 3.75rem;
-	background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-	background-attachment: fixed;
-
-	/*
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
-	background: -webkit-linear-gradient(to right, #434343 0%, black 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
 h2 {
 	text-transform: none;
 	color: #000;
@@ -543,14 +529,6 @@ ul {
 @media (max-width: 990px) {
 	h1 {
 		font-size: 28px;
-	}
-
-	r {
-		font-size: 25px;
-	}
-
-	r-2 {
-		font-size: 50px;
 	}
 
 	h2 {
@@ -746,7 +724,7 @@ external_knowmore {
 
 
 .collapsible-coli {
-	background-color: rgba(39, 174, 96, 0.9);
+	background-color: #0f4c5c;
 	color: #000;
 	display: block;
 	margin: auto;
@@ -762,7 +740,7 @@ external_knowmore {
 }
 
 .collapsible-coli:hover {
-	background-color: rgba(39, 174, 96, 1.0);
+	background-color: #0f4c5c;
 	color: #000;
 	background-size: cover;
 	border: none;
@@ -830,6 +808,7 @@ external_knowmore {
 	animation: background-move 10s infinite;
 	background: url(Backgrounds/T--IISER_Bhopal--13.jpg);
 	font-weight: 1000;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -1185,17 +1164,6 @@ area {
 
 }
 
-
 .parta{
 	outline: none;
-}
-
-.img3{
-	transition: all 0.5s ease;
-}
-
-.img3:hover{
-	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
 }

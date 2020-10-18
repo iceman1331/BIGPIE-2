@@ -1,0 +1,289 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: "Aileron";
+	src: url("../Common/Font/Aileron/Aileron-Light.otf") format("truetype");
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	font-size: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#cta {
+	width: 100%;
+	height: 600px;
+	background-attachment: fixed;
+	background-image: url(CTA-Drug.png);
+	background-position: center;
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	margin-bottom: 5%;
+}
+
+@media(max-width:600px) {
+	#cta {
+		height: auto;
+		background-attachment: scroll;
+		background-position: center;
+		background-image: ;
+		width: 100%;
+	}
+}
+
+.desc-title {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding-top: 25%;
+}
+
+.desc-title h1 {
+	color: #fff;
+	font-size: 6rem;
+	font-weight: 100;
+	font-family: 'Lato', sans-serif;
+}
+
+@media(max-width:600px) {
+	.desc-title {
+		padding-top: 50%;
+	}
+
+	.desc-title h1 {
+		font-size: 2.25rem;
+		color: #ffff;
+		padding-bottom: 10%;
+	}
+}
+
+@media(max-width:360px) {
+	.desc-title h1 {
+		font-size: 3rem;
+	}
+}
+
+.prev-next {
+	display: block;
+}
+
+@media(max-width:500px) {
+	.prev-next {
+		display: none;
+	}
+}
+
+.buttons-coll {
+	width: 90%;
+	margin: 25px auto;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+button {
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+.custom-btn {
+	padding: 10px 25px;
+	font-weight: 500;
+	background: transparent;
+	outline: none !important;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+.alert{
+	width: 50%;
+	margin: auto;
+	margin-bottom: 5%;
+}
+/**** BTN No. 14 ****/
+.main-text {
+	padding: inherit 5% inherit 20%;
+	margin: auto;
+}
+
+.main-text ul {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: 0% auto 2% auto;
+}
+
+.main-text ol {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: 1% auto 5% auto;
+}
+
+.main-text p {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: auto;
+}
+
+.main-text h1,
+h2,
+h2,
+h3,
+h4 {
+	font-family: 'Aileron', sans-serif;
+	text-transform: none;
+}
+
+.main-text{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: auto;
+}
+
+th{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: auto;
+	width: 6%;
+	text-transform: none;
+}
+
+.references {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: auto;
+	margin: 12% auto 2% auto;
+
+}
+
+.bad-image {
+	vertical-align: middle;
+	padding: 20%;
+}
+
+.btn-14 {
+	float: right;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+}
+
+.btn-14:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+	color: #fff;
+}
+
+.btn-14:hover:after {
+	left: 0;
+	width: 100%;
+}
+
+.btn-14:active {
+	top: 2px;
+}
+
+/**** BTN No. 15 ****/
+
+.btn-15 {
+	float: left;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+	content: "";
+}
+
+.btn-15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+	color: #fff;
+}
+
+.btn-15:hover:after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+
+.btn-15:active {
+	top: 2px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 13px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}

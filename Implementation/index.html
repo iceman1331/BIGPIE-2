@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no, shrink-to-fit=no" />
+	<title>Clinical Trials</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="../Common/fontawesome/css/all.min.css">
+	<script src="../Common/fontawesome/js/all.min.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.css" />
+
+
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+
+	<script src="../Common/jquery.fancybox.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="../Common/jquery.fancybox.min.css" />
+
+	<link rel="stylesheet" href="stylesheet.css" />
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop src="../Common/T--IISER_Bhopal--Loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<a class="navbar-brand text-light active" href="../index.html"><img width="50px" src="../Common/logo.png">The BIGPIE</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
+							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
+						</div>
+					</li>
+
+					<li class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item active" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Team/index.html">Team</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+
+	<main>
+		<div id="cta">
+			<div class="desc-title">
+				<h1> Clinical trials </h1>
+			</div>
+		</div>
+
+		<div class="container trial human-trial">
+			<h1 class="text-center">Human trials</h1>
+
+			<div class="container text-center">
+
+				<a href="Human-trials.png" data-fancybox data-caption="Human Trials">
+					<img class="img-fluid" src="Human-trials.png">
+				</a>
+
+			</div>
+			<div class="human-type-I">
+				<h2>Type-1 Diabetes mellitus trials</h2>
+				<ul>
+					<li>The subjects will be randomized and divided into placebo and experimental groups in 1:1 ratio.</li>
+					<li>Their blood glucose levels and vitals will be regularly measured.
+					</li>
+					<li>The control group will be given E. coli Nissle orally (2 doses per week for 16 weeks) along with Insulin injections during the observation period (4 months).</li>
+					<li>The experimental group will be given engineered bacteria orally (2 doses per week for 16 weeks) along with saline injections during the observation period (4 months).
+					</li>
+					<li>Gut microbiota test, insulin blood test, C-peptide test etc will be performed for all subjects after the first observation period.</li>
+					<li>The subjects will be kept under observation during the wash-up period (1 month).</li>
+					<li>The subjects of the original placebo group and the experimental group will be swapped (suggestion by Dr. Rabindra Shukla) and kept under observation for 4 months.</li>
+					<li>Regular telephonic follow up interviews and outpatient visits will be conducted during the follow-up period ().
+					</li>
+				</ul>
+			</div>
+
+			<div class="testsI">
+				<h4>Tests</h4>
+				<ol>
+					<li>Body weight (baseline, 4 month and end program)
+					</li>
+					<li>Haemoglobin A1c (baseline, 4 month and end program)
+					</li>
+
+					<li>Blood glucose (baseline, 4 month and end program) </li>
+					<li>Insulin blood test (baseline, 4 month and end program)</li>
+					<li>Serum C-peptide (baseline, 4 month and end program) </li>
+					<li>Serum inflammatory markers (IL-6, IFN-gamma, TNF-alpha and IL-10) (baseline, 4 month and end program) </li>
+					<li>GLP-1 (baseline, 4 month and end program)</li>
+					<li>GLP-2 (baseline, 4 month and end program)</li>
+					<li>Intestinal permeability test (baseline, 4 month and end program)</li>
+					<li>Gut microbial profiling (baseline, 4 month and end program) </li>
+				</ol>
+			</div>
+
+			<div class="human-type-II">
+				<h2>Type-2 Diabetes mellitus trials</h2>
+				<ul>
+					<li>The subjects will be randomized and divided into placebo and experimental groups in 1:1 ratio.</li>
+					<li>Their blood glucose levels and vitals will be regularly measured.</li>
+					<li>The control group will be given E. coli Nissle orally (2 doses per week for 16 weeks) along with regular medications during the observation period (4 months).</li>
+					<li>The experimental group will be given engineered bacteria orally (2 doses per week for 16 weeks) along with placebo pills during the observation period (4 months)</li>
+					<li>Gut microbiota test, insulin blood test, C-peptide test etc will be performed for all subjects after the first observation period.</li>
+					<li>The subjects will be kept under observation during the wash-up period (1 month).</li>
+
+					<li>The subjects of the original placebo group and the experimental group will be swapped suggestion by Dr. Rabindra Shukla) and kept under observation for 4 months.</li>
+					<li>Regular telephonic follow up interviews and outpatient visits will be conducted during the follow-up period ().
+					</li>
+				</ul>
+			</div>
+			<div class="testsII">
+				<h4>Tests</h4>
+				<ol>
+					<li>Body weight (baseline, 4 month and end program)</li>
+					<li>Haemoglobin A1c (baseline, 4 month and end program)</li>
+					<li>Blood glucose (baseline, 4 month and end program) </li>
+					<li>Insulin blood test (baseline, 4 month and end program)</li>
+					<li>Change in insulin resistance (baseline, 4 month and end program)</li>
+					<li>Serum C-peptide (baseline, 4 month and end program) </li>
+					<li>Serum inflammatory markers (IL-6, IFN-gamma, TNF-alpha and IL-10) (baseline, 4 month and end program) </li>
+					<li>GLP-1 (baseline, 4 month and end program)</li>
+					<li>GLP-2 (baseline, 4 month and end program)</li>
+					<li>Intestinal permeability test (baseline, 4 month and end program)</li>
+					<li>Gut microbial profiling (baseline, 4 month and end program) </li>
+				</ol>
+			</div>
+
+			<div class="container references">
+				<h3>References</h3>
+				<ul>
+					<li>Ho J, Reimer RA, Doulla M, Huang C. Effect of prebiotic intake on gut microbiota, intestinal permeability and glycemic control in children with type 1 diabetes: study protocol for a randomized controlled trial. Trials. 2016;17(1):347. Published 2016 Jul 26. doi:10.1186/s13063-016-1486-y</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!---section II--->
+		<div class="container trial rodent-trial">
+			<h1 class="text-center">Rodent trials</h1>
+			<div class="container text-center">
+				<a href="Rodent-trials.png" data-fancybox data-caption="Rodent Trials">
+					<img class="img-fluid" src="Rodent-trials.png">
+				</a>
+
+			</div>
+
+			<p>The mice models were suggested by Dr Ravi Shukla, an experienced diabetologist. He guided us in framing the clinical trials in accordance with our project requirements.</p>
+			<div class="rodent-type-I">
+				<h2>Type-1 Diabetes mellitus</h2>
+				<p><b>High dose streptozotocin (STZ) mice</b><br> Streptozotocin (STZ) enters the beta cells through cell surface transporters. STZ alkylates the DNA of the pancreatic beta cells and is also a source of free radicals. Treatment of mice with a high dose of STZ results in the rapid destruction of beta cells causing hyperglycemia creating a condition similar to.
+					<br> STZ is usually delivered via intraperitoneal (IP) route or intravenous (IV) route.
+				</p>
+				<p>
+					<b>Non-obese diabetic (NOD) mice</b><br> Dr. Ravindra Shukla gave us the suggestion of performing experiments on NOD mice along with STZ mice as they are a better model to study the immune response against the transdifferentiated beta-islet like cells. NOD mice are an excellent model to study the novel therapies for type-1 diabetes mellitus and the genetic and immunological causes of type-1 diabetes mellitus. These mice develop type 1 diabetes spontaneously. They develop insulitis (manifestation of the autoimmune attack against beta cells) at around 3–4 weeks of age and lose approximately ninety percent of pancreatic insulin at around 10–14 weeks of age.
+				</p>
+
+				<ul>
+					<li>The subjects will be randomized after the onset of type-1 diabetes mellitus and their blood glucose levels will be regularly measured.</li>
+					<li>The control groups will be fed with E. coli Nissle whereas the experimental groups will be fed with engineered bacteria. (2 doses per week for 2 weeks)</li>
+					<li>The control groups will be given insulin injections and the experimental groups will be given saline intravenously for 2 weeks.</li>
+					<li>Epididymal fat analysis, gut microbiota test, insulin blood test, and C-peptide test will be performed for all subjects after 2 weeks</li>
+					<li>The subjects will be kept under observation for another week to be checked for cardiovascular disease risks and other complications.</li>
+					<li>The subjects will be finally sacrificed to check for the insulin mRNA levels in the intestine.</li>
+				</ul>
+			</div>
+
+			<div class="rodent-type-II">
+				<h2>Type-2 Diabetes mellitus</h2>
+				<p>
+					<b>Zucker diabetic fatty (ZDF) rats</b><br> ZDF rats are good model organisms for the study of type-2 diabetes mellitus as they exhibit a decreased number of cell surface GLUT-2 receptors, insulin resistance, and beta-cell dysfunction. The male ZDF rat develops hyperglycemia spontaneously at approximately 7 weeks of age and develops full-blown type-2 diabetes mellitus at about 12 weeks of age. The female ZDF rats develop type-2 diabetes mellitus when placed on a high-fat diabetogenic diet therefore, chow fed ZDF female mice do not develop type-2 diabetes mellitus.
+				</p>
+
+				<ul>
+					<li>The subjects will be randomized after the onset of type-2 diabetes mellitus and their blood glucose levels will be regularly measured.</li>
+					<li>The control groups will be fed with E. coli Nissle whereas the experimental groups will be fed with engineered bacteria. (2 doses per week for 2 weeks)</li>
+					<li>The control groups will be given regular medications and the experimental groups will be given placebo pills for 2 weeks.</li>
+					<li>Epididymal fat analysis, gut microbiota test, insulin blood test, and C-peptide test will be performed for all subjects after 2 weeks.</li>
+					<li>The subjects will be kept under observation for another week to be checked for cardiovascular disease risks and other complications.</li>
+					<li>The subjects will be finally sacrificed to check for the insulin mRNA levels in the intestine.</li>
+				</ul>
+			</div>
+
+			<div class="container references">
+				<h3>References</h3>
+				<ul>
+					<li>
+						Wang YW, Sun GD, Sun J, et al. Spontaneous type 2 diabetic rodent models. J Diabetes Res. 2013;2013:401723. doi:10.1155/2013/401723
+					</li>
+					<li>
+						King AJ. The use of animal models in diabetes research. Br J Pharmacol. 2012;166(3):877-894. doi:10.1111/j.1476-5381.2012.01911.x
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div class="container-fluid prev-next">
+			<div class="buttons-coll">
+				<a href="..">
+					<button class="custom-btn btn-15">← Preliminary Research</button>
+				</a>
+				<a href="..">
+					<button class="custom-btn btn-14">Entrepreneurship → </button>
+				</a>
+			</div>
+		</div>
+
+
+
+	</main>
+
+	<div class="container">
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-8">
+						<div class="ch-info">
+							<a href="../Biosafety/index.html">
+								<h3>Safety</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+	</div>
+
+
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="../Common/css3-animate-it.js"></script>
+</body></html>

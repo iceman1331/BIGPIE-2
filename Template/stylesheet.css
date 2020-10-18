@@ -69,3 +69,123 @@ body {
 	}
 }
 
+.prev-next {
+	display: block;
+}
+
+@media(max-width:500px) {
+	.prev-next {
+		display: none;
+	}
+}
+
+.buttons-coll {
+	width: 90%;
+	margin: 25px auto;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+button {
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+.custom-btn {
+	padding: 10px 25px;
+	font-weight: 500;
+	background: transparent;
+	outline: none !important;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+/**** BTN No. 14 ****/
+
+.btn-14 {
+	float: right;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+}
+
+.btn-14:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+	color: #fff;
+}
+
+.btn-14:hover:after {
+	left: 0;
+	width: 100%;
+}
+
+.btn-14:active {
+	top: 2px;
+}
+
+/**** BTN No. 15 ****/
+
+.btn-15 {
+	float: left;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+	content: "";
+}
+
+.btn-15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+	color: #fff;
+}
+
+.btn-15:hover:after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+
+.btn-15:active {
+	top: 2px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+	background-color: transparent;
+}
+::-webkit-scrollbar {
+	width: 13px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+
