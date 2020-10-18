@@ -121,6 +121,7 @@ body {
 
 /*---3d Mag-----*/
 
+
 .cube {
 	perspective: 1200px;
 	transform-style: preserve-3D;
@@ -146,6 +147,9 @@ body {
 	width: 210px;
 	height: 280px;
 	background: #ff2ba2;
+	background: aqua;
+	background: rgba(207,181,59,0.75);
+	background: rgba(0,0,0,0.35);
 	transform-origin: 50% 50%;
 }
 
@@ -170,6 +174,7 @@ body {
 .cube_inner div.page_right {
 	transform: translateZ(4px);
 	background: url('GMO-intro-2.JPG');
+	background: url('Intro-1.JPG');
 	background-size: cover !important;
 }
 
@@ -211,7 +216,7 @@ hr {
 }
 
 .box {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/wood_panels.png');
+	background-image: url('wood_panels.png');
 	background-size: cover;
 	width: 500px;
 	background-color: #e8cbb1;
