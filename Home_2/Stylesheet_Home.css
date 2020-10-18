@@ -373,7 +373,10 @@ ttext b:nth-child(6) {
 	.alpha .row img {
 	margin: auto;
 	}
+}
 
+.headers{
+	font-family: 'Raleway', sans-serif;	
 }
 
 .alpha p {
