@@ -191,8 +191,28 @@ button {
 	background-color: #555;
 }
 
+.students{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: auto;
+	margin: 2% auto 2% auto;
+}
 
+.students .row{
+	margin: 2% auto 2% auto;
+}
+.name-details{
+	margin: auto;
+}
 
+.PI{
+	width: 50%;
+	margin: auto;
+	display: block;
+}
 
 
 h3,h5{
@@ -203,7 +223,9 @@ h3,h5{
 	width: 80%;
 }
 
-
+.blank-space{
+	padding: 10%;
+}
 
 .list-profs ol {
 	font-family: 'Merriweather Sans', sans-serif;
@@ -216,85 +238,192 @@ h3,h5{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- #test-list {
-	 height: 100vh;
-	 display: flex;
-	 flex-wrap: wrap;
-	 justify-content: space-around;
-	 align-items: center;
-	 margin: 1.5rem auto;
-	 width: 75%;
-	 max-width: 1200px;
+ol {
+	counter-reset: li;
+	list-style: none;
+	*list-style: decimal;
+	/* Keep using default numbering for IE6/7 */
+	font: 15px 'Merriweather Sans', 'lucida sans', sans-serif;
+	padding: 10px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	width: 90%;
+	margin: 0 auto;
 }
- #test-list section {
-	 margin-bottom: 50px;
-	 width: 264px;
+
+ol ol {
+	margin-left: 2em;
 }
- #test-list section .top-box {
-	 background-color: #dfdbd5;
-	 width: 263px;
-	 height: 103px;
-	 position: absolute;
-	 z-index: 1;
+
+.rounded-list ah {
+	cursor: default;
+	position: relative;
+	display: block;
+	padding: .4em .8em .4em 2em;
+	*padding: .4em;
+	margin: .5em 0;
+	background: #ddd;
+	border-radius: .3em;
+	transition: all .5s ease-out;
+
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+	font-weight: 300;
+	color: #000;
+	font-size: 19.8px;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+	letter-spacing: .03em;
 }
- #test-list section img {
-	 background-color: gray;
-	 border-radius: 100%;
-	 border: 3px soild #d4d4d4;
-	 width: 200px;
-	 height: 200px;
-	 text-align: center;
-	 object-fit: contain;
-	 position: relative;
-	 display: block;
-	 margin: auto;
-	 top: 15px;
-	 z-index: 5;
+
+.rounded-list ah:hover {
+	background: #eee;
 }
- #test-list section .bottom-box {
-	 box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
-	 width: 263px;
-	 height: 238px;
-	 transform: translateY(-50px);
+
+.rounded-list ah:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	left: -1.3em;
+	top: 20%;
+	margin-top: -1.3em;
+	background: #87ceeb;
+	height: 2em;
+	width: 2em;
+	line-height: 1.5em;
+	border: .3em solid #fff;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 2em;
+	transition: all .3s ease-out;
 }
- #test-list section .bottom-box blockquote {
-	 margin: 0 auto;
-	 padding: 0;
-	 width: 210px;
+
+
+
+
+
+.parallax {
+	height: auto;
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 9;
 }
- #test-list section .bottom-box blockquote p {
-	 font-style: italic;
-	 font-size: 16px;
-	 line-height: 21px;
-	 padding-top: 60px;
+
+.parallax-inner {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	display: block;
+	margin-left: auto;
+	margin-top: auto;
 }
- #test-list section .bottom-box .test-details {
-	 text-align: center;
-	 margin-top: 25%;
+
+
+.parallax-inner-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: hidden;
 }
- #test-list section .bottom-box .test-details span {
-	 font-size: 18px;
-	 font-weight: 500;
+
+he1 {
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+	letter-spacing: 3px;
 }
+
+@media(max-width:400px) {
+	he1 {
+		font-size: 1rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mark.points {
+  opacity: 0.5;
+  padding: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.card-header {
+  border: none !important;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card-footer {
+  background-color: #fff;
+  font-size: calc(
+    13px + (15 - 13) * ((100vw - 360px) / (1600 - 360))
+  ) !important ;
+}
+mark {
+  background-color: #eee !important;
+  padding: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: calc(
+    13px + (15 - 13) * ((100vw - 360px) / (1600 - 360))
+  ) !important ;
+}
+
+.sm-img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle !important;
+}
+
+.test {
+  position: absolute;
+  bottom: -1px;
+  font-size: 12px;
+}
+
+.card {
+  width: calc(
+    275px + (305 - 275) * ((100vw - 360px) / (1600 - 360))
+  ) !important ;
+}
+
