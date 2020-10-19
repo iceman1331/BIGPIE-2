@@ -264,6 +264,12 @@ Posters and still images
 .scene:nth-child(3) .poster {
 	background-image: url(MCU/ironman.jpg);
 }
+.scene:nth-child(4) .poster {
+	background-image: url(MCU/ironman.jpg);
+}
+.scene:nth-child(5) .poster {
+	background-image: url(MCU/ironman.jpg);
+}
 
 .scene:nth-child(1) .info header {
 	background-image: url(A2_crop.jpg);
@@ -274,6 +280,12 @@ Posters and still images
 }
 
 .scene:nth-child(3) .info header {
+	background-image: url(contributions.png);
+}
+.scene:nth-child(4) .info header {
+	background-image: url(contributions.png);
+}
+.scene:nth-child(5) .info header {
 	background-image: url(contributions.png);
 }
 
