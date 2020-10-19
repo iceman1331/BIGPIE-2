@@ -174,7 +174,6 @@ body {
 .cube_inner div.page_right {
 	transform: translateZ(4px);
 	background: url('GMO-intro-2.JPG');
-	background: url('Intro-1.JPG');
 	background-size: cover !important;
 }
 
