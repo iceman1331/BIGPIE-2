@@ -54,11 +54,12 @@ body {
 	text-align: center;
 	margin: auto;
 	padding-top: 25%;
+	padding-right: 20%;
 }
 
 .desc-title h1 {
 	color: #fff;
-	font-size: 4.5rem;
+	font-size: 5.5rem;
 	font-weight: 1000;
 	font-family: 'Lato', sans-serif;
 }
@@ -565,4 +566,75 @@ button {
 	border-radius: 0px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
 	background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.parallax {
+	height: auto;
+	background-color:  #75B8C8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 9;
+}
+
+.parallax-inner {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	display: block;
+	margin-left: auto;
+	margin-top: auto;
+}
+
+
+.parallax-inner-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+he1 {
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+@media(max-width:400px) {
+	he1 {
+		font-size: 1rem;
+	}
+}
+
+h2{
+	text-transform: none;
+	margin: 15px auto 15px auto;
 }

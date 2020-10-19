@@ -33,7 +33,6 @@ body {
 	background-image: url(CTA-Clinical.png);
 	background-position:bottom;
 	opacity: 1;
-	filter: brightness(70%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 1;
@@ -62,6 +61,7 @@ body {
 	color: #fff;
 	font-size: 6rem;
 	font-weight: 100;
+	backdrop-filter: blur(5px);
 	font-family: 'Lato', sans-serif;
 }
 
@@ -143,6 +143,52 @@ body {
 }
 
 
+/*----------------Parallax-------------------*/
+
+.parallax {
+	height: auto;
+	background-color:  #75B8C8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 9;
+	margin-top: 8%;
+}
+
+.parallax-inner {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	display: block;
+	margin-left: auto;
+	margin-top: auto;
+}
+
+.parallax-inner-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+he1 {
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+
+@media(max-width:400px) {
+	he1 {
+		font-size: 1rem;
+	}
+}
+
+.blank-space{
+	padding: 3%;
+}
 
 
 /*Fancybox setting*/
