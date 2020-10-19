@@ -1,0 +1,379 @@
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#cta {
+	width: 100%;
+	height: 600px;
+	background-attachment: fixed;
+	background-image: url(overview.png);
+	background-position: center;
+	opacity: 1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	margin-bottom: 5%;
+}
+
+@media(max-width:600px) {
+	#cta {
+		height: auto;
+		background-attachment: scroll;
+		background-position: center;
+		background-image: ;
+		width: 100%;
+	}
+}
+
+.desc-title {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	padding-top: 10%;
+}
+
+.desc-title h1 {
+	color: #fff;
+	font-size: 6rem;
+	font-weight: 100;
+	font-family: 'Lato', sans-serif;
+}
+
+@media(max-width:600px) {
+	.desc-title {
+		padding-top: 50%;
+	}
+
+	.desc-title h1 {
+		font-size: 2.25rem;
+		color: #ffff;
+		padding-bottom: 10%;
+	}
+}
+
+@media(max-width:360px) {
+	.desc-title h1 {
+		font-size: 3rem;
+	}
+}
+
+.prev-next {
+	display: block;
+}
+
+@media(max-width:500px) {
+	.prev-next {
+		display: none;
+	}
+}
+
+.buttons-coll {
+	width: 90%;
+	margin: 25px auto;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+button {
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+.custom-btn {
+	padding: 10px 25px;
+	font-weight: 500;
+	background: transparent;
+	outline: none !important;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+/**** BTN No. 14 ****/
+
+.btn-14 {
+	float: right;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+}
+
+.btn-14:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+	color: #fff;
+}
+
+.btn-14:hover:after {
+	left: 0;
+	width: 100%;
+}
+
+.btn-14:active {
+	top: 2px;
+}
+
+/**** BTN No. 15 ****/
+
+.btn-15 {
+	float: left;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+	content: "";
+}
+
+.btn-15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+	color: #fff;
+}
+
+.btn-15:hover:after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+
+.btn-15:active {
+	top: 2px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar {
+	width: 13px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.blankspace {
+	padding: 5%;
+}
+
+
+
+
+
+
+
+
+.mainprime {
+	margin: 5% auto 5% auto;
+}
+
+.main-para p {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.5px;
+	font-weight: 400;
+	line-height: 30.8px;
+	padding: 10px;
+}
+
+
+
+
+
+
+.main-cards p {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 30.8px;
+	padding: 0;
+}
+
+
+.drug-delivery {
+	background-color: #50514f;
+	color: #fff;
+	border-radius: 10px;
+	padding: 0% 5% 6% 5%;
+	margin: auto;
+	margin-bottom: 5%;
+}
+
+.clinical-trials {
+	color: #000;
+	border-radius: 10px;
+	padding: 0% 5% 6% 5%;
+	background-color: #f2d0a9;
+	margin: auto;
+	margin-bottom: 5%;
+}
+
+.entrepreneurship {
+	background-color: #60afff;
+	color: #000;
+	border-radius: 10px;
+	padding: 0% 5% 6% 5%;
+	margin: auto;
+	margin-bottom: 5%;
+}
+
+@media(max-width:500px) {
+	.drug-delivery {
+		padding: 0% 5% 16% 5%;
+	}
+
+	.clinical-trials {
+		padding: 0% 5% 16% 5%;
+	}
+
+	.entrepreneurship {
+		padding: 0% 5% 16% 5%;
+	}
+}
+
+.main-cards button {
+	margin: auto;
+
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	border: 0;
+	float: right;
+	vertical-align: middle;
+	text-decoration: none;
+	background: transparent;
+	font-size: inherit;
+	margin: 0 5% 0 5%;
+	font-family: inherit;
+}
+
+button.learn-more {
+	width: 12rem;
+	height: auto;
+}
+
+button.learn-more .circle {
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 3rem;
+	height: 3rem;
+	background: #282936;
+	border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	left: 0.625rem;
+	width: 1.125rem;
+	height: 0.125rem;
+	background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+	position: absolute;
+	content: '';
+	top: -0.25rem;
+	right: 0.0625rem;
+	width: 0.625rem;
+	height: 0.625rem;
+	border-top: 0.125rem solid #fff;
+	border-right: 0.125rem solid #fff;
+	transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+	transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 0.75rem 0;
+	margin: 0 0 0 1.85rem;
+	color: #282936;
+	font-weight: 700;
+	line-height: 1.6;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+button:hover .circle {
+	width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+	background: #fff;
+	transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+	color: #fff;
+}

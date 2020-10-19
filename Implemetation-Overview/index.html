@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no, shrink-to-fit=no" />
+	<title>Proposed Implementation Overview</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="stylesheet.css" />
+
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop src="../Common/T--IISER_Bhopal--Loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<a class="navbar-brand" href="../index.html"><img width="55px" src="../Common/logo.png">The BIGPIE</a>
+			<button class="navbar-toggler mt-auto mb-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
+							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item active" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Team/index.html">Team</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+
+	<main>
+		<div id="cta">
+			<div class="desc-title">
+				<h1> Proposed Implementation Overview </h1>
+			</div>
+		</div>
+
+		
+		<div class="container">
+		<div class="container mainprime main-para">
+			<p>The BIG PIE aims to create an alternative therapy for diabetes. Our pill iBETA is capable of producing insulin in-vivo removing the need for insulin injections.</p>
+			<p>Our proposed implementation took our project from the lab to the final product for our patients - the Pill iBETA. </p>
+		</div>
+		</div>
+
+		<!--
+		<div class="container">
+			<h2>Drug Delivery</h2>
+			<p>The first stage to take our project from proof of concept in the lab to a product is to convert into a well-designed drug in a capsule that easily accessible, ingestible and convenient for the patients. Our survey data showed that over 83% of the people who took our survey preferred tablets or capsules. Hence it was the perfect option for a diabetes drug.</p>
+			<p>Our bacteria are enclosed in a pH-sensitive pill designed to maximise bacteria release in our target site the duodenum. To improve the safety and efficiency of the bacteria we are using microspheres with mucopenetrative formulations capable of directly penetrating the thick mucous lining and releasing the bacteria in the crypts of the villi.</p>
+			<p>Find out the details of our drug delivery capsule design.</p>
+		</div>
+
+
+		<div class="container">
+			<h2>Clinical Trials</h2>
+			<p>Our email correspondence with the Central Drug Standards Control Organisation and Endocrinologist from AIIMS Jodhpur, India, helped us understand the ethical and technical concerns involved in our project, as well as the drug safety and regulations. As per the CDSCO, our probiotic would be qualified as a new drug and would need to undergo rigorous clinical trials before being approved as a safe drug in the market.</p>
+			<p>As part of our implementation, we have created a roadmap that we intend to follow to help our project go from the lab to the market.</p>
+			<p>Find out the details of the Clinical trials we have designed.</p>
+		</div>
+
+		<div class="container">
+			<h2>Entrepreneurship</h2>
+			<p>Our pill iBETA is a product being launched into the pharmaceutical market. While our customers are clearly diabetes patients. We have done a thorough analysis of the market dynamics, the competitors, customer needs, requirements, demographics. Understanding the customer expectations, the assistance we can give to the diabetes patients. How we intend to reach and diversify our market. The challenges we will face while entering the market and growing in it.</p>
+			<p>Our safety policies are also extremely stringent which well ensure the safety not only of the patient but also the environment. We have rigorously tested for any biosecurity issues and tried to eliminate them in the design stages itself.
+			</p>
+			<p>
+				Click here to know more about the implementation, safety aspects, challenges and other considerations that we’ve made.
+			</p>
+		</div>
+		-->
+
+
+		<div class="main-cards">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="container-fluid drug-delivery text-justify">
+							<img class="img-fluid" src="Drug%20Delivery.png">
+							<p>The first stage to take our project from proof of concept in the lab to a product is to convert into a well-designed drug in a capsule that easily accessible, ingestible and convenient for the patients. Our survey data showed that over 83% of the people who took our survey preferred tablets or capsules. Hence it was the perfect option for a diabetes drug.</p>
+							<p>Our bacteria are enclosed in a pH-sensitive pill designed to maximise bacteria release in our target site the duodenum. To improve the safety and efficiency of the bacteria we are using microspheres with mucopenetrative formulations capable of directly penetrating the thick mucous lining and releasing the bacteria in the crypts of the villi.</p>
+							<p>Find out the details of our drug delivery capsule design.</p>
+							<button class="learn-more text-right">
+								<span class="circle" aria-hidden="true">
+									<span class="icon arrow"></span>
+								</span>
+								<span class="button-text">Learn More</span>
+							</button>
+						</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-sm-12">
+						<div class="container-fluid clinical-trials text-justify">
+							<img class="img-fluid" src="Clinical%20Trials.png">
+							<p>Our email correspondence with the Central Drug Standards Control Organisation and Endocrinologist from AIIMS Jodhpur, India, helped us understand the ethical and technical concerns involved in our project, as well as the drug safety and regulations. As per the CDSCO, our probiotic would be qualified as a new drug and would need to undergo rigorous clinical trials before being approved as a safe drug in the market.</p>
+							<p>As part of our implementation, we have created a roadmap that we intend to follow to help our project go from the lab to the market.</p>
+							<p>Find out the details of the Clinical trials we have designed.</p>
+							<button class="learn-more text-right">
+								<span class="circle" aria-hidden="true">
+									<span class="icon arrow"></span>
+								</span>
+								<span class="button-text">Learn More</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="container-fluid entrepreneurship">
+							<img class="img-fluid" src="entrepreneurship.png">
+							<p>Our pill iBETA is a product being launched into the pharmaceutical market. While our customers are clearly diabetes patients. We have done a thorough analysis of the market dynamics, the competitors, customer needs, requirements, demographics. Understanding the customer expectations, the assistance we can give to the diabetes patients. How we intend to reach and diversify our market. The challenges we will face while entering the market and growing in it.</p>
+							<p>Our safety policies are also extremely stringent which well ensure the safety not only of the patient but also the environment. We have rigorously tested for any biosecurity issues and tried to eliminate them in the design stages itself.
+							</p>
+							<p>
+								Click here to know more about the implementation, safety aspects, challenges and other considerations that we’ve made.
+							</p>
+							<button class="learn-more text-right">
+								<span class="circle" aria-hidden="true">
+									<span class="icon arrow"></span>
+								</span>
+								<span class="button-text">Learn More</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+	</main>
+
+
+	<div class="container-fluid prev-next">
+		<div class="buttons-coll">
+			<a href="..">
+				<button class="custom-btn btn-14">Preliminary Research → </button>
+			</a>
+		</div>
+	</div>
+
+	<div class="blankspace"></div>
+
+	<div class="container-fluid">
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<a href="../Description/index.html">
+								<h3>Description</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+				
+				<li>
+				<div class="ch-item ch-img-16">
+					<div class="ch-info">
+						<h3>Engineering success</h3>
+						<p>Read More...<a href="#">Read More</a></p>
+					</div>
+				</div>
+			</li>
+				
+				<li>
+				<div class="ch-item ch-img-10">
+					<div class="ch-info">
+						<h3>Biosecurity</h3>
+						<p>Read More...<a href="#">Read More</a></p>
+					</div>
+				</div>
+			</li>
+				
+
+				
+				<li>
+					<div class="ch-item ch-img-5">
+						<div class="ch-info">
+							<h3>Human Practices</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				
+			</ul>
+		</section>
+	</div>
+
+
+
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src=""></script>
+</body></html>

@@ -105,6 +105,7 @@
 
 .ch-img-4 {
 	background-image: url(https://2020.igem.org/wiki/images/f/f3/T--IISER_Bhopal--THEBIGPIE-PreFooterEntrepreneurship.png);
+	background-image: url(New-icons/entrepreneurship_c.png);
 	background-position: center;
 	background-origin: border-box;
 }
@@ -117,12 +118,15 @@
 
 .ch-img-6 {
 	background-image: url(https://2020.igem.org/wiki/images/1/16/T--IISER_Bhopal--THEBIGPIE-PreFooterModelling.png);
-	background-position: right;
+	background-position: right center;
+	background-repeat: repeat;
+	background-origin: border-box;
 }
 
 .ch-img-7 {
 	background-image: url(https://2020.igem.org/wiki/images/e/eb/T--IISER_Bhopal--THEBIGPIE-PreFooterPatentLaw.png);
-	background-position: top;
+	background-position: top center;
+	background-origin: border-box;
 }
 
 .ch-img-8 {
@@ -131,6 +135,69 @@
 	background-origin: border-box;
 	background-repeat: no-repeat;
 	background-color: #ffff99;
+}
+
+.ch-img-9 {
+	background-image: url(New-icons/attributors_c.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+}
+
+.ch-img-10 {
+	background-image: url(New-icons/biosecurity_c.png);
+	background-position: center center;
+	background-repeat: repeat;
+	background-origin: border-box;
+}
+
+.ch-img-11 {
+	background-image: url(New-icons/clinical-trials_c.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+}
+
+.ch-img-12 {
+	background-image: url(New-icons/collaborations_c.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+
+.ch-img-13 {
+	background-image: url(New-icons/contribution_c.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-14 {
+	background-image: url(New-icons/drug-delivery_c.png);
+	background-position: center right;
+	background-repeat: repeat;
+}
+.ch-img-15 {
+	background-image: url(New-icons/education_c.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-16 {
+	background-image: url(New-icons/engineering-success_c.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-17 {
+	background-image: url(New-icons/implementation_c.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-18 {
+	background-image: url(New-icons/safe-by-design_c.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-19 {
+	background-image: url(New-icons/team_c.png);
+	background-position: center center;
+	background-repeat: repeat;
 }
 
 .ch-info {
@@ -159,7 +226,7 @@
 	letter-spacing: 2px;
 	font-size: 22px;
 	margin: 0 20px;
-	padding: 95px 0 0 0;
+	padding: 85px 0 0 0;
 	height: 150px;
 	font-family: 'Open Sans', Arial, sans-serif;
 	text-shadow:
