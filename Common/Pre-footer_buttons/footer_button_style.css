@@ -296,6 +296,7 @@ footer {
 	background: linear-gradient(59deg, #3A6073, #16222A);
 	color: white;
 	margin-top: 10px;
+	
 }
 
 .foot p {
@@ -310,6 +311,16 @@ footer {
 	color: #fff;
 	font-size: 1.5rem;
 	font-family: sans-serif;
+}
+
+@media(max-width:500px){
+	.foot h4 {
+		text-align: center;
+	}
+	
+	footer{
+		text-align: center;
+	}
 }
 
 footer a {
@@ -328,6 +339,7 @@ footer a:hover {
 	padding: 1%;
 	border-top: 1px solid #FFFFFF;
 	border-top-width: medium;
+	
 }
 
 .footer-middle {
@@ -350,6 +362,7 @@ ul.social-network {
 ul.social-network li {
 	display: inline-block;
 	margin: 1% auto 1% auto;
+	
 }
 
 
