@@ -52,6 +52,10 @@ body {
 	}
 }
 
+.before-table{
+	margin: auto auto 5% auto;
+}
+
 .desc-title {
 	display: block;
 	width: 100%;
