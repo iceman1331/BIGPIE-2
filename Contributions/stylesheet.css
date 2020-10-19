@@ -71,6 +71,10 @@ body {
 	}
 }
 
+.blank-space{
+	padding: 5%;
+}
+
 .disclaimer {
 	padding: 2px 5px 5% 15px;
 }

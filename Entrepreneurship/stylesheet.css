@@ -77,6 +77,10 @@ body {
 	}
 }
 
+.blank-space{
+	padding: 5%
+}
+
 
 h2 {
 	text-transform: none;
@@ -87,14 +91,13 @@ h2 {
 }
 
 h4 {
-	text-transform: none;
-	text-transform: none;
 	color: #000;
 	font-family: 'Merriweather', serif;
 	font-weight: 400;
 	letter-spacing: 1.4px;
 }
 
+/*
 p {
 	font-family: 'Lato', sans-serif;
 	text-align: justify;
@@ -105,6 +108,17 @@ p {
 	line-height: 180%;
 	font-size: 20px;
 	font-weight: 100;
+}
+*/
+
+p {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: auto;
+	margin: 2% auto 2% auto;
 }
 
 @media (max-width: 990px) {
@@ -128,348 +142,10 @@ p {
 
 
 }
-
-/*-------------------Sections Hover effect-------------*/
-
-.grid-ctr {
-	margin: 5% auto 10% auto;
-	padding: 4%;
-}
-
-.grid {
-
-	display: inline-grid;
-	margin: auto;
-	width: 29%;
-	margin: auto;
-	list-style: none;
-	text-align: center;
-}
-
-/* Common style */
-.grid figure {
-	display: inline-block;
-	position: relative;
-	float: left;
-	overflow: hidden;
-	min-width: 300px;
-	max-width: 460px;
-	max-height: 320px;
-	width: 100%;
-	height: auto;
-	background: transparent;
-	text-align: center;
-	cursor: pointer;
-}
-
-.grid figure img {
-	position: relative;
-	display: block;
-	width: 90%;
-	opacity: 1;
-}
-
-.grid figure figcaption {
-	padding: 1em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-	pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 90%;
-	height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-.grid figure figcaption > a {
-	z-index: 1000;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
-
-.grid figure h2 {
-	word-spacing: -0.15em;
-	font-size: 1.4rem;
-	font-weight: 800;
-}
-
-.grid figure h2 span {
-	font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-	margin: 0;
-}
-
-.grid figure p {
-	letter-spacing: 1px;
-	font-size: 68.5%;
-}
-
-figure.effect-jazz {}
-
-figure.effect-jazz img {
-	opacity: 0.9;
-}
-
-figure.effect-jazz figcaption::after,
-figure.effect-jazz img,
-figure.effect-jazz p {
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-jazz figcaption::after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	content: '';
-	opacity: 0;
-	-webkit-transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
-	transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
-	-webkit-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
-}
-
-figure.effect-jazz h2,
-figure.effect-jazz p {
-	opacity: 1;
-	-webkit-transform: scale3d(0.8, 0.8, 1);
-	transform: scale3d(0.8, 0.8, 1);
-}
-
-figure.effect-jazz h2 {
-	padding-top: 50%;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-}
-
-figure.effect-jazz p {
-	padding: 0.5em 2em;
-	text-transform: none;
-	font-size: 0.85em;
-	opacity: 0;
-}
-
-figure.effect-jazz:hover img {
-	opacity: 0.75;
-	-webkit-transform: scale3d(1.05, 1.05, 1);
-	transform: scale3d(1.001, 1.001, 1);
-}
-
-figure.effect-jazz:hover figcaption::after {
-	opacity: 1;
-	-webkit-transform: rotate3d(0, 0, 1, 180deg) scale3d(1, 1, 1);
-	transform: rotate3d(0, 0, 0.75, 45deg) scale3d(1, 1, 1);
-}
-
-figure.effect-jazz:hover h2,
-figure.effect-jazz:hover p {
-	opacity: 1;
-	-webkit-transform: scale3d(1, 1, 1);
-	transform: scale3d(1, 1, 1);
-}
-
-
-/* Media queries */
-@media screen and (max-width: 50em) {
-	.content {
-		padding: 0 10px;
-		text-align: center;
-	}
-
-	.grid figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 100%;
-	}
-}
-
-
-
-
-/* ---------Hover Overlay text Effect--------- */
-
-.overlay-item {
-	display: block;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-	border-radius: 5px;
-}
-
-.overlay-item .mask {
-	display: block;
-	position: absolute;
-	overflow: hidden;
-	text-align: center;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
-
-.overlay-item img {
-	display: block;
-	width: 100%;
-	height: auto;
-	x-margin-right: auto;
-	x-margin-left: auto;
-}
-
-.overlay-item h3 {
-	text-align: center;
-	position: relative;
-	padding: 1%;
-	margin: 0px auto 20px auto;
-	display: block;
-	background-color: #333;
-	color: #fff;
-}
-
-.overlay-item p {
-	text-align: left;
-}
-
-.overlay-item a.btn {
-	margin: 10px 0;
-}
-
-.overlay-effect img {
-	-webkit-transform: scaleY(1);
-	-moz-transform: scaleY(1);
-	-o-transform: scaleY(1);
-	-ms-transform: scaleY(1);
-	transform: scaleY(1);
-	-webkit-transition: all 0.7s ease-in-out;
-	-moz-transition: all 0.7s ease-in-out;
-	-o-transition: all 0.7s ease-in-out;
-	-ms-transition: all 0.7s ease-in-out;
-	transition: all 0.7s ease-in-out;
-}
-
-.overlay-effect .mask {
-	background-color: rgba(255, 255, 255, 0.3);
-	-webkit-transition: all 0.5s linear;
-	-moz-transition: all 0.5s linear;
-	-o-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
-	transition: all 0.5s linear;
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	opacity: 0;
-}
-
-.overlay-effect h3 {
-	-webkit-transform: scale(0);
-	-moz-transform: scale(0);
-	-o-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
-	-webkit-transition: all 0.5s linear;
-	-moz-transition: all 0.5s linear;
-	-o-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
-	transition: all 0.5s linear;
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	opacity: 0;
-}
-
-.overlay-effect p {
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	opacity: 0;
-	-webkit-transform: scale(0);
-	-moz-transform: scale(0);
-	-o-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
-	-webkit-transition: all 0.5s linear;
-	-moz-transition: all 0.5s linear;
-	-o-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
-	transition: all 0.5s linear;
-}
-
-.overlay-effect a.btn {
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	opacity: 0;
-	-webkit-transform: scale(0);
-	-moz-transform: scale(0);
-	-o-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
-	-webkit-transition: all 0.5s linear;
-	-moz-transition: all 0.5s linear;
-	-o-transition: all 0.5s linear;
-	-ms-transition: all 0.5s linear;
-	transition: all 0.5s linear;
-}
-
-.overlay-effect:hover img {
-	-webkit-transform: scale(10);
-	-moz-transform: scale(10);
-	-o-transform: scale(10);
-	-ms-transform: scale(10);
-	transform: scale(10);
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	opacity: 0;
-}
-
-.overlay-effect:hover .mask {
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
-}
-
-.overlay-effect:hover h3,
-.overlay-effect:hover p,
-.overlay-effect:hover a.btn {
-
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	opacity: 1;
-}
-
 /*----------------Parallax-------------------*/
 
 .parallax {
 	height: auto;
-	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-	background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-	background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
 	background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -507,27 +183,6 @@ he1 {
 	}
 }
 
-/*Underline with hover*/
-span {
-	/*  shadows render better in certain browsers than text, first rule is for older browser support  */
-	color: #333;
-	cursor: default;
-	color: transparent;
-	text-shadow: 0 0 #333, .08em 0 0 #fff, 0 0, -.08em 0 0 #fff;
-	/*  gradient background allows us to use css only & re-position it  */
-	background: -webkit-linear-gradient(#999, #999) center 1.09em no-repeat;
-	background: linear-gradient(#999, #999) center 1.09em no-repeat;
-	/*  can precisely control size in relation to the text  */
-	background-size: 65% 2px;
-	/*  now the underline supports transitions  */
-	-webkit-transition: .5s ease;
-	transition: .5s ease;
-}
-
-span:hover {
-	/*  backgrounds won't size larger than 100%  */
-	background-size: 95% 2px;
-}
 
 
 
@@ -723,8 +378,42 @@ div.img img {
 	box-shadow: 2px 0px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
+.guide-doc {
+	display: block;
+	margin: auto;
+}
 
+embed {
+	display: block;
+	margin: auto;
+	width: 80%;
+	height: 120vh;
+}
 
+.smallpdf {
+	display: none;
+}
+
+@media(max-width:500px) {
+	embed {
+		display: none;
+	}
+
+	.smallpdf {
+		display: block;
+		margin: auto;
+		text-align: center;
+	}
+
+	.smallpdf a {
+		color: #336699;
+		text-decoration: none;
+	}
+}
+
+.add1{
+	padding: 5% 2% 0 2%;
+}
 
 
 
@@ -783,3 +472,131 @@ div.img img {
 	text-rendering: optimizelegibility !important;
 	letter-spacing: .03em;
 }
+
+
+
+
+
+
+
+
+.prev-next {
+	display: block;
+}
+
+@media(max-width:500px) {
+	.prev-next {
+		display: none;
+	}
+}
+
+.buttons-coll {
+	width: 90%;
+	margin: 25px auto;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+button {
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+.custom-btn {
+	padding: 10px 25px;
+	font-weight: 500;
+	background: transparent;
+	outline: none !important;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+/**** BTN No. 14 ****/
+
+.btn-14 {
+	float: right;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+}
+
+.btn-14:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+
+.btn-14:hover {
+	color: #fff;
+}
+
+.btn-14:hover:after {
+	left: 0;
+	width: 100%;
+}
+
+.btn-14:active {
+	top: 2px;
+}
+
+/**** BTN No. 15 ****/
+
+.btn-15 {
+	float: left;
+	border: 2px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+	content: "";
+}
+
+.btn-15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+
+.btn-15:hover {
+	color: #fff;
+}
+
+.btn-15:hover:after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+
+.btn-15:active {
+	top: 2px;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+	background-color: transparent;
+}
+::-webkit-scrollbar {
+	width: 13px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+
