@@ -325,8 +325,7 @@ ttext b:nth-child(6) {
 	vertical-align: middle;
 	align-items: center;
 	height: 100%;
-	text-align: center;
-	letter-spacing: 0.1em;
+	text-align: left;
 	line-height: normal;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased !important;
@@ -454,10 +453,21 @@ ttext b:nth-child(6) {
 	margin: 5% auto 5% auto;
 }
 
-.caused {
+.caused h1{
 	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 1000;
 	font-size-adjust: auto;
+	font-size: 3rem;
+	font-weight: 900;
+	margin-bottom: 4%;
+}
+
+
+.diabetes-2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	font-size: 2rem;
 }
 
 .button-label {
@@ -641,12 +651,11 @@ ttext b:nth-child(6) {
 }
 
 .solution-img {
-	width: 70%;
+	width: 80%;
 	display: block;
 	margin: auto;
 	text-align: center;
 }
-
 @media(max-width:600px) {
 	.solution-img {
 		width: 100%;

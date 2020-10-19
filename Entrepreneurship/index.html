@@ -46,11 +46,12 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
+
 	</script>
 
 	<header>
 		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
-			<a class="navbar-brand" href="../index.html"><img width="55px" src="../Common/logo.png">  The BIGPIE</a>
+			<a class="navbar-brand" href="../index.html"><img width="55px" src="../Common/logo.png"> The BIGPIE</a>
 			<button class="navbar-toggler mt-auto mb-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -183,7 +184,7 @@
 
 
 		<section class="parallax">
-			<div class="parallax-inner">
+			<div class="parallax-inner" style="background-color: grey;">
 				<he1 id="button-1" class="underline-small">Preliminary Considerations </he1>
 			</div>
 		</section>
@@ -198,9 +199,7 @@
 			<div class="container-fluid">
 				<h2>Survey Data</h2>
 				<p>In order to understand the patient and market needs, we decided to conduct a survey and to perform a comparative analysis of the customer’s experiences with their current diabetes therapy and understand their preference for the various dosage forms. </p>
-
 			</div>
-
 		</div>
 
 		<div class="container chapter">
@@ -227,8 +226,7 @@
 									</div>
 								</div>
 								<p class="interview-text">
-									He suggested that we focus on Type 1 Diabetes and Type 2 Diabetes patients with 8 to 10 years of diabetes history.
-									He also told us that most Insulin injections release the insulin into the subcutaneous tissue and the insulin gets diffused. But in healthy patients, there is insulin movement across the portal vein. So our system is possibly superior to injections as it will also be producing insulin in the gut and directly entering the blood which is similar to the natural functioning of the pancreas.
+									He suggested that we focus on Type 1 Diabetes and Type 2 Diabetes patients with 8 to 10 years of diabetes history. He also told us that most Insulin injections release the insulin into the subcutaneous tissue and the insulin gets diffused. But in healthy patients, there is insulin movement across the portal vein. So our system is possibly superior to injections as it will also be producing insulin in the gut and directly entering the blood which is similar to the natural functioning of the pancreas.
 								</p>
 							</div>
 						</div>
@@ -286,14 +284,23 @@
 				<he1 id="button-2" class="underline-small">Business Plan</he1>
 			</div>
 		</section>
-		<div class="container add1">
+		<div class="container add1 text-center">
+
 			<h2>Product Competitors</h2>
+			<a href="Entrepreneurship/Competition.pdf" target="_blank">
+				<button type="button" class="btn btn-primary" style="margin-bottom: 5%;">View competitors pdf</button>
+			</a>
+			<!--
+			
+			<button class=""> </button>
+			
 			<div class="container-fluid guide-doc" data="Entrepreneurship/Competition.pdf">
 				<embed src="Entrepreneurship/Competition.pdf" />
 				<div class="smallpdf">
 					<a href="Entrepreneurship/Competition.pdf" target="_blank"> View competitors pdf</a>
 				</div>
 			</div>
+-->
 		</div>
 
 
@@ -635,6 +642,9 @@
 				moveTo.registerTrigger(triggers[i]);
 			}
 		});
+
 	</script>
 
-</body></html>
+</body>
+
+</html>

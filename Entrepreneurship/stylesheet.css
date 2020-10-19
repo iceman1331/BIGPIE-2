@@ -20,8 +20,8 @@ body {
 }
 
 #cta {
-	width: 100%;
-	height: 600px;
+	width: 100vw;
+	height: 90vh;
 	background-attachment: fixed;
 	background-image: url(e2.png);
 	background-position: top left;
@@ -147,6 +147,7 @@ p {
 .parallax {
 	height: auto;
 	background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+	
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
@@ -156,6 +157,7 @@ p {
 	padding-top: 3%;
 	padding-bottom: 3%;
 	display: block;
+	background-color: gray;
 	margin-left: auto;
 	margin-top: auto;
 }
@@ -184,6 +186,9 @@ he1 {
 	}
 }
 
+.patent-table{
+	
+}
 
 
 
