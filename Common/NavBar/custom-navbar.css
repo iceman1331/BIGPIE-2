@@ -1,6 +1,7 @@
-.navbar{
-	background-color: #162C42
+.navbar {
+	background-color: #162C42;
 }
+
 .navbar .nav-item {
 	margin: 2px;
 	position: relative;
@@ -9,17 +10,12 @@
 	font-weight: 500;
 }
 
-@media(max-width:500px) {
-	.navbar .nav-item {
-		
-	}
-}
 
-.navbar .dropdown .active{
+.navbar .dropdown .active {
 	background-color: #abe188;
 }
 
-.dropdown-menu{
+.dropdown-menu {
 	backdrop-filter: blur(4px);
 }
 
@@ -77,7 +73,7 @@
 .slideIn {
 	-webkit-animation-name: slideIn;
 	animation-name: slideIn;
-	font-size:1rem;
+	font-size: 1rem;
 }
 
 .navbar {
@@ -100,7 +96,7 @@
 	/* IE */
 	background-color: rgb(255, 219, 130);
 	background-color: rgba(255, 219, 130, 0.95);
-	
+
 
 }
 
