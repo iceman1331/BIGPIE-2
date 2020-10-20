@@ -306,6 +306,11 @@ button {
 	background-position: center center;
 	background-repeat: repeat;
 }
+.ch-img-20 {
+	background-image: url(New-icons/biosafety%20icon1_c.png);
+	background-position: top center;
+	background-repeat: repeat;
+}
 
 .ch-info {
 	position: absolute;
