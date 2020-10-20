@@ -245,15 +245,15 @@ button {
 }
 
 .ch-img-9 {
-	background-image: url(New-icons/attributors_c.png);
+	background-image: url(https://2020.igem.org/wiki/images/7/7b/T--IISER_Bhopal--THEBIGPIE-PreFooterAttributors.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-origin: border-box;
 }
 
 .ch-img-10 {
-	background-image: url(New-icons/biosecurity_c.png);
-	background-position: center center;
+	background-image: url(https://2020.igem.org/wiki/images/e/ec/T--IISER_Bhopal--THEBIGPIE-PreFooterBiosafety.png);
+	background-position: top center;
 	background-repeat: repeat;
 	background-origin: border-box;
 }
