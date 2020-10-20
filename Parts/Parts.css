@@ -5,11 +5,9 @@ body {
 	width: 100vw;
 	background-color: #ffffff;
 	box-sizing: border-box;
-
-}
-
-body {
+	position: relative;
 	overflow-x: hidden;
+
 }
 
 #cta {
@@ -35,7 +33,6 @@ body {
 	}
 }
 
-
 .desc-title {
 	display: block;
 	width: 100%;
@@ -47,7 +44,7 @@ body {
 .desc-title h1 {
 	color: #fff;
 	font-size: 6rem;
-	font-weight: 100;
+	font-weight: 500;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -76,8 +73,34 @@ body {
 /**/
 /**/
 
+.main-table{
+	margin-top: 5%;
+}
+table{
+	margin-top: 1%;
+}
 thead {
 	text-align: center;
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+	line-height: 30px;
+	font-weight: 300;
+	color: #000;
+	font-size: 19.8px;
+}
+
+th{
+	font-family: Merriweather, serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	margin: auto;
+	margin: 5% auto 5% auto;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+	letter-spacing: .05em;
 }
 
 tbody {
@@ -87,7 +110,6 @@ tbody {
 	font-weight: 300;
 	color: #000;
 	font-size: 19.8px;
-
 	text-align: center;
 }
 
@@ -102,8 +124,6 @@ tbody {
 tbody .para {
 	text-align: justify;
 }
-
-
 
 .efed-1 {
 	width: 5%;
@@ -120,7 +140,6 @@ tbody .para {
 .efed-4 {
 	width: 55%;
 }
-
 
 .efed-5 {
 	width: 10%;
@@ -149,13 +168,21 @@ h4 {
 	font-size: 19.8px;
 	text-align: center;
 }
-p {
-	font-family: 'Lato', sans-serif;
-	text-align: justify;
-	line-height: 30px;
-	font-weight: 300;
+
+main p {
+	font-family: Merriweather, serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	margin: auto;
+	margin: 2% auto 5% auto;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+	letter-spacing: .05em;
 	color: #000;
-	font-size: 19.8px;
+	color: rgb(61, 61, 61);
 }
 
 @media (max-width: 990px) {
@@ -176,8 +203,6 @@ p {
 		font-size: 16px;
 		color: #000;
 	}
-
-
 }
 
 sup {
@@ -244,11 +269,11 @@ sup {
 
 }
 
-
 .plasmidtxt {
 	width: 18%;
 	border-bottom: 5px solid #c5ff99;
 	margin: auto;
+	margin-bottom: 3%;
 	font-size: 1.5rem;
 }
 
@@ -307,10 +332,7 @@ underline4 {
 	transform-origin: 0% 50%;
 }
 
-
-
-
-a {
+table a {
 	position: relative;
 	display: inline-block;
 	outline: none;
@@ -319,7 +341,7 @@ a {
 	text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
 }
 
-a:hover,
+table a:hover,
 a:focus {
 	outline: none;
 	text-decoration: none;
@@ -425,7 +447,6 @@ a:focus {
 	transform: rotate(0deg) translateX(50%);
 }
 
-
 .imgs {
 	display: block;
 	margin: auto;
@@ -436,6 +457,3 @@ a:focus {
 	display: block;
 	margin: auto;
 }
-
-
-

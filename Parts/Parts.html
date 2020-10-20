@@ -20,7 +20,6 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
 
-	<script src="../Common/fontawesome/df7451b09d.js"></script>
 
 	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
 	<link rel="stylesheet" href="Parts.css" />
@@ -46,20 +45,17 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
+
 	</script>
 
 	<header>
 		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<a class="navbar-brand text-light mr-auto active" href="../index.html"><img width="45px" src="../Common/logo.png">The BIGPIE</a>
+			<button class="navbar-toggler mb-auto mt-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item navbar-nav mr-auto active">
-						<a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
-					</li>
-				</ul>
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav mb-auto mt-auto ml-auto">
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-project-diagram"></i> Project
@@ -67,19 +63,44 @@
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="../Description/index.html">Description</a>
 							<a class="dropdown-item" href="../Design/index.html">Design</a>
-							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
 							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+
 						</div>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item dropdown active">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-puzzle-piece"></i> Parts
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item active" href="../Parts/Parts.html">Parts Collection</a>
 							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
 						</div>
 					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
+							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">GMO Policy</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-handshake"></i> Human Practices
@@ -96,35 +117,13 @@
 						</a>
 						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="../Team/index.html">Team</a>
-							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Supervisors</a>
 							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-biohazard"></i> Safety
-						</a>
-						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
-							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
-							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
 						</div>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fa fa-gavel"></i> Judging Forms
 						</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fa fa-cog"></i> Implementation
-						</a>
-						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
-							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
-							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
-							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
-						</div>
 					</li>
 				</ul>
 			</div>
@@ -161,7 +160,22 @@
 				<br> <b>MAFA :</b> Also known as RIPE3b1, is a member of the MAF family of basic leucine zippers. It is a transcription factor that binds to the enhancer/promoter region of the insulin gene and drives insulin expression in response to glucose. Hence, the expression levels of MAFA are critical for proper β-cell maturation. For regenerative approaches, MAFA’s expression is also important to regenerate functional and mature β-cells from pluripotent stem cells.
 			</p>
 			<h4>Cassette to be Cloned</h4>
-			<p>pGadA - RBS - TF Polyprotein - Terminator TF Polyprotein Sequence Map20 - <linker>Linker</linker> - <site>Site</site> - <linker>Linker</linker> - PDX1 - <linker>Linker</linker> - NLS - <linker>Linker</linker> - <site>Site</site> - <linker>Linker</linker> - MAFA - <linker>Linker</linker> - NLS - <linker>Linker</linker> - <site>Site</site> - <linker>Linker</linker> - NGN3 - <linker>Linker</linker> - NLS - <linker>Linker</linker> - <site>Site</site> - <linker>Linker</linker> - NES</p>
+			<p>pGadA - RBS - TF Polyprotein - Terminator TF Polyprotein Sequence Map20 -
+				<linker>Linker</linker> -
+				<site>Site</site> -
+				<linker>Linker</linker> - PDX1 -
+				<linker>Linker</linker> - NLS -
+				<linker>Linker</linker> -
+				<site>Site</site> -
+				<linker>Linker</linker> - MAFA -
+				<linker>Linker</linker> - NLS -
+				<linker>Linker</linker> -
+				<site>Site</site> -
+				<linker>Linker</linker> - NGN3 -
+				<linker>Linker</linker> - NLS -
+				<linker>Linker</linker> -
+				<site>Site</site> -
+				<linker>Linker</linker> - NES</p>
 		</div>
 
 
@@ -173,7 +187,11 @@
 				<br> MAP 20: Mitochondria associated protein is a 20 amino acid long export signal peptide sequence for T3SS, which helps guide the protein sequence through the T3SS pore.
 			</p>
 			<h4>Cassette to be cloned</h4>
-			<p>pGadA- RBS- protease fusion - Terminator Protease Fusion NH2 - Map20 - <linker>Linker</linker> - Cleavage <site>Site</site> - β-Catenin - <linker>Linker</linker> - TEV Protease (S219N) - <linker>Linker</linker> - NES - COOH
+			<p>pGadA- RBS- protease fusion - Terminator Protease Fusion NH2 - Map20 -
+				<linker>Linker</linker> - Cleavage
+				<site>Site</site> - β-Catenin -
+				<linker>Linker</linker> - TEV Protease (S219N) -
+				<linker>Linker</linker> - NES - COOH
 			</p>
 
 			<div class="imgs">
@@ -214,11 +232,12 @@
 			</div>
 		</div>
 
-		<div class="container text-center table-head">
-			<h3>Parts from Registry</h3>
-		</div>
 
-		<div class="container">
+		<div class="container main-table">
+			<div class="container text-center table-head">
+				<h3>Parts from Registry</h3>
+			</div>
+
 			<div class="table-responsive">
 				<table class="table table-sm table-fixed table-bordered table-striped">
 					<thead>
@@ -314,11 +333,11 @@
 							<th scope="row">8</th>
 							<td>
 								<nav class="cl-effect-3">
-									<a>BBa_K2447000</a>
+									<a>BBa_K1682012</a>
 								</nav>
 							</td>
 							<td>Phosphate promoter</td>
-							<td>PhoB promoter is activated as a result of active binding of phosphorylated-PhoB, resulting in downstream expression of GFP. When a high concentration of extracellular phosphate ions is present, PhoR will dephosphorylate PhoB, and therefore inactivating it, and repressing the PhoB promoter for GFP expression.</td>
+							<td>PhoA promoter is activated as a result of active binding of phosphorylated-PhoB, resulting in downstream expression of GFP. When a high concentration of extracellular phosphate ions is present, PhoR will dephosphorylate PhoB, and therefore inactivating it, and repressing the PhoA promoter for transcription.</td>
 							<td>1375 bp</td>
 						</tr>
 						<tr>
@@ -347,6 +366,28 @@
 							<th scope="row">11</th>
 							<td>
 								<nav class="cl-effect-3">
+									<a>BBa_R0051</a>
+								</nav>
+							</td>
+							<td>cI lam Promoter</td>
+							<td>Lambda phage cI-repressible promoter. Facilitates high expression levels, while retaining the ability to shut off expression downstream of a desired signal.</td>
+							<td>$</td>
+						</tr>
+						<tr>
+							<th scope="row">12</th>
+							<td>
+								<nav class="cl-effect-3">
+									<a>BBa_K105004</a>
+								</nav>
+							</td>
+							<td>cI Repressor</td>
+							<td>Bacteriophage Lambda-derived transcriptional repressor. Binds to and inhibits transcription from cI lam promoter.</td>
+							<td>$</td>
+						</tr>
+						<tr>
+							<th scope="row">13</th>
+							<td>
+								<nav class="cl-effect-3">
 									<a>β-Catenin</a>
 								</nav>
 							</td>
@@ -355,7 +396,7 @@
 							<td>#</td>
 						</tr>
 						<tr>
-							<th scope="row">12</th>
+							<th scope="row">14</th>
 							<td>
 								<nav class="cl-effect-3">
 									<a>Tobacco Etch Virus Protease Substrate</a>
@@ -366,7 +407,7 @@
 							<td>#</td>
 						</tr>
 						<tr>
-							<th scope="row">13</th>
+							<th scope="row">15</th>
 							<td>
 								<nav class="cl-effect-3">
 									<a>PKI Alpha Nuclear Export Signal</a>
@@ -377,7 +418,7 @@
 							<td>#</td>
 						</tr>
 						<tr>
-							<th scope="row">14</th>
+							<th scope="row">16</th>
 							<td>
 								<nav class="cl-effect-3">
 									<a>PDX1</a>
@@ -388,7 +429,7 @@
 							<td>852 nt</td>
 						</tr>
 						<tr>
-							<th scope="row">15</th>
+							<th scope="row">17</th>
 							<td>
 								<nav class="cl-effect-3">
 									<a>MAFA</a>
@@ -399,7 +440,7 @@
 							<td>1062 nt</td>
 						</tr>
 						<tr>
-							<th scope="row">16</th>
+							<th scope="row">18</th>
 							<td>
 								<nav class="cl-effect-3">
 									<a>Ngn3</a>
@@ -411,7 +452,7 @@
 							<td>645 nt</td>
 						</tr>
 						<tr>
-							<th scope="row">17</th>
+							<th scope="row">19</th>
 							<td>
 								<nav class="cl-effect-3">
 									<a>β Intimin</a>
@@ -422,7 +463,7 @@
 							<td>#</td>
 						</tr>
 						<tr>
-							<th scope="row">18</th>
+							<th scope="row">20</th>
 							<td>
 								<nav class="cl-effect-3">
 									<a>Anti-Lgr5 VHH</a>
@@ -434,53 +475,31 @@
 						</tr>
 					</tbody>
 				</table>
-
 			</div>
 		</div>
-
-
 	</main>
 
+	<div class="container-fluid prev-next">
+		<div class="buttons-coll">
+			<a href="..">
+				<button class="custom-btn btn-15">← Design</button>
+			</a>
+			<a href="..">
+				<button class="custom-btn btn-14">Modelling → </button>
+			</a>
+		</div>
+	</div>
 
 	<div class="container">
 		<section class="pre-footer-button-container">
 			<ul class="ch-grid">
 				<li>
-					<div class="ch-item ch-img-1">
-						<div class="ch-info">
-							<a href="../Description/index.html">
-								<h3>Description</h3>
-								<p>Read More...<a href="#">Read More</a></p>
-							</a>
-						</div>
-					</div>
-				</li>
-
-				<li>
 					<div class="ch-item ch-img-2">
 						<div class="ch-info">
 							<a href="#">
 								<h3>Design</h3>
-								<p>Read More...<a href="#">Read More</a></p>
+								<p>Read More...</p>
 							</a>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="ch-item ch-img-3">
-						<div class="ch-info">
-							<h3>Parts</h3>
-							<p>Read More...<a href="#">Read More</a></p>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="ch-item ch-img-5">
-						<div class="ch-info">
-							<h3>Human Practices</h3>
-							<p>Read More...<a href="#">Read More</a></p>
 						</div>
 					</div>
 				</li>
@@ -488,47 +507,36 @@
 				<li>
 					<div class="ch-item ch-img-6">
 						<div class="ch-info">
-							<h3>Model</h3>
-							<p>Read More...<a href="#">Read More</a></p>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="ch-item ch-img-4">
-						<div class="ch-info">
-							<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
-							<p>Read More...<a href="#">Read More</a></p>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="ch-item ch-img-7">
-						<div class="ch-info">
-							<h3>Patent <br>Law</h3>
-							<p>Read More...<a href="#">Read More</a></p>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="ch-item ch-img-8">
-						<div class="ch-info">
-							<a href="../Biosafety/index.html">
-								<h3>Safety</h3>
-								<p>Read More...<a href="#">Read More</a></p>
+							<a href="#">
+								<h3>Model</h3>
+								<p>Read More...</p>
 							</a>
 						</div>
 					</div>
 				</li>
-
+				<li>
+					<div class="ch-item ch-img-10">
+						<div class="ch-info">
+							<a href="#">
+								<h3>Biosecurity</h3>
+								<p>Read More...</p>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-17">
+						<div class="ch-info">
+							<a href="#">
+							<h3 style="font-size: 1.1rem;">Implementation</h3>
+							<p>Read More...</p>
+							</a>
+						</div>
+					</div>
+				</li>
 			</ul>
 		</section>
 	</div>
-
-
-
 
 	<footer class="mainfooter" role="contentinfo">
 		<div class="footer-middle">
@@ -543,12 +551,15 @@
 
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-12">
+					<div class="col-md-3 col-sm-6">
 						<!--Column1-->
 						<div class="footer-pad foot">
-							<h4>Sponsers</h4>
+							<h4>Our Sponsers</h4>
 							<ul class="list-unstyled">
-								<li><a href="#">A</a></li>
+								<li><a href="#"><img class="sponsers-footer img-fluid" src="../Common/Sponsers/benchlingWordmark.png"></a></li>
+								<li><a href="#"><img class="sponsers-footer img-fluid" src="../Common/Sponsers/IISERB_cropped.png"></a></li>
+								<li><a href="#"><img class="sponsers-footer img-fluid" src="../Common/Sponsers/"></a></li>
+								<li><a href="#"><img class="sponsers-footer img-fluid" src="../Common/Sponsers/benchlingWordmark.png"></a></li>
 								<li><a href="#">B</a></li>
 								<li><a href="#">C</a></li>
 								<li><a href="#">Disclaimer</a></li>
@@ -557,11 +568,12 @@
 							</ul>
 						</div>
 					</div>
-					<!--
+					
 					<div class="col-md-3 col-sm-6">
-
+							<a href="#"><img class="sponsers-footer img-fluid" src="../Common/Sponsers/benchlingWordmark.png"></a>
+								
 					</div>
-					-->
+					
 					<div class="col-md-3 foot">
 						<h4>Follow Us</h4>
 						<ul class="social-network social-circle">
@@ -583,4 +595,6 @@
 		</div>
 	</footer>
 
-</body></html>
+</body>
+
+</html>

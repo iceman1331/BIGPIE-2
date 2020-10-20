@@ -36,9 +36,116 @@
 	}
 }
 
+/*----prev-next buttons-------*/
+.prev-next {
+	display: block;
+	margin: 2% auto 5% auto;
+	padding: 2%
+}
+@media(max-width:500px) {
+	.prev-next {
+		display: none;
+	}
+}
+
+.buttons-coll {
+	width: 90%;
+	margin: 25px auto;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+button {
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+.custom-btn {
+	padding: 10px 25px;
+	font-weight: 500;
+	background: transparent;
+	outline: none !important;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+/**** BTN No. 14 ****/
+
+.btn-14 {
+	float: right;
+	border: 1px solid #000;
+	z-index: 10;
+	border-radius: 2px;
+}
+.btn-14:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+.btn-14:hover {
+	color: #fff;
+}
+.btn-14:hover:after {
+	left: 0;
+	width: 100%;
+}
+.btn-14:active {
+	top: 2px;
+}
+
+/**** BTN No. 15 ****/
+
+.btn-15 {
+	float: left;
+	border: 1px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+	content: "";
+}
+
+.btn-15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+.btn-15:hover {
+	color: #fff;
+}
+.btn-15:hover:after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+.btn-15:active {
+	top: 2px;
+}
+
+
+
+
+
+
+
+
+
+/*----------footer buttons---------*/
 .pre-footer-button-container {
-	margin: 1%;
-	
+	margin: 1%;	
 }
 
 .ch-grid {
@@ -448,4 +555,10 @@ ul.social-network li {
 
 .social-network a {
 	background-color: #F9F9F9;
+}
+
+
+
+.sponsers-footer{
+	width: 30%;
 }
