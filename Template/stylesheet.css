@@ -13,6 +13,11 @@ body {
 	overflow-x: hidden;
 }
 
+
+
+.blankdiv{
+	padding: 10%;
+}
 #cta {
 	width: 100%;
 	height: 600px;

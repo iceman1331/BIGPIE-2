@@ -50,6 +50,7 @@
 			const loader = document.querySelector(".loader");
 			loader.className += " hidden"; // new class = "loader hidden"
 		});
+
 	</script>
 
 	<header>
@@ -146,13 +147,11 @@
 	<div class="ZeroOne">
 		<p>
 			The BIG PIE is a biological delivery system created to allow insulin production in-vivo(within the body). The objective of BIG PIE is to compensate for the decreased/defective β-islet cells in the pancreas of diabetes patients.
-			<br>
-			By working as an innate alternative and replacing the need for external sources of insulin in diabetes patients.
-			The design of this project has been refined constantly to create a delivery system which is effective, reliable and most importantly safe by design.
+			<br> By working as a natural alternative and replacing the need for external sources of insulin in diabetes patients. The design of this project has been refined constantly to create a delivery system which is effective, reliable and most importantly safe by design.
 		</p>
-    </div>
-    
-    <div class="container clickable">
+	</div>
+
+	<div class="container clickable">
 		<img src="imgs/T--IISER_Bhopal--clickable_design.png" id="map-image" alt="" usemap="#map" class="" />
 		<map name="map" class="modalmap">
 			<area class="js-trigger parta" shape="circle" coords="479, 257, 77" title="Part 1" href="#plasmid1" onmouseover="writeText('Part_1')" />
@@ -176,10 +175,11 @@
 		function writeText(txt) {
 			document.getElementById("desc").innerHTML = txt;
 		}
+
 	</script>
 
 	<div class="ZeroTwo">
-        <h1 class="text hr1" style="text-align: center;">Project Principle</h1>
+		<h1 class="text hr1" style="text-align: center;">Project Principle</h1>
 		<p>
 			Our project is based on the principle of “transdifferentiation”. We intend to reprogram a set of the newly differentiated intestinal crypt cells in the duodenum(gut) to β-islet-like cells, capable of glucose-responsive insulin secretion.
 		</p>
@@ -195,7 +195,7 @@
 	</div>
 
 	<div class="ZeroTwo">
-        <p class="text">
+		<p class="text">
 			Previously transdifferentiation has been performed in human organoids and mice models with the aid of adenovirus vectors: a viral delivery system. But due to the pathogenic nature of viruses and the risks associated with them (mutagenesis, oncogenesis and immunogenicity). We decided to replace the viral vector with a probiotic bacterial vector that is safely accepted into the host.
 		</p>
 		<p class="ZeroTwoOne">Keeping in mind these aspects our design stands on <b>4 pillars</b> which form the backbone of our work.</p>
@@ -208,55 +208,57 @@
 	</section>
 
 	<div class="row">
+		<!--
 		<div class="col-sm-10 offset-sm-1">
-            <div class="OneOne">
+            
+        </div>
+-->
+
+		<div class="col-sm-5 offset-sm-1">
+			<div class="OneOne">
 				<p class="text">
-					In order to reduce the risk involved in the delivery system. We are using an FDA approved probiotic bacteria E.coli Nissle 1917. The bacteria will be cloned with plasmids expressing an EPEC derived molecular syringe called T3SS along with the 3 transcription factors of our choice PDX1, MAFA and NGN3 which will be maintained in the form of a single linear polypeptide lead by an export signal peptide called Map 20.
-					E.coli nissle is a nonpathogenic Gram-negative strain used in the therapies of many gastrointestinal disorders including diarrhea, irritable bowel syndrome etc and hence would convenience be able to reach the crypt cells in the duodenum of the small intestine.
+					Our project iBETA is using an FDA approved probiotic bacteria E.coli Nissle 1917. E.coli Nissle is a nonpathogenic Gram-negative strain used in the therapies of many gastrointestinal disorders including diarrhoea, irritable bowel syndrome etc and can reach the crypt cells in the duodenum of the small intestine.
 				</p>
 			</div>
-        </div>
-        
-		<div class="col-sm-5 offset-sm-1">
-            <div class="colp-containerOne collapsible-container">
+
+			<div class="colp-containerOne collapsible-container">
 				<button class="collapsible-coli" style="outline: none;">Why use Ecoli. Nissle 1917?</button>
 				<div class="content-collapsible">
 					<div>
 						<br>
 						<p>
-							E.coli Nissle is classified as a probiotic due to its lack of defined virulence factors along with the expression of fitness factors such as microcins, and iron uptake systems, and proteases which may support its colonization of the human gut.
-								EcN exhibits a semi-rough lipopolysaccharide (LPS) phenotype and serum sensitivity and does not produce known toxins<sup>[9]</sup>. EcN colonizes the intestine within a few days and it remains as colonic flora for months after administration<sup>[10]</sup>.
+							E.coli Nissle is classified as a probiotic due to its lack of defined virulence factors along with the expression of fitness factors such as microcins, and iron uptake systems, and proteases which may support its colonization of the human gut. EcN exhibits a semi-rough lipopolysaccharide (LPS) phenotype and serum sensitivity and does not produce known toxins. EcN colonizes the intestine within a few days and it remains as colonic flora for months after administration.
 						</p>
-                        <div class="p-linklist" style="text-align: left;">
-                            EcN advantages :
-								<li>
-									Intestinal anti-inflammatory and anti-microbial effects.
-								</li>
-								<li>
-									Its flagellum is the major “propulsor” in vivo, which allows this probiotic strain to efficiently bind with sites on host tissue.
-								</li>
-								<li>
-									It directly stimulates defensin production by intestinal epithelial cells, such as the human β-defensin that inhibits adhesion and invasion of intestinal cells by pathogens.
-								</li>
-                        </div>
-                        <br>
+						<div class="p-linklist" style="text-align: left;">
+							EcN advantages :
+							<li>
+								Intestinal anti-inflammatory and anti-microbial effects.
+							</li>
+							<li>
+								Its flagellum is the major “propulsor” in vivo, which allows this probiotic strain to efficiently bind with sites on host tissue.
+							</li>
+							<li>
+								It directly stimulates defensin production by intestinal epithelial cells, such as the human β-defensin that inhibits adhesion and invasion of intestinal cells by pathogens.
+							</li>
+						</div>
+						<br>
 					</div>
 				</div>
 			</div>
-            
-            <div class="colp-containerTwo collapsible-container">
+
+			<div class="colp-containerTwo collapsible-container">
 				<button class="collapsible-coli" style="outline: none;">Target cells: Crypt cells in the gut</button>
 				<div class="content-collapsible">
 					<div>
-                        <br>
+						<br>
 						<p>
-							Our literature reviews showed us that several cell types in the stomach, gut, liver could be transformed into beta islet-like cells capable of producing inc=sluin. However, the accessibility of the gut cells, which could be easily reached by our target vector in the form of a pill, the well-characterised environment of the intestine which is capable of hosting bacterial systems like our own, made the gut our first choice for iBETA. The crypt cells in the gut were part of the epithelium which made it relatively easy to access, most importantly they are young and developmentally flexible stem cells, that can be easily reprogrammed into beta islet-like cells by our bacterial delivery system using the principles of transdifferentiation.
-				        </p>
+							Our literature reviews showed us that several cell types in the stomach, gut, liver could be transformed into beta islet-like cells capable of producing insulin. But we chose the gut because it is easily accessible. Our bacterial drug can reach the gut by oral consumption via capsules. The well-characterised environment of the intestine can easily host our bacteria and will show a long term result to our treatment. The crypt cells in the gut were part of the epithelium which made it relatively easy to access, most importantly they are young and developmentally flexible stem cells, that can be easily reprogrammed into beta islet-like cells by our bacterial delivery system using the principles of transdifferentiation.
+						</p>
 					</div>
 				</div>
 			</div>
-        </div>
-        
+		</div>
+
 		<div class="col-sm-5">
 			<div class="OneTwo">
 				<div class='animatedParent animateOnce'>
@@ -279,7 +281,7 @@
 	<div class="row">
 		<div class="col-sm-5 offset-sm-1">
 			<div class="TwoOne">
-                <div class="centred-child-2">
+				<div class="centred-child-2">
 					<div class='animatedParent animateOnce'>
 						<div class="animated fadeInLeft container">
 							<a href="imgs/T--IISER_Bhopal--t3ss.png" data-fancybox data-caption="Image description">
@@ -293,73 +295,83 @@
 		</div>
 
 		<div class="col-sm-5">
-            <div class="TwoZero">
+			<div class="TwoZero">
 				<p class="text text-justify">
 					We intend to use a novel delivery mechanism : Type III Secretion System (T3SS)<sup>8</sup> -‘molecular syringe’ found on certain Gram-negative bacteria consisting of a basal body and filament . The T3SS cloned in E.coli Nissle will transport the linear polypeptide sequence consisting of effector proteins’ - PDX, MAFA and NGN3 into the crypt cells in the gut.
 				</p>
 			</div>
-            
-            <div class="colp-containerOne collapsible-container">
-				<button class="collapsible-coli" style="outline: none;">Protein Translocation across T3SS</button>
-				<div class="content-collapsible">
-					<div>
-						<br>
-						<p>
-							Proteins are delivered by T3SS in a two-step process. Firstly, contact with the intestinal epithelial cells triggers the secretion of the T3SS hydrophobic ‘translocon’ protein, which inserts itself into the cell membrane forming a pore. This creates a continuous path between the bacterial and eukaryotic cytoplasm through the lumen of the needle and pore. Due to the small dimensions of the channel the effector proteins are unfolded during its passage. The proteins are introduced into the T3SS with the aid of MAP20, a short N terminal export signal tag. The chaperone CesT helps maintain the polypeptide in a partially unfolded state to facilitate delivery through the secretion channel of T3SS. Both the protein unfolding and secretion are powered through a combination of ATPase activity and the proton motive force. (Ref. 12). The factors will be translocated across the T3SS membrane and delivered into the cytoplasm of the undifferentiated crypt cells where they will fold into their native states and get translocated into the nucleus, and exert their functions.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="colp-containerTwo collapsible-container">
-				<button class="collapsible-coli" style="outline: none;">Introducing Polyprotein sequence</button>
+
+			<div class="colp-containerOne collapsible-container">
+				<button class="collapsible-coli collapsible-coliAlt" style="outline: none; color: #fff;">Introducing Polyprotein sequence</button>
 				<div class="content-collapsible">
 					<div>
 						<div>
 							<p>
-								<br>
-								Studies have demonstrated that overexpression PDX1, NEUROG3, and/or MAFA, can reprogram the fate of various non-β cell types into glucose responsive insulin-producing cells. Here’s an explanation of every part of our plasmid construct.
+								<br> Studies have demonstrated that overexpression PDX1, NEUROG3, and/or MAFA, can reprogram the fate of various non-β cell types into glucose responsive insulin-producing cells. Here’s an explanation of every part of our plasmid construct.
 							</p>
 
 							<p>
-								<b>MAP 20</b><br> Mitochondria associated protein is a 20 amino acid long export signal peptide sequence for T3SS, which helps guide the protein sequence through the T3SS pore.
+								<b>MAP 20</b>
+								<br> Mitochondria associated protein is a 20 amino acid long export signal peptide sequence for T3SS, which helps guide the protein sequence through the T3SS pore.
 								<br>
 								<br>
-								<b>TMV Protease Substrate</b><br>Protease cleavage sites are required to separate and activate the transcription factors in the cytosol of the effector cells.
+								<b>TMV Protease Substrate</b>
+								<br>Protease cleavage sites are required to separate and activate the transcription factors in the cytosol of the effector cells.
 								<br>
 								<br>
-								<b>PDX1</b><br> is a homeodomain transcription factor and is required for early embryonic development of the pancreas and differentiation of endocrine cell types including β cells. It plays a critical role in maintaining β-cell function.
+								<b>PDX1</b>
+								<br> is a homeodomain transcription factor and is required for early embryonic development of the pancreas and differentiation of endocrine cell types including β cells. It plays a critical role in maintaining β-cell function.
 								<br>
 								<br>
-								<b>NEUROG3</b><br>is a member of the basic helix–loop–helix transcription factor family involved in the central nervous system and embryonic pancreas development.
+								<b>NEUROG3</b>
+								<br>is a member of the basic helix–loop–helix transcription factor family involved in the central nervous system and embryonic pancreas development.
 								<br>
 								<br>
-								<b>MAFA</b><br> also known as RIPE3b1, is a member of the MAF family of basic leucine zippers. It is a transcription factor that binds to the enhancer/promoter region of the insulin gene and drives insulin expression in response to glucose. For regenerative approaches, MAFA’s expression is also important to regenerate functional and mature β cells from pluripotent stem cells.
+								<b>MAFA</b>
+								<br> also known as RIPE3b1, is a member of the MAF family of basic leucine zippers. It is a transcription factor that binds to the enhancer/promoter region of the insulin gene and drives insulin expression in response to glucose. For regenerative approaches, MAFA’s expression is also important to regenerate functional and mature β cells from pluripotent stem cells.
 							</p>
 							<p>
-								<b>Interaction among PDX1, NEUROG3, and MAFA</b>
-								Transcription factors PDX1, NEUROG3, and MAFA are also mutually interacted/regulated during the pancreatic developmental process. PDX1 regulates the expression of NEUROG3 and MAFA in the development and reprogramming processes.
+								<b>Interaction among PDX1, NEUROG3, and MAFA</b> Transcription factors PDX1, NEUROG3, and MAFA are also mutually interacted/regulated during the pancreatic developmental process. PDX1 regulates the expression of NEUROG3 and MAFA in the development and reprogramming processes.
 							</p>
 
 							<div class="centred-child">
-
 								<a href="imgs/design_%20Vector%20delivery%20.png" data-fancybox data-caption="Image description">
 									<img src="imgs/design_%20Vector%20delivery%20.png" class="img-fluid" alt="Responsive image">
 								</a>
 
 							</div>
-
 							<div class="button_know" align="center">
 								<a class="external_knowmore" href="https://stemcellres.biomedcentral.com/articles/10.1186/s13287-017-0694-z" target="_blank" rel="nofollow">
-									<span>Read more</span><br>
+									<span>Read more</span>
+									<br>
 								</a>
 							</div>
 							<br>
 						</div>
 					</div>
 				</div>
-  </div>
+			</div>
 			<div class="colp-containerTwo collapsible-container">
-				<button class="collapsible-coli" style="outline: none;">How Proteins Survive in Host Environments?</button>
+				<button class="collapsible-coli collapsible-coliAlt" style="outline: none; color: #fff;">Protein Translocation across T3SS</button>
+				<div class="content-collapsible">
+					<div>
+						<br>
+						<div class="p-linklist" style="text-align: left;">
+							Proteins are delivered by T3SS in a two-step process:
+							<br>
+							<li>
+								Contact with the intestinal epithelial cells triggers the secretion of the T3SS hydrophobic ‘translocon’ protein, which inserts itself into the cell membrane forming a pore. This creates a continuous path between the bacterial and eukaryotic cytoplasm through the lumen of the needle and pore. Due to the small dimensions of the channel, the effector proteins are unfolded during its passage.
+							</li>
+							<li>
+								The proteins are introduced into the T3SS with the aid of MAP20, a short N terminal export signal tag. The chaperone CesT helps maintain the polypeptide in a partially unfolded state to facilitate delivery through the secretion channel of T3SS. Both the protein unfolding and secretion are powered through a combination of ATPase activity and the proton motive force. (Ref. 12). The factors will be translocated across the T3SS membrane and delivered into the cytoplasm of the undifferentiated crypt cells where they will fold into their native states and get translocated into the nucleus, to exert their functions.
+							</li>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+			<div class="colp-containerTwo collapsible-container">
+				<button class="collapsible-coli collapsible-coliAlt" style="outline: none; color: #fff;">How Proteins Survive in Host Environments?</button>
 				<div class="content-collapsible">
 					<div>
 						<div>
@@ -373,6 +385,7 @@
 									<img src="imgs/T--IISER_Bhopal--tfs.png" alt="" />
 								</a>
 								<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+								<br>
 							</div>
 
 
@@ -381,7 +394,7 @@
 						</div>
 					</div>
 				</div>
-  </div>
+			</div>
 		</div>
 	</div>
 
@@ -392,79 +405,77 @@
 	</section>
 
 	<div class="row">
+		<!--
 		<div class="col-sm-10 offset-sm-1">
+			
+		</div>
+-->
+
+		<div class="col-sm-4 offset-sm-1">
 			<div class="ThreeOne">
 				<p class="text">
 					There were a number of strategies thought of for the targeting system. But we finally decided on a three step targeting system. To ensure absolute accuracy and specificity in the attachment of our delivery vector to the target cell. It was imperative that transdifferentiation occurs specifically and only in the undifferentiated crypt cells of the duodenum.
 				</p>
 			</div>
-		</div>
-
-		<div class="col-sm-5 offset-sm-1">
-            <div class="colp-containerZero collapsible-container">
+			<div class="colp-containerZero collapsible-container">
 				<button class="collapsible-coli" style="outline: none;">A)Prior to Cell Binding : pH Specific promoter upstream of Polyprotein sequence.</button>
 				<div class="content-collapsible">
 					<br>
-					<p> 
-                        <b>pH Specific promoter upstream of Polyprotein sequence</b>
-                        Our drug delivery system as explained in proposed implementation, is designed to release the bacteria in the stomach, which get ejected along with stomach acids into the duodenum(gut). To control the bacterial activity we have a pH sensitive promoter pGadA with attached RBS (BBa_K1231001) at the starting of our gene cassette.
-				        The promoter is shown to initiate transcription at low pH. The well characterised promoter is active between pH 5 to 8 and shows optimal activity at pH 6 which is the usual condition observed in the duodenum, in the gut lumen.
-                        This ensures all necessary protein translation, only in the gut region. It serves as our first check for cell specificity and prevents bacterial activity or interaction with the stomach lining. Thereby ensuring that our bacterial system is only active within the required region which is the duodenum in the gut.
-                    </p>
-                    <a href="imgs/pH%20promoter%20section.png" data-fancybox data-caption="Image description">
-                        <img src="imgs/pH%20promoter%20section.png" alt="" />
-                    </a>
+					<p>
+						<b>pH Specific promoter upstream of Polyprotein sequence</b> Our drug delivery system as explained in proposed implementation, is designed to release the bacteria in the stomach, which get ejected along with stomach acids into the duodenum(gut). To control the bacterial activity we have a pH sensitive promoter pGadA with attached RBS (BBa_K1231001) at the starting of our gene cassette. The promoter is shown to initiate transcription at low pH. The well characterised promoter is active between pH 5 to 8 and shows optimal activity at pH 6 which is the usual condition observed in the duodenum, in the gut lumen. This ensures all necessary protein translation, only in the gut region. It serves as our first check for cell specificity and prevents bacterial activity or interaction with the stomach lining. Thereby ensuring that our bacterial system is only active within the required region which is the duodenum in the gut.
+					</p>
+					<a href="imgs/pH%20promoter%20section.png" data-fancybox data-caption="Image description">
+						<img src="imgs/pH%20promoter%20section.png" class="img-fluid" alt="" />
+					</a>
 				</div>
 			</div>
-            
-            <div class="colp-containerTwo collapsible-container">
+
+			<div class="colp-containerTwo collapsible-container">
 				<button class="collapsible-coli" style="outline: none;">B) Prior to Cell Binding: Antibody specific to Crypt Cells</button>
 				<div class="content-collapsible">
+					<br>
 					<p>
-									<b>Antibody specific to Crypt Cells</b>
-									We intend to display a Single domain Antibody (SdaB) with a β intimin base attached to E.coli Nissle surface. The SdaB corresponds to the Lgr5 antigen exposed on the crypt cells(CBCs) in the gut. The antibodies ensure that the delivery vector binds to the right type of cells.
-									The single domain antibodies from camelids (nanobodies or VHH) bind to β intimin a surface protein derived from EHEC.The display of the VHH on intimin guarantees a stronger affinity for the cell specific antigens. The sdABs also survived better on the E.coli surface with very little proteolysis or cell toxicity.
-									Thus this antibody display on E.coli surface specific to antigens on crypt cells is the first step that ensures accurate binding of the delivery vector to the crypt cells.
-								</p>
-								<p>
-									The strategies we are currently exploring involve displaying antibodies against cell-type-specific markers on E. coli’s surface<sup>10</sup>, displaying a cell-specific protease-sensitive T3SS inhibitor on E. coli’s surface, and fusing our effectors to C-terminal cytoplasmic retention signals downstream of the cleavage site of a cell-specific protease.
-								</p>
-								<div class="centred-child">
-									<a href="imgs/T--IISER_Bhopal--prior_to_binding.png" data-fancybox data-caption="Image description">
-										<img src="imgs/T--IISER_Bhopal--prior_to_binding.png" alt="" />
-									</a>
+						<b>Antibody specific to Crypt Cells</b> We intend to display a Single domain Antibody (SdaB) with a β intimin base attached to E.coli Nissle surface. The SdaB corresponds to the Lgr5 antigen exposed on the crypt cells(CBCs) in the gut. The antibodies ensure that the delivery vector binds to the right type of cells. The single domain antibodies from camelids (nanobodies or VHH) bind to β intimin a surface protein derived from EHEC.The display of the VHH on intimin guarantees a stronger affinity for the cell specific antigens. The sdABs also survived better on the E.coli surface with very little proteolysis or cell toxicity. Thus this antibody display on E.coli surface specific to antigens on crypt cells is the first step that ensures accurate binding of the delivery vector to the crypt cells.
+					</p>
+					<p>
+						The strategies we are currently exploring involve displaying antibodies against cell-type-specific markers on E. coli’s surface<sup>10</sup>, displaying a cell-specific protease-sensitive T3SS inhibitor on E. coli’s surface, and fusing our effectors to C-terminal cytoplasmic retention signals downstream of the cleavage site of a cell-specific protease.
+					</p>
+					<div class="centred-child">
+						<a href="imgs/T--IISER_Bhopal--prior_to_binding.png" data-fancybox data-caption="Image description">
+							<img src="imgs/T--IISER_Bhopal--prior_to_binding.png" alt="" />
+						</a>
 
-									<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+						<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
 
-								</div>
+					</div>
+					<br>
 				</div>
 			</div>
-            
-            <div class="colp-containerTwo collapsible-container">
+
+			<div class="colp-containerTwo collapsible-container">
 				<button class="collapsible-coli" style="outline: none;">C) Post Cell Binding : Protease Controlled Protein Activity</button>
 				<div class="content-collapsible">
+					<br>
 					<p>
-									Our final regulation step takes advantage of a pre-existing Wnt signalling pathway present mostly in the crypt base cells which is our target cell.
-									We intend to clone a protein protected by the Wnt signalling pathway, β-catenin along with the protease TEV Protease (S219N) can cleave our polyprotein sequence and seperate the Transcription factors PDX1, MAfa and NGN3 in the cell cytosol.
-									<br>
-									In most cells β catenin(and attached protease) is degraded by the environment and hence the polyprotein sequence will not be active. However in the crypt cells, the Wnt signalling pathway protects the β catenin and the tagged protease can survive.
-									<br>
-									Since β catenin is a transcription factor usually found in the nucleus. We are also placing an NES(Nuclear Export Signal) at its C-terminus to retain it in the cytosol of the effector cell. This allows the cleavage of the polyprotein sequence in the cytosol, transport of the transcription factors to the nucleus and activation of downstream signaling required for cellular reprogramming.
-								</p>
+						Our final regulation step takes advantage of a pre-existing Wnt signalling pathway present mostly in the crypt base cells which is our target cell. We intend to clone a protein protected by the Wnt signalling pathway, β-catenin along with the protease TEV Protease (S219N) can cleave our polyprotein sequence and seperate the Transcription factors PDX1, MAfa and NGN3 in the cell cytosol.
+						<br> In most cells β catenin(and attached protease) is degraded by the environment and hence the polyprotein sequence will not be active. However in the crypt cells, the Wnt signalling pathway protects the β catenin and the tagged protease can survive.
+						<br> Since β catenin is a transcription factor usually found in the nucleus. We are also placing an NES(Nuclear Export Signal) at its C-terminus to retain it in the cytosol of the effector cell. This allows the cleavage of the polyprotein sequence in the cytosol, transport of the transcription factors to the nucleus and activation of downstream signaling required for cellular reprogramming.
+					</p>
 
-								<a data-fancybox data-width="640" data-height="360" href="imgs/T--IISER_Bhopal--Protease_Activity.mp4">
-									<div class="embed-responsive embed-responsive-16by9">
-										<video autoplay muted playsinline id="video" preload="auto" src="imgs/T--IISER_Bhopal--Protease_Activity.mp4" class="embed-responsive-item"></video>
-									</div>
-								</a>
+					<a data-fancybox data-width="640" data-height="360" href="imgs/T--IISER_Bhopal--Protease_Activity.mp4">
+						<div class="embed-responsive embed-responsive-16by9">
+							<video autoplay muted playsinline id="video" preload="auto" src="imgs/T--IISER_Bhopal--Protease_Activity.mp4" class="embed-responsive-item"></video>
+						</div>
+					</a>
+					<br>
 				</div>
 			</div>
 		</div>
 
-		<div class="col-sm-5">
-			<div class='animatedParent animateOnce'>
+		<div class="col-sm-6">
+			<div class='animatedParent'>
 				<div class="animated fadeInRight container">
-					<div class="video">
+					<div class="video1">
 						<a data-fancybox data-width="640" data-height="360" href="imgs/T--IISER_Bhopal--Desc_video.mp4">
 							<div class="embed-responsive embed-responsive-16by9">
 								<video autoplay muted playsinline id="video" preload="auto" src="imgs/T--IISER_Bhopal--Desc_video.mp4" class="embed-responsive-item"></video>
@@ -484,15 +495,13 @@
 	</section>
 
 	<div class="row">
+		<!--
         <div class="col-sm-10 offset-sm-1">
-			<div class="FourZero">
-				<p class="text text-justify">
-					With the usage of Genetically modified Organisms (GMOs) safety is a major concern. The usage of genetically modified bacteria has led to several claims and arguments about the unwarranted impacts on not only the consumer but also our surroundings. Keeping in mind this safety aspect at every step. We have made design considerations for the biosafety mechanism, which will ensure not only the safety of the microbiome in the gut of the host, the patient consuming the pill but also the environment in which the pills’ contents will be released.
-				</p>
-			</div>
+			
 		</div>
-		
-		<div class="col-sm-5 offset-sm-1">
+-->
+
+		<div class="col-sm-6 offset-sm-1">
 			<div class="FourOne">
 				<div class='animatedParent animateOnce'>
 					<div class="animated fadeInLeft container">
@@ -502,29 +511,23 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		
-		<div class="col-sm-5">
 			<div class="FiveOne collapsible-container">
-				<button class="collapsible-coli" style="outline: none;">Kill switch to regulate colonisation of the small intestine</button>
+				<button class="collapsible-coli collapsible-coliAlt collapsible-coliAltNarrow" style="outline: none; color: #fff;">Kill switch to regulate colonisation of the small intestine</button>
 				<div class="content-collapsible">
 					<br>
 					<p class="text">
-						Another major concern is the release of GMOs from the gut which could be hazardous for the environment.
-						To avoid this we propose a single gate phosphate regulated kill switch that is activated in the colon and kills our probiotic bacteria by the time it is excreted and enters the environment.
+						Another major concern is the release of GMOs from the gut which could be hazardous for the environment. To avoid this we propose a single gate phosphate regulated kill switch that is activated in the colon and kills our probiotic bacteria by the time it is excreted and enters the environment.
 
 					</p>
 
 					<p>
-						<b>Expression</b><br>
-						To kill the engineered probiotic, we are constitutively expressing the Colicin E2 DNase domain "miniColicin" BBa_K1976048, that can degrade Host DNA whilst posing little threat to the gut microbiota.
-						In the bacteria’s active state we are inhibiting the toxin activity by constitutively expressing the anti-toxin,immunity protein IM2 BBa_K1976027 on the same plasmid which suppresses the toxin in alive bacteria.
+						<b>Expression</b>
+						<br> To kill the engineered probiotic, we are constitutively expressing the Colicin E2 DNase domain "miniColicin" BBa_K1976048, that can degrade Host DNA whilst posing little threat to the gut microbiota. In the bacteria’s active state we are inhibiting the toxin activity by constitutively expressing the anti-toxin,immunity protein IM2 BBa_K1976027 on the same plasmid which suppresses the toxin in alive bacteria.
 					</p>
 
 					<p>
-						<b>Killing Mechanism</b><br>
-						To activate the kill switch we are using a phosphate regulated promoter PhoB.
-						At high phosphate concentrations in the small intestine the promoter is inactive, allowing the bacteria to function. At low phosphate concentrations in the colon, the PhoB promoter is activated, and transcribes an antisense RNA strand, which binds to the anti-toxin and renders it inactive. The constitutively expressed toxin then kills the bacteria which dies in the low phosphate environment starting from the colon to the time it is excreted/released into the environment.
+						<b>Killing Mechanism</b>
+						<br> To activate the kill switch we are using a phosphate regulated promoter PhoB. At high phosphate concentrations in the small intestine the promoter is inactive, allowing the bacteria to function. At low phosphate concentrations in the colon, the PhoB promoter is activated, and transcribes an antisense RNA strand, which binds to the anti-toxin and renders it inactive. The constitutively expressed toxin then kills the bacteria which dies in the low phosphate environment starting from the colon to the time it is excreted/released into the environment.
 					</p>
 					<div class="centred-child-2">
 						<a href="imgs/T--IISER_Bhopal--design_Kill_Switch.png" data-fancybox data-caption="Image description">
@@ -535,8 +538,17 @@
 					<div style="text-align: center;">. .</div>
 				</div>
 			</div>
-      <div class="FiveTwo collapsible-container">
-				<button class="collapsible-coli" style="outline: none;">Reorganisation of code to prevent horizontal gene transfer.</button>
+		</div>
+
+		<div class="col-sm-4">
+			<div class="FourZero">
+				<p class="text text-justify">
+					With the usage of Genetically modified Organisms (GMOs) safety is a major concern. The usage of genetically modified bacteria has led to several claims and arguments about the unwarranted impacts on not only the consumer but also our surroundings. Keeping in mind this safety aspect at every step. We have made design considerations for the biosafety mechanism, which will ensure not only the safety of the microbiome in the gut of the host, the patient consuming the pill but also the environment in which the pills’ contents will be released.
+				</p>
+			</div>
+
+			<div class="FiveTwo collapsible-container">
+				<button class="collapsible-coli collapsible-coliAlt" style="outline: none; color: #fff;">Reorganisation of code to prevent horizontal gene transfer.</button>
 				<div class="content-collapsible">
 					<div>
 						<div>
@@ -547,7 +559,7 @@
 					</div>
 				</div>
 			</div>
-        </div>
+		</div>
 	</div>
 
 	<div class="blankspace"></div>
@@ -555,25 +567,17 @@
 	<div class="container">
 		<section class="pre-footer-button-container">
 			<ul class="ch-grid">
-				<li>
-					<div class="ch-item ch-img-1">
-						<div class="ch-info">
-							<a href="../Description/index.html">
-								<h3>Description</h3>
-								<p>Read More...<a href="#">Read More</a></p>
-							</a>
-						</div>
-					</div>
-				</li>
 
 				<li>
-					<div class="ch-item ch-img-2">
+					<div class="ch-item ch-img-16">
+
 						<div class="ch-info">
-							<a href="#">
-								<h3>Design</h3>
-								<p>Read More...<a href="#">Read More</a></p>
+							<a href="£">
+								<h3>Engineering success</h3>
+								<p>Read More...</p>
 							</a>
 						</div>
+
 					</div>
 				</li>
 
@@ -594,34 +598,6 @@
 						</div>
 					</div>
 				</li>
-
-				<li>
-					<div class="ch-item ch-img-6">
-						<div class="ch-info">
-							<h3>Model</h3>
-							<p>Read More...<a href="#">Read More</a></p>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="ch-item ch-img-4">
-						<div class="ch-info">
-							<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
-							<p>Read More...<a href="#">Read More</a></p>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<div class="ch-item ch-img-7">
-						<div class="ch-info">
-							<h3>Patent <br>Law</h3>
-							<p>Read More...<a href="#">Read More</a></p>
-						</div>
-					</div>
-				</li>
-
 				<li>
 					<div class="ch-item ch-img-8">
 						<div class="ch-info">
@@ -712,8 +688,8 @@
 			</div>
 		</div>
 	</footer>
-    
-    <script>
+
+	<script>
 		/*Button reveal*/
 		var coll = document.getElementsByClassName("ref_collapsible");
 		var i;
@@ -730,6 +706,7 @@
 			});
 		}
 		/*Button reveal*/
+
 	</script>
 
 	<script>
@@ -749,6 +726,7 @@
 			});
 		}
 		/*Button reveal*/
+
 	</script>
 
 	<script>
@@ -768,6 +746,7 @@
 			});
 		}
 		/*Button reveal*/
+
 	</script>
 
 	<script>
@@ -777,6 +756,7 @@
 			var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
 			console.log(bufferedSeconds + ' seconds of video are ready to play!');
 		});
+
 	</script>
 	<script>
 		//Smooth scroll
@@ -799,6 +779,7 @@
 				moveTo.registerTrigger(triggers[i]);
 			}
 		});
+
 	</script>
 
 	<script src="../Common/css3-animate-it.js"></script>
@@ -807,4 +788,6 @@
 	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
 	<script src="fancybox/jquery.fancybox.min.js"></script>
 
-</body></html>
+</body>
+
+</html>

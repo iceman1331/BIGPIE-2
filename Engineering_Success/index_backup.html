@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no,shrink-to-fit=no" />
+	<title>Engineering Success</title>
+	<link rel="preload" href="../Common/T--IISER_Bhopal--Loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../Common/NavBar/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.css" />
+	<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Tabs.css">
+
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+	<script src="Smooth/moveTo.min.js" charset="utf-8"></script>
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+</head>
+    
+<body>
+    <div class="loader">
+		<video autoplay muted loop src="../Common/T--IISER_Bhopal--Loader.mp4"></video>
+	</div>
+    
+    <script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+	</script>
+    
+    <header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item navbar-nav mr-auto active">
+						<a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Team/index.html">Team</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Supervisors</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
+							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+    
+    <script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+    <div id="cta">
+		<div class="desc-title">
+			<h1> Design </h1>
+		</div>
+	</div>
+    
+    <div class="container intro">
+        <div class="intro intro-title">
+            <h1> Introduction </h1>
+        </div>
+        <div class="intro-text">
+            <div class="intro-text-one">
+                <p>
+                    Engineering success for our team involved constant ideation, designing, adjustments and improvements until we reached the final product - iBETA capable of tackling diabetes by producing beta cells in-vivo.
+                </p>
+                <p>
+                    <b>IDEATION STAGE:</b> The objective of IISERB’s 2020 iGEM project was always to tackle diabetes from the root, by creating beta cells in the body. The initial design included the usage of GLP1 and T3SS, a molecular syringe needed to transform necessary cells into beta islet-like cells. But the literature on GLP1 made us aware of the drawbacks - it was neither comprehensive nor well characterized to be used as a basis for our project idea. <br>
+                    Instead, we decided to use transcription factors - PDX1, Mafa and Ngn3. Our literature showed these 3 transcription factors could transform certain cell types in the stomach, liver and gut into glucose-responsive insulin-secreting beta cells.
+                </p>
+                <p>
+                    We decided to work with gut cells as they are easily available, can be reached by oral consumption and have a stable environment capable of handling a bacterial system. We needed to pick gut cells that could undergo the transformation to beta cells for long time spans. Hence the crypt cells in the villi of the duodenum stem cells were a perfect choice; they are developmentally flexible, young and competent to undergo reprogramming.
+                </p>
+                <p style="margin-top: 30px;">
+                    <b>
+                        The ideation stage was followed by rigorous literature reviews which helped us design, improvise and finalise the details of our delivery system. A major section that needed to be reworked was the organisation of effector proteins in the operon and the proteases we chose, which significantly changed the project.
+                    </b>
+                </p>
+            </div>
+            
+            <div class="naccs">
+				<div class="grid">
+					<div class="gc gc--1-of-3">
+						<div class="menu">
+							<div class="active"><span class="light"></span><span>1. Initial Construct of Effectors</span></div>
+							<div><span class="light"></span><span>2. Final Construct of Effectors</span></div>
+							<div><span class="light"></span><span>3. Initial Protease Cleavage System</span></div>
+							<div><span class="light"></span><span>4. Final Protease Cleavage System</span></div>
+						</div>
+					</div>
+					<div class="gc gc--2-of-3">
+						<ul class="nacc">
+							<li class="active">
+								<div>
+                                    <div class="text-center"><img src="img/wiki_illustrations/initial%20construct.png" class="img-fluid" style="max-width: 100%; margin-top: -60px;"/></div>
+									<p style="margin-top: -90px;">Our initial plan was to express the three transcription factors on an operon, as separate ORFs. However, it was pointed out to us that we would be unable to ascertain the stoichiometric ratios of translation of our 3 factors which was for our device to operate, so we tweaked our expression system.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+                                    <div class="text-center"><img src="img/wiki_illustrations/final%20construct.png" class="img-fluid" style="max-width: 100%; margin-top: -80px; margin-left: 30px;"/></div>
+									<p style="margin-top: -110px;">We switched to a polyprotein-based BioBrick instead, where all three of our factors were joined directly by linkers under a single operon. They entered the target cell as one, achieving a roughly 1:1:1 stoichiometric ratio while being delivered to the gut cell.<br>
+                                    In order to ensure the polyprotein was separated into 3 functional transcription factors, only in our cells of interest, we needed to find a protease specific to our target cells- Columnar based crypt cells(CBCCs).</p>
+								</div>
+							</li>
+                            <li>
+								<div>
+                                    <div class="text-center"><img src="img/wiki_illustrations/initial%20polyprotein%20+%20protease.png" class="img-fluid" style="max-width: 30%;"/></div>
+									<p>At first, we tried to find a protease specific to our target cells - CBCCs. A promising candidate called SENP1 appeared. It helps chop SUMO tags from their conjugated proteins. A proteome-wide screen found that it was enriched in our target cells. We thought we'd found the holy grail!<br>
+                                    But it turned out that SENP1 shared a cleavage site with multiple proteases, some of which were expressed in other cells as well. Another issue we'd overlooked was the fact that it leaves a 100 aa residue at the C-termini of our factors, which could possibly impact their function.</p>
+								</div>
+							</li>
+                            <li>
+								<div>
+                                    <div class="text-center"><img src="img/wiki_illustrations/final%20polyprotein%20+%20protease.png" class="img-fluid" style="max-width: 60%; margin-top: -20px;"/></div>
+									<p>Our current system does not rely on a host protease. Instead, we have sneaked in our own protease and designed it such that it is only functional in our target cells. We have used beta-catenin, the famous Wnt effector, usually degraded in most cells except the ones with an active Wnt cascade (as is present in our target cells).<br>
+                                    We have fused a protease - Tobacco Etch Virus protease with beta-catenin which is active only in crypt cells. Our device has a multi advantage it is a protease that efficiently cleaves our transcription factors whilst maintaining cell-specificity, safety and efficacy of our system.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            
+            <div class="intro-text-two">
+                <p>
+                Following the engineering cycle of Design, Test, Improve and Research. We were able to design a delivery system which is safe, effective and capable of producing beta cells in-vivo. To bring it to culmination we have designed several modules explaining the exact steps that would take our project from an idea to wet lab work that will give the real results.
+            </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h4>NOTE: Unless specified, all bacterial culture work will be performed at 37&#176;C and 200 RPM.</h4>
+    </div>
+    
+    <div class="cards">
+        <div class="cardOne">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="text-center">
+                        <h1>Module 1</h1>
+                    </div>
+<!--
+                    <div class="oneImg">
+                        <img src="img/module_number_thumbnails/module%201.png" class="img-fluid"/>
+                    </div>                    
+-->
+<!--
+                    <div class="tabbable tabs-left">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+					<li><a href="#about" data-toggle="tab">About</a></li>
+					<li><a href="#services" data-toggle="tab">Services</a></li>
+					<li><a href="#contact" data-toggle="tab">Contact</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="home">                
+						<div class="">
+							<h1>Home Tab</h1>
+							<p>These lists are meant to identify articles which deserve editor attention because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>                 
+						</div>
+					</div> 
+					<div class="tab-pane" id="about"> 
+						<div class="">
+							<h1>About Tab</h1>
+							<p>because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>                 
+						</div>
+					</div>
+				
+					<div class="tab-pane" id="services"> 
+						<div class="">
+							<h1>Services Tab</h1>
+							<p>meant to identify articles which deserve editor attention because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>                 
+						</div>
+					</div>
+				
+					<div class="tab-pane" id="contact"> 
+						 <div class="">
+							<h1>Contact Tab</h1>
+							<p>deserve editor attention because they are the most important for an encyclopedia to have, as determined by the community of participating editors. They may also be of interest to readers as an alternative to lists of overview articles.</p>                 
+						 </div>
+					</div>
+				</div>
+			</div>
+-->
+                    
+                </div>
+            </div>
+
+            <div class="module-content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="1A-tab" data-toggle="tab" href="#A1" role="tab" aria-controls="tab1A" aria-selected="true">
+                        A. Plasmid Extraction
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="1B-tab" data-toggle="tab" href="#B1" role="tab" aria-controls="tab1B" aria-selected="false">
+                        B. Growth Kinetics
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="1C-tab" data-toggle="tab" href="#C1"1 role="tab" aria-controls="tab1C" aria-selected="false">
+                        C. Antibiotic Sensitivity
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="1D-tab" data-toggle="tab" href="#D1" role="tab" aria-controls="tab1D" aria-selected="false">
+                        D. Competency Check
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="1E-tab" data-toggle="tab" href="#E1" role="tab" aria-controls="tab1E" aria-selected="false">
+                        E. Cell Line Maintenance
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="1F-tab" data-toggle="tab" href="#F1" role="tab" aria-controls="tab1F" aria-selected="false">
+                        F. T3SS Validation
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="A1" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="text-center">
+                          <img src="img/plasmid-module-1.png" />
+                          <img src="img/module1/Plasmid%20Extraction%20clipart.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        </div>
+                        <p>
+                            We plan to assemble our parts onto the Golden Gate destination vector pGGA, shown here. First, we will transform NEB5α competent E. coli cells with the lyophilised vector, and extract it with a standard miniprep kit.Then, we will confirm linearisation by restriction digestion with BsaI-HF, followed by visualisation on an agarose gel.<br>                  First, we will transform NEB5α competent E. coli cells with the lyophilised vector, and extract it with a standard miniprep kit.<br>
+                            Then, we will confirm linearisation by restriction digestion with BsaI-HF, followed by visualisation on an agarose gel.<br>
+                            The plasmid pGGA will be extracted (after stock revival, using LB-Cm plates) from its DH5α stock using the QIAGEN Miniprep protocol, described <a href="https://www.qiagen.com/us/resources/resourcedetail?id=22df6325-9579-4aa0-819c-788f73d81a09&lang=en" style="font-weight: bold;">here</a>.<br>
+                            The plasmid’s integrity will be checked by digesting 5 μg of the extracted plasmid with BsaI in the recommended buffer at 370C for 3 hours, followed by resolution on a 1% agarose gel. In parallel, a mock-digested plasmid will also be resolved.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Culturing plasmid stock in LB-Cm broth to mid-log phase.</li>
+                                <li>Pelleting cells down, resuspending in DNA-protective buffer.</li>
+                                <li>Alkaline cell lysis, followed by renaturation in acetate buffer.</li>
+                                <li>Supernatant extraction.</li>
+                                <li>Plasmid purification via silica spin column.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            This will allow us to check the plasmid’s size as well as the presence of BsaI restriction sites, thereby refining our troubleshooting protocols by eliminating a potential source of error. The extracted plasmid also allows us to test our chassis’ competency.
+                        </p>
+                        <h4>Troubleshooting: <a href="https://www.qiagen.com/us/resources/resourcedetail?id=22df6325-9579-4aa0-819c-88f73d81a09&lang=en" style="font-weight: bold; font-size: 19.8px;">Detailed protocol</a></h4>
+                        <p>
+                            <ul>
+                                <li>Analyzing fractions saved from each step in the procedure on an agarose gel to find the source of error.</li>
+                            </ul>
+                        </p>
+                        <h4>Errors</h4>
+                        <p>
+                            <ul>
+                                <li>Presence of RNA in the eluate : Adding RNase A to the resuspension buffer.</li>
+                                <li>Presence of genomic DNA in the eluate: Handling the lysate gently after addition of lysis buffer to prevent shearing and Reducing the time for lysis reaction (Maximum 5 mins).</li>
+                                <li>Little or no DNA in eluate: Checking the pH of the elution buffer (desired pH 8.5).</li>
+                            </ul>         
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="B1" role="tabpanel" aria-labelledby="profile-tab">
+                        <img src="img/module1/Growth%20Kinetics%20Measurement%20clipart.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                            
+                        <p>
+                            We will measure the growth kinetics of our strains of interest, in order to finetune our protocols as per the concentrations recommended.
+                        </p>
+                        <p>
+                            The growth kinetics of E. coli K-12, SIEC and SIEC-eLEE5 will be studied, both in the presence and absence of IPTG and L-arabinose, in order to attempt to observe any inducer-dependent or insert-dependent effects on observed growth.
+                        </p>
+                        <p>
+                            The experiment will be conducted in the LB medium, using the protocol described <a href="https://www.iitg.ac.in/biotech/BTechProtocols/Expt4.pdf" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Inoculating freshly grown bacterial culture in 150 ml of nutrient media with different IPTG and L-arabinose concentrations: 0, 0.5, 1, 2, 3 and 4 g/L.</li>
+                                <li>Collecting 2 ml of samples from each flask at following time intervals: 0 hr, 4 hrs, 6hrs, 8hrs, 10 hrs, 12hrs, 14 hrs, 16 hrs, 18hrs, 20 hrs, 22 hrs and 24 hrs.</li>
+                                <li>Collecting 2 ml of samples from each flask at following time intervals: 0 hr, 4 hrs, 6hrs, 8hrs, 10 hrs, 12hrs, 14 hrs, 16 hrs, 18hrs, 20 hrs, 22 hrs and 24 hrs.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="C1" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/module1/Antibiotic%20Sensitivity%20Assay%20clipart.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            We will confirm that our strain is sensitive to the antibiotic chloramphenicol at 35 μg/ml, in order to ensure selection for optimal plasmid stability.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>E. coli K-12, SIEC and SIEC-eLEE5 will be cultured in LB for 12-16 hours, before a 1:100 dilution into LB-Cm. In parallel, 20 μL of the saturated primary culture will be streaked onto an LB-Cm plate.</li>
+                                <li>Growth will be assayed using spectrophotometry after 8 hours (for the broth culture), and by looking for colonies on the plate after O/N incubation.</li>
+                                <li>Cultures in plain LB broth and plates will be used as controls, in order to determine chloramphenicol-dependent effects on growth.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <h4>Troubleshooting: Preparing fresh stock of chloramphenicol.</h4>
+                            <a href="http://2018.igem.org/wiki/images/e/ec/T--Toronto--_Antibacterial_Stock_Preperation_Protocol.pdf" style="font-weight: bold;">Protocol</a> (in brief)
+                            Stock concentration: 25mg/mL in 100% EtOH
+                            <ol>
+                                <li>Adding 2.72g chloramphenicol to a Pyrex bottle containing 80mL 100% EtOH.</li>
+                                <li>Adding the magnetic stir bar into the solution and placing the Pyrex bottle on the magnetic stirrer set at 300-600 rpm.</li>
+                                <li>Aliquoting (1mL) into microcentrifuge tubes.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="D1" role="tabpanel" aria-labelledby="home-tab">
+                        <img src="img/module1/Competency%20Check%20clipart.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            Competency in our strains will be chemically induced, and the strains will be transformed with pGGA using the protocol described <a href="https://jemi.microbiology.ubc.ca/sites/default/files/Chang%20et%20al%20JEMI-methods%20Vol%201%20pg%2022-25.pdf" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            In parallel, they will be transformed with pUC19, as a positive control.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Subculturing overnight culture to 0.4 OD.</li>
+                                <li>Conducting a CaCl2 wash.</li>
+                                <li>Transforming the competent cells via heat shock.</li>
+                                <li>Suspending transformed cells in SOC, incubating for 3 hrs.</li>
+                                <li>Spread plating the 1:10, 1:1000 and 1:100000 dilutions of the cells on selective LB plates.</li>
+                            </ol>
+                        </p>
+                        <p>This will give us competent cell stocks for use in future modules, allowing us to troubleshoot our cloning procedures in the future.</p>
+                        <p>Troubleshooting: Extracting the pGGA plasmid again. Refer to Module-1 Protocol-A.</p>
+                    </div>
+                    <div class="tab-pane fade" id="E1" role="tabpanel" aria-labelledby="profile-tab">
+                        <img src="img/module1/T3SS%20Validation%20clipart.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            We will establish our continuous lines with the protocol described <a href="https://www.atcc.org/en/Products/Cells_and_Microorganisms/By_Tissue/Intestine_Small/CRL-3266.aspx#culturemethod" style="font-weight: bold;">here</a>
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <h5>Complete growth medium- OptiMEM 1 Reduced Serum Medium, 20 mM HEPES, 10 mM GlutaMAX, 10 ng/mL Epidermal Growth Factor (EGF) and fetal bovine serum (FBS) to a final concentration of 4%.</h5>
+                            <ol>
+                                <li>Removing and discarding the culture medium.</li>
+                                <li>Briefly rinsing the cell layer with free Dulbecco's phosphate-buffered saline (D-PBS) for removal of  all traces of serum containing trypsin inhibitor.</li>
+                                <li>Adding Trypsin-EDTA solution to the flask.</li>
+                                <li>Observing the cells under an inverted microscope (checking the dispersal of the cell layer).</li>
+                                <li>Note: Avoid agitating the cells while waiting for them to detach to avoid clumping.</li>
+                                <li>Adding  6.0 to 8.0 mL of complete growth medium and aspirating the cells by gentle pipetting.</li>
+                                <li>Adding appropriate aliquots of the cell suspension to new culture vessels.</li>
+                                <li>Incubating cultures at 37°C.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <h4>Troubleshooting:</h4>
+                            <h5>Checking for suspended contaminants through DAPI staining and microscopy with the protocol described <a href="https://media.tghn.org/medialibrary/2014/08/Detection_of_Mycoplasma_in_cell_cultures.pdf" style="font-weight: bold;">here</a>.</h5>
+                            <ol>
+                                <li>Removing the cell culture medium and incubating the cells for 15 minutes with 4% PFA.</li>
+                                <li>Washing the cells twice with 1X PBS.</li>
+                                <li>Incubating cells with DAPI solution for about a minute.</li>
+                                <li>Washing the cells twice or thrice with 1X PBS.</li>
+                                <li>Keeping the washed cells in PBS.</li>
+                                <li>Observing the cells under an epifluorescent microscope.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="F1" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/module1/T3SS%20Validation%20clipart.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            The expression of the T3SS will be induced and validated with the protocol described <a href="http://genetics.wustl.edu/tslab/protocols/protein-stuff/iptg-induction/" style="font-weight: bold;">here</a>. This will be performed with SIEC and SIEC-eLEE5, with E. coli K-12 as a negative control. Performing this experiment allows us to check for the presence of our delivery system, making it easier to troubleshoot certain experiments in Modules 3, 4 and 5.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Preparation of early-log phase secondary culture.</li>
+                                <li>Aliquoting, preserving uninduced control.</li>
+                                <li>Pelleting sample, resuspending in IPTG-supplemented media, incubation.</li>
+                                <li>Pelleting induced sample post-incubation, preparation, SDS-PAGE.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <h4>Troubleshooting:</h4>
+                            <ol>
+                                <li>Checking the survival of K-12 in IPTG-supplemented media.</li>
+                                <li>Checking the growth curves of SIEC and SIEC-eLEE5, and E. coli K-12 in IPTG-supplemented media.</li>
+                            </ol>
+                        </p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div class="cardTwo">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>Module 2</h1>
+                </div>
+            </div>
+
+            <div class="module-content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#A2" role="tab" aria-controls="contact" aria-selected="true">A. Obtaining and amplifying the Constructs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#B2" role="tab" aria-controls="contact" aria-selected="false">B. Golden Gate Assembly</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#C2" role="tab" aria-controls="contact" aria-selected="false">C. Transformation and Screening</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#D2" role="tab" aria-controls="contact" aria-selected="false">D. Transformation into Test Hosts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#E2" role="tab" aria-controls="contact" aria-selected="false">E. Expression and Validation</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="A2" role="tabpanel" aria-labelledby="home-tab">
+                        <img src="img/module2/amplification%20of%20constructs%20.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            Our main biobrick would consist of the following:
+                        </p>
+                        <img src="img/biobrick.png" />
+                        <p>It would contain an L-arabinose-inducible expression system controlling a gene for a polyprotein containing the three factors of interest (each with its own C-terminal NLS), along with  an N-terminal T3SS targeting signal called Map20. The three proteins will be separated by recognition sites (labelled TEVs) for the Tobacco Etch Virus Protease (TEVp). Each factor would also be FLAG-tagged, for experimental purposes.</p>
+                        <p>In a separate transcriptional unit, it would also contain the β-Catenin-TEVp fusion that constitutes one of our targeting systems.</p>
+                        <p>We will construct this biobrick synthetically, and amplify it with PCR, adding in the BsaI restriction sites and the overhangs required.</p>
+                        <p>The cassettes of interest will be procured by chemical synthesis from IDT. The lyophilised samples obtained will be suspended in the appropriate amount of nuclease-free water (NFW), and amplified using PCR, following the protocol described <a href="https://international.neb.com/protocols/2012/12/07/protocol-for-q5-high-fidelity-2x-master-mix-m0492" style="font-weight: bold;">here</a>.</p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Assembling and thawing all the required reagents (Q5 High-Fidelity 2X Master Mix, 10 µM Forward Primer, 10 µM Reverse Primer, Template DNA and Nuclease-Free Water) on ice.</li>
+                                <li>Mixing appropriate amounts of the reaction components in a PCR tube.</li>
+                                <li>Transferring the reactions to a thermocycler preheated to the denaturation temperature (98°C).</li> 
+                                <li>35 cycles of Denaturation, Annealing (Tm-5) and Extension followed by a final extension.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            The DNA thus obtained will be purified and extracted from a 1% agarose gel (to remove primers and incomplete amplification products) using the protocol described <a href="https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/dna-clean-up/qiaquick-gel-extraction-kit/?clear=true#orderinginformation" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Dissolving cut gel slices in a buffer containing a pH indicator for optimal dissolution.</li>
+                                <li>Applying the mixture to the QIAquick spin column.</li>
+                                <li>Washing away the impurities and eluting pure DNA via a small volume of NF</li>
+                            </ol>
+                        </p>
+                        <p>
+                            This gets us the material we need to carry out our cloning work.
+                        </p>
+                        <p>
+                            <h4>Troubleshooting: PCR <a href="https://international.neb.com/tools-and-resources/troubleshooting-guides/pcr-troubleshooting-guide">troubleshooting guide</a></h4>
+                            <ol>
+                                <li>We will rerun the reaction after increasing or decreasing the number of cycles.</li>
+                                <li>We will rerun the reaction after increasing or decreasing the concentration of primers.</li>
+                                <li>We will rerun the reaction after increasing or decreasing the concentration of the template DNA.</li>
+                                <li>We will rerun the reaction after checking the primers for self-complementarity and cross-complementarity.</li>
+                                <li>We will rerun the reaction after checking for additional complementary regions for the primers within the template DNA.</li>
+                                <li>We will rerun the reaction after increasing or decreasing the length of the primers.</li>
+                                <li>We will rerun the reaction after increasing or decreasing the annealing temperature.</li>
+                                <li>We will rerun the reaction after recalculating the primer Tm values.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="B2" role="tabpanel" aria-labelledby="home-tab">
+                        <img src="img/module2/golden%20gate%20assembly.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            Our parts will be assembled onto our backbone using the single-pot digestion-ligation reaction described <a href="https://international.neb.com/products/e1601-neb-golden-gate-assembly-mix#Product%20Information">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (in brief):</h4>
+                            <ol>
+                                <li>Adding inserts and intact backbone into a single reaction mixture, and adding BsaI-HFv2, T4 DNA Ligase and the appropriate ATP-supplemented buffer.</li>
+                                <li>Running the reaction at 370C for 1 hr.</li>
+                                <li>Incubating at 600C for 5 min.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="C2" role="tabpanel" aria-labelledby="profile-tab">
+                        <img src="img/module2/transformation%20and%20screening.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>The ligated product will first be transformed into DH5α using the protocol described <a href="https://jemi.microbiology.ubc.ca/sites/default/files/Chang%20et%20al%20JEMI-methods%20Vol%201%20pg%2022-25.pdf" style="font-weight: bold;">here</a>.</p>
+                        <p>Insert release will be validated following <a href="https://www.qiagen.com/us/resources/resourcedetail?id=22df6325-9579-4aa0-819c-788f73d81a09&lang=en">plasmid extraction</a> and a double digest with BamHI-HF and XhoI in the CutSmart buffer at 370C for 3 hours. The bands derived thusly will be resolved and visualised on a 1% agarose gel.</p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Subculturing overnight culture to 0.4 OD.</li>
+                                <li>Conducting a CaCl2 wash.</li>
+                                <li>Transforming the competent cells via heat shock.</li>
+                                <li>Suspending transformed cells in SOC, incubating for 3 hrs.</li>
+                                <li>Spread plating the 1:10, 1:1000 and 1:100000 dilutions of the cells on LB-Cm plates.</li>
+                            </ol>
+                        </p>
+                        <p>The inserts will then be sequenced using the protocols described <a href="https://assets.thermofisher.com/TFS-Assets/LSG/manuals/4331468.pdf">here</a>.</p>
+                        <p>
+                            <h4>Brief protocol for preparing the reaction mixture </h4>
+                            <ol>
+                                <li>Adding the template DNA to the reaction mastermix containing four nucleotides (dATP, dTTP, dCTP, dGTP) and the labelled ddNTPs (ddATP, ddTTP, ddCTP, ddGTP).</li>
+                                <li>Adding the primer and DNA polymerase.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            The screening procedures described above will allow us to verify the integrity of our inserts, streamlining our future troubleshooting work.
+                        </p>
+                        <p>
+                            Troubleshooting: We will prepare a fresh stock of chloramphenicol with the protocol described here.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <h5>Stock concentration: 25mg/mL in 100% EtOH</h5>
+                            <ol>
+                                <li>Adding 2.72g chloramphenicol to a Pyrex bottle containing 80mL 100% EtOH.</li>
+                                <li>Adding the magnetic stir bar into the solution and placing the Pyrex bottle on the magnetic stirrer set at 300-600 rpm.</li>
+                                <li>Aliquoting (1mL) into microcentrifuge tubes.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="D2" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/module2/transformation%20into%20test%20hosts%20.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            The plasmid will be extracted and transformed into competent E. coli K-12, SIEC and SIEC-eLEE5 using the protocol described <a href="https://jemi.microbiology.ubc.ca/sites/default/files/Chang%20et%20al%20JEMI-methods%20Vol%201%20pg%2022-25.pdf" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Subculturing overnight culture to 0.4 OD.</li>
+                                <li>Conducting a CaCl2 wash.</li>
+                                <li>Transforming the competent cells via heat shock.</li>
+                                <li>Suspending transformed cells in SOC, incubating for 3 hrs.</li>
+                                <li>Spread plating the 1:10, 1:1000 and 1:100000 dilutions of the cells on LB-Cm plates.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <h4>Troubleshooting:</h4>
+                            We will analyze the fractions saved from each step in the procedure on an agarose gel to find the source of error with the protocol described here.
+                        </p>
+                        <p>
+                            <h4>ERROR</h4>
+                            E. Presence of RNA in the eluate : We will add RNase A to the resuspension buffer.<br>
+                            F. Presence of genomic DNA in the eluate: We will handle the lysate gently after addition of the lysis buffer to prevent shearing and reduce the time for lysis reaction (Maximum 5 mins).<br>
+                            G. Little or no DNA in eluate: We will check the pH of the elution buffer (optimum pH 8.5).
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="E2" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/module2/expression%20and%20validation.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            The expression of the desired factors will be induced with L-arabinose and observed using the protocol described <a href="http://genetics.wustl.edu/tslab/protocols/protein-stuff/iptg-induction/" style="font-weight: bold;">here</a>. This will be performed in K-12, SIEC and SIEC-eLEE5 in the presence or absence of IPTG (to induce the expression of the T3SS).
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Preparation of early-log phase secondary culture.</li>
+                                <li>Aliquoting, preserving uninduced control.</li>
+                                <li>Pelleting sample, resuspending in L-arabinose-supplemented media, incubation.</li>
+                                <li>Pelleting induced sample post-incubation, preparation, SDS-PAGE.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            Performing this experiment allows us to check for the expression of our devices, making it easier to troubleshoot certain experiments in Modules 3, 4 and 5.
+                        </p>
+                        <p>
+                            <h4>Troubleshooting:</h4>
+                            <ol>
+                                <li>We will check the survival of K-12 in IPTG-supplemented media.</li>
+                                <li>We will check the growth curves of SIEC and SIEC-eLEE5, and E. coli K-12 in IPTG-supplemented media.</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div class="cardThree">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>Module 3</h1>
+                </div>
+            </div>
+
+            <div class="module-content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#A3" role="tab" aria-controls="3A" aria-selected="true">A. Observing Effector Secretion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#B3" role="tab" aria-controls="3B" aria-selected="false">B. Observing and Quantifying Binding</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#C3" role="tab" aria-controls="3C" aria-selected="false">C. Observing Translocation, Proteolysis and Nuclear Entry</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#D3" role="tab" aria-controls="3D" aria-selected="false">D. Quantifying Insulin Output</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="A3" role="tabpanel" aria-labelledby="home-tab">
+                        <img src="img/module3/observing%20effector%20secretion.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            We will assay T3SS secretion downstream of expression by inducing secretion into the culture medium and observing the secreted products.
+                        </p> 
+                        <p>
+                            We will observe the secretion of our effectors using the protocol described <a href="https://academic.oup.com/femsle/article/365/14/fny122/5003382" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            This will be performed on L-arabinose and IPTG-induced K-12, SIEC and SIEC-eLEE5 harbouring the recombinant plasmid, with controls lacking each (and both) of the inducers.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Inducing the expression of the relevant parts (See Module 1).</li>
+                                <li>Centrifugation and supernatant collection.</li>
+                                <li>Protein extraction and TCA-precipitation.</li>
+                                <li>Visualisation through SDS-PAGE.</li>
+                            </ol>
+                        </p>
+                        <p>
+                        <h4>To troubleshoot this, we will:</h4>
+                        <ul>
+                            <li>Use Tir, EspA, B and D as positive controls. If these give positives, but the effector gives negatives, the construct is faulty. We will attempt to rectify this by altering our leader.</li>
+                            <li>If the positive controls give negatives, we will add EDTA to our media to attempt further induction.</li>
+                        </ul>
+                    </p>
+                    </div>
+                    <div class="tab-pane fade" id="B3" role="tabpanel" aria-labelledby="profile-tab">
+                        <img src="img/module3/Observing%20Translocation,%20Proteolysis%20and%20Nuclear%20Entry.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            We will visualise the T3SS-dependent binding of our bacteria to HIEC-6 using the protocol described <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4603727/" style="font-weight: bold;">here</a>. This will be performed using SIEC and SIEC-eLEE5, either in the presence or absence of IPTG, in order to demonstrate dependence on the T3SS, as well as the Tir-intimin system.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Growing SIEC-eLEE5 bacteria in LB with IPTG to mid log phase, and incubating with HIEC-6 cells with and without IPTG for 3 or 6 hours.</li>
+                                <li>Washing, fixing, and staining the samples for fluorescence microscopy to visualise bacteria (DAPI), F-actin (phalloidin), and nuclei (DAPI).</li>
+                            </ol>
+                        </p>
+                        <p>
+                            Additionally, we will quantify this attachment by counting the number of bacteria attached to each human cell using the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6629874/">attached</a> protocol.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Inoculating bacteria at 1:50 dilution in 24-well microplates containing incomplete HIEC-6 cell monolayers in DMEM with 15 mM HEPES, 2% FBS and 2% D-mannose (to block type I fimbriae-mediated adherence).</li> 
+                                <li>Washing with phosphate buffered saline (PBS) after 3 hours of incubation.</li>
+                                <li>Incubating for another 3 hours after adding fresh medium (6-h assay).</li>
+                                <li>Fixing the preparations with methanol at room temperature for 30 min after several washes.</li>
+                                <li>Staining with May-Grünwald/Giemsa and analyzing under immersion light microscopy.</li> 
+                                <li>Lysing of HIEC-6 cells in sterile distilled water (30 min at 37°C)  after 6 hours of incubation.</li> 
+                                <li>Serially diluting and spreading of the bacterial suspensions on MacConkey agar for colony forming units/mL (CFU/mL) determination.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            This allows us to determine that the T3SS is indeed functional, and can serve as a component adhesin, in addition to being able to secrete factors into the cytosol of intestinal epithelial cells.
+                        </p>
+                        <p>
+                            <h4>Troubleshooting:</h4>
+                            <ul>
+                                <li>We will ensure that the system can sense microfilament perturbations by observing cytoskeletal shifts after Cytochalasin D introduction using phalloidin.</li>
+                                <li>We will independently observe HIEC-6 and our chassis under an epifluorescence microscope using DAPI staining, to ensure that our system can detect those signals.</li>
+                                <li>If the problem isn't resolved, we will attempt to replicate <a href="https://pubs.acs.org/doi/10.1021/acssynbio.5b00080">these</a> results in HeLa, to control for cell-specific outcomes.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="C3" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/module3/binding%20.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            We will observe translocation, proteolysis and nuclear entry downstream of T3SS binding using the protocol described <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5371411/" style="font-weight: bold;">here</a>. The antibodies used in the Western blotting work will be directed at FLAG tags conjugated with each of the transcription factors.
+                        </p>
+                        <p>
+                            The proteolytic event can be observed using size determination on the Western blot, and the cellular location of the factors can be observed with Western blots against various cellular fractions (cytoplasmic or nuclear).
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Pre Incubating and washing the cells with PBS.</li>
+                                <li>Dislodging  and pelleting the cells via centrifugation.</li>
+                                <li>Resuspending the pellet in the cell lysis buffer and incubating on ice for 15‐20 min with intermittent mixing.</li> 
+                                <li>Vortexing the tubes to disrupt cell membranes and then centrifuging them (12,000 g at 4°C) for 10 min.</li>
+                                <li>Storing the supernatant (cytoplasmic extract) at ‐70°C.</li> 
+                                <li>Washing the pelleted nuclei thrice with the cell lysis buffer.</li>
+                                <li>Resuspending the pelleted nuclei in the nuclear extraction buffer and incubating on ice for 30 min.</li>
+                                <li>Collecting the nuclear extract by centrifugation (12,000 g at 4°C) for 15 min.</li> 
+                                <li>Storing the nuclear fraction at ‐70°C.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Separating Purified proteins (PDX1, MAFA and NGN3) from the nuclear fraction by SDS-PAGE and transferring them to PVDF membranes.</li>
+                                <li>Pre Incubating PDX1, MAFA and NGN3 with 2 mM PMSF to avoid proteolysis.</li> 
+                                <li>Adsorbing PDX1, MAFA and NGN3 on nitrocellulose membranes.</li> 
+                                <li>Blocking the membranes from the blot and dot blot assays overnight and incubating with PDX1 at 5 g/ml in binding buffer for 1.5 hours</li>
+                                <li>Incubating with mouse anti-FLAG antibody for 1 hour followed by goat anti-mouse IgG secondary antibody, and horseradish peroxidase conjugated for 1 hour.</li> 
+                                <li>Detecting the reaction via a western chemiluminescent HRP substrate kit.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            This allows us to verify that our effectors are cleaved in the cytosol, and that they enter the nucleus of our target cells post infection, in a T3SS-dependent manner.
+                        </p>
+                        <p>
+                            <h4>Troubleshooting:</h4>
+                            <ul>
+                                <li>-If our loading controls show up negative, we will incorporate more potent protease inhibitors into our extraction protocol, and follow standard troubleshooting procedures for fractionation.</li>
+                                <li>We will stain the nuclear and cytoplasmic fractions with antibodies against cytoplasmic and nuclear markers, respectively, to check for cross-fraction contamination.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="D3" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/module3/insulin%20output.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            We will quantify insulin secretion using Insulin-ELISA from the culture supernatant. The relevant protocols are described <a href="https://www.sigmaaldrich.com/catalog/product/sigma/rab0327?lang=en&region=IN" style="font-weight: bold;">here</a>. This will be done at different ambient glucose levels, to demonstrate that our system is glucose-responsive.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Introducing factors into cells (See Above).</li>
+                                <li>Extracting supernatant at various time points (0-72 hrs).</li>
+                                <li>Adding samples to wells, incubating as prescribed.</li>
+                                <li>Removing unbound fluid, washing.</li>
+                                <li>Adding antibodies and reagents as recommended.</li>
+                                <li>Stopping reaction, measuring OD450, quantifying against standard.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            <h4>Troubleshooting:</h4>
+                            <ul>
+                                <li>We will use the supplied standard to verify whether the detection kit is functional.</li>
+                                <li>We will run Western blots from the supernatant against insulin in order to qualitatively verify its presence.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div class="cardFour">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>Module 4</h1>
+                </div>
+            </div>
+
+            <div class="module-content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#A4" role="tab" aria-controls="home" aria-selected="true">A. Constructing and validating antibody display apparatus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#B4" role="tab" aria-controls="profile" aria-selected="false">B. Studying the impact of antibody display on binding dynamics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#C4" role="tab" aria-controls="contact" aria-selected="false">C. Constructing and validating expression of kill switch</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#D4" role="tab" aria-controls="contact" aria-selected="false">D. Studying the Kill Switch</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="A4" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="text-center">
+                            <img src="img/module_4.png" />
+                            <img src="img/module4/antibody%20display%20system.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        </div>
+                        <p>
+                            To target our chassis towards crypt base columnar cells (CBCCs), we will display the variable heavy chain of a single-domain antibody (sdAb) on the bacterial surface, targeted at moieties specific to CBCCs. We have chosen to target the cell-surface GPCR and noted CBCC marker Lgr5.
+                        </p>
+                        <p>
+                            We will construct this device using the techniques introduced in Module 2, and test it using the techniques introduced in Module 3B.
+                        </p>
+                        <h3>A1:Obtaining and amplifying the Constructs</h3>
+                        <p>
+                            The cassettes of interest will be procured by chemical synthesis from IDT. The lyophilised samples obtained will be suspended in the appropriate amount of nuclease-free water (NFW), and amplified using PCR, following the protocol described <a href="https://international.neb.com/protocols/2012/12/07/protocol-for-q5-high-fidelity-2x-master-mix-m0492" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Assembling all reaction components Q5 High-Fidelity 2X Master Mix, 10 µM Forward Primer	10 µM Reverse Primer, Template DNA and Nuclease-Free Water on ice.</li>
+                                <li>Mixing the reaction components in a PCR tube.</li>
+                                <li>Transferring the reactions to a thermocycler preheated to the denaturation temperature (98°C).</li> 
+                                <li>35 cycles of Denaturation, Annealing (Tm-5) and Extension at the temperature followed by final extension.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            The DNA thus obtained will be purified and extracted from a gel (to remove primers and incomplete amplification products) using the protocol described <a href="https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/dna-clean-up/qiaquick-gel-extraction-kit/?clear=true#orderinginformation" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Dissolving the gel slices in a buffer containing a pH indicator, for optimal binding.</li>
+                                <li>Applying the mixture to the QIAquick spin column.</li>
+                                <li>Washing away the impurities and eluting pure DNA via a small volume of NFW.</li>
+                            </ol>
+                        </p>
+                        <h3>A2:Golden Gate Assembly</h3>
+                        <p>
+                            Our parts will be assembled onto our backbone using the single-pot digestion-ligation reaction described <a href="https://international.neb.com/products/e1601-neb-golden-gate-assembly-mix#Product%20Information">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Adding inserts and intact backbone into a single reaction mixture, and adding BsaI-HFv2, T4 DNA Ligase and the appropriate ATP-supplemented buffer.</li>
+                                <li>Running the reaction at 370C for 1 hr.</li>
+                                <li>Incubating at 600C for 5 min.</li>
+                            </ol>
+                        </p>
+                        <h3>A3:Transformation and Screening</h3>
+                        <p>
+                            The ligated product will first be transformed into DH5α using the protocol described here.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Subculturing overnight culture until OD reaches 0.4</li> 
+                                <li>CaCl2 wash</li>
+                                <li>Transforming the competent cells via heat shock method</li>
+                                <li>Spread plating the 1:10, 1:1000 and 1:100000 dilutions of the cells on selection plates (Chloramphenicol resistant).</li>
+                            </ol>
+                        </p>
+                        <p>
+                            Insert release will be validated following <a href="https://www.qiagen.com/us/resources/resourcedetail?id=22df6325-9579-4aa0-819c-788f73d81a09&lang=en">plasmid extraction</a> and a double digest with BamHI-HF and XhoI in the CutSmart buffer at 370C for 3 hours. The bands derived thusly will be resolved and visualised on a 1% agarose gel.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Culturing plasmid stock in LB-Cm broth to mid-log phase.</li>
+                                <li>Pelleting cells down, resuspending in DNA-protective buffer.</li>
+                                <li>Alkaline cell lysis, followed by renaturation in acetate buffer.</li>
+                                <li>Supernatant extraction.</li>
+                                <li>Plasmid purification via silicate spin column.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            The inserts will then be sequenced using the protocols described <a href="https://assets.thermofisher.com/TFS-Assets/LSG/manuals/4331468.pdf" style="font-weight: bold;">here</a>.
+                        </p>
+                        <h3>A4:Transformation into Test Hosts</h3>
+                        <p>
+                            The plasmid will be extracted and transformed into competent E. coli K-12, SIEC and SIEC-eLEE5 using the protocols described above.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Subculturing overnight culture until OD reaches 0.4 </li>
+                                <li>CaCl2 wash</li>
+                                <li>Transforming the competent cells via heat shock method</li>
+                                <li>Spread plating the 1:10, 1:1000 and 1:100000 dilutions of the cells on selection plates (Chloramphenicol resistant)</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="B4" role="tabpanel" aria-labelledby="profile-tab">
+                        <img src="img/module4/antibody%20display%20system.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            We will visualise the antibody mediated T3SS-dependent binding of our bacteria to HIEC-6 using the protocol described <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4603727/" style="font-weight: bold;">here</a>. This will be performed using SIEC and SIEC-eLEE5, either in the presence or absence of IPTG, in order to demonstrate dependence on the T3SS, as well as the Tir-intimin system.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>SIEC-eLEE5 bacteria were grown in LB with IPTG to mid log phase and then incubated with HIEC-6 cells with and without IPTG for 3 and 6 hours respectively.</li>
+                                <li>Samples were washed after infection, fixed, and stained for fluorescence microscopy to visualize bacteria (DAPI), F-actin  (phalloidin), and DNA (DAPI).</li>
+                            </ol>
+                        </p>
+                        <p>
+                            Additionally, we will quantify this attachment by counting the number of bacteria attached to each human cell using the <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6629874/">attached</a> protocol.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Inoculating bacteria at 1:50 dilution in 24-well microplates containing incomplete HIEC-6 cell monolayers in DMEM with 15 mM HEPES, 2% FBS and 2% D-mannose (to block type I fimbriae-mediated adherence). </li>
+                                <li>Washing with phosphate buffered saline (PBS) after 3 h of incubation at 37°C.</li>
+                                <li>Incubating for another 3 h after adding fresh medium (6-h assay).</li>
+                                <li>Fixing the preparations with methanol at room temperature for 30 min after several washes.</li>
+                                <li>Staining with May-Grünwald/Giemsa (Merck, NJ, United States) and analyzing under immersion light microscopy.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="C4" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/module4/kill%20switch.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                           Our kill switch integrates inputs from a phosphate-sensitive circuit in the pho regulon, and feeds it into the E2-IM2 toxin-antitoxin system via the repression of IM2, mediated by the the bacteriophage lambda cI repressor expressed under PhoB’s promoter.<br>
+                           We will construct this BioBrick in E. coli K-12, and test it in the manner described below.
+                        </p>
+                        <h2>C1: Obtaining and amplifying the Constructs</h2>
+                        <p>
+                            The cassettes of interest will be procured by chemical synthesis from IDT. The lyophilised samples obtained will be suspended in the appropriate amount of nuclease-free water (NFW), and amplified using PCR, following the protocol described <a href="https://international.neb.com/protocols/2012/12/07/protocol-for-q5-high-fidelity-2x-master-mix-m0492" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Dissolving the gel slices in a buffer containing a pH indicator, for optimal binding.</li>
+                                <li>Applying the mixture to the QIAquick spin column.</li>
+                                <li>Washing away the impurities and eluting pure DNA via a small volume of NFW.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            The DNA thus obtained will be purified and extracted from a gel (to remove primers and incomplete amplification products) using the protocol described <a href="https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/dna-clean-up/qiaquick-gel-extraction-kit/?clear=true#orderinginformation" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Dissolving the gel slices in a buffer containing a pH indicator, for optimal binding.</li>
+                                <li>Applying the mixture to the QIAquick spin column.</li>
+                                <li>Washing away the impurities and eluting pure DNA via a small volume of NFW.</li>
+                            </ol>
+                        </p>
+                        <h2>C2: Golden Gate Assembly</h2>
+                        <p>
+                            Our parts will be assembled onto our backbone using the single-pot digestion-ligation reaction described <a href="https://international.neb.com/products/e1601-neb-golden-gate-assembly-mix#Product%20Information" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Adding inserts and intact backbone into a single reaction mixture, and adding BsaI-HFv2, T4 DNA Ligase and the appropriate ATP-supplemented buffer.</li>
+                                <li>Running the reaction at 370C for 1 hr.</li>
+                                <li>Incubating at 60&#176;C for 5 min.</li>
+                            </ol>
+                        </p>
+                        <h2>C3: Transformation and Screening</h2>
+                        <p>
+                            The ligated product will first be transformed into DH5α using the protocol described <a href="https://jemi.microbiology.ubc.ca/sites/default/files/Chang%20et%20al%20JEMI-methods%20Vol%201%20pg%2022-25.pdf" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Subculturing overnight culture until OD reaches 0.4 </li>
+                                <li>CaCl2 wash</li>
+                                <li>Transforming the competent cells via heat shock method</li>
+                                <li>Spread plating the 1:10, 1:1000 and 1:100000 dilutions of the cells on selection plates (Chloramphenicol resistant).</li>
+                            </ol>
+                        </p>
+                        <p>
+                            Insert release will be validated following <a href="https://www.qiagen.com/us/resources/resourcedetail?id=22df6325-9579-4aa0-819c-788f73d81a09&lang=en">plasmid extraction</a> and a double digest with BamHI-HF and XhoI in the CutSmart buffer at 370C for 3 hours. The bands derived thusly will be resolved and visualised on a 1% agarose gel.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Culturing plasmid stock in LB-Cm broth to mid-log phase.</li>
+                                <li>Pelleting cells down, resuspending in DNA-protective buffer.</li>
+                                <li>Alkaline cell lysis, followed by renaturation in acetate buffer.</li>
+                                <li>Supernatant extraction.</li>
+                                <li>Plasmid purification via silicate spin column.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            The inserts will then be sequenced using the protocols described <a href="https://assets.thermofisher.com/TFS-Assets/LSG/manuals/4331468.pdf" style="font-weight: bold;">here</a>.
+                        </p>
+                        <h2>C4: Transformation into Test Hosts</h2>
+                        <p>
+                            The plasmid will be extracted and transformed into competent <span class="font-italic">E. coli</span> K-12, SIEC and SIEC-eLEE5 using the protocols described above.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Subculturing overnight culture until OD reaches 0.4.</li>
+                                <li>CaCl2 wash</li>
+                                <li>Transforming the competent cells via heat shock method</li>
+                                <li>Spread plating the 1:10, 1:1000 and 1:100000 dilutions of the cells on selection plates (Chloramphenicol resistant)</li>
+                            </ol>
+                        </p>
+                        <p>
+                            The expression of the desired factors will be induced with L-arabinose and observed using the protocol described <a href="http://genetics.wustl.edu/tslab/protocols/protein-stuff/iptg-induction/" style="font-weight: bold;">here</a>. This will be performed in K-12, SIEC and SIEC-eLEE5 in the presence or absence of IPTG (to induce the expression of the T3SS).
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Preparation of early-log phase secondary culture.</li>
+                                <li>Aliquoting, preserving uninduced control.</li>
+                                <li>Pelleting sample, resuspending in IPTG-supplemented media, incubation.</li>
+                                <li>Pelleting induced sample post-incubation, preparation, SDS-PAGE.</li>
+                            </ol>
+                        </p>    
+                    </div>
+                    <div class="tab-pane fade" id="D4" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/module4/kill%20switch.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            We will prepare our strains as described <a href="http://2017.igem.org/Team:NUS_Singapore/Improvement" style="font-weight: bold;">here</a>, and obtain cell counts and viable cell counts at various time points post induction using spectrophotometry (by measuring the OD600 values of 1 mL aliquots) and CFU analysis (by spreading serially diluted aliquots on LB-Cm plates), respectively.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Isolation of early log phase cells.</li>
+                                <li>Resuspension in MOPS, dilution into phosphate-controlled solution.</li>
+                                <li>Aliquoting at various time points, OD measurement.</li>
+                                <li>Serial dilution, spread plating, O/N incubation.</li>
+                                <li>Colony counting.</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="cards">
+        <div class="cardFive">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>Module 5</h1>
+                </div>
+            </div>
+
+            <div class="module-content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#E5" role="tab" aria-controls="contact" aria-selected="false">Potential Improvement</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="home-tab" data-toggle="tab" href="#A5" role="tab" aria-controls="home" aria-selected="true">A. Golden Gate Assembly</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#B5" role="tab" aria-controls="profile" aria-selected="false">B. Transformation and Screening</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#C5" role="tab" aria-controls="contact" aria-selected="false">C. Transformation into Test Hosts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#D5" role="tab" aria-controls="contact" aria-selected="false">D. Expression and Validation</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="E5" role="tabpanel" aria-labelledby="home-tab">
+                        <img src="img/module5/secretion%20tag.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            After building and testing our devices, we intend to improve on them by identifying potential weaknesses and replacing the parts involved with improved versions.
+                        </p>
+                        <h4>Secretion Tag</h4>
+                        <p>
+                            During our survey of the iGEM repository, we noticed that the T3SS secretion signal we have chosen (Map20), appears to inhibit either protein expression or folding in a chaperone-independent manner. We posit that this is the result of folding interference between Map20 and the protein it is fused to, raising concerns about the fusion’s ability to fold correctly in the target cells. We intend to rectify this issue by introducing a long, flexible linker to separate the two domains.
+                        </p>
+                        <p>
+                            We will build <span style="background-color: 	#BA55D3;">Map20 - Linker - mCherry - β-lactamase</span> and <span style="background-color: 	#BA55D3;">Map20 - mCherry - β-lactamase</span> constructs  to report expression and folding, both in our chassis (with mCherry) and in human cells it is translocated into (with β-lactamase). We will FLAG-tag these constructs to verify their presence, for troubleshooting purposes. Additionally, we will use GFP for normalisation.
+                        </p>
+                        <p>
+                            The cassettes of interest will be procured by chemical synthesis from IDT. The lyophilised samples obtained will be suspended in the appropriate amount of nuclease-free water (NFW), and amplified using PCR, following the protocol described <a href="https://international.neb.com/protocols/2012/12/07/protocol-for-q5-high-fidelity-2x-master-mix-m0492" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Assembling and thawing all the required reagents (Q5 High-Fidelity 2X Master Mix, 10 µM Forward Primer, 10 µM Reverse Primer, Template DNA and Nuclease-Free Water) on ice.</li>
+                                <li>Mixing appropriate amounts of the reaction components in a PCR tube.</li>
+                                <li>Transferring the reactions to a thermocycler preheated to the denaturation temperature (98°C).</li> 
+                                <li>35 cycles of Denaturation, Annealing (Tm-5) and Extension followed by a final extension.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            The DNA thus obtained will be purified and extracted from a 1% agarose gel (to remove primers and incomplete amplification products) using the protocol described <a href="https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/dna-clean-up/qiaquick-gel-extraction-kit/?clear=true#orderinginformation" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Dissolving cut gel slices in a buffer containing a pH indicator for optimal dissolution.</li>
+                                <li>Applying the mixture to the QIAquick spin column.</li>
+                                <li>Washing away the impurities and eluting pure DNA via a small volume of NFW.</li>
+                            </ol>
+                        </p>
+                        <p>This gets us the material we need to carry out our cloning work.</p>
+                        <p>
+                            <h4>Troubleshooting: PCR <a href="https://international.neb.com/tools-and-resources/troubleshooting-guides/pcr-troubleshooting-guide">troubleshooting guide</a></h4>
+                            <ol>
+                                <li>We will rerun the reaction after increasing or decreasing the number of cycles.</li>
+                                <li>We will rerun the reaction after increasing or decreasing the concentration of primers.</li>
+                                <li>We will rerun the reaction after increasing or decreasing the concentration of the template DNA.</li>
+                                <li>We will rerun the reaction after checking the primers for self-complementarity and cross-complementarity.</li>
+                                <li>We will rerun the reaction after checking for additional complementary regions for the primers within the template DNA.</li>
+                                <li>We will rerun the reaction after increasing or decreasing the length of the primers.</li>
+                                <li>We will rerun the reaction after increasing or decreasing the annealing temperature.</li>
+                                <li>We will rerun the reaction after recalculating the primer Tm values.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="A5" role="tabpanel" aria-labelledby="contact-tab">
+                        <p>
+                            Our parts will be assembled onto our backbone using the single-pot digestion-ligation reaction described <a href="https://international.neb.com/products/e1601-neb-golden-gate-assembly-mix#Product%20Information" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Adding inserts and intact backbone into a single reaction mixture, and adding BsaI-HFv2, T4 DNA Ligase and the appropriate ATP-supplemented buffer.</li>
+                                <li>Running the reaction at 370C for 1 hr.</li>
+                                <li>Incubating at 600C for 5 min.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="B5" role="tabpanel" aria-labelledby="profile-tab">
+                        <p>
+                            The ligated product will first be transformed into DH5α using the protocol described here.
+                        </p>
+                        <p>
+                            Insert release will be validated following plasmid extraction and a double digest with BamHI-HF and XhoI in the CutSmart buffer at 370C for 3 hours. The bands derived thusly will be resolved and visualised on a 1% agarose gel.
+                        </p>
+                        <p></p>
+                        <p>
+                            The inserts will then be sequenced using the protocols described <a href="https://assets.thermofisher.com/TFS-Assets/LSG/manuals/4331468.pdf" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p></p>
+                        <p>
+                            The screening procedures described above will allow us to verify the integrity of our inserts, streamlining our future troubleshooting work.
+                        </p>
+                        <p></p>
+                    </div>
+                    <div class="tab-pane fade" id="C5" role="tabpanel" aria-labelledby="contact-tab">
+                        <p>
+                            The plasmid will be extracted and transformed into competent E. coli K-12, SIEC and SIEC-eLEE5 using the protocol described <a href="https://jemi.microbiology.ubc.ca/sites/default/files/Chang%20et%20al%20JEMI-methods%20Vol%201%20pg%2022-25.pdf" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="tab-pane fade" id="D5" role="tabpanel" aria-labelledby="contact-tab">
+                        <img src="img/module5/protease.png" class="img-fluid float-right" style="max-width: 200px;"/>
+                        <p>
+                            The expression of the desired factors will be induced with L-arabinose and observed using the protocol described <a href="http://genetics.wustl.edu/tslab/protocols/protein-stuff/iptg-induction/" style="font-weight: bold;">here</a>. This will be performed in K-12, SIEC and SIEC-eLEE5 in the presence or absence of IPTG (to induce the expression of the T3SS).
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Preparation of early-log phase secondary culture.</li>
+                                <li>Aliquoting, preserving uninduced control.</li>
+                                <li>Pelleting sample, resuspending in L-arabinose-supplemented media, incubation.</li>
+                                <li>Pelleting induced sample post-incubation, preparation, SDS-PAGE.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            Performing this experiment allows us to check for the expression of our devices, making it easier to troubleshoot certain experiments in Modules 3, 4 and 5.
+                        </p>
+                        <p>
+                            <h4>Troubleshooting:</h4>
+                            <ol>
+                                <li>Checking the survival of K-12 in IPTG-supplemented media.</li>
+                                <li>Checking the growth curves of SIEC and SIEC-eLEE5, and E. coli K-12 in IPTG-supplemented media.</li>
+                            </ol>
+                        </p>
+                        <p>Protocol: <a href="http://parts.igem.org/Part:BBa_K2871000">http://parts.igem.org/Part:BBa_K2871000</a></p>
+                        <p>
+                            <h4>Testing Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Induce expression with L-arabinose (See Module 1).</li>
+                                <li>Pellet down induced cells, resuspend in LB-Cm.</li>
+                                <li>Measure mCherry fluorescence using spectrometric quantification (Excitation at 587 nm, Emission at 610 nm).</li>
+                                <li>Measure GFP fluorescence using spectrometric quantification (Excitation at 395 nm, Emission at 509 nm).</li>
+                                <li>Induce T3SS and effector expression (See Module 1).</li>
+                                <li>Translocate effector into HIEC-6 (See Module 3).</li>
+                                <li>Wash with HBSS.</li>
+                                <li>Add HBSS + CCF2/AM (Substrate Solution).</li>
+                                <li>Incubate at room temperature for 90 min.</li>
+                                <li>Observe β-lactamase fluorescence on plate reader (Excitation at 405 nm, Emission at 460 and 530 nm).</li>
+                            </ol>
+                        </p>
+                        <p>
+                            This assay helps inform our choice of leader, and validates our improvement.
+                        </p>
+                        <p>
+                            <h4>Troubleshooting:</h4>
+                            <ul>
+                                <li>We will run Western blots against FLAG in order to verify the protein's presence in both the soluble and insoluble fraction.</li>
+                                <li>If the fusion is insoluble, we will attempt to express the T3SS-associated chaperone CesT to correct it.</li>
+                            </ul>
+                        </p>
+                        <h4>Protease Cleavage Site</h4>
+                        <p>
+                            We intend to explore replacing the TEVs cleavage site with the 2x TEVs site, containing a pair of TEVp cleavage sites. It has long been thought that such a site would be more sensitive to TEVp than the conventional single cleavage site, although this has not been empirically verified.
+                        </p>
+                        <p>
+                            We will test this improved part in HIEC-6 (after cloning into SIEC-eLEE5) using the FlipGFP protease cleavage reporter, with mCherry for normalisation.
+                        </p>
+                        <p>
+                            The cassettes of interest will be procured by chemical synthesis from IDT. The lyophilised samples obtained will be suspended in the appropriate amount of nuclease-free water (NFW), and amplified using PCR, following the protocol described here.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Assembling and thawing all the required reagents (Q5 High-Fidelity 2X Master Mix, 10 µM Forward Primer, 10 µM Reverse Primer, Template DNA and Nuclease-Free Water) on ice.</li>
+                                <li>Mixing appropriate amounts of the reaction components in a PCR tube.</li>
+                                <li>Transferring the reactions to a thermocycler preheated to the denaturation temperature (98°C).</li> 
+                                <li>35 cycles of Denaturation, Annealing (Tm-5) and Extension followed by a final extension.</li>
+                            </ol>
+                        </p>
+                        <p>
+                            The DNA thus obtained will be purified and extracted from a 1% agarose gel (to remove primers and incomplete amplification products) using the protocol described <a href="https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/dna-clean-up/qiaquick-gel-extraction-kit/?clear=true#orderinginformation" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            <h4>Protocol (In Brief):</h4>
+                            <ol>
+                                <li>Dissolving cut gel slices in a buffer containing a pH indicator for optimal dissolution.
+                                <li>Applying the mixture to the QIAquick spin column.</li>
+                                <li>Washing away the impurities and eluting pure DNA via a small volume of NFW.</li>
+                            </ol>
+                        </p>
+                        <p>This gets us the material we need to carry out our cloning work.</p>
+                        <p>
+                            <h4>Troubleshooting: PCR <a href="https://international.neb.com/tools-and-resources/troubleshooting-guides/pcr-troubleshooting-guide">troubleshooting guide</a></h4>
+                            <ol>
+                                <li>Rerunning the reaction after increasing or decreasing the number of cycles.</li>
+                                <li>Rerunning the reaction after increasing or decreasing the concentration of primers.</li>
+                                <li>Rerunning the reaction after increasing or decreasing the concentration of the template DNA.</li>
+                                <li>Checking the primers for self-complementarity and cross-complementarity.</li>
+                                <li>Checking for additional complementary regions for primers within the template DNA.</li>
+                                <li>Rerunning the reaction after increasing or decreasing the length of the primers.</li>
+                                <li>Rerunning the reaction after increasing or decreasing the annealing temperature.</li>
+                                <li>Rerunning the reaction after recalculating the primer Tm values.</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="cardSix">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1>Future Work</h1>
+                </div>
+            </div>
+
+            <div class="module-content">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="6A-tab" data-toggle="tab" href="#A6" role="tab" aria-controls="6A" aria-selected="true">Module 6</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="6B-tab" data-toggle="tab" href="#B6" role="tab" aria-controls="6B" aria-selected="false">Module 7</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="6C-tab" data-toggle="tab" href="#C6" role="tab" aria-controls="6C" aria-selected="false">Module 8</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="A6" role="tabpanel" aria-labelledby="home-tab">
+                        <h4>Interface Validation</h4>
+                        <p>
+                            To build on the experiments we've planned, we intend to characterise our system further, and prepare it for animal trials. To do so, we will follow the workflow described here:
+                        </p>
+                        <p>
+                            We have designed our previous experiments under the assumption that our system makes a certain set of functional interfaces with its target cell. We intend to validate those dependences through knocking down the host factors responsible for those interactions through transfection with shRNA after we carry out the infection protocol described in Module 3. We will observe the outcomes of these knockdowns through fractionation and Western blotting, following the protocols introduced in Module 3C.
+                        </p>
+                        <p>
+                            We will use scrambled shRNA controls, to isolate responses to our specific knockdowns.
+                        </p>
+                        <h4>Lgr5</h4>
+                        <p>
+                            The CBCC marker Lgr5 is the target of our selective adhesion system. We expect that knocking it down will compromise our chassis' ability to bind to our cells. We will test this with the protocol introduced in Module 3B post transfection.
+                        </p>
+                        <h4>Frizzled 7</h4>
+                        <p>
+                            Frizzled 7 is responsible for transducing Wnt signals to the cytosol of intestinal CBCCs. Knocking it down would deprotect beta-catenin, thereby destabilising our protease and inhibiting proteolysis. We will demonstrate this effect with the protocol introduced in Module 3C post transfection.
+                        </p>
+                        <h4>CRM1</h4>
+                        <p>
+                            CRM1 is an exportin that mediates the nuclear export of proteins with the PKIA NES. Our beta-catenin-TEVp fusion has a C-terminal PKIA NES in order to retain it in the cytosol. After CRM1 knockdown, we expect proteolysis to be inhibited, due to the nuclear localisation of our protease. We will demonstrate this effect with the protocol introduced
+                            in Module 3C post transfection.
+                        </p>
+                        <h4>Importins Alpha and Beta</h4>
+                        <p>
+                            Our transcription factors will be tagged with C-terminal SV40 large T antigen NLSs, which mediate nuclear import in an importin Alpha and Beta dependent manner. Knocking them down would impair nuclear entry, which we will observe using the protocol introduced in Module 3C post transfection.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="B6" role="tabpanel" aria-labelledby="contact-tab">
+                        <h4>Chromosomal Integration</h4>
+                        <p>
+                            Once our parts have been rigorously tested and improved, we will insert them into defined chromosomal loci on E. coli Nissle 1917 (our desired host strain). We will carry out this procedure, involving knockins and selective marker excisions, using the protocols described <a href="https://jbioleng.biomedcentral.com/articles/10.1186/1754-1611-7-12" style="font-weight: bold;">here</a>.
+                        </p>
+                        <p>
+                            In parallel, we will transfer all five T3SS-associated operons from SIEC-eLEE5 to Nissle, following the protocols described <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4603727/" style="font-weight: bold;">here</a>. In doing so, we will replace their IPTG-inducible promoters with a well-characterised <a href="http://parts.igem.org/Part:BBa_J23100">σ70 promoter</a> from the iGEM repository.
+                        </p>
+                        <p>
+                            We will characterise this strain using the same protocols we have proposed for our engineering success workflow, using as controls empty integrants of each of our BioBricks.
+                        </p>
+                        <h4>Fimbriae Disruption</h4>
+                        <p>
+                            The specificity of our system relies, in part, on the ability of our chassis to selectively bind to Lgr5+ CBCCs. We reason that this selectivity would be enhanced by the depletion of other adhesins. We have identified Nissle's F1C fimbriae, which we plan on disrupting using antisense RNA directed at the focA gene. We will demonstrate that such disruptants would display a stronger dependence on our selective adhesion device to bind to epithelial cells, using the protocol introduced in Module 3B.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="C6" role="tabpanel" aria-labelledby="contact-tab">
+                        <p>
+                            Following this characterisation, we will study the behaviour of our system in an Lgr5+ stem cell-derived human intestinal organoid. Our maintenance and infection protocols will mirror the ones followed <a href="https://mbio.asm.org/content/11/4/e01470-20" style="font-weight: bold;">here</a>, and we would test the system’s response to our factors using the protocols described <a href="https://www.sciencedirect.com/science/article/pii/S2211124714001132" style="font-weight: bold;">here</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src=""></script>
+	<script>
+		// Acc
+		$(document).on("click", ".naccs .menu div", function() {
+			var numberIndex = $(this).index();
+
+			if (!$(this).is("active")) {
+				$(".naccs .menu div").removeClass("active");
+				$(".naccs ul li").removeClass("active");
+
+				$(this).addClass("active");
+				$(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+				var listItemHeight = $(".naccs ul")
+					.find("li:eq(" + numberIndex + ")")
+					.innerHeight();
+				$(".naccs ul").height(listItemHeight + "px");
+			}
+		});
+
+	</script>
+    
+</body>
+</html>
+    

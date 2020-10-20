@@ -1,0 +1,1198 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no" />
+	<title>iGEM 2020 || GMO</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<script src="../Common/fontaawesome.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../Common/fontawesome-all-v5.5.0.css">
+	<link rel="stylesheet" href="../Common/fontawesome-all-v5.5.0.css">
+
+
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.css" />
+	<link rel="stylesheet" href="Timeline.css" />
+
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+	<link rel="stylesheet" href="../Common/jquery.fancybox.min.css" />
+	<script src="../Common/jquery.fancybox.min.js" charset="utf-8"></script>
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop src="../Common/T--IISER_Bhopal--Loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item navbar-nav mr-auto active">
+						<a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
+							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Team/index.html">Team</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+
+
+
+
+
+	<div id="cta">
+		<div class="desc-title">
+			<h1>Human Practices</h1>
+		</div>
+	</div>
+
+	<section class="parallax" style="opacity: 1;">
+		<div class="parallax-inner">
+			<he1>Interviews of the Experts</he1>
+		</div>
+	</section>
+	<div class="container alpha">
+		<h2>Integrated Human Practices </h2>
+		<p>
+			Human practices have moulded and transformed our project from a technical standpoint to the final implementation stages.
+		</p>
+	</div>
+
+	<div class="container alpha1">
+		<ol type="1">
+			<h2><li>Technical Suggestions by Dr. Ishaan Gupta and Dr. Varun Choudhary</li></h2>
+		</ol>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6 text-center">
+					<div class="card" style="width: 60%;margin: auto;">
+						<img src="Imgs/Q1.png" class="img-fluid" alt="...">
+						<div class="card-body">
+							<p class="text-center name">Dr. Varun Chaudhary</p>
+							<p class="card-text qualifications">PhD </p>
+							<p class="text-left addressline">Assistant Professor</p>
+							<p class="text-left addressline">Dept. of Biological Sciences</p>
+							<p class="text-left addressline">IISER Bhopal, MP, India</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 text-center">
+					<div class="card" style="width: 60%;margin: auto;">
+						<img src="Imgs/Q2.png" class="img-fluid anomaly1" alt="...">
+						<div class="card-body">
+							<p class="text-center name">Dr. Ishaan Gupta</p>
+							<p class="card-text qualifications">PhD </p>
+							<p class="text-left addressline">Assistant Professor</p>
+							<p class="text-left addressline">Dept. of Biochemical Engineering & </p>
+							<p class="text-left addressline">Biotechnology, IIT Delhi, India</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<ol>
+			<li>Human practices, in terms of technical work, helped us cover up significant loopholes in the work with advice from professors we interacted with during AIIM.</li>
+			<ol type="A">
+				<li>
+					<b>Change in Effector Construct</b>
+					<br> Our design initially consisted of three transcription factors arranged under separate ORFs being translated and translocated separately via the T3SS injection into the gut cells. After it was pointed out by Dr Gupta that the translation ratios would not be stoichiometrically equal, we took his advice. We created a polyprotein with the 3 factors which would be translated and translocated into the gut cell as a single sequence hence having a stoichiometric ratio of approximately 1:1:1.
+
+				</li>
+				<li>
+					<b>Change in protease used</b>
+					<br> Initially, we had chosen SENP1, which was common in other cell types as well. Dr Varun Choudhary guided us on the usage of a protease that would be specific to our target cells. We decided to introduce a protease attached to the beta-catenin. As a developmental biologist.
+
+				</li>
+			</ol>
+		</ol>
+		<p>
+			Dr. Chaudhary was able to help us understand the Pros and Cons associated with using a beta-catenin attached protease for our polyprotein sequence. But assured us that it would help maintain the necessary cell specificity and efficiently cleave the polyprotein since we were able to choose a protease of our choice.
+		</p>
+	</div>
+
+	<div class="container alpha2">
+
+		<h2>2. Drug Design Work with Dr Padma Devarajan</h2>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<div class="card" style="width: 100%;margin: auto;">
+						<img src="Imgs/Q3.png" class="img-fluid" alt="...">
+						<div class="card-body">
+							<p class="text-center name">Prof. Padma Devarajan</p>
+							<p class="card-text qualifications">PhD </p>
+							<p class="text-left addressline">Professor, Department of Pharmaceutical Sciences and Technology, Institute of Chemical Technology, Mumbai, Maharashtra, India</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-8">
+					<p>
+						As part of our proposed implementation, we designed a pill to ensure efficient drug delivery in the intestine. We took the help of Dr Devarajan, who guided us every step of the way.
+					</p>
+
+					<ul>
+						<li>
+							<b>Maximise Bacteria in Duodenum</b>
+							<br> The objective was to ensure maximum bacteria reaching the crypts in the duodenum and the early jejunum. She suggested that we use a pH-sensitive capsule that will release the bacteria at pH>5. Since the duodenum has a pH~5.5 prior to a meal. The pill dissolves to release the drug the instant it leaves the stomach hence ensuring that the bacteria remain protected from stomach acids while being released efficiently in the duodenum and early jejunum.
+
+						</li>
+						<li>
+							<b>Modelling Changes and improved drug action</b><br> She advised us to enclose our bacteria in mucopenetrtive microspheres inside the capsule which would guide the bacteria past the mucous layer of the epithelium directly into the crypts. As a drug that needed to reach the duodenum we decided our proposed implementation work of drug design would require the advice from an expert drug designer who helped us remodel our pill for better efficiency of drug delivery to the gut. Which also impacted our modelling work as we had to recalibrate the modelling work as per the delivery mechanism of the new pill.
+
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="container alpha3">
+		<h2>3. Designing Clinical Trials with Dr Ravindra Shukla</h2>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<div class="card" style="width: 100%;margin: auto;">
+						<img src="Imgs/Q4.png" class="img-fluid" alt="...">
+						<div class="card-body">
+							<p class="text-center name">Dr Ravindra Shukla</p>
+							<p class="card-text qualifications">MD(med), DM(Endocrinology & Metabolism)</p>
+							<p class="text-left addressline">Associate Professor, Department of Endocrinology and Metabolism, All India Institute of Medical Sciences (AIIMS), Jodhpur, Rajasthan, India</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-9">
+					
+					<ul>
+						<li>
+							As per Indian law our capsule iBETA containing modified probiotic bacteria E.coli Nissle is characterised as a “new drug” not a probiotic. Hence it needed to undergo clinical trials and gain approval from government medical and bioethics committees. Our interaction with Dr Shukla, a diabetologist who worked in organ transplant helped us design and improve our clinical trials right from the lab stage to the final Human trials stage.
+							<br> He initially advised us to focus on designing clinical trials for Rodents, then Rhesus Monkeys followed by the final Human Trials. Later he advised us to complete our project in cell lines followed by organoid work. After which clinical trials for rodents and final trials on humans would suffice.
+						</li>
+						<li>
+							He advised us to focus on trials of late stage Type 2 diabetes patients as they are more easily accessible for the Trials. He guided us on picking the perfect models for our rodent trials that would help get accurate results, for both T1D and T2D models. He thoroughly studied our clinical trials and protocols, and helped us set the timelines for each stage of the process. He also recommended that we observe the impact of our system on the target as a whole, leading us to develop protocols to look at the gut microbiome, as well as to study cardiovascular outcomes. He understood the necessary regulations and approvals that would be required to reach every step of the clinical trials phase. From the numbers in control and experiment, the time periods we must set, to the wash-off step we needed for our human trials, he guided us through all of it
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+	</div>
+
+	<section class="parallax" style="opacity: 1;">
+		<div class="parallax-inner">
+			<he1>‘BIG - PIE’ Survey</he1>
+		</div>
+	</section>
+
+	<div class="container alpha4">
+		<div class="container">
+			<h2>Background</h2>
+			<p>
+				We designed our survey in accordance with the guidelines proposed by iGEM HQ. Hence, informed consent and privacy/data protection were highly important to us and we got them approved by a professor working in the field of surveys from the Department of Economic Sciences at our institute. Also, our survey design had to be specific and unambiguous, with the goal of not compromising our survey by insinuating a “correct” response to any question. The participants volunteered to conduct our survey. Our survey was an anonymous survey and also any personal data like email id, name, location, etc. was not recorded. However, our survey was designed to help us improve our project and give insight on the public perception towards new therapies and Synthetic Biology. The survey was published on the iGEM collaboration page, social media diabetes forums, our institution, etc.
+			</p>
+		</div>
+
+		<div class="container">
+			<h2>Overview</h2>
+			<p>
+				The survey covered a number of topics including prevalence and awareness about diabetes, application of our therapeutic drug in the real world, knowledge and perception about Genetically Modified Organisms (GMOs). Overall, 126 people participated in our survey from all over the country.
+			</p>
+		</div>
+		<div class="container">
+			<h4>Here is some Important Information that shaped our Project.</h4>
+
+			<p>
+				First, we wanted to know about the preferred form of drug administration and the ‘tablet’ was preferred by most of the people. And also people were found to be more concerned about side effects of the drug to be administered. This inspired us to design mucopenetrative drug delivery system in the form of tablet (See <a href="">implementation</a>) and a kill switch to ensure safety of users <a href="">(Link)</a>.
+			</p>
+		</div>
+
+		<div class="container">
+			<h4>What is your preferred form of drug administration?</h4>
+			<div class="container">
+				<a href="Imgs/D1.png" data-fancybox data-caption="What is your preferred form of drug administration?">
+					<img class="img-fluid imgdata" src="Imgs/D1.png">
+				</a>
+			</div>
+			<p>
+				<b>105 out of 126 people chose ‘tablets’</b> as their preferred form of drug administration. We chose the word tablet instead of capsule as it is a more colloquial and widely accepted word in the Indian subcontinent
+			</p>
+		</div>
+		<div class="container">
+			<h4>What factors do you take into consideration while choosing medicine?</h4>
+			<div class="container">
+
+				<a href="Imgs/D2.png" data-fancybox data-caption="What factors do you take into consideration while choosing medicine?">
+					<img class="img-fluid imgdata" src="Imgs/D2.png">
+				</a>
+			</div>
+		</div>
+		<div class="container">
+			<h4>How many times does the diabetes patient get administered insulin injections in a day?</h4>
+
+			<div class="container">
+				<a href="Imgs/D3.png" data-fancybox data-caption="How many times does the diabetes patient get administered insulin injections in a day?">
+					<img class="img-fluid imgdata" src="Imgs/D3.png">
+				</a>
+			</div>
+			<p>Over 51% of the patients were taking insulin shots at least 3 times a day. </p>
+			<a href="">
+				<button type="button" class="btn btn-light">SURVEY Findings</button>
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!--TimeLine-->
+	<section class="timeline">
+		<div class="container">
+			<div class="arrow">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<ul>
+			<li>
+				<div>
+					<time>4<sup>th</sup> May 2020 </time>
+					<img src="Imgs/P1.png">
+					<p class="text-center name">Dr Kamal Sharma</p>
+					<p class="text-center qualifications">MD, DM (Cardiology), DNB (Cardiology), DNB (Medicine), MNAMS</p>
+					<p class="text-justify addressline">Senior Interventional Cardiologist practicing at the Apollo Hospitals, U N Mehta Institute of Cardiology, Ahmedabad, Gujarat, India Associate Professor, B. J. Medical College, Ahmedabad.
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p1">
+						Know More
+					</button>
+				</div>
+			</li>
+
+			<li>
+				<div>
+					<time>13<sup>th</sup> August 2020</time>
+					<img src="Imgs/P2.png">
+					<p class="text-center name">Dr John C. March, </p>
+					<p class="text-center qualifications">Ph. D.</p>
+					<p class="text-justify addressline">
+						Professor and Chair, Department of Biological and Environmental Engineering, Cornell University, Ithaca, NY, USA
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p2">
+						Know More
+					</button>
+				</div>
+			</li>
+
+			<li>
+				<div>
+					<time>15<sup>th</sup> August 2020</time>
+					<img src="Imgs/P3.png">
+					<p class="text-center name">Dr Anish Behl </p>
+					<p class="text-center qualifications">MBBS, MD (Medicine), DM (Endocrinology)</p>
+					<p class="text-justify addressline">
+						Consultant Endocrinologist at Apollo BGS Hospitals, Mysore, Karnataka, India
+					</p>
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p3">
+						Know More
+					</button>
+				</div>
+			</li>
+
+			<li>
+				<div>
+					<time>15<sup>th</sup> August 2020</time>
+					<img src="Imgs/P4.png">
+					<p class="text-center name">Dr Ravindra Shukla</p>
+					<p class="text-center qualifications">MD(med), DM(Endocrinology & Metabolism)</p>
+					<p class="text-justify addressline">
+						Associate Professor, Department of Endocrinology and Metabolism, All India Institute of Medical Sciences (AIIMS), Jodhpur, Rajasthan, India
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p4">
+						Know More
+					</button>
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>17<sup>th</sup> August</time>
+					<img src="Imgs/P5.png">
+					<p class="text-center name">Prof. Bertrand Toussaint</p>
+					<p class="text-center qualifications">Ph.D., MD</p>
+					<p class="text-justify addressline">Professor of Medicine, Université de Grenoble Alpes, France
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p5">
+						Know More
+					</button>
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>25<sup>th</sup> August 2020</time>
+					<img src="Imgs/P6.png">
+					<p class="text-center name">Prof. Padma Devarajan</p>
+					<p class="text-center qualifications">PhD</p>
+					<p class="text-justify addressline">Professor, Department of Pharmaceutical Sciences and Technology, Institute of Chemical Technology, Mumbai, Maharashtra, India
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p6">
+						Know More
+					</button>
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>23<sup>rd</sup> August</time>
+					<img src="Imgs/P7.png">
+					<p class="text-center name">Dr. Sandeep K Agarwal</p>
+					<p class="text-center qualifications">PhD </p>
+					<p class="text-justify addressline">Assistant Professor, Economic Sciences,IISER Bhopal, MP, India
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p7">
+						Know More
+					</button>
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>23<sup>rd</sup> August 2020</time>
+					<img src="Imgs/P8.png">
+					<p class="text-center name">Dr. Ishu Saraogi</p>
+					<p class="text-center qualifications">PhD</p>
+					<p class="text-justify addressline">Assistant Professor, Chemistry, IISER Bhopal, MP, India
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p7">
+						Know More
+					</button>
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>26<sup>th</sup> August 2020</time>
+					<img src="Imgs/P9.png">
+					<p class="text-center name">Vihang Ghalsasi</p>
+					<p class="text-center qualifications">PhD</p>
+					<p class="text-justify addressline">Molecular Biology and Microbial Protein Expression specialist, Syngene International Limited, Bengaluru, Karnataka, India
+
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p8">
+						Know More
+					</button>
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>15<sup>th</sup> September 2020</time>
+					<img src="Imgs/P10.png">
+					<p class="text-center name">Dr Ravindra Shukla</p>
+					<p class="text-center qualifications">MD(med), DM(Endocrinology & Metabolism) </p>
+					<p class="text-justify addressline">Associate Professor, Department of Endocrinology and Metabolism All India Institute of Medical Sciences (AIIMS), Jodhpur, Rajasthan, India
+
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p9">
+						Know More
+					</button>
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>4<sup>th</sup> September 2020</time>
+					<img src="Imgs/P11.png">
+					<p class="text-center name">Dr. Varun Chaudhary</p>
+					<p class="text-center qualifications">PhD</p>
+					<p class="text-justify addressline">Assistant Professor, Department of Biological Sciences, IISER Bhopal, MP, India
+					</p>
+
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p10">
+						Know More
+					</button>
+				</div>
+			</li>
+			<li>
+				<div>
+					<time>8<sup>th</sup> September 2020</time>
+					<img src="Imgs/P12.png">
+					<p class="text-center name">Dr. Himanshu Kumar</p>
+					<p class="text-center qualifications">PhD</p>
+					<p class="text-justify addressline">
+						Associate Professor, Department of Biological Sciences, IISER Bhopal, MP, India
+					</p>
+					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#p11">
+						Know More
+					</button>
+				</div>
+			</li>
+
+		</ul>
+	</section>
+
+	<!--Modal-->
+	<!--Modal-->
+
+	<div class="modal fade" id="p1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Dr Kamal Sharma </h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						Dr Sharma is a leading cardiologist in the country, who helped us understand the difficulties patients usually face due to diabetes medication. He helped us analyse the practical impact of our drug on the patient and the relevant changes we must make to create a product which is patient friendly.
+					</p>
+					<ul>
+						<li>
+							He pointed out the struggle of using a glucometer on a daily basis and suggested we create an app which enables patients to calculate their pill intake depending on the insulin requirements of the body as visible on the app.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							While our initial plan was to use E.coli K-12, he suggested using a clinically approved probiotic which is widely available over the counter example lactobacillus, that can enable speeding up clinical trials and future steps in getting approval for the drug. However we finally decided to go with E.coli Nissle, due to our requirement for a Gram negative probiotic bacteria.
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="p2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Dr John C. March</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<p>Despite having picked E.coli Nissle as our delivery vector we were uncertain of its survival efficiency in the small intestine. Due to Dr March’s experience working with Ecoli Nissle where he observed its survival and expression in the 3D tissue model of the small intestine made in the lab. We decided to consult him to understand more about the advantages and drawbacks of our chosen delivery vector.
+					</p>
+					<ul>
+						<li>
+							Dr March was fairly optimistic about Nissle in the crypts, but expressed reservations surrounding long-term colonisation. He recommended repeated short administration of the pill.</li>
+					</ul>
+					<ul>
+						<li>
+							He was concerned about the immune response that could be caused due to the T3SS, along with the cells we’re transforming.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							He advised us to be wary of perturbations to intestinal flow. At that time we were considering using a plasmid which would have our necessary transcription factors cloned individually that would be transported separately into the crypt cell. He advised us to look at alternative delivery mechanisms to improve efficiency (compartments containing TFs).
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="p3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Dr Anish Behl  </h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<p>
+						Our interaction with Dr Behl helped us understand the problems faced by diabetes patients. He advised us :
+					</p>
+					<ul>
+						<li>
+							He informed us about the limitations of the current treatments with insulin injections. He explained that there are two kinds of insulin -Basal insulin and Bolus insulin present in the injections. The drawbacks of the current treatment is that insulin absorption rates are variable and it has to be injected into the subcutaneous tissue. While our therapy creates beta like cells which are glucose responsive and hence will naturally respond to the insulin requirements.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							He advised us to focus not only on Type 1 Diabetes patients who are prone to immune responses and hence may be more sensitive to the drug but also older T2D patients with 8 to 10 years of diabetes history.His advice helped us create the clinical trials for our work more accurately and with greater awareness.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							He informed us that most Insulin injections release the insulin into the subcutaneous tissue so it gets diffused. But in healthy patients there is movement across the portal vein. So our system is possibly superior to injections as it will also be using the portal vein and is closer to the natural functioning of the pancreas.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							To complete a Risk Benefit assessment of current treatment vs Our alternative diabetes treatment with iBETA.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							He advised us to calculate the sensitivity of our system in comparison to ambient glucose requirements
+						</li>
+					</ul>
+					<ul>
+						<li>
+							Ascertain Safety
+						</li>
+					</ul>
+					<ul>
+						<li>
+							Ensure the targeting is very specific to the crypt cells.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							You will have to test this in the mice model first.
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="p4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Dr Ravindra Shukla </h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<p>
+						Dr Shukla was quite intrigued by our project idea and had several suggestions for us. As a diabetologist who worked with organ transplantation he was able to help us understand the implications of introducing GMO bacteria into the gut. He also guided us on steps required to to follow to take the drug from the lab to the market.
+					</p>
+					<ul>
+						<li>
+							He told us that despite the usage of E.coli Nissle our bacteria will be classified as a drug not probiotic since it is not benefiting the intestine itself.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							There is a possibility of Immune response due to the T3SS like fibrosis which can make it impossible for the body to function naturally. Type 1 diabetes patients are especially more prone to this.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							He informed us of stringent guidelines in India for the development of “new drugs”. Due to this we will need to work with clinical trials starting from mice, monkey. then humans. But he also informed us that if our project could successfully be replicated in cell lines and organoid systems. Then the trials with monkeys can be skipped to go to Human trials.
+						</li>
+					</ul>
+
+					<ul>
+						<li>
+							There is a chance of cancer in IPSCs while no such response was found in mice. It is possible to observe something similar in humans.
+						</li>
+					</ul>
+
+					<ul>
+						<li>
+							To work with STEM cells you will need mucosal cells might be better. All alpha cells must be in the centre with beta cells arranged at the periphery. It should be a 3D system of cells.
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="p5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Prof. Bertrand Toussaint </h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<p>
+						Through email correspondence with Dr Toussaint we were able to learn plenty about working with T3SS in E.coli.
+					</p>
+					<ul>
+						<li>
+							In his opinion T3SS was not a very disruptive system for antigen delivery. He infomed us that several biotech societies developed approaches like Advaxis which are used for delivery(which is not T3SS but was an equivalent system and hence T3SS was a safe enough system).</li>
+					</ul>
+					<ul>
+						<li>
+							With respect to our concerns about horizontal gene transfer, he believed it was unlikely that around 30 genes could simultaneously be transferred and work as functional proteins in a foreign bacteria. The chances of such an occurrence are very low.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							He was quite certain that T3SS could be an effective injection and delivery system in the gut with very little chance of immune response or any other issues.
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="p6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Prof. Padma Devarajan </h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<ul>
+						<li>
+							Enteric (pH sensitive polymer) capsules can be used to target duodenum provided that we prescribe consumption of capsule before the meal.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							We will use a gastroretentive formulation, Immediate release pill
+						</li>
+					</ul>
+					<ul>
+						<li>
+							Look into mucoadhesive microparticles and mucus penetration
+						</li>
+					</ul>
+					<ul>
+						<li>
+							Freeze drying is the best suited method for storage of bacteria.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							This would be important to decide the size of the capsule.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							Choose a capsule that is released at ph>5 this ensures its release only in the duodenum.
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="p7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Dr. Sandeep K Agarwal | Dr. Ishu Saraogi </h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<p>
+						Survey: Ensured survey meets confidentiality requirements, protects identity of the survey takers.
+					</p>
+					<ul>
+						<li>
+							Collects data in an unbiased manner and ensures language is simple, easy to understand and does not contain technical jargon.</li>
+					</ul>
+					<ul>
+						<li>
+							Was thorough in verifying our survey.
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="p8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Dr. Vihang Ghalsasi</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						Survey: Ensured survey meets confidentiality requirements, protects identity of the survey takers.
+					</p>
+					<ul>
+						<li>
+							Advised on abiding by all iGEM Safety guidelines
+						</li>
+					</ul>
+					<ul>
+						<li>
+							Made us aware of the possible safety issues that could occur in the lab while working with a bacteria like SEIC-6 E.coli K-12. He warned us about issues like discard, spillage , avoiding human exposure by following all biosafety and biosecurity guidelines.
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="p9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Dr Ravindra Shukla</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<p>
+						Dr Shukla is well versed with clinical trials works and Bioethics in India. He was able to guide us and help us design an effective clinical trial for our project which would enable us to gain approval as a medication for Type 1 diabetes patients and late stage Type 2 Diabetes patients in India.
+					</p>
+					<ul>
+						<li>
+							He advised us to work with germ-free mice, as found in gnotobiotic labs.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							He also advised us to document chassis-dependent and injection dependent effects on microbiome.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							Use empty chassis as control, to isolate effector-dependent outcomes.
+						</li>
+					</ul>
+					<ul>
+						<li>Look at cardiovascular outcomes.</li>
+					</ul>
+					<ul>
+						<li>On tissue extracts, assay beta cell-like phenotype thoroughly (insulin staining, C-peptide, glucagon, etc.).</li>
+					</ul>
+					<ul>
+						<li>He suggested that start with a comparative clinical study with Chow-fed vs fat-fed mice (T2D model).</li>
+					</ul>
+					<ul>
+						<li>In India we would also be required to test the drug on Rhesus macaques; this step can be skipped if the study with organoids is successful.
+						</li>
+					</ul>
+					<ul>
+						<li>Advised us to include a washoff period on human trials, when the person is temporarily not administered the drug to study the effects of the treatment.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							He advised us on the monetary aspect to secure a source of insurance before proceeding with clinical trials.
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="p10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Dr. Varun Chaudhary</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						Dr Chaudhary is a developmental biologist who is well versed with the beta catenin pathway. Since we had several questions regarding the new protein cleavage technique which involved beta catenin. Sir guided us to confirm the changes
+					</p>
+					<ul>
+						<li>
+							He warned us that impaired tissue regeneration is a potential source of concern, but given that the existing literature doesn’t support it, it shouldn’t be too much of an issue.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							He informed us that N-terminal tags on beta-catenin tend to impair protein function by preventing protein-protein interactions. This was very important,as it led us to attach a cleavage site to Map20 which is at N-terminus.
+						</li>
+					</ul>
+
+					<ul>
+						<li>
+							We were attempting to create a protease cleavage system in which the polyprotein could only be cleaved in the target cells. He informed us that the Wnt signalling tends to be active throughout the base (including at the +4 stock), as well as the TA(transit amplifying) cells present in the crypts in the gut.This information is very relevant to the project but has already handled by the efficacy of our targeting system and drug delivery mechanism which will ensure high accuracy in the bacteria binding to the crypt cells .
+						</li>
+					</ul>
+					<ul>Beta-catenin is likely to be degraded or sequestered in mature cells.</ul>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="p11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Dr. Himanshu Kumar</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<ul>
+						<li>The immune system might target the T3SS.</li>
+					</ul>
+					<ul>
+						<li>
+							The innate immune response is a bigger threat, especially from TLRs 4,5, and the NLR system. Beware of cytokine storm.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							CD8 T cell response unlikely to be an issue; GALT doesn’t have a lot of CD8 T cells.
+						</li>
+					</ul>
+					<ul>
+						<li>Transformed cells may very well be targeted in T1D.</li>
+					</ul>
+					<ul>
+						<li>Tolerogenic therapy is a possibility, but excessive damping could contribute to intestinal infection or tumorigenesis.</li>
+					</ul>
+
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Modal-->
+	<!--Modal-->
+
+
+
+
+
+
+	<div class="container">
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<a href="../Description/index.html">
+								<h3>Description</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-2">
+						<div class="ch-info">
+							<a href="#">
+								<h3>Design</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-3">
+						<div class="ch-info">
+							<h3>Parts</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-5">
+						<div class="ch-info">
+							<h3>Human Practices</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-6">
+						<div class="ch-info">
+							<h3>Model</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-4">
+						<div class="ch-info">
+							<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-7">
+						<div class="ch-info">
+							<h3>Patent <br>Law</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-8">
+						<div class="ch-info">
+							<a href="../Biosafety/index.html">
+								<h3>Safety</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+	</div>
+
+
+
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script>
+		(function() {
+
+			'use strict';
+
+			// define variables
+			var items = document.querySelectorAll(".timeline li");
+
+			// check if an element is in viewport
+			// http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+			function isElementInViewport(el) {
+				var rect = el.getBoundingClientRect();
+				return (
+					rect.top >= 0 &&
+					rect.left >= 0 &&
+					rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+					rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+				);
+			}
+
+			function callbackFunc() {
+				for (var i = 0; i < items.length; i++) {
+					if (isElementInViewport(items[i])) {
+						items[i].classList.add("in-view");
+					}
+				}
+			}
+
+			// listen for events
+			window.addEventListener("load", callbackFunc);
+			window.addEventListener("resize", callbackFunc);
+			window.addEventListener("scroll", callbackFunc);
+
+		})();
+
+	</script>
+
+</body>
+
+</html>
