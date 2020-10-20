@@ -5,11 +5,10 @@ body {
 	width: 100%;
 	background-color: #ffffff;
 	box-sizing: border-box;
+	position:relative;
+	overflow-x:hidden;
 }
 
-body {
-	overflow-x: hidden;
-}
 
 .col {
 	background-color: red;
