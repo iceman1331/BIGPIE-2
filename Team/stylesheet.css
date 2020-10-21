@@ -14,6 +14,17 @@ body {
 	background-color: #ffffff;
 	box-sizing: border-box;
 	font-size: 100%;
+	
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
 }
 
 body {
@@ -24,7 +35,7 @@ body {
 	width: 100%;
 	height: 600px;
 	background-attachment: fixed;
-	background-image: url(contributions.png);
+	background-image: url(team.png);
 	background-position: top left;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -98,7 +109,9 @@ Build the scene and rotate on hover
 .scene {
 	width: 260px;
 	height: 400px;
+	height: 400px;
 	margin: 30px;
+	margin-bottom: 15%;
 	float: left;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
@@ -120,9 +133,9 @@ Build the scene and rotate on hover
 }
 
 .movie:hover {
-	-webkit-transform: rotateY(-78deg) translateZ(20px);
-	-moz-transform: rotateY(-78deg) translateZ(20px);
-	transform: rotateY(-81deg) translateZ(20px);
+	-webkit-transform: rotateY(-90deg) translateZ(5px);
+	-moz-transform: rotateY(-90deg) translateZ(5px);
+	transform: rotateY(-90deg) translateZ(5px);
 }
 
 /*************************************
@@ -253,40 +266,126 @@ Generate "lighting" using box shadows
 Posters and still images
 **************************************/
 
+
+.scene .movie .poster {
+	background-position: center;
+	background-size: contain;
+	background-color: aquamarine;
+}
 .scene:nth-child(1) .movie .poster {
-	background-image: url(A1.jpg);
+	background-image: url(Team/Archit_mask.png);
 }
 
 .scene:nth-child(2) .poster {
-	background-image: url(MCU/black_widow.jpg);
+	background-image: url(Team/Hari_mask.png);
 }
 
 .scene:nth-child(3) .poster {
-	background-image: url(MCU/ironman.jpg);
+	background-image: url(Team/Hitaishi_mask.png);
 }
+
 .scene:nth-child(4) .poster {
-	background-image: url(MCU/ironman.jpg);
+	background-image: url(Team/Kedar_mask.png);
 }
+
 .scene:nth-child(5) .poster {
-	background-image: url(MCU/ironman.jpg);
+	background-image: url(Team/Prerita_mask.png);
+}
+
+.scene:nth-child(6) .poster {
+	background-image: url(Team/Priya_mask.png);
+}
+
+.scene:nth-child(7) .poster {
+	background-image: url(Team/Raibat_mask.png);
+}
+
+.scene:nth-child(8) .poster {
+	background-image: url(Team/Rishana_mask.png);
+}
+
+.scene:nth-child(9) .poster {
+	background-image: url(Team/Rita_mask.png);
+}
+
+.scene:nth-child(10) .poster {
+	background-image: url(Team/Rohan_mask.png);
+}
+
+.scene:nth-child(11) .poster {
+	background-image: url(Team/Ruchir_mask.png);
+}
+
+.scene:nth-child(12) .poster {
+	background-image: url(Team/Sebin_mask.png);
+}
+
+.scene:nth-child(13) .poster {
+	background-image: url(Team/Shashaank_mask.png);
+}
+
+
+/*---------Full image-------*/
+
+.scene .info header {
+	background-size: cover;
+	background-position: center;
 }
 
 .scene:nth-child(1) .info header {
-	background-image: url(A2_crop.jpg);
+	background-image: url(Team_no_mask/Archit.jpg);
+
 }
 
 .scene:nth-child(2) .info header {
-	background-image: url(contributions.png);
+	background-image: url(Team_no_mask/Hari.JPG);
 }
 
 .scene:nth-child(3) .info header {
-	background-image: url(contributions.png);
+	background-image: url(Team_no_mask/Hitaishi.png);
 }
+
 .scene:nth-child(4) .info header {
-	background-image: url(contributions.png);
+	background-image: url(Team_no_mask/Kedar-2.jpg);
 }
+
 .scene:nth-child(5) .info header {
-	background-image: url(contributions.png);
+	background-image: url(Team_no_mask/Prerita.JPG);
+	background-size: cover;
+	background-position: center;
+}
+
+.scene:nth-child(6) .info header {
+	background-image: url(Team_no_mask/Priya.jpg);
+}
+
+.scene:nth-child(7) .info header {
+	background-image: url(Team_no_mask/Raibat-1.JPG);
+}
+
+.scene:nth-child(8) .info header {
+	background-image: url(Team_no_mask/Rishana.jpg);
+}
+
+.scene:nth-child(9) .info header {
+	background-image: url(Team_no_mask/Rita.jpg);
+}
+
+.scene:nth-child(10) .info header {
+	/*------------------------------------*/
+	background-image: url(Team_no_mask/Rohan);
+}
+
+.scene:nth-child(11) .info header {
+	background-image: url(Team_no_mask/Ruchir.jpeg);
+}
+
+.scene:nth-child(12) .info header {
+	background-image: url(Team_no_mask/Sebin.jpg);
+}
+
+.scene:nth-child(13) .info header {
+	background-image: url(Team_no_mask/Shashaank.jpg);
 }
 
 /*************************************
@@ -372,30 +471,270 @@ modal-title {
 
 
 
-.nameMem{
+.nameMem {
 	font-size: 1rem;
 	text-align: center;
 	margin: 0;
 	text-transform: none;
 }
-.memdetails{
+
+.memdetails {
 	color: #000;
 	margin: 0;
 	text-align: center;
-	
+
 }
 
-.li{
+.li {
 	color: #000;
 	font-size: 0.5rem;
 }
 
 
-.btn{
+.btn {
 	padding: 5px;
 	margin-top: 1%;
 }
-.role{
+
+.primarynames{
+	margin: auto;
+	margin-top: 0;
+}
+.primarynames h1{
+	margin: auto;
+	margin-top: 0;
+	font-size: 1.25rem;
+	margin-bottom: 10px;
+	border-bottom: 1px solid red;
+	text-transform: none;
+}
+
+.primarynames h3{
+	font-size: 1rem;
+	text-transform: none;
+}
+
+.primarynames p{
+	font-size: 0.75rem;
+	margin: 0;
+	letter-spacing: 0;
+	line-height: 18px;
+	font-style: italic;
+	text-transform: none;
+}
+
+.role {
 	margin: auto;
 	margin: 0;
 }
+
+.modal-title h5{
+	margin: auto;
+	text-align: center;
+}
+.modal-body{
+	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+	
+}
+
+.modal img{
+	width: 50%;
+}
+.modal-backdrop {
+   background-color: #336699;
+}
+.modal h2 {
+	font-size: 1.5rem;
+}
+
+.modal ul{
+	text-align: left;
+}
+
+.close {
+	opacity: 0.5;
+	transition: all 0.2s ease;
+}
+
+.close:hover{
+	color: aqua;
+}
+
+
+
+.social-block {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+/*social icons*/
+social-ico {
+	width: 50%;
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+.ease-all {
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+/* Social Icons */
+
+.social-ic {
+	display: block;
+	height: 10rem;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.social-ic li a {
+	display: block;
+	float: left;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	margin-right: 1rem;
+	text-align: center;
+	padding-top: 10px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	-ms-border-radius: 20px;
+	border-radius: 20px;
+
+	/*background-color: #222;*/
+	-webkit-box-shadow: inset 0 0 0 40px #222;
+	-moz-box-shadow: inset 0 0 0 40px #222;
+	-o-box-shadow: inset 0 0 0 40px #222;
+	-ms-box-shadow: inset 0 0 0 40px #222;
+	box-shadow: inset 0 0 0 40px #222;
+
+	color: #fff;
+
+}
+
+.social-ic li a:hover {
+	-webkit-box-shadow: inset 0 0 0 3px #222;
+	-moz-box-shadow: inset 0 0 0 3px #222;
+	-o-box-shadow: inset 0 0 0 3px #222;
+	-ms-box-shadow: inset 0 0 0 3px #222;
+	box-shadow: inset 0 0 0 3px #222;
+
+	color: #222;
+}
+
+
+
+
+ .btn:hover, .btn-primary, .btn-primary:hover, .btn-info, .btn-info:hover, .btn-success, .btn-success:hover, .btn-warning, .btn-warning:hover, .btn-danger, .btn-danger:hover, .btn-inverse, .btn-inverse:hover, .btn-primaryColor, .btn-primaryColor:hover, .btn-secondaryColor, .btn-secondaryColor:hover, .btn-tertiaryColor, .btn-tertiaryColor:hover {
+	 color: #fff;
+}
+ .btn {
+	 font-size: 14px;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 padding: 10px;
+	 margin: 0;
+	 border: none;
+	 background: #fff;
+	 position: relative;
+	 display: inline-block;
+	 transition: all 0.25s ease;
+}
+ .btn:hover {
+	 background: #0a8cfd;
+	 text-decoration: none;
+}
+ .btn:focus {
+	 outline: none;
+}
+ .btn-primary {
+	 background: #005888;
+}
+ .btn-primary:hover {
+	 background: #0079bb;
+}
+ .btn-info {
+	 background: #49afcd;
+}
+ .btn-info:hover {
+	 background: #71c1d8;
+}
+ .btn-success {
+	 background: #5bb75b;
+}
+ .btn-success:hover {
+	 background: #7ec77e;
+}
+ .btn-warning {
+	 background: #faa732;
+}
+ .btn-warning:hover {
+	 background: #fbbc64;
+}
+ .btn-danger {
+	 background: #da4f49;
+}
+ .btn-danger:hover {
+	 background: #e37873;
+}
+ .btn-inverse {
+	 background: #363636;
+}
+ .btn-inverse:hover {
+	 background: #505050;
+}
+ .btn-primaryColor {
+	 background: #0156a0;
+}
+ .btn-primaryColor:hover {
+	 background: #0171d3;
+}
+ .btn-secondaryColor {
+	 background: #02a7ab;
+}
+ .btn-secondaryColor:hover {
+	 background: #03d8dd;
+}
+ .btn-tertiaryColor {
+	 background: #666;
+}
+ .btn-tertiaryColor:hover {
+	 background: #808080;
+}
+ .btn-large {
+	 font-size: 18px;
+	 padding: 12px 22px 10px;
+}
+ .btn-small {
+	 font-size: 11px;
+	 padding: 8px 16px 6px;
+}
+ .btn-mini {
+	 font-size: 9px;
+	 padding: 7px 12px 5px;
+}
+ .btn-link {
+	 background: none;
+	 padding: 0;
+	 border-radius: 0;
+	 border: none;
+}
+ 
