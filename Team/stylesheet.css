@@ -82,8 +82,7 @@ body {
 		font-size: 3rem;
 	}
 }
-
-.mainstyle {}
+]
 
 
 .wrapper {
@@ -101,19 +100,21 @@ Build the scene and rotate on hover
 **************************************/
 
 .scene {
+	display: inline-block;
 	width: 260px;
 	height: 400px;
 	height: 400px;
-	margin: 30px;
 	margin-bottom: 15%;
 	float: left;
-	
+	float: none;
+	margin: 2% 10% 2% 10%;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
 }
-@media(max-width:500px){
-	.scene{
+
+@media(max-width:500px) {
+	.scene {
 		display: inline-block;
 		margin: auto;
 		padding-left: 15%;
@@ -230,7 +231,7 @@ Movie information
 	font-weight: 700;
 	color: #000;
 	line-height: 1.4em;
-	border-top: 10px solid #555;
+
 }
 
 /*************************************
@@ -269,66 +270,14 @@ Posters and still images
 
 
 .scene .movie .poster {
-	background-position: center;
+	background-position: bottom;
 	background-size: contain;
-	background-color: aquamarine;
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+	vertical-align: baseline;
 }
 
-.scene:nth-child(1) .movie .poster {
-	background-image: url(Team/Archit_mask.png), linear-gradient(to top, #5f72bd 0%, #9b23ea 100%);
-
-}
-
-.scene:nth-child(2) .poster {
-	background-image: url(Team/Hari_mask.png), linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
-}
-
-.scene:nth-child(3) .poster {
-	background-image: url(Team/Hitaishi_mask.png);
-}
-
-.scene:nth-child(4) .poster {
-	background-image: url(Team/Kedar_mask.png);
-}
-
-.scene:nth-child(5) .poster {
-	background-image: url(Team/Prerita_mask.png);
-}
-
-.scene:nth-child(6) .poster {
-	background-image: url(Team/Priya_mask.png);
-}
-
-.scene:nth-child(7) .poster {
-	background-image: url(Team/Raibat_mask.png);
-}
-
-.scene:nth-child(8) .poster {
-	background-image: url(Team/Rishana_mask.png);
-}
-
-.scene:nth-child(9) .poster {
-	background-image: url(Team/Rita_mask.png);
-}
-
-.scene:nth-child(10) .poster {
-	background-image: url(Team/Rohan_mask.png);
-}
-
-.scene:nth-child(11) .poster {
-	background-image: url(Team/Ruchir_mask.png);
-}
-
-.scene:nth-child(12) .poster {
-	background-image: url(Team/Sebin_mask.png);
-}
-
-.scene:nth-child(13) .poster {
-	background-image: url(Team/Shashaank_mask.png);
-}
 
 
 /*---------Full image-------*/
@@ -337,62 +286,9 @@ Posters and still images
 	background-size: cover;
 	background-position: center;
 	background-origin: border-box;
+	padding-top: 10%;
 }
 
-.scene:nth-child(1) .info header {
-	background-image: url(Team_no_mask/Archit.jpg);
-
-}
-
-.scene:nth-child(2) .info header {
-	background-image: url(Team_no_mask/Hari.JPG);
-}
-
-.scene:nth-child(3) .info header {
-	background-image: url(Team_no_mask/Hitaishi.png);
-}
-
-.scene:nth-child(4) .info header {
-	background-image: url(Team_no_mask/Kedar-2.jpg);
-}
-
-.scene:nth-child(5) .info header {
-	background-image: url(Team_no_mask/Prerita.JPG);
-}
-
-.scene:nth-child(6) .info header {
-	background-image: url(Team_no_mask/Priya.jpg);
-}
-
-.scene:nth-child(7) .info header {
-	background-image: url(Team_no_mask/Raibat-1.JPG);
-}
-
-.scene:nth-child(8) .info header {
-	background-image: url(Team_no_mask/Rishana.jpg);
-}
-
-.scene:nth-child(9) .info header {
-	background-image: url(Team_no_mask/Rita.jpg);
-}
-
-.scene:nth-child(10) .info header {
-	/*------------------------------------*/
-	background-image: url(Team_no_mask/Rohan);
-}
-
-.scene:nth-child(11) .info header {
-	background-image: url(Team_no_mask/Ruchir.jpeg);
-	background-position: top;
-}
-
-.scene:nth-child(12) .info header {
-	background-image: url(Team_no_mask/Sebin.jpg);
-}
-
-.scene:nth-child(13) .info header {
-	background-image: url(Team_no_mask/Shashaank.jpg);
-}
 
 /*************************************
 Fallback
@@ -409,13 +305,9 @@ Media Queries
 	.scene {
 		float: none;
 		margin: 30px auto 60px;
+		margin: auto;
 	}
 }
-
-
-
-
-
 
 /*------------------Modal box---------------*/
 .wrap {
@@ -530,6 +422,13 @@ modal-title {
 	margin-top: 1%;
 }
 
+.wrapper h1{
+	letter-spacing: 2px;
+	font-family: 'Lato', sans-serif;
+	margin-top: 2%;
+	
+}
+
 .primarynames {
 	margin: auto;
 	margin-top: 0;
@@ -537,12 +436,13 @@ modal-title {
 
 .primarynames h1 {
 	margin: auto;
-	margin-top: 0;
 	font-size: 1.5rem;
 	margin-bottom: 10px;
-	border-bottom: 1px solid red;
+	margin-top: 5px;
+	border-bottom: 1px solid #555;
 	text-transform: none;
 	letter-spacing: 1px;
+	text-align: center;
 }
 
 .primarynames h3 {
@@ -551,8 +451,8 @@ modal-title {
 }
 
 .primarynames p {
-	font-size: 0.75rem;
-	margin: 0;
+	font-size: 0.85rem;
+	margin: auto;
 	letter-spacing: 0;
 	line-height: 18px;
 	font-style: italic;
@@ -560,20 +460,28 @@ modal-title {
 }
 
 @media(max-width:600px) {
-	.poster{
-		margin-bottom: 10%;
-		
+	.poster {
+		margin-bottom: 14%;
 	}
-	.scene{
+
+	.scene {
 		background-size: contain;
 	}
-	.primarynames h1 {}
+
+	.primarynames h1 {
+			width: 100%;
+	margin-left: 12%;
+
+	}
 
 	.primarynames h3 {}
 
 	.primarynames h3 {}
 
 	.primarynames p {
+		
+	width: 100%;
+	margin-left: 12%;
 	}
 
 }
@@ -591,23 +499,41 @@ modal-title {
 
 .modal-body {
 	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-
 }
 
 .modal img {
-	width: 50%;
+	width: 40%;
+}
+@media(max-width:500px){
+	.modal img{
+		width: 60%;
+	}
 }
 
-.modal-backdrop {
-	background-color: #336699;
+.modal h5{
+	text-transform: none;
+	letter-spacing: 2px;
+	font-size: 1.25rem;
 }
 
-.modal h2 {
+.modal h4 {
 	font-size: 1.5rem;
+	letter-spacing: 2px;
 }
 
 .modal ul {
 	text-align: left;
+}
+/*------modal animation--------*/
+.modal-backdrop {
+	background-color: #336699;
+	transition:opacity 0.15s;
+}
+.modal-backdrop.fade{
+	transition: all 0.25s ease;
+}
+.modal-backdrop.show {
+    opacity: 0.95;
 }
 
 .close {
@@ -616,25 +542,23 @@ modal-title {
 }
 
 .close:hover {
-	color: aqua;
+	color: #000;
 }
-
-
 
 .social-block {
 	display: block;
-	margin: auto;
-	text-align: center;
+	margin: 0;
+	padding: 5px 0 10px 0;
 }
 
 
 
 /*social icons*/
 social-ico {
-	width: 50%;
+	padding: 0;
+	width: 100%;
 	display: block;
-	text-align: center;
-	margin: auto;
+	margin: 0;
 }
 
 .hide-text {
@@ -667,16 +591,17 @@ social-ico {
 	display: block;
 	float: left;
 	text-align: center;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	margin-right: 1rem;
 	text-align: center;
-	padding-top: 10px;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	-o-border-radius: 20px;
-	-ms-border-radius: 20px;
-	border-radius: 20px;
+	padding-top: 8px;
+	font-size:1.5rem;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+	-ms-border-radius: 50px;
+	border-radius: 50px;
 
 	/*background-color: #222;*/
 	-webkit-box-shadow: inset 0 0 0 40px #222;
@@ -702,54 +627,17 @@ social-ico {
 
 
 
-.btn:hover,
-.btn-primary,
-.btn-primary:hover,
-.btn-info,
-.btn-info:hover,
-.btn-success,
-.btn-success:hover,
-.btn-warning,
-.btn-warning:hover,
-.btn-danger,
-.btn-danger:hover,
-.btn-inverse,
-.btn-inverse:hover,
-.btn-primaryColor,
-.btn-primaryColor:hover,
-.btn-secondaryColor,
-.btn-secondaryColor:hover,
-.btn-tertiaryColor,
-.btn-tertiaryColor:hover {
+.btn-light{
+	color: #000;
+	transition: 0.25s all ease;
+	background-color: transparent;
+	border-radius: 2px;
+	margin-bottom: 1%;
+	text-transform: none;
+}
+
+.btn-light:hover{
 	color: #fff;
-}
-
-.btn {
-	font-size: 12px;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 5px 10px 5px 10px;
-	margin: 0;
-	border: none;
-	background: #fff;
-	position: relative;
-	display: inline-block;
-	transition: all 0.25s ease;
-}
-
-.btn:hover {
-	background: #0a8cfd;
-	text-decoration: none;
-}
-
-.btn:focus {
-	outline: none;
-}
-
-.btn-primary {
-	background: #005888;
-}
-
-.btn-primary:hover {
-	background: #0079bb;
+	background-color: #000;
+	
 }
