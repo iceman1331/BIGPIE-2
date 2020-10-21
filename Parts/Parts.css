@@ -80,6 +80,19 @@ img-desc{
 	font-style: italic;
 }
 
+#red{
+	color: red;
+}
+#green{
+	color: green;
+}
+#blue{
+	color: blue;
+}
+#purple{
+	color: purple;
+}
+
 .parallax-inner {
 	padding-top: 3%;
 	padding-bottom: 3%;
