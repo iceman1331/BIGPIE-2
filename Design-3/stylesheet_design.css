@@ -5,8 +5,8 @@ body {
 	width: 100%;
 	background-color: #ffffff;
 	box-sizing: border-box;
-	position:relative;
-	overflow-x:hidden;
+	position: relative;
+	overflow-x: hidden;
 }
 
 
@@ -21,7 +21,7 @@ body {
 	width: 100%;
 	height: 600px;
 	background-image: url(./imgs/Design-1.png);
-    background-attachment: fixed;
+	background-attachment: fixed;
 	background-position: bottom 75px right 0px;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -127,11 +127,10 @@ body {
 .clickable img {
 	display: block;
 	z-index: 2;
-	border-radius: 1000px;
 	width: 1200px;
 	max-width: 100%;
 	height: auto;
-  border-style: none;
+	border-style: none;	
 }
 
 .ZeroTwo {
@@ -140,7 +139,7 @@ body {
 }
 
 .ZeroTwoOne {
-  font-size: 25px;
+	font-size: 25px;
 	font-weight: 400;
 }
 
@@ -155,7 +154,7 @@ body {
 }
 
 .OneOne {
-    padding: 0 35px;
+	padding: 0 35px;
 }
 
 .OneOneA {
@@ -207,10 +206,10 @@ body {
 }
 
 .OneTwo img {
-  width: 80%;
-  display: block;
-  margin: auto; 
-} 
+	width: 80%;
+	display: block;
+	margin: auto;
+}
 
 .OneTwo .container {
 	padding-left: 0;
@@ -241,7 +240,7 @@ body {
 }
 
 .colp-containerZero {
-    padding: 70px 0 20px 0;
+	padding: 70px 0 20px 0;
 }
 
 .colp-containerOne {
@@ -254,11 +253,11 @@ body {
 }
 
 .TwoZero {
-    margin: 10px 30px 0 30px;
+	margin: 10px 30px 0 30px;
 }
 
 .TwoTwo {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 @media(max-width:500px) {
@@ -278,7 +277,7 @@ body {
 }
 
 .ThreeOne {
-    padding: 0 20px;
+	padding: 0 20px;
 }
 
 .ThreeTwo {
@@ -292,7 +291,7 @@ body {
 }
 
 .accordion {
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 @media(max-width:500px) {
@@ -318,8 +317,8 @@ body {
 }
 
 .container .video1 {
-    margin-top: 70px;
-/*
+	margin-top: 70px;
+	/*
     border-style: solid;
     border-width: 1px;
     border-color: gray;
@@ -333,8 +332,8 @@ body {
 */
 
 .FourOne img {
-    margin-top: -20px;
-    width: 100%;
+	margin-top: -20px;
+	width: 100%;
 }
 
 .FourTwo {
@@ -352,11 +351,11 @@ body {
 }
 
 .FiveOne {
-    padding-top: 55px;
+	padding-top: 55px;
 }
 
 .FiveTwo {
-    padding-top: 70px;
+	padding-top: 70px;
 	padding-bottom: 20px;
 }
 
@@ -656,7 +655,7 @@ external_knowmore {
 }
 
 .collapsible-containerAlt {
-    background-color: #0f4c5c;
+	background-color: #0f4c5c;
 }
 
 .ref_collapsible {
@@ -723,16 +722,16 @@ external_knowmore {
 }
 
 .collapsible-coliAlt {
-    background-color: #0f4c5c;
-	
+	background-color: #0f4c5c;
+
 }
 
 .collapsible-coliAltNarrow {
-    width: 60%;
+	width: 60%;
 }
 
 .collapsible-coliAlt:hover {
-    background-color: #0f4c5c;
+	background-color: #0f4c5c;
 }
 
 .collapsible-coli:hover {
@@ -865,6 +864,7 @@ a {
 area {
 	text-decoration: none;
 }
+
 .centred-child-2 {
 	display: block;
 	margin: auto;
@@ -879,9 +879,8 @@ area {
 	.centred-child-2 .img-fluid {
 		width: 100%;
 	}
-
 }
 
-.parta{
+.parta {
 	outline: none;
 }

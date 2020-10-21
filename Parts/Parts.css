@@ -65,6 +65,54 @@ body {
 	}
 }
 
+
+.parallax {
+	height: auto;
+	background-color:  #75B8C8;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 9;
+	margin-top: 5%;
+}
+
+img-desc{
+	font-style: italic;
+}
+
+.parallax-inner {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	display: block;
+	margin-left: auto;
+	margin-top: auto;
+}
+
+
+.parallax-inner-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+he1 {
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+	letter-spacing: 3px;
+}
+
+@media(max-width:400px) {
+	he1 {
+		font-size: 1rem;
+	}
+}
+
+
 /**/
 /**/
 /**/
@@ -73,7 +121,7 @@ body {
 /**/
 
 .main-table{
-	margin-top: 5%;
+	margin-top: 2%;
 }
 table{
 	margin-top: 1%;
@@ -152,13 +200,13 @@ h2 {
 	letter-spacing: 1.4px;
 }
 
-h4 {
+.final-update h4 {
 	text-transform: none;
 	text-transform: none;
 	color: #000;
 	font-family: 'Merriweather', serif;
-	font-weight: 400;
-	letter-spacing: 1.4px;
+	font-weight: 600;
+	letter-spacing: 1px;
 }
 .text-light{
 	font-family: 'Lato', sans-serif;

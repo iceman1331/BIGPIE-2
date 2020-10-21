@@ -145,15 +145,75 @@
 
 	<div class="ZeroOne">
 		<p>
-			The BIG PIE is a biological delivery system created to allow insulin production in-vivo(within the body). The objective of BIG PIE is to compensate for the decreased/defective β-islet cells in the pancreas of diabetes patients.
-			<br> By working as a natural alternative and replacing the need for external sources of insulin in diabetes patients. The design of this project has been refined constantly to create a delivery system which is effective, reliable and most importantly safe by design.
+			The BIG PIE is a biological delivery system created to allow insulin production in-vivo within the body. The objective of BIG PIE is to compensate for the decreased/defective β-islet cells in the pancreas of diabetes patients by reprogramming the gut cells into β-islet cells and eliminating the need for external sources of insulin. We intend to package our modified bacteria as a capsule which creates our final product iβeta.
+		</p>
+		<p>
+			The design of this project has been refined constantly to create a delivery system which is effective, reliable and most importantly safe by design.
 		</p>
 	</div>
+
+
+
+	<script>
+		window.onload = function() {
+
+			if (/MSIE 8/i.test(navigator.userAgent)) {
+				$('.tapbutton').removeClass('hide');
+			} else {
+				$("#close").click(function() {
+					$("#popup").fadeOut();
+					$("#popup_image").attr('src', $(this).attr(""));
+					$("#base_image").removeClass("darken");
+				});
+
+				$('.pulse-container').removeClass("hide");
+				if ($("#first").attr("data-top") != "") {
+					$('#first').toggleClass("hide");
+					$('#first').css('top', 'calc(' + $("#first").attr("data-top") + ' - 15px)');
+					$('#first').css('left', 'calc(' + $("#first").attr("data-left") + ' - 15px)');
+				}
+
+				if ($("#second").attr("data-top") != "") {
+					$('#second').toggleClass("hide");
+					$('#second').css('top', 'calc(' + $("#second").attr("data-top") + ' - 15px)');
+					$('#second').css('left', 'calc(' + $("#second").attr("data-left") + ' - 15px)');
+				}
+
+				if ($("#third").attr("data-top") != "") {
+					$('#third').toggleClass("hide");
+					$('#third').css('top', 'calc(' + $("#third").attr("data-top") + ' - 15px)');
+					$('#third').css('left', 'calc(' + $("#third").attr("data-left") + ' - 15px)');
+				}
+
+				$(".location").click(function() {
+					if ($(this).attr("image-url") != "") {
+						$("#popup_image").attr('src', $(this).attr("image-url"));
+						$("#base_image").addClass("darken");
+						$("#popup").fadeIn();
+					} else if ($(this).attr("data-url") != "") {
+						window.open($(this).attr("data-url"));
+					}
+					//
+
+
+					// if (!$(this).hasClass(".active")) {
+					//$(".location.active").removeClass("active");
+					$(this).addClass("active");
+					//  }
+				});
+
+			}
+
+		}
+
+	</script>
+
+
 
 	<div class="container clickable">
 		<img src="imgs/T--IISER_Bhopal--clickable_design.png" id="map-image" alt="" usemap="#map" class="" />
 		<map name="map" class="modalmap">
-			<area class="js-trigger parta" shape="circle" coords="479, 257, 77" title="Part 1" href="#plasmid1" onmouseover="writeText('Part_1')" />
+			<area class="js-trigger parta" shape="circle" coords="479, 257, 77" title="Plasmid1" href="#plasmid1" onmouseover="writeText('Part_1')" />
 
 			<area class="js-trigger parta" shape="circle" coords="674, 260, 77" title="Part 2" href="#plasmid4" onmouseover="writeText('Part_2')" />
 
@@ -163,6 +223,19 @@
 		</map>
 
 		<h4 id="desc" class="text-center">Some Description here...</h4>
+		<div class="container-fluid">
+			<p>
+				Representative bacteria shows all constructs we intend to clone into our bacteria delivery system.
+			</p>
+			<ul>
+				<li>
+					Plasmid1(left) : Polyprotein sequence with 3 effector proteins and protease fusion sequence have been cloned for reprogramming into β cells.
+				</li>
+				<li>
+					Plasmid2(right): Kill switch construct needed to kill bacteria outside the body.Needle Like T3SS injection for penetrating and attaching to gut cell membrane. VHH antibodies specific to the target cell.
+				</li>
+			</ul>
+		</div>
 	</div>
 
 	<script src="imageMapResizer.min.js"></script>
@@ -186,18 +259,18 @@
 
 	<div class="centred-child">
 		<div class="img">
-			<a href="imgs/T--IISER_Bhopal--transdiff.png" data-fancybox data-caption="Image description">
+			<a href="imgs/T--IISER_Bhopal--transdiff.png" data-fancybox data-caption="(Left)Pluripotent cell undergoing dedifferentiation then transitioning to another cell type.<br> (Right) Stem cell directly transdifferentiating into another cell type without an intermediate step.">
 				<img src="imgs/T--IISER_Bhopal--transdiff.png" alt="" />
 			</a>
-			<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+			<div class="img-desc">(Left) Pluripotent cell undergoing dedifferentiation then transitioning to another cell type. (Right) Stem cell directly transdifferentiating into another cell type without an intermediate step.</div>
 		</div>
 	</div>
 
 	<div class="ZeroTwo">
 		<p class="text">
-			Previously transdifferentiation has been performed in human organoids and mice models with the aid of adenovirus vectors: a viral delivery system. But due to the pathogenic nature of viruses and the risks associated with them (mutagenesis, oncogenesis and immunogenicity). We decided to replace the viral vector with a probiotic bacterial vector that is safely accepted into the host.
+			Previously transdifferentiation has been performed in human organoids and mice models with the aid of adenovirus vectors: a viral delivery system. Due to the pathogenic nature of viruses and the risks associated with them (mutagenesis, oncogenesis and immunogenicity), we decided to replace the viral vector with a probiotic bacterial vector that is safely accepted into the host.
 		</p>
-		<p class="ZeroTwoOne">Keeping in mind these aspects our design stands on <b>4 pillars</b> which form the backbone of our work.</p>
+		<p class="ZeroTwoOne">Keeping in mind these aspects of our project, our design stands on <b>4 pillars</b> which form the backbone of our work.</p>
 	</div>
 
 	<section class="parallax" style="opacity: 0.9;">
@@ -262,9 +335,12 @@
 			<div class="OneTwo">
 				<div class='animatedParent animateOnce'>
 					<div class="animated fadeInRight container">
-						<a href="imgs/T--IISER_Bhopal--Priscilla_Right.png" data-fancybox data-caption="Image description">
+						<a href="imgs/T--IISER_Bhopal--Priscilla_Right.png" data-fancybox data-caption="Priscilla Pie the E.coli is our mascot. Represents a probiotic bacteria E.coli Nissle, our chosen delivery vector capable of transforming the gut cells into β cells.">
 							<img src="imgs/T--IISER_Bhopal--Priscilla_Right.png" class="img-fluid" alt="Responsive image">
 						</a>
+						<div class="img-desc">
+							Priscilla Pie the E.coli is our mascot. Represents a probiotic bacteria E.coli Nissle, our chosen delivery vector capable of transforming the gut cells into β cells.
+						</div>
 					</div>
 				</div>
 			</div>
@@ -283,10 +359,11 @@
 				<div class="centred-child-2">
 					<div class='animatedParent animateOnce'>
 						<div class="animated fadeInLeft container">
-							<a href="imgs/T--IISER_Bhopal--t3ss.png" data-fancybox data-caption="Image description">
+							<a href="imgs/T--IISER_Bhopal--t3ss.png" data-fancybox data-caption="Representation of Type 3 Secretion System (T3SS) derived from pathogenic strain of E.coli. The T3SS tip  penetrates the host cell membrane and transports effector proteins into the gut cell.">
 								<img class="img-fluid" src="imgs/T--IISER_Bhopal--t3ss.png" alt="" />
 							</a>
-							<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
+							<div class="img-desc">Representation of Type 3 Secretion System (T3SS) derived from pathogenic strain of E.coli. The T3SS tip penetrates the host cell membrane and transports effector proteins into the gut cell.
+							</div>
 						</div>
 					</div>
 				</div>
@@ -333,12 +410,13 @@
 								<b>Interaction among PDX1, NEUROG3, and MAFA</b> Transcription factors PDX1, NEUROG3, and MAFA are also mutually interacted/regulated during the pancreatic developmental process. PDX1 regulates the expression of NEUROG3 and MAFA in the development and reprogramming processes.
 							</p>
 
-							<div class="centred-child">
-								<a href="imgs/design_%20Vector%20delivery%20.png" data-fancybox data-caption="Image description">
-									<img src="imgs/design_%20Vector%20delivery%20.png" class="img-fluid" alt="Responsive image">
+							<div class="container-fluid text-center" style="padding: 0;">
+								<a href="imgs/design_%20plasmid%20construct.png" data-fancybox data-caption="Construct with Polyprotein Sequence consisting of effectors - PDX1, MAFA and NGN3 and another sequence coding Tobacco Etch Virus(TEV) protease.">
+									<img src="imgs/design_%20plasmid%20construct.png" class="collapsible-img img-fluid" alt="Responsive image">
 								</a>
-
+								<div class="img-desc">Construct with Polyprotein Sequence consisting of effectors - PDX1, MAFA and NGN3 and another sequence coding Tobacco Etch Virus(TEV) protease.</div>
 							</div>
+
 							<div class="button_know" align="center">
 								<a class="external_knowmore" href="https://stemcellres.biomedcentral.com/articles/10.1186/s13287-017-0694-z" target="_blank" rel="nofollow">
 									<span>Read more</span>
@@ -380,23 +458,21 @@
 							</p>
 
 							<div class="centred-child">
-								<a href="imgs/T--IISER_Bhopal--tfs.png" data-fancybox data-caption="Image description">
+								<a href="imgs/T--IISER_Bhopal--tfs.png" data-fancybox data-caption="Represents interaction of PDX1 with MAFA and NGN3 in regular β cells and how that will be mimicked in gut cells. ">
 									<img src="imgs/T--IISER_Bhopal--tfs.png" alt="" />
 								</a>
-								<div class="img-desc"><strong style="font-weight:900;">Image I: </strong>image description.</div>
-								<br>
+
+								<div class="img-desc">
+									Represents interaction of PDX1 with MAFA and NGN3 in regular β cells and how that will be mimicked in gut cells.
+								</div>
+
 							</div>
-
-
-
-
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<section class="parallax" style="opacity: 0.9;">
 		<div class="parallax-inner" id="plasmid3">
 			<he1 class="underline-small">Targeting System</he1>
@@ -417,15 +493,20 @@
 				</p>
 			</div>
 			<div class="colp-containerZero collapsible-container">
-				<button class="collapsible-coli" style="outline: none;">A)Prior to Cell Binding : pH Specific promoter upstream of Polyprotein sequence.</button>
+				<button class="collapsible-coli" style="outline: none;">A) Prior to Cell Binding : pH Specific promoter upstream of Polyprotein sequence.</button>
 				<div class="content-collapsible">
 					<br>
 					<p>
 						<b>pH Specific promoter upstream of Polyprotein sequence</b> Our drug delivery system as explained in proposed implementation, is designed to release the bacteria in the stomach, which get ejected along with stomach acids into the duodenum(gut). To control the bacterial activity we have a pH sensitive promoter pGadA with attached RBS (BBa_K1231001) at the starting of our gene cassette. The promoter is shown to initiate transcription at low pH. The well characterised promoter is active between pH 5 to 8 and shows optimal activity at pH 6 which is the usual condition observed in the duodenum, in the gut lumen. This ensures all necessary protein translation, only in the gut region. It serves as our first check for cell specificity and prevents bacterial activity or interaction with the stomach lining. Thereby ensuring that our bacterial system is only active within the required region which is the duodenum in the gut.
 					</p>
-					<a href="imgs/pH%20promoter%20section.png" data-fancybox data-caption="Image description">
-						<img src="imgs/pH%20promoter%20section.png" class="img-fluid" alt="" />
-					</a>
+					<div class="container-fluid text-center">
+						<a href="imgs/pH%20promoter%20section.png" data-fancybox data-caption="The bacteria surface has a Single domain antibody against Lgr5 receptor specific to crypt cells will guide the bacteria and ensure it binds only to crypt cells. ">
+							<img src="imgs/pH%20promoter%20section.png" style="width: 100%;" class="img-fluid" alt="" />
+						</a>
+						<div class="img-desc">
+							The bacteria surface has a Single domain antibody against Lgr5 receptor specific to crypt cells will guide the bacteria and ensure it binds only to crypt cells.
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -461,11 +542,15 @@
 						<br> Since β catenin is a transcription factor usually found in the nucleus. We are also placing an NES(Nuclear Export Signal) at its C-terminus to retain it in the cytosol of the effector cell. This allows the cleavage of the polyprotein sequence in the cytosol, transport of the transcription factors to the nucleus and activation of downstream signaling required for cellular reprogramming.
 					</p>
 
-					<a data-fancybox data-width="640" data-height="360" href="imgs/T--IISER_Bhopal--Protease_Activity.mp4">
+					<a data-fancybox data-width="640" data-height="360" href="imgs/T--IISER_Bhopal--Protease_Activity.mp4" data-caption="
+								TEV Protease attached to β catenin cleaves the polyprotein sequence of  PDX1, MAFA and NGN3 separating the transcription factors which are then transported to the nucleus due to their nuclear localisation signal and show their effect of reprogramming the cell. ">
 						<div class="embed-responsive embed-responsive-16by9">
 							<video autoplay muted playsinline id="video" preload="auto" src="imgs/T--IISER_Bhopal--Protease_Activity.mp4" class="embed-responsive-item"></video>
 						</div>
 					</a>
+					<div class="img-desc">
+						TEV Protease attached to β catenin cleaves the polyprotein sequence of PDX1, MAFA and NGN3 separating the transcription factors which are then transported to the nucleus due to their nuclear localisation signal and show their effect of reprogramming the cell.
+					</div>
 					<br>
 				</div>
 			</div>
@@ -475,11 +560,15 @@
 			<div class='animatedParent'>
 				<div class="animated fadeInRight container">
 					<div class="video1">
-						<a data-fancybox data-width="640" data-height="360" href="imgs/T--IISER_Bhopal--Desc_video.mp4">
+						<a data-fancybox data-width="640" data-height="360" href="imgs/T--IISER_Bhopal--Desc_video.mp4" data-caption="							Bacteria bind to crypt cells with Lgr5 receptors on their surface. T3SS injection penetrates the cell. CesT Chaperone unfolds the polyprotein and MAP20 guides the sequence across the T3SS pore into the gut cell where the 3 transcription factors act in the nucleus and reprogramme the cell to create β-islet like cells.">
 							<div class="embed-responsive embed-responsive-16by9">
 								<video autoplay muted playsinline id="video" preload="auto" src="imgs/T--IISER_Bhopal--Desc_video.mp4" class="embed-responsive-item"></video>
 							</div>
 						</a>
+						<div class="img-desc">
+							Bacteria bind to crypt cells with Lgr5 receptors on their surface. T3SS injection penetrates the cell. CesT Chaperone unfolds the polyprotein and MAP20 guides the sequence across the T3SS pore into the gut cell where the 3 transcription factors act in the nucleus and reprogramme the cell to create β-islet like cells.
+
+						</div>
 					</div>
 					<div class="img-desc"><strong style="font-weight:900;">Video I: </strong>image description.</div>
 				</div>
@@ -504,9 +593,12 @@
 			<div class="FourOne">
 				<div class='animatedParent animateOnce'>
 					<div class="animated fadeInLeft container">
-						<a href="imgs/T--IISER_Bhopal--killswitch_design.png" class="img-fluid" data-fancybox data-caption="Image description">
+						<a href="imgs/T--IISER_Bhopal--killswitch_design.png" class="img-fluid" data-fancybox data-caption="(1) anti-toxin binds to toxin rendering it inactive in the functional state of the bacteria. (2) the low phosphate conditions beginning in the colon cause the PphoA promoter to activate translation of the repressor protein. The repressor binds to the promoter upstream of anti-toxin. This stops anti-toxin production. Excess toxin in the environment eventually kills the bacteria.">
 							<img src="imgs/T--IISER_Bhopal--killswitch_design.png" class="img-fluid" alt="" />
 						</a>
+						<div class="img-desc">
+							(1) anti-toxin binds to toxin rendering it inactive in the functional state of the bacteria. (2) the low phosphate conditions beginning in the colon cause the PphoA promoter to activate translation of the repressor protein. The repressor binds to the promoter upstream of anti-toxin. This stops anti-toxin production. Excess toxin in the environment eventually kills the bacteria.
+						</div>
 					</div>
 				</div>
 			</div>
@@ -547,7 +639,7 @@
 			</div>
 
 			<div class="FiveTwo collapsible-container">
-				<button class="collapsible-coli collapsible-coliAlt" style="outline: none; color: #fff;">Reorganisation of code to prevent horizontal gene transfer.</button>
+				<button class="collapsible-coli collapsible-coliAlt" style="outline: none; color: #fff;">Chromosomal Integration to prevent HGT</button>
 				<div class="content-collapsible">
 					<div>
 						<div>
@@ -561,7 +653,16 @@
 		</div>
 	</div>
 
-	<div class="blankspace"></div>
+	<div class="container-fluid prev-next">
+		<div class="buttons-coll">
+			<a href="..">
+				<button class="custom-btn btn-15">← Description</button>
+			</a>
+			<a href="..">
+				<button class="custom-btn btn-14">Engineering success → </button>
+			</a>
+		</div>
+	</div>
 
 	<div class="container">
 		<section class="pre-footer-button-container">
@@ -583,8 +684,10 @@
 				<li>
 					<div class="ch-item ch-img-3">
 						<div class="ch-info">
-							<h3>Parts</h3>
-							<p>Read More...<a href="#">Read More</a></p>
+							<a href="">
+								<h3>Parts</h3>
+								<p>Read More...</p>
+							</a>
 						</div>
 					</div>
 				</li>
@@ -592,17 +695,19 @@
 				<li>
 					<div class="ch-item ch-img-5">
 						<div class="ch-info">
-							<h3>Human Practices</h3>
-							<p>Read More...<a href="#">Read More</a></p>
+							<a href="">
+								<h3>Human Practices</h3>
+								<p>Read More...</p>
+							</a>
 						</div>
 					</div>
 				</li>
 				<li>
-					<div class="ch-item ch-img-8">
+					<div class="ch-item ch-img-18">
 						<div class="ch-info">
-							<a href="../Biosafety/index.html">
-								<h3>Safety</h3>
-								<p>Read More...<a href="#">Read More</a></p>
+							<a href="">
+								<h3>Safe by design</h3>
+								<p>Read More...</p>
 							</a>
 						</div>
 					</div>
