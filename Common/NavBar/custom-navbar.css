@@ -1,5 +1,6 @@
 .navbar {
 	background-color: #162C42;
+	
 }
 
 .navbar .nav-item {
@@ -8,8 +9,8 @@
 	font-size: 1.05rem;
 	font-family: 'Lato', sans-serif;
 	font-weight: 500;
+	line-height: 25px;	
 }
-
 
 .navbar .dropdown .active {
 	background-color: #abe188;
