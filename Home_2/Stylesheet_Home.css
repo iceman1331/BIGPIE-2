@@ -371,7 +371,7 @@ ttext b:nth-child(6) {
 .sol3 {
 	font-size: 2rem;
 	font-family: 'Raleway', sans-serif;
-	margin: 2% auto 5% auto;
+	margin: 2% auto 0 auto;
 }
 
 .pieLine {
