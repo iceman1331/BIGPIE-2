@@ -641,3 +641,30 @@ social-ico {
 	background-color: #000;
 	
 }
+
+
+
+.PI{
+	width:50%;
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+@media(max-width:500px){
+	.PI{
+		width: 100%;
+	}
+}
+
+.principle .primarynames h1{
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
+
+.principle .primarynames p{
+	margin: auto;
+	padding: 0;
+	text-align: center;
+}
