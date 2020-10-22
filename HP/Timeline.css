@@ -324,6 +324,15 @@ img {
 	padding: 10px;
 	transition: 0.25s all;
 }
+
+.center{
+    text-align: center;
+}
+
+.btn_sf{
+    text-align: center;
+	background-color: #F5F2EB;
+}
 .modal-title{
 	text-transform: none;
 	text-align: center;
