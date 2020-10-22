@@ -6,7 +6,8 @@ body {
 	width: 100%;
 	background-color: #ffffff;
 	box-sizing: border-box;
-	font-size: 100%;	
+	font-size: 100%;
+	position: relative;
 }
 
 body {
@@ -96,6 +97,14 @@ body {
 }
 
 .main-model ul{
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	letter-spacing: 1.4px;
+	margin: 2% auto 3% auto;
+	color: rgb(61,61,61);
+}
+
+.main-model ol{
 	font-family: 'Merriweather', serif;
 	font-weight: 400;
 	letter-spacing: 1.4px;
