@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no, shrink-to-fit=no" />
+	<title>iGEM 2020</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.min.css" />
+	<link rel="stylesheet" href="stylesheet.css" />
+
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="../Common/jquery.fancybox.min.css" />
+	<script src="../Common/jquery.fancybox.min.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop src="../Common/T--IISER_Bhopal--Loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item navbar-nav mr-auto active">
+						<a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Team</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Supervisors</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosafety</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Safe by Design</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+
+	<main>
+		<div id="cta">
+			<div class="desc-title">
+				<h1> Title </h1>
+			</div>
+		</div>
+
+		<div class="container fluid">
+			<h2>Background</h2>
+			<p>
+				To have a quantitative analysis of intestinal drug absorption and to study its kinetics we decided to use the Compartment Analysis And Transit (CAT) model. Despite the oral absorption process being complex and difficult to predict, most drugs are administered orally. Because of this complexity, computational physiologically based pharmacokinetic (PBPK) models have emerged as a tool to mechanistically capture the process of drug absorption. These models use inputs from in vitro assays to predict the pharmacokinetic behaviour of drugs in the body. The most common oral PBPK models are compartmental approaches in which the gastrointestinal tract is characterized as a series of compartments through which the drug transits. Two fundamental processes describing drug absorption include the dissolution of the drug into gastrointestinal fluid and permeation of dissolved drug through the intestinal wall. These processes are complex and are governed by physicochemical properties such as the compound solubility and permeability. Other external properties such as pH environment and metabolic enzymes in the GI tract also play an important role in drug absorption.
+			</p>
+			<h2> CAT Model</h2>
+			<p>
+				The compartmental absorption and transit model extends the mixing tank model to characterize the drug transit through the GI tract. Seven compartments are used to describe absorption and transit through the small intestine. The CAT model was originally developed to predict drug absorption for non-degradable drugs, still this model was shown to capture the dependence of a fraction of dose absorbed on the effective permeability for various drugs with different absorption characteristics.
+			</p>
+			<p>
+				By incorporating the Michaelis Menten kinetics for carrier/transporter mediated absorption , gastric emptying rate constant, compartment dependent degradation rate constant, the CAT model was extended for predicting the dose-dependent drug absorption with degradation in the small intestine. The CAT model was later extended to simulate the fraction of the dose absorbed in controlled release dosage forms . The compartment transit times in the duodenum, jejunum and the ileum are 14, 71 and 114 min respectively. The CAT model also provides an insight into the physicochemical properties (such as solubility and permeability) and dosage form variables on the oral drug absorption.
+			</p>
+			<p>
+				In our case, we have used the CAT model to understand the transit flow in the small intestine and estimate the relative drug absorption in each compartment of the small intestine. Our objective is to show that our drug is absorbed the most in the duodenum.
+			</p>
+
+			<div class="container-fluid">
+				<a href="1.png" data-fancybox data-caption="Schematic of the compartmental absorption and transit (CAT) model. The small intestine is separated into seven compartments. The solid and dotted arrows represent the transit rate constant (kt) and absorption rate constant (ka), respectively">
+					<img src="1.png" class="img-fluid">
+				</a>
+				<div class="img-desc">Schematic of the compartmental absorption and transit (CAT) model. The small intestine is separated into seven compartments. The solid and dotted arrows represent the transit rate constant (kt) and absorption rate constant (ka), respectively</div>
+			</div>
+			
+			<h2>SPECIFICITIES OF OUR PILL</h2>
+			<p>
+				Our probiotic is loaded into PEGylated PLGA microspheres which are loaded into an HMTC enteric pill. The microspheres will be released in the proximal part of the duodenum. These PEGylated microspheres will diffuse through the mucus of the intestine to reach the intestinal wall to release the probiotic. For a normal small molecule drug, the absorption constant is determined by the intestinal effective permeability. In our case, instead of being absorbed by the enterocytes, the microspheres are being absorbed by the mucosal layer. Hence, we can define a parameter analogous to the intestinal effective permeability for this specific case.
+			</p>
+			<h2>ASSUMPTIONS MADE IN CAT MODEL</h2>
+			<ul>
+			<li>Dissolution is instantaneous</li>
+				<li>A drug moving through the small intestine can be viewed as a process flowing through a series of segments, each described by a single compartment with linear transfer kinetics from one to the next, all compartments may have different volume and flow rates but have the same residence time.</li>
+			</ul>
+			<p>
+				Therefore for a non-degradable drug dosed in an immediate release dosage form the absorption and the transit in the small intestine can be depicted as follows
+			</p>
+			<h2>Equations in the small intestine</h2>
+			<p>
+				The human small intestine transit flow can be described by seven compartments where the transfer of drug from one compartment to the next is represented by linear first-order differential equations. The ODEs are as follows:
+			</p>
+		</div>
+
+	</main>
+
+	<div class="container-fluid prev-next">
+		<div class="buttons-coll">
+			<a href="..">
+				<button class="custom-btn btn-15">← Preliminary Research</button>
+			</a>
+			<a href="..">
+				<button class="custom-btn btn-14">Entrepreneurship → </button>
+			</a>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<a href="../Description/index.html">
+								<h3>Description</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-2">
+						<div class="ch-info">
+							<a href="#">
+								<h3>Design</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-3">
+						<div class="ch-info">
+							<h3>Parts</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-5">
+						<div class="ch-info">
+							<h3>Human Practices</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-6">
+						<div class="ch-info">
+							<h3>Model</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-4">
+						<div class="ch-info">
+							<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-7">
+						<div class="ch-info">
+							<h3>Patent <br>Law</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-8">
+						<div class="ch-info">
+							<a href="../Biosafety/index.html">
+								<h3>Safety</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+	</div>
+
+
+
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="../Common/css3-animate-it.js"></script>
+</body>
+
+</html>

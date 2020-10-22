@@ -14,6 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 	<title>Home</title>
 	<link rel="preload" href="T--IISER_Bhopal--loader.mp4" as="video">
+	<link rel="preload" href="Home_2/Videos/Bigpie_intro.mp4" as="video">
 
 	<link rel="stylesheet" href="Common/fontawesome/css/all.min.css">
 	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
@@ -196,14 +197,49 @@
 			</div>
 
 
+			<style>
+				.ammap2 {
+					width: 100%;
+					display: block;
+					margin: auto;
+					font-size: 1rem;
+				}
+				
+				#chartdiv {
+					width: 100%;
+					height: 500px;
+					cursor: pointer;
+					border-radius: 10px;
+				}
+				
+				@media(max-width:500px) {
+					.ammap2 h2 {
+						font-size: 1rem;
+					}
+					#chartdiv {
+						width: 100%;
+						height: 250px;
+					}
+				}
+
+			</style>
 			<div class="animatedParent container-fluid animateOnce">
 				<div class="animated fadeIn">
 					<div class="container-fluid">
-						<img class="img-fluid atlas" src="Home_2/map-3.png">
+						<div id="chartdiv"></div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<script src="Home_2/Amcharts/core.js"></script>
+		<script src="Home_2/Amcharts/charts.js"></script>
+		<script src="Home_2/Amcharts/maps.js"></script>
+		<script src="Home_2/Amcharts/worldLow.js"></script>
+		<script src="Home_2/Amcharts/themes/animated.js"></script>
+		<script src="Home_2/Amcharts/themes/dark.js"></script>
+		<script src="Home_2/Amcharts/themes/material.js"></script>
+		<script src="Home_2/map_home_2.js"></script>
 
 
 
@@ -292,7 +328,7 @@
 			</div>
 		</div>
 -->
-<!--
+		<!--
 		<div class="container-fluid embed-responsive embed-responsive-16by9">
 			<video autoplay muted playsinline class="embed-responsive-item" src="Home_2/Videos/BIGPIE_intro.m4v"></video>
 		</div>

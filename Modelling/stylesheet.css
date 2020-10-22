@@ -88,6 +88,14 @@ body {
 	text-transform: none;
 }
 
+.main-model h4{
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 4% auto 1% auto;
+	text-transform: none;
+}
+
 .main-model p{
 	font-family: 'Merriweather', serif;
 	font-weight: 400;

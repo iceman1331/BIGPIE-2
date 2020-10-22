@@ -138,7 +138,7 @@
 			</div>
 		</div>
 
-		<div class="container fluid main-model">
+		<div class="container main-model">
 			<h2>Background</h2>
 			<p>
 				In our quest to transdifferentiate the gut cells into insulin-producing cells, we propose to transport our 3 transcription factors PDx1, MAFA and NGN3, as a single polyprotein sequence, from our bacteria through the T3SS injection. This was done since sending the individual proteins via T3SS would have posed problems like one protein hampering the transfer of another. For the same purpose, appropriate linkers were selected and a protease was chosen which would ultimately cleave the polyprotein at particular sequences to free the 3 TFs to perform their individual roles in the transdifferentiation process.
@@ -148,368 +148,400 @@
 				In this regard, it is important to understand and verify that the function of the 3 TFs is not lost/altered during this process. In other words, we need to make sure that the active domains of our TFs are unaffected by the polyprotein formation and cleaving process. For this, we take the help of structural modelling.
 			</p>
 
-			<div class="container">
-				<h2>Fundamental Basis</h2>
-				<h4>Protein folding</h4>
-				<p>
-					Protein folding is the physical process by which a polypeptide chain folds into a highly specific and biologically functional three-dimensional structure from a random coil. This three-dimensional conformation of a protein molecule is determined by its amino acid sequence. Every protein molecule exists as an unfolded entity immediately after translation. It is because of the various non-covalent interactions between the amino acids that the protein folds and adopts a structure called the native state.
-				</p>
-				<h4>Poly-proteins</h4>
-				<p>
-					Poly-proteins are proteins that can be cleaved to produce more than one functionally active polypeptides. In our case, the 3 TFs are linked together to form a polyprotein.
-				</p>
-				<p>
-					In most cases, the functionality of such proteins is not affected because of the fusion process. It is because of intrinsic protein domains modularity. The part of a polypeptide that corresponds to a given domain can be removed or added to the rest of the molecule without hampering its native functional roles.
-				</p>
-				<p>
-					However, it is highly advised to predict the three-dimensional structure of fusion protein or the artificially attached proteins after the linkers have been cleaved by the chosen protease. The knowledge of the spatial organization of any given protein and the effect of the remnant linker residues on the active site of the protein is extremely useful for understanding the function (and its changes (if any) and for the rational modifications of the proteins.
-				</p>
+			<h2>Fundamental Basis</h2>
+			<h4>Protein folding</h4>
+			<p>
+				Protein folding is the physical process by which a polypeptide chain folds into a highly specific and biologically functional three-dimensional structure from a random coil. This three-dimensional conformation of a protein molecule is determined by its amino acid sequence. Every protein molecule exists as an unfolded entity immediately after translation. It is because of the various non-covalent interactions between the amino acids that the protein folds and adopts a structure called the native state.
+			</p>
+			<h4>Poly-proteins</h4>
+			<p>
+				Poly-proteins are proteins that can be cleaved to produce more than one functionally active polypeptides. In our case, the 3 TFs are linked together to form a polyprotein.
+			</p>
+			<p>
+				In most cases, the functionality of such proteins is not affected because of the fusion process. It is because of intrinsic protein domains modularity. The part of a polypeptide that corresponds to a given domain can be removed or added to the rest of the molecule without hampering its native functional roles.
+			</p>
+			<p>
+				However, it is highly advised to predict the three-dimensional structure of fusion protein or the artificially attached proteins after the linkers have been cleaved by the chosen protease. The knowledge of the spatial organization of any given protein and the effect of the remnant linker residues on the active site of the protein is extremely useful for understanding the function (and its changes (if any) and for the rational modifications of the proteins.
+			</p>
 
-				<h2>Methods/Servers</h2>
+			<h2>Methods/Servers</h2>
 
-				<ol>
-					<li>
-						Protein Data Bank: The Protein Data Bank (PDB) is a database for the three-dimensional structural data of large biological molecules, such as proteins and nucleic acids.
-					</li>
-					<li>
-						Uniprot: UniProt is a freely accessible database of protein sequence and functional information, many entries being derived from genome sequencing projects.
-					</li>
-					<li>
-						I-TASSER: It is a bioinformatics method for predicting three-dimensional structure models of protein molecules from amino acid sequences.
-					</li>
-					<li>
-						Swiss Model: It is a structural bioinformatics web-server dedicated to homology modeling of 3D protein structures.
-					</li>
-					<li>
-						PyMOL: PyMOL is a user-sponsored molecular visualization system on an open-source foundation, maintained and distributed by Schrödinger.
-					</li>
-					<li>
-						PSIPRED : PSI-blast based secondary structure PREDiction is a method used to investigate protein structure.
-					</li>
-					<li>
-						YASARA: Yet Another Scientific Artificial Reality Application (YASARA) is a computer program for molecular visualisation, modeling, and dynamics. We have used it for energy minimization of our structures.
-					</li>
-					<li>
-						MolProbity : The Ramachandran plots have been generated using MolProbity. It is most complete for crystal structure of proteins and acts as an active validation tool that produces coordinates, graphics and numerical evaluations.
-					</li>
-				</ol>
+			<ol>
+				<li>
+					Protein Data Bank: The Protein Data Bank (PDB) is a database for the three-dimensional structural data of large biological molecules, such as proteins and nucleic acids.
+				</li>
+				<li>
+					Uniprot: UniProt is a freely accessible database of protein sequence and functional information, many entries being derived from genome sequencing projects.
+				</li>
+				<li>
+					I-TASSER: It is a bioinformatics method for predicting three-dimensional structure models of protein molecules from amino acid sequences.
+				</li>
+				<li>
+					Swiss Model: It is a structural bioinformatics web-server dedicated to homology modeling of 3D protein structures.
+				</li>
+				<li>
+					PyMOL: PyMOL is a user-sponsored molecular visualization system on an open-source foundation, maintained and distributed by Schrödinger.
+				</li>
+				<li>
+					PSIPRED : PSI-blast based secondary structure PREDiction is a method used to investigate protein structure.
+				</li>
+				<li>
+					YASARA: Yet Another Scientific Artificial Reality Application (YASARA) is a computer program for molecular visualisation, modeling, and dynamics. We have used it for energy minimization of our structures.
+				</li>
+				<li>
+					MolProbity : The Ramachandran plots have been generated using MolProbity. It is most complete for crystal structure of proteins and acts as an active validation tool that produces coordinates, graphics and numerical evaluations.
+				</li>
+			</ol>
 
-				<p>The evaluation/analysis was based on RC plot, RMSD & C-Score.</p>
+			<p>The evaluation/analysis was based on RC plot, RMSD & C-Score.</p>
 
-				<p><b>C Score:</b> C-score is a confidence score for estimating the quality of predicted models by I-TASSER. It is calculated based on the significance of threading template alignments and the convergence parameters of the structure assembly simulations. (C-score is typically in the range of [-5,2]).</p>
+			<p><b>C Score:</b> C-score is a confidence score for estimating the quality of predicted models by I-TASSER. It is calculated based on the significance of threading template alignments and the convergence parameters of the structure assembly simulations. (C-score is typically in the range of [-5,2]).</p>
 
-				<p>
-					RMSD: The root-mean-square deviation of atomic positions (or simply root-mean-square deviation, RMSD) is the measure of the average distance between the atoms (usually the backbone atoms) of superimposed proteins. The RMSD of two aligned structures indicates their divergence from one another.
-				</p>
-				<p>
-					Ramachandran Plot: The Ramachandran plot is a plot of the torsional angles - phi (φ)and psi (ψ) - of the residues (amino acids) contained in a peptide. The plot indicates which torsional angles are allowed and provides an insight into the structure of peptides.
-				</p>
+			<p>
+				RMSD: The root-mean-square deviation of atomic positions (or simply root-mean-square deviation, RMSD) is the measure of the average distance between the atoms (usually the backbone atoms) of superimposed proteins. The RMSD of two aligned structures indicates their divergence from one another.
+			</p>
+			<p>
+				Ramachandran Plot: The Ramachandran plot is a plot of the torsional angles - phi (φ)and psi (ψ) - of the residues (amino acids) contained in a peptide. The plot indicates which torsional angles are allowed and provides an insight into the structure of peptides.
+			</p>
 
-				<h2>Results:</h2>
-				<p>
-					Sequences: The native protein sequences were obtained from PDB or Uniprot.
-				</p>
+			<h2>Results</h2>
+			<p>
+				Sequences: The native protein sequences were obtained from PDB or Uniprot.
+			</p>
 
-				<p>Sequences of Native Proteins</p>
-				<p>
-					<b>Pdx1:</b> MNGEEQYYAATQLYKDPCAFQRGPAPEFSASPPACLYMGRQPPPPPPHPFPGALGALEQG SPPDISPYEVPPLADDPAVAHLHHHLPAQLALPHPPAGPFPEGAEPGVLEEPNRVQLPFP WMKSTKAHAWKGQWAGGAYAAEPEENKRTRTAYTRAQLLELEKEFLFNKYISRPRRVELA VMLNLTERHIKIWFQNRRMKWKKEEDKKRGGGTAVGGGGVAEPEQDCAVTSGEELLALPP PPPPGGAVPPAAPVAAREGRLPPGLSASPQPSSVAPRRPQEPR
-				</p>
-				<p>
-					<b>MafA:</b> MAAELAMGAELPSSPLAIEYVNDFDLMKFEVKKEPPEAERFCHRLPPGSLSSTPLSTPCS SVPSSPSFCAPSPGTGGGGGAGGGGGSSQAGGAPGPPSGGPGAVGGTSGKPALEDLYWMS GYQHHLNPEALNLTPEDAVEALIGSGHHGAHHGAHHPAAAAAYEAFRGPGFAGGGGADDM GAGHHHGAHHAAHHHHAAHHHHHHHHHHGGAGHGGGAGHHVRLEERFSDDQLVSMSVREL NRQLRGFSKEEVIRLKQKRRTLKNRGYAQSCRFKRVQQRHILESEKCQLQSQVEQLKLEV GRLAKERDLYKEKYEKLAGRGGPGSAGGAGFPREPSPPQAGPGGAKGTADFFL
-				</p>
+			<p><b>Sequences of Native Proteins</b></p>
+			<p>
+				<b>Pdx1:</b> MNGEEQYYAATQLYKDPCAFQRGPAPEFSASPPACLYMGRQPPPPPPHPFPGALGALEQG SPPDISPYEVPPLADDPAVAHLHHHLPAQLALPHPPAGPFPEGAEPGVLEEPNRVQLPFP WMKSTKAHAWKGQWAGGAYAAEPEENKRTRTAYTRAQLLELEKEFLFNKYISRPRRVELA VMLNLTERHIKIWFQNRRMKWKKEEDKKRGGGTAVGGGGVAEPEQDCAVTSGEELLALPP PPPPGGAVPPAAPVAAREGRLPPGLSASPQPSSVAPRRPQEPR
+			</p>
+			<p>
+				<b>MafA:</b> MAAELAMGAELPSSPLAIEYVNDFDLMKFEVKKEPPEAERFCHRLPPGSLSSTPLSTPCS SVPSSPSFCAPSPGTGGGGGAGGGGGSSQAGGAPGPPSGGPGAVGGTSGKPALEDLYWMS GYQHHLNPEALNLTPEDAVEALIGSGHHGAHHGAHHPAAAAAYEAFRGPGFAGGGGADDM GAGHHHGAHHAAHHHHAAHHHHHHHHHHGGAGHGGGAGHHVRLEERFSDDQLVSMSVREL NRQLRGFSKEEVIRLKQKRRTLKNRGYAQSCRFKRVQQRHILESEKCQLQSQVEQLKLEV GRLAKERDLYKEKYEKLAGRGGPGSAGGAGFPREPSPPQAGPGGAKGTADFFL
+			</p>
 
-				<p>
-					<b>Ngn3:</b> MTPQPSGAPTVQVTRETERSFPRASEDEVTCPTSAPPSPTRTRGNCAEAEEGGCRGAPRK LRARRGGRSRPKSELALSKQRRSRRKKANDRERNRMHNLNSALDALRGVLPTFPDDAKLT KIETLRFAHNYIWALTQTLRIADHSLYALEPPAPHCGELGSPGGSPGDWGSLYSPVSQAG SLSPAASLEERPGLLGATFSACLSPGSLAFSDFL
-				</p>
+			<p>
+				<b>Ngn3:</b> MTPQPSGAPTVQVTRETERSFPRASEDEVTCPTSAPPSPTRTRGNCAEAEEGGCRGAPRK LRARRGGRSRPKSELALSKQRRSRRKKANDRERNRMHNLNSALDALRGVLPTFPDDAKLT KIETLRFAHNYIWALTQTLRIADHSLYALEPPAPHCGELGSPGGSPGDWGSLYSPVSQAG SLSPAASLEERPGLLGATFSACLSPGSLAFSDFL
+			</p>
 
-				<p>Sequences of Proteins with Residues</p>
+			<p><b>Sequences of Proteins with Residues</b></p>
 
-				<p>
-					<b>Pdx1:</b> SGGSGSGSGMNGEEQYYAATQLYKDPCAFQRGPAPEFSASPPACLYMGRQPPPPPPHPFPGALGALEQGSPPDISPYEVPPLADDPAVAHLHHHLPAQLALPHPPAGPFPEGAEPGVLEEPNRVQLPFPWMKSTKAHAWKGQWAGGAYAAEPEENKRTRTAYTRAQLLELEKEFLFNKYISRPRRVELAVMLNLTERHIKIWFQNRRMKWKKEEDKKRGGGTAVGGGGVAEPEQDCAVTSGEELLALPPPPPPGGAVPPAAPVAAREGRLPPGLSASPQPSSVAPRRPQEPRGGSGSGSGPKKKRKVGGSGSGSGENLYFQ
-				</p>
+			<p>
+				<b>Pdx1:</b> SGGSGSGSGMNGEEQYYAATQLYKDPCAFQRGPAPEFSASP PACLYMGRQPPPPPPHPFPGALGALEQGSPPDISPYEVPPLADDPAVAHLHHHL PAQLALPHPPAGPFPEGAEPGVLEEPNRVQLPFPWMKSTKAHAWKGQWAGGAYA AEPEENKRTRTAYTRAQLLELEKEFLFNKYISRPRRVELAVMLNLTERHIKIWFQNR RMKWKKEEDKKRGGGTAVGGGGVAEPEQDCAVTSGEELLALPPPPPPGGAVPPAAPVA AREGRLPPGLSASPQPSSVAPRRPQEPRGGSGSGSGPKKKRKVGGSGSGSGENLYFQ
+			</p>
 
-				<p>
-					<b>MafA:</b> SGGSGSGSGMAAELAMGAELPSSPLAIEYVNDFDLMKFEVKKEPPEAERFCHRLPPGSLSSTPLSTPCSSVPSSPSFCAPSPGTGGGGGAGGGGGSSQAGGAPGPPSGGPGAVGGTSGKPALEDLYWMSGYQHHLNPEALNLTPEDAVEALIGSGHHGAHHGAHHPAAAAAYEAFRGPGFAGGGGADDMGAGHHHGAHHAAHHHHAAHHHHHHHHHHGGAGHGGGAGHHVRLEERFSDDQLVSMSVRELNRQLRGFSKEEVIRLKQKRRTLKNRGYAQSCRFKRVQQRHILESEKCQLQSQVEQLKLEVGRLAKERDLYKEKYEKLAGRGGPGSAGGAGFPREPSPPQAGPGGAKGTADFFLGGSGSGSGPKKKRKVGGSGSGSGENLYFQ
-				</p>
-				<p>
-					<b>Ngn3:</b> SGGSGSGSGMTPQPSGAPTVQVTRETERSFPRASEDEVTCPTSAPPSPTRTRGNCAEAEEGGCRGAPRKLRARRGGRSRPKSELALSKQRRSRRKKANDRERNRMHNLNSALDALRGVLPTFPDDAKLTKIETLRFAHNYIWALTQTLRIADHSLYALEPPAPHCGELGSPGGSPGDWGSLYSPVSQAGSLSPAASLEERPGLLGATFSACLSPGSLAFSDFLGGSGSGSGPKKKRKVGGSGSGSGENLYFQ
-				</p>
-			</div>
+			<p>
+				<b>MafA:</b> SGGSGSGSGMAAELAMGAELPSSPLAIEYVNDFDLMKFEVKKEPPEAERFCHRLPPGSLSSTP LSTPCSSVPSSPSFCAPSPGTGGGGGAGGGGGSSQAGGAPGPPSGGPGAVGGTSGKPALEDL YWMSGYQHHLNPEALNLTPEDAVEALIGSGHHGAHHGAHHPAAAAAYEAFRGPGFAGGGGADD MGAGHHHGAHHAAHHHHAAHHHHHHHHHHGGAGHGGGAGHHVRLEERFSDDQLVSMSVRELNRQ LRGFSKEEVIRLKQKRRTLKNRGYAQSCRFKRVQQRHILESEKCQLQSQVEQLKLEVGRLAKERDLY KEKYEKLAGRGGPGSAGGAGFPREPSPPQAGPGGAKGTADFFLGGSGSGSGPKKKRKVGGSGSGSGENLYFQ
+			</p>
+			<p>
+				<b>Ngn3:</b> SGGSGSGSGMTPQPSGAPTVQVTRETERSFPRASEDEVTCPTSAPPSPTRTRGNCAEAEEGGCRGA PRKLRARRGGRSRPKSELALSKQRRSRRKKANDRERNRMHNLNSALDALRGVLPTFPDDAKLTKIE TLRFAHNYIWALTQTLRIADHSLYALEPPAPHCGELGSPGGSPGDWGSLYSPVSQAGSLSPAASLE ERPGLLGATFSACLSPGSLAFSDFLGGSGSGSGPKKKRKVGGSGSGSGENLYFQ
+			</p>
+		</div>
 
-			<div class="container">
-				<p>
-					PSIPRED: The secondary structures were predicted successfully using this server. A large part of our TFs except for the active domains were predicted to be just random coils which was later validated when we obtained the structures from I-Tasser.
-				</p>
+		<div class="container main-model">
+			<p>
+				PSIPRED: The secondary structures were predicted successfully using this server. A large part of our TFs except for the active domains were predicted to be just random coils which was later validated when we obtained the structures from I-Tasser.
+			</p>
 
-				<ol>
-					<li>PDX 1
-						<ol type="a">
-							<li>
-								Native sequence
-								<div class="container-fluid">
-									<img class="img-fluid" src="https://2020.igem.org/wiki/images/4/43/T--IISER_Bhopal--THEBIGPIE-struct1.png">
-								</div>
-							</li>
-							<br>
-							<li>
-								With remnant residues from linkers and protease cleavage
-								<div class="container-fluid">
-									<img class="img-fluid" src="https://2020.igem.org/wiki/images/f/fe/T--IISER_Bhopal--THEBIGPIE-struct2.png">
-								</div>
-							</li>
-							<br>
-						</ol>
-					</li>
+			<ol>
+				<li>PDX 1
+					<ol type="a">
+						<li>
+							Native sequence
+							<div class="container-fluid">
+								<img class="img-fluid" src="https://2020.igem.org/wiki/images/4/43/T--IISER_Bhopal--THEBIGPIE-struct1.png">
+							</div>
+						</li>
+						<br>
+						<li>
+							With remnant residues from linkers and protease cleavage
+							<div class="container-fluid">
+								<img class="img-fluid" src="https://2020.igem.org/wiki/images/f/fe/T--IISER_Bhopal--THEBIGPIE-struct2.png">
+							</div>
+						</li>
+						<br>
+					</ol>
+				</li>
 
-					<li>NGN3
-						<ol type="a">
-							<li>
-								Native sequence
-								<div class="container-fluid">
-									<img class="img-fluid" src="https://2020.igem.org/wiki/images/e/ed/T--IISER_Bhopal--THEBIGPIE-struct3.png">
-								</div>
-							</li>
-							<br>
-							<li>
-								With additional residues
-								<div class="container-fluid">
-									<img class="img-fluid" src="https://2020.igem.org/wiki/images/6/61/T--IISER_Bhopal--THEBIGPIE-struct4.png">
-								</div>
-							</li>
-						</ol>
-					</li>
+				<li>NGN3
+					<ol type="a">
+						<li>
+							Native sequence
+							<div class="container-fluid">
+								<img class="img-fluid" src="https://2020.igem.org/wiki/images/e/ed/T--IISER_Bhopal--THEBIGPIE-struct3.png">
+							</div>
+						</li>
+						<br>
+						<li>
+							With additional residues
+							<div class="container-fluid">
+								<img class="img-fluid" src="https://2020.igem.org/wiki/images/6/61/T--IISER_Bhopal--THEBIGPIE-struct4.png">
+							</div>
+						</li>
+					</ol>
+				</li>
 
-					<li> MAFA
-						<ol type="a">
-							<li>
-								Native sequence
-								<div class="container-fluid">
-									<img class="img-fluid" src="https://2020.igem.org/wiki/images/e/e0/T--IISER_Bhopal--THEBIGPIE-struct5.png">
-								</div>
-							</li>
-							<br>
-							<li>
-								With additional residues
-								<div class="container-fluid">
-									<img class="img-fluid" src="https://2020.igem.org/wiki/images/c/cf/T--IISER_Bhopal--THEBIGPIE-struct6.png">
-								</div>
-							</li>
-						</ol>
-					</li>
-				</ol>
-			</div>
+				<li> MAFA
+					<ol type="a">
+						<li>
+							Native sequence
+							<div class="container-fluid">
+								<img class="img-fluid" src="https://2020.igem.org/wiki/images/e/e0/T--IISER_Bhopal--THEBIGPIE-struct5.png">
+							</div>
+						</li>
+						<br>
+						<li>
+							With additional residues
+							<div class="container-fluid">
+								<img class="img-fluid" src="https://2020.igem.org/wiki/images/c/cf/T--IISER_Bhopal--THEBIGPIE-struct6.png">
+							</div>
+						</li>
+					</ol>
+				</li>
+			</ol>
+		</div>
 
-			<div class="container">
-				<p>
-					<b>CRYSTAL  STRUCTURES FOR HOMEODOMAINS:</b> After going through literature and searching on protein data bank (PDB), we found that the complete crystal structures for our TFs are not readily available. In most cases, just the structure of the active domains are available (PDB IDs: 2H1K for PDX1, 4EOT for MafA and a previously published Swiss Model for NgN3)
-				</p>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-6">
-							<img src="https://2020.igem.org/wiki/images/c/c9/T--IISER_Bhopal--THEBIGPIE-struct7.png" class="img-fluid">
-							<div class="img-desc">Crystal structure of the Pdx1 homeodomain </div>
-						</div>
-						<div class="col-sm-6">
-							<img src="https://2020.igem.org/wiki/images/0/01/T--IISER_Bhopal--THEBIGPIE-struct8.png" class="img-fluid">
-							<div class="img-desc">Crystal structure of Mafa homeodomain</div>
-						</div>
-
-						<div class="col-sm-12 text-center">
-							<img src="https://2020.igem.org/wiki/images/8/84/T--IISER_Bhopal--THEBIGPIE-struct9.png" class="img-fluid">
-							<div class="img-desc">Swiss model of Ngn3</div>
-						</div>
-
-					</div>
-				</div>
-
-				<h2>Models obtained from I-TASSER:</h2>
-				<p>
-					Since the complete crystal structures were not available, we obtained Structural models for all three TFs (with and without the additional residues from linker sequences) using I-TASSER and their energies were minimized using YASARA server. The structures obtained showed that a large part of our structures are just random coils as predicted by PSIPRED.
-				</p>
-				<div class="container row text-center">
-					<p><b>PDX1:</b> Grey: without residues (-4.21) and magenta: with additional residues(-4.34).</p>
+		<div class="container main-model">
+			<p>
+				<b>CRYSTAL  STRUCTURES FOR HOMEODOMAINS:</b>
+				<br> After going through literature and searching on protein data bank (PDB), we found that the complete crystal structures for our TFs are not readily available. In most cases, just the structure of the active domains are available (PDB IDs: 2H1K for PDX1, 4EOT for MafA and a previously published Swiss Model for NgN3)
+			</p>
+			<div class="container-fluid">
+				<div class="row">
 					<div class="col-sm-6">
-						<div class="container-fluid">
-							<img src="https://2020.igem.org/wiki/images/b/b8/T--IISER_Bhopal--THEBIGPIE-struct10.png" class="img-fluid">
-						</div>
-					</div>
-
-					<div class="col-sm-6">
-						<img src="https://2020.igem.org/wiki/images/3/3a/T--IISER_Bhopal--THEBIGPIE-struct11.png" class="img-fluid">
-					</div>
-				</div>
-				<br>
-				<br>
-				<br>
-				<div class="container row text-center">
-					<p><b>NGN3:</b> Red: Without residues (-4.79)and Blue: With residues(-4.79)</p>
-					<div class="col-sm-6">
-						<div class="container-fluid">
-							<img src="https://2020.igem.org/wiki/images/6/62/T--IISER_Bhopal--THEBIGPIE-struct12.png" class="img-fluid">
-						</div>
-					</div>
-
-					<div class="col-sm-6">
-						<img src="https://2020.igem.org/wiki/images/4/41/T--IISER_Bhopal--THEBIGPIE-struct13.png" class="img-fluid">
-					</div>
-				</div>
-
-				<br>
-				<br>
-				<div class="container row text-center">
-					<p><b>MafA :</b> FireBrick (without resides C=-3.96) and Yellow (with residues, C=-2.92)</p>
-					<div class="col-sm-6">
-						<div class="container-fluid">
-							<img src="https://2020.igem.org/wiki/images/5/58/T--IISER_Bhopal--THEBIGPIE-struct14.png" class="img-fluid">
-						</div>
+						<img src="https://2020.igem.org/wiki/images/c/c9/T--IISER_Bhopal--THEBIGPIE-struct7.png" class="img-fluid">
+						<div class="img-desc">Crystal structure of the Pdx1 homeodomain </div>
 					</div>
 					<div class="col-sm-6">
-						<img src="https://2020.igem.org/wiki/images/2/2f/T--IISER_Bhopal--THEBIGPIE-struct15.png" class="img-fluid">
+						<img src="https://2020.igem.org/wiki/images/0/01/T--IISER_Bhopal--THEBIGPIE-struct8.png" class="img-fluid">
+						<div class="img-desc">Crystal structure of Mafa homeodomain</div>
 					</div>
-				</div>
 
-
-				<h2>Swiss Model</h2>
-				<p>
-					We also used Homology modeling via the Swiss Model server to obtain the structure for our TFs. This was done as an alternative approach to the one via I-TASSER. However, the homology modeling was not very useful for our case since the complete structures were not obtained via this method irrespective of the templates used. Hence we went ahead with the i-Tasser structures for our analysis. (Swiss Models for PDX1, NGN3, MAFA (LtoR))
-				</p>
-
-				<div class="container row text-center">
-					<p><b>MafA :</b> FireBrick (without resides C=-3.96) and Yellow (with residues, C=-2.92)</p>
-					<div class="col-sm-6">
-						<div class="container-fluid">
-							<img src="https://2020.igem.org/wiki/images/b/b2/T--IISER_Bhopal--THEBIGPIE-struct16.png" class="img-fluid">
-							<div class="img-desc">PDX1</div>
-						</div>
-					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-12 text-center">
 						<img src="https://2020.igem.org/wiki/images/8/84/T--IISER_Bhopal--THEBIGPIE-struct9.png" class="img-fluid">
-						<div class="img-desc">NGN3</div>
-					</div>
-					<div class="col-sm-12">
-						<img src="https://2020.igem.org/wiki/images/1/12/T--IISER_Bhopal--THEBIGPIE-struct18.png" class="img-fluid">
-						<div class="img-desc">MAFA</div>
-					</div>
-				</div>
-
-				<div class="container-fluid">
-					<h2>Ramachandran plots:</h2>
-					<p>
-						The RC plots for the 2 structures (with and without residues) were compared for each of the TF to see if there are any significant differences in the secondary structures. The results obtained are as follows:
-					</p>
-
-
-					<h2>PDX1</h2>
-					<div class="container row text-center">
-
-						<br>
-						<p>(RC plots for PDX1 Native (left) and with residues( right), no major differences in the secondary structures noted)</p>
-						<div class="col-sm-6">
-							<div class="container-fluid">
-								<img src="https://2020.igem.org/wiki/images/1/1e/T--IISER_Bhopal--THEBIGPIE-struct19.png" class="img-fluid">
-								<div class="img-desc">PDX1 Native </div>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<img src="https://2020.igem.org/wiki/images/6/61/T--IISER_Bhopal--THEBIGPIE-struct20.png" class="img-fluid">
-							<div class="img-desc">PDX1 with residues </div>
-						</div>
-					</div>
-
-					<h2>NGN3</h2>
-					<div class="container row text-center">
-
-						<br>
-						<p>(RC plots for NGN3 Native (left) and with residues( right) , no major differences in the secondary structures noted)</p>
-						<div class="col-sm-6">
-							<div class="container-fluid">
-								<img src="https://2020.igem.org/wiki/images/6/6d/T--IISER_Bhopal--THEBIGPIE-struct21.png" class="img-fluid">
-								<div class="img-desc">NGN3 Native </div>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<img src="https://2020.igem.org/wiki/images/0/09/T--IISER_Bhopal--THEBIGPIE-struct22.png" class="img-fluid">
-							<div class="img-desc">NGN3 with residues </div>
-						</div>
-					</div>
-
-					<h2>MAFA</h2>
-					<div class="container row text-center">
-
-						<br>
-						<p>(RC plots for MAFA Native (left) and with residues( right) , no major differences in the secondary structures noted)</p>
-						<div class="col-sm-6">
-							<div class="container-fluid">
-								<img src="https://2020.igem.org/wiki/images/1/15/T--IISER_Bhopal--THEBIGPIE-struct23.png" class="img-fluid">
-								<div class="img-desc">MAFA Native </div>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<img src="https://2020.igem.org/wiki/images/8/89/T--IISER_Bhopal--THEBIGPIE-struct24.png" class="img-fluid">
-							<div class="img-desc">MAFA with residues </div>
-						</div>
+						<div class="img-desc">Swiss model of Ngn3</div>
 					</div>
 
 				</div>
+			</div>
 
-				<div class="container-fluid">
-					<h2>Alignment:</h2>
-					<p>
-						The structural alignments were done using PyMOL to analyze if the structure was significantly affected by the addition of linker residues. The active domains remain unchanged for the proteins with linker residues. Since most of the remaining parts of the proteins are random coils as seen from PSIPRED results and I-TASSER models, they didn’t align as expected. The RMSD Values obtained were under acceptable limits for the active domains
-					</p>
-
-					<p>Alignment of I-tasser models with crystal structures of active domain</p>
-					<div class="row">
-						<div class="container col-sm-4 text-center">
-							<img src="https://2020.igem.org/wiki/images/6/6e/T--IISER_Bhopal--THEBIGPIE-struct25.png" class="img-fluid">
-							<div class="img-desc">I-tasser model for Pdx1 aligned with it’s homeodomain (PDB ID: 2H1K).
-								<br>[RMSD: 0.955] </div>
-						</div>
-
-						<div class="container col-sm-4 text-center">
-							<img src="https://2020.igem.org/wiki/images/1/16/T--IISER_Bhopal--THEBIGPIE-struct26.png" class="img-fluid">
-							<div class="img-desc">I-tasser model for Mafa aligned with it’s homeodomain(PDB IB:4EOT).
-								<br>[RMSD:1.799] </div>
-						</div>
-
-						<div class="container col-sm-4 text-center">
-							<img src="https://2020.igem.org/wiki/images/3/35/T--IISER_Bhopal--THEBIGPIE-struct27.png" class="img-fluid">
-							<div class="img-desc">I-tasser model for Ngn3 aligned with Swiss model for Ngn3.
-								<br>[RMSD: 0.713]</div>
-						</div>
+			<h2>Models obtained from I-TASSER</h2>
+			<p>
+				Since the complete crystal structures were not available, we obtained Structural models for all three TFs (with and without the additional residues from linker sequences) using I-TASSER and their energies were minimized using YASARA server. The structures obtained showed that a large part of our structures are just random coils as predicted by PSIPRED.
+			</p>
+			<div class="container row text-center">
+				<p><b>PDX1:</b> Grey: without residues (-4.21) and magenta: with additional residues(-4.34).</p>
+				<div class="col-sm-6">
+					<div class="container-fluid">
+						<img src="https://2020.igem.org/wiki/images/b/b8/T--IISER_Bhopal--THEBIGPIE-struct10.png" class="img-fluid">
+						<div class="img-desc">-4.21</div>
 					</div>
+				</div>
+				<br>
+				<br>
 
-					<p>Alignment of I-TASSER Structures.</p>
-
-					<div class="row">
-						<div class="container col-sm-4 text-center">
-							<img src="https://2020.igem.org/wiki/images/c/c8/T--IISER_Bhopal--THEBIGPIE-struct28.png" class="img-fluid">
-							<div class="img-desc">Alignment of PDX1 (with residues (magenta) and without residues (grey)).
-								<br> [RMSD: 0.879 (for active domains only)]
-							</div>
-						</div>
-
-						<div class="container col-sm-4 text-center">
-							<img src="https://2020.igem.org/wiki/images/0/0c/T--IISER_Bhopal--THEBIGPIE-struct29.png" class="img-fluid">
-							<div class="img-desc">Alignment of Ngn3 (without residues (red) and with residues (cyan)).
-								<br> [RMSD: 0.774 (for active domains only)]
-							</div>
-						</div>
-
-						<div class="container col-sm-4 text-center">
-							<img src="https://2020.igem.org/wiki/images/1/18/T--IISER_Bhopal--THEBIGPIE-struct30.png" class="img-fluid">
-							<div class="img-desc">Alignment of MafA(without residues (firebrick) and with residues (yellow)).
-								<br> [RMSD: 1.501 (for active domains only)]
-							</div>
-						</div>
+				<div class="col-sm-6">
+					<img src="https://2020.igem.org/wiki/images/3/3a/T--IISER_Bhopal--THEBIGPIE-struct11.png" class="img-fluid">
+					<div class="img-desc">-4.34</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="container row text-center">
+				<p><b>NGN3:</b> Red: Without residues (-4.79) and Blue: With residues(-4.79)</p>
+				<div class="col-sm-6">
+					<div class="container-fluid">
+						<img src="https://2020.igem.org/wiki/images/6/62/T--IISER_Bhopal--THEBIGPIE-struct12.png" class="img-fluid">
+						<div class="img-desc">(-4.79)</div>
 					</div>
-
 				</div>
 
+				<div class="col-sm-6">
+					<img src="https://2020.igem.org/wiki/images/4/41/T--IISER_Bhopal--THEBIGPIE-struct13.png" class="img-fluid">
+					<div class="img-desc">(-4.79)</div>
+				</div>
+			</div>
+
+			<br>
+			<br>
+			<div class="container row text-center">
+				<p><b>MafA :</b> FireBrick (without resides C=-3.96) and Yellow (with residues, C=-2.92)</p>
+				<div class="col-sm-6">
+					<div class="container-fluid">
+						<img src="https://2020.igem.org/wiki/images/5/58/T--IISER_Bhopal--THEBIGPIE-struct14.png" class="img-fluid">
+						<div class="img-desc">C = -3.96</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<img src="https://2020.igem.org/wiki/images/2/2f/T--IISER_Bhopal--THEBIGPIE-struct15.png" class="img-fluid">
+					<div class="img-desc">C = -2.92</div>
+				</div>
+			</div>
 
 
+			<h2>Swiss Model</h2>
+			<p>
+				We also used Homology modeling via the Swiss Model server to obtain the structure for our TFs. This was done as an alternative approach to the one via I-TASSER. However, the homology modeling was not very useful for our case since the complete structures were not obtained via this method irrespective of the templates used. Hence we went ahead with the i-Tasser structures for our analysis. (Swiss Models for PDX1, NGN3, MAFA (LtoR)).
+			</p>
+
+			<div class="container row text-center">
+				<p><b>MafA :</b> FireBrick (without resides C = -3.96) and Yellow (with residues, C=-2.92)</p>
+				<div class="col-sm-6">
+					<div class="container-fluid">
+						<img src="https://2020.igem.org/wiki/images/b/b2/T--IISER_Bhopal--THEBIGPIE-struct16.png" class="img-fluid">
+						<div class="img-desc">PDX1</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<img src="https://2020.igem.org/wiki/images/8/84/T--IISER_Bhopal--THEBIGPIE-struct9.png" class="img-fluid">
+					<div class="img-desc">NGN3</div>
+				</div>
+				<div class="col-sm-12">
+					<img src="https://2020.igem.org/wiki/images/1/12/T--IISER_Bhopal--THEBIGPIE-struct18.png" class="img-fluid">
+					<div class="img-desc">MAFA</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<h2>Ramachandran plots</h2>
+				<p>
+					The RC plots for the 2 structures (with and without residues) were compared for each of the TF to see if there are any significant differences in the secondary structures. The results obtained are as follows:
+				</p>
+
+
+				<h2>PDX1</h2>
+				<div class="container row text-center">
+
+					<br>
+					<p>(RC plots for PDX1 Native (left) and with residues (right), no major differences in the secondary structures noted)</p>
+					<div class="col-sm-6">
+						<div class="container-fluid">
+							<img src="https://2020.igem.org/wiki/images/1/1e/T--IISER_Bhopal--THEBIGPIE-struct19.png" class="img-fluid">
+							<div class="img-desc">PDX1 Native </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<img src="https://2020.igem.org/wiki/images/6/61/T--IISER_Bhopal--THEBIGPIE-struct20.png" class="img-fluid">
+						<div class="img-desc">PDX1 with residues </div>
+					</div>
+				</div>
+
+				<h2>NGN3</h2>
+				<div class="container row text-center">
+
+					<br>
+					<p>(RC plots for NGN3 Native (left) and with residues (right), no major differences in the secondary structures noted)</p>
+					<div class="col-sm-6">
+						<div class="container-fluid">
+							<img src="https://2020.igem.org/wiki/images/6/6d/T--IISER_Bhopal--THEBIGPIE-struct21.png" class="img-fluid">
+							<div class="img-desc">NGN3 Native </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<img src="https://2020.igem.org/wiki/images/0/09/T--IISER_Bhopal--THEBIGPIE-struct22.png" class="img-fluid">
+						<div class="img-desc">NGN3 with residues </div>
+					</div>
+				</div>
+
+				<h2>MAFA</h2>
+				<div class="container row text-center">
+
+					<br>
+					<p>(RC plots for MAFA Native (left) and with residues (right), no major differences in the secondary structures noted)</p>
+					<div class="col-sm-6">
+						<div class="container-fluid">
+							<img src="https://2020.igem.org/wiki/images/1/15/T--IISER_Bhopal--THEBIGPIE-struct23.png" class="img-fluid">
+							<div class="img-desc">MAFA Native </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<img src="https://2020.igem.org/wiki/images/8/89/T--IISER_Bhopal--THEBIGPIE-struct24.png" class="img-fluid">
+						<div class="img-desc">MAFA with residues </div>
+					</div>
+				</div>
 
 			</div>
+
+			<div class="container-fluid">
+				<h2>Alignment</h2>
+				<p>
+					The structural alignments were done using PyMOL to analyze if the structure was significantly affected by the addition of linker residues. The active domains remain unchanged for the proteins with linker residues. Since most of the remaining parts of the proteins are random coils as seen from PSIPRED results and I-TASSER models, they didn’t align as expected. The RMSD Values obtained were under acceptable limits for the active domains
+				</p>
+
+				<p>Alignment of I-tasser models with crystal structures of active domain</p>
+				<div class="row">
+					<div class="container col-sm-4 text-center">
+						<img src="https://2020.igem.org/wiki/images/6/6e/T--IISER_Bhopal--THEBIGPIE-struct25.png" class="img-fluid">
+						<div class="img-desc">I-tasser model for Pdx1 aligned with it’s homeodomain (PDB ID: 2H1K).
+							<br>[RMSD: 0.955] </div>
+					</div>
+
+					<div class="container col-sm-4 text-center">
+						<img src="https://2020.igem.org/wiki/images/1/16/T--IISER_Bhopal--THEBIGPIE-struct26.png" class="img-fluid">
+						<div class="img-desc">I-tasser model for Mafa aligned with it’s homeodomain(PDB IB:4EOT).
+							<br>[RMSD:1.799] </div>
+					</div>
+
+					<div class="container col-sm-4 text-center">
+						<img src="https://2020.igem.org/wiki/images/3/35/T--IISER_Bhopal--THEBIGPIE-struct27.png" class="img-fluid">
+						<div class="img-desc">I-tasser model for Ngn3 aligned with Swiss model for Ngn3.
+							<br>[RMSD: 0.713]</div>
+					</div>
+				</div>
+
+				<p>Alignment of I-TASSER Structures.</p>
+
+				<div class="row">
+					<div class="container col-sm-4 text-center">
+						<img src="https://2020.igem.org/wiki/images/c/c8/T--IISER_Bhopal--THEBIGPIE-struct28.png" class="img-fluid">
+						<div class="img-desc">Alignment of PDX1 (with residues (magenta) and without residues (grey)).
+							<br> [RMSD: 0.879 (for active domains only)]
+						</div>
+					</div>
+
+					<div class="container col-sm-4 text-center">
+						<img src="https://2020.igem.org/wiki/images/0/0c/T--IISER_Bhopal--THEBIGPIE-struct29.png" class="img-fluid">
+						<div class="img-desc">Alignment of Ngn3 (without residues (red) and with residues (cyan)).
+							<br> [RMSD: 0.774 (for active domains only)]
+						</div>
+					</div>
+
+					<div class="container col-sm-4 text-center">
+						<img src="https://2020.igem.org/wiki/images/1/18/T--IISER_Bhopal--THEBIGPIE-struct30.png" class="img-fluid">
+						<div class="img-desc">Alignment of MafA(without residues (firebrick) and with residues (yellow)).
+							<br> [RMSD: 1.501 (for active domains only)]
+						</div>
+					</div>
+				</div>
+
+				<h2>Conclusion</h2>
+				<p>
+					It is quite evident from the results obtained from the structural models and the alignments that the active domains of our TFs remained unchanged with the addition of linker residues to form the polyprotein and subsequent cleavage by the protease. This goes along with our expectation that the small 8 linker residues added on either end would not affect the active domain. The same is corroborated by the low RMSD values for active domain alignment and the Ramachandran plots. The model, therefore, shows that our TFs don’t lose their functionality in the process of transferring them in the form of a polyprotein. Based on the above predictions we have no reason to suspect that functional properties of the fusion proteins will be inhibited by steric hindrance or structural inflexibility.
+				</p>
+
+				<p>
+					(Although this is a valid computational prediction, we understand that it is always a better practice to express the proteins and check for their activity experimentally which we could not do this year.)
+				</p>
+
+				<h4>References</h4>
+				<ul>
+					<li>http://2009.igem.org/Team:Warsaw/Modelling/Structural</li>
+					<li>Williams et al. (2018) MolProbity: More and better reference data for improved all-atom structure validation. Protein Science 27: 293-315
+					</li>
+					<li>Improving physical realism, stereochemistry, and side-chain accuracy in homology modeling: Four approaches that performed well in CASP8. Krieger E, Joo K, Lee J, Lee J, Raman S, Thompson J, Tyka M, Baker D, Karplus K (2009) Proteins 77 Suppl 9, 114-122 PMID19768677.
+					</li>
+					<li>A Roy, A Kucukural, Y Zhang. I-TASSER: a unified platform for automated protein structure and function prediction. Nature Protocols, 5: 725-738 (2010).
+					</li>
+					<li>Waterhouse, A., Bertoni, M., Bienert, S., Studer, G., Tauriello, G., Gumienny, R., Heer, F.T., de Beer, T.A.P., Rempfer, C., Bordoli, L., Lepore, R., Schwede, T. SWISS-MODEL: homology modelling of protein structures and complexes. Nucleic Acids Res. 46(W1), W296-W303 (2018).
+					</li>
+					<li>Psipred Server :Buchan DWA, Jones DT (2019). The PSIPRED Protein Analysis Workbench: 20 years on. Nucleic Acids Research https://doi.org/10.1093/nar/gkz297.
+					</li>
+					<li>The PSIPRED secondary structure prediction method : Jones DT. (1999) Protein secondary structure prediction based on position-specific scoring matrices. J. Mol. Biol. 292: 195-202.
+					</li>
+				</ul>
+			</div>
+
+
+
+
 		</div>
 	</main>
 
