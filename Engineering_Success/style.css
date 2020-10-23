@@ -121,6 +121,9 @@ ul {
 		height: 100%;
 		width: 100%;
 	}
+	.naccs .menu div {
+		width: 7rem;
+	}
 
 }
 
@@ -340,6 +343,7 @@ ul {
 	font-weight: 700;
 	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 	text-align: left;
+	
 }
 
 .naccs .menu div:hover {
@@ -353,7 +357,6 @@ ul {
 	top: 24px;
 	left: 15px;
 	background-color: #303f9f;
-	background-color: ;
 	border-radius: 100%;
 	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }

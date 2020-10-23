@@ -15,6 +15,7 @@ am4internal_webpackJsonp(["8593"],{d66p:function(c,t,e){"use strict";Object.defi
 		//Material
 		// Themes begin
 		
+		am4core.useTheme(am4themes_dark);
 		am4core.useTheme(am4themes_material);
 		am4core.useTheme(am4themes_animated);
 		// Themes end
@@ -992,1016 +993,1016 @@ am4internal_webpackJsonp(["8593"],{d66p:function(c,t,e){"use strict";Object.defi
 		var mapData = [{
 				"id": "AF",
 				"name": "Afghanistan",
-				"value": 32358260,
+				"value": 9.2,
 				"color": chart.colors.getIndex(0),
 				 "fill": am4core.color("#fff")
 			},
 			{
 				"id": "AL",
 				"name": "Albania",
-				"value": 3215988,
+				"value": 9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "DZ",
 				"name": "Algeria",
-				"value": 35980193,
+				"value": 6.7,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "AO",
 				"name": "Angola",
-				"value": 19618432,
+				"value": 4.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "AR",
 				"name": "Argentina",
-				"value": 40764561,
+				"value": 5.9,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "AM",
 				"name": "Armenia",
-				"value": 3100236,
+				"value": 6.1,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "AU",
 				"name": "Australia",
-				"value": 22605732,
+				"value": 5.6,
 				"color": "#8aabb0"
 			},
 			{
 				"id": "AT",
 				"name": "Austria",
-				"value": 8413429,
+				"value": 6.6,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "AZ",
 				"name": "Azerbaijan",
-				"value": 9306023,
+				"value": 6.1,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "BH",
 				"name": "Bahrain",
-				"value": 1323535,
+				"value": 15.6,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "BD",
 				"name": "Bangladesh",
-				"value": 150493658,
+				"value": 9.2,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "BY",
 				"name": "Belarus",
-				"value": 9559441,
+				"value": 5,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "BE",
 				"name": "Belgium",
-				"value": 10754056,
+				"value": 4.6,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "BJ",
 				"name": "Benin",
-				"value": 9099922,
+				"value": 1,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "BT",
 				"name": "Bhutan",
-				"value": 738267,
+				"value": 10.3,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "BO",
 				"name": "Bolivia",
-				"value": 10088108,
+				"value": 6.8,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "BA",
 				"name": "Bosnia and Herzegovina",
-				"value": 3752228,
+				"value": 9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "BW",
 				"name": "Botswana",
-				"value": 2030738,
+				"value": 5.8,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "BR",
 				"name": "Brazil",
-				"value": 196655014,
+				"value": 10.4,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "BN",
 				"name": "Brunei",
-				"value": 405938,
+				"value": 13.3,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "BG",
 				"name": "Bulgaria",
-				"value": 7446135,
+				"value": 6,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "BF",
 				"name": "Burkina Faso",
-				"value": 16967845,
+				"value": 7.3,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "BI",
 				"name": "Burundi",
-				"value": 8575172,
+				"value": 6,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "KH",
 				"name": "Cambodia",
-				"value": 14305183,
+				"value": 6.4,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "CM",
 				"name": "Cameroon",
-				"value": 20030362,
+				"value": 6,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "CA",
 				"name": "Canada",
-				"value": 34349561,
+				"value": 7.6,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "CV",
 				"name": "Cape Verde",
-				"value": 500585,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "CF",
 				"name": "Central African Rep.",
-				"value": 4486837,
+				"value": 6,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "TD",
 				"name": "Chad",
-				"value": 11525496,
+				"value": 6,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "CL",
 				"name": "Chile",
-				"value": 17269525,
+				"value": 8.6,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "CN",
 				"name": "China",
-				"value": 1347565324,
+				"value": 9.2,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "CO",
 				"name": "Colombia",
-				"value": 46927125,
+				"value": 7.4,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "KM",
 				"name": "Comoros",
-				"value": 753943,
+				"value": 12.3,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "CD",
 				"name": "Congo, Dem. Rep.",
-				"value": 67757577,
+				"value": 6,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "CG",
 				"name": "Congo, Rep.",
-				"value": 4139748,
+				"value": 6.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "CR",
 				"name": "Costa Rica",
-				"value": 4726575,
+				"value": 9.1,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "CI",
 				"name": "Cote d'Ivoire",
-				"value": 20152894,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "HR",
 				"name": "Croatia",
-				"value": 4395560,
+				"value": 5.4,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "CU",
 				"name": "Cuba",
-				"value": 11253665,
+				"value": 9.6,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "CY",
 				"name": "Cyprus",
-				"value": 1116564,
+				"value": 9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "CZ",
 				"name": "Czech Rep.",
-				"value": 10534293,
+				"value": 7,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "DK",
 				"name": "Denmark",
-				"value": 5572594,
+				"value": 8.3,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "DJ",
 				"name": "Djibouti",
-				"value": 905564,
+				"value": 5.1,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "DO",
 				"name": "Dominican Rep.",
-				"value": 10056181,
+				"value": 8.6,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "EC",
 				"name": "Ecuador",
-				"value": 14666055,
+				"value": 5.5,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "EG",
 				"name": "Egypt",
-				"value": 82536770,
+				"value": 17.2,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "SV",
 				"name": "El Salvador",
-				"value": 6227491,
+				"value": 8.8,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "GQ",
 				"name": "Equatorial Guinea",
-				"value": 720213,
+				"value": 6,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "ER",
 				"name": "Eritrea",
-				"value": 5415280,
+				"value": 5.1,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "EE",
 				"name": "Estonia",
-				"value": 1340537,
+				"value": 4.2,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "ET",
 				"name": "Ethiopia",
-				"value": 84734262,
+				"value": 4.3,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "FJ",
 				"name": "Fiji",
-				"value": 868406,
+				"value": 14.7,
 				"color": "#8aabb0"
 			},
 			{
 				"id": "FI",
 				"name": "Finland",
-				"value": 5384770,
+				"value": 5.6,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "FR",
 				"name": "France",
-				"value": 63125894,
+				"value": 4.8,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "GA",
 				"name": "Gabon",
-				"value": 1534262,
+				"value": 6,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "GM",
 				"name": "Gambia",
-				"value": 1776103,
+				"value": 1.9,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "GE",
 				"name": "Georgia",
-				"value": 4329026,
+				"value": 5.8,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "DE",
 				"name": "Germany",
-				"value": 82162512,
+				"value": 10.4,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "GH",
 				"name": "Ghana",
-				"value": 24965816,
+				"value": 2.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "GR",
 				"name": "Greece",
-				"value": 11390031,
+				"value": 4.7,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "GT",
 				"name": "Guatemala",
-				"value": 14757316,
+				"value": 10,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "GN",
 				"name": "Guinea",
-				"value": 10221808,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "GW",
 				"name": "Guinea-Bissau",
-				"value": 1547061,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "GY",
 				"name": "Guyana",
-				"value": 756040,
+				"value": 11.6,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "HT",
 				"name": "Haiti",
-				"value": 10123787,
+				"value": 6.7,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "HN",
 				"name": "Honduras",
-				"value": 7754687,
+				"value": 7.3,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "HK",
 				"name": "Hong Kong, China",
-				"value": 7122187,
+				"value": 4.5,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "HU",
 				"name": "Hungary",
-				"value": 9966116,
+				"value": 6.9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "IS",
 				"name": "Iceland",
-				"value": 324366,
+				"value": 5.8,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "IN",
 				"name": "India",
-				"value": 1241491960,
+				"value": 10.4,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "ID",
 				"name": "Indonesia",
-				"value": 242325638,
+				"value": 6.3,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "IR",
 				"name": "Iran",
-				"value": 74798599,
+				"value": 9.6,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "IQ",
 				"name": "Iraq",
-				"value": 32664942,
+				"value": 8.8,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "IE",
 				"name": "Ireland",
-				"value": 4525802,
+				"value": 3.2,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "IL",
 				"name": "Israel",
-				"value": 7562194,
+				"value": 9.7,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "IT",
 				"name": "Italy",
-				"value": 60788694,
+				"value": 5,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "JM",
 				"name": "Jamaica",
-				"value": 2751273,
+				"value": 11.3,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "JP",
 				"name": "Japan",
-				"value": 126497241,
+				"value": 5.6,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "JO",
 				"name": "Jordan",
-				"value": 6330169,
+				"value": 12.7,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "KZ",
 				"name": "Kazakhstan",
-				"value": 16206750,
+				"value": 6.1,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "KE",
 				"name": "Kenya",
-				"value": 41609728,
+				"value": 3.1,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "KP",
 				"name": "Korea, Dem. Rep.",
-				"value": 24451285,
+				"value": 2.4,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "KR",
 				"name": "Korea, Rep.",
-				"value": 48391343,
+				"value": 2.5,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "KW",
 				"name": "Kuwait",
-				"value": 2818042,
+				"value": 12.2,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "KG",
 				"name": "Kyrgyzstan",
-				"value": 5392580,
+				"value": 6.1,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "LA",
 				"name": "Laos",
-				"value": 6288037,
+				"value": 1.5,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "LV",
 				"name": "Latvia",
-				"value": 2243142,
+				"value": 5,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "LB",
 				"name": "Lebanon",
-				"value": 4259405,
+				"value": 11.2,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "LS",
 				"name": "Lesotho",
-				"value": 2193843,
+				"value": 4.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "LR",
 				"name": "Liberia",
-				"value": 4128572,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "LY",
 				"name": "Libya",
-				"value": 6422772,
+				"value": 10.2,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "LT",
 				"name": "Lithuania",
-				"value": 3307481,
+				"value": 3.8,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "LU",
 				"name": "Luxembourg",
-				"value": 515941,
+				"value": 5,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "MK",
 				"name": "Macedonia, FYR",
-				"value": 2063893,
+				"value": 1,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "MG",
 				"name": "Madagascar",
-				"value": 21315135,
+				"value": 4.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "MW",
 				"name": "Malawi",
-				"value": 15380888,
+				"value": 4.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "MY",
 				"name": "Malaysia",
-				"value": 28859154,
+				"value": 16.7,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "ML",
 				"name": "Mali",
-				"value": 15839538,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "MR",
 				"name": "Mauritania",
-				"value": 3541540,
+				"value": 7.1,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "MU",
 				"name": "Mauritius",
-				"value": 1306593,
+				"value": 22,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "MX",
 				"name": "Mexico",
-				"value": 114793341,
+				"value": 13.5,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "MD",
 				"name": "Moldova",
-				"value": 3544864,
+				"value": 2.3,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "MN",
 				"name": "Mongolia",
-				"value": 2800114,
+				"value": 4.7,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "ME",
 				"name": "Montenegro",
-				"value": 632261,
+				"value": 9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "MA",
 				"name": "Morocco",
-				"value": 32272974,
+				"value": 7,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "MZ",
 				"name": "Mozambique",
-				"value": 23929708,
+				"value": 3.3,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "MM",
 				"name": "Myanmar",
-				"value": 48336763,
+				"value": 3.9,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "NA",
 				"name": "Namibia",
-				"value": 2324004,
+				"value": 4.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "NP",
 				"name": "Nepal",
-				"value": 30485798,
+				"value": 7.2,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "NL",
 				"name": "Netherlands",
-				"value": 16664746,
+				"value": 5.4,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "NZ",
 				"name": "New Zealand",
-				"value": 4414509,
+				"value": 6.2,
 				"color": "#8aabb0"
 			},
 			{
 				"id": "NI",
 				"name": "Nicaragua",
-				"value": 5869859,
+				"value": 11.4,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "NE",
 				"name": "Niger",
-				"value": 16068994,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "NG",
 				"name": "Nigeria",
-				"value": 162470737,
+				"value": 3.1,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "NO",
 				"name": "Norway",
-				"value": 4924848,
+				"value": 5.3,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "OM",
 				"name": "Oman",
-				"value": 2846145,
+				"value": 10.1,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "PK",
 				"name": "Pakistan",
-				"value": 176745364,
+				"value": 19.9,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "PA",
 				"name": "Panama",
-				"value": 3571185,
+				"value": 7.7,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "PG",
 				"name": "Papua New Guinea",
-				"value": 7013829,
+				"value": 17.9,
 				"color": "#8aabb0"
 			},
 			{
 				"id": "PY",
 				"name": "Paraguay",
-				"value": 6568290,
+				"value": 9.6,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "PE",
 				"name": "Peru",
-				"value": 29399817,
+				"value": 6.6,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "PH",
 				"name": "Philippines",
-				"value": 94852030,
+				"value": 7.1,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "PL",
 				"name": "Poland",
-				"value": 38298949,
+				"value": 6.1,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "PT",
 				"name": "Portugal",
-				"value": 10689663,
+				"value": 9.8,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "PR",
 				"name": "Puerto Rico",
-				"value": 3745526,
+				"value": 13.7,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "QA",
 				"name": "Qatar",
-				"value": 1870041,
+				"value": 15.6,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "RO",
 				"name": "Romania",
-				"value": 21436495,
+				"value": 6.9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "RU",
 				"name": "Russia",
-				"value": 142835555,
+				"value": 6.1,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "RW",
 				"name": "Rwanda",
-				"value": 10942950,
+				"value": 5.1,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "SA",
 				"name": "Saudi Arabia",
-				"value": 28082541,
+				"value": 15.8,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "SN",
 				"name": "Senegal",
-				"value": 12767556,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "RS",
 				"name": "Serbia",
-				"value": 9853969,
+				"value": 9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "SL",
 				"name": "Sierra Leone",
-				"value": 5997486,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "SG",
 				"name": "Singapore",
-				"value": 5187933,
+				"value": 5.5,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "SK",
 				"name": "Slovak Republic",
-				"value": 5471502,
+				"value": 5.9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "SI",
 				"name": "Slovenia",
-				"value": 2035012,
+				"value": 6.5,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "SB",
 				"name": "Solomon Islands",
-				"value": 552267,
+				"value": 19,
 				"color": "#8aabb0"
 			},
 			{
 				"id": "SO",
 				"name": "Somalia",
-				"value": 9556873,
+				"value": 5.1,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "ZA",
 				"name": "South Africa",
-				"value": 50459978,
+				"value": 12.7,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "ES",
 				"name": "Spain",
-				"value": 46454895,
+				"value": 6.9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "LK",
 				"name": "Sri Lanka",
-				"value": 21045394,
+				"value": 10.7,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "SD",
 				"name": "Sudan",
-				"value": 34735288,
+				"value": 22.1,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "SR",
 				"name": "Suriname",
-				"value": 529419,
+				"value": 12.5,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "SZ",
 				"name": "Swaziland",
-				"value": 1203330,
+				"value": 12.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "SE",
 				"name": "Sweden",
-				"value": 9440747,
+				"value": 4.8,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "CH",
 				"name": "Switzerland",
-				"value": 7701690,
+				"value": 5.7,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "SY",
 				"name": "Syria",
-				"value": 20766037,
+				"value": 2.6,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "TW",
 				"name": "Taiwan",
-				"value": 23072000,
+				"value": 6.4,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "TJ",
 				"name": "Tajikistan",
-				"value": 6976958,
+				"value": 6.1,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "TZ",
 				"name": "Tanzania",
-				"value": 46218486,
+				"value": 6.2,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "TH",
 				"name": "Thailand",
-				"value": 69518555,
+				"value": 7,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "TG",
 				"name": "Togo",
-				"value": 6154813,
+				"value": 2.4,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "TT",
 				"name": "Trinidad and Tobago",
-				"value": 1346350,
+				"value": 11,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "TN",
 				"name": "Tunisia",
-				"value": 10594057,
+				"value": 8.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "TR",
 				"name": "Turkey",
-				"value": 73639596,
+				"value": 11.1,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "TM",
 				"name": "Turkmenistan",
-				"value": 5105301,
+				"value": 6.1,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "UG",
 				"name": "Uganda",
-				"value": 34509205,
+				"value": 2.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "UA",
 				"name": "Ukraine",
-				"value": 45190180,
+				"value": 6.1,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "AE",
 				"name": "United Arab Emirates",
-				"value": 7890924,
+				"value": 16.3,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "GB",
 				"name": "United Kingdom",
-				"value": 62417431,
+				"value": 3.9,
 				"color": chart.colors.getIndex(1)
 			},
 			{
 				"id": "US",
 				"name": "United States",
-				"value": 313085380,
+				"value": 10.8,
 				"color": chart.colors.getIndex(4)
 			},
 			{
 				"id": "UY",
 				"name": "Uruguay",
-				"value": 3380008,
+				"value": 7.3,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "UZ",
 				"name": "Uzbekistan",
-				"value": 27760267,
+				"value": 6.5,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "VE",
 				"name": "Venezuela",
-				"value": 29436891,
+				"value": 7,
 				"color": chart.colors.getIndex(3)
 			},
 			{
 				"id": "PS",
 				"name": "West Bank and Gaza",
-				"value": 4152369,
+				"value": 6,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "VN",
 				"name": "Vietnam",
-				"value": 88791996,
+				"value": 5.5,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "YE",
 				"name": "Yemen, Rep.",
-				"value": 24799880,
+				"value": 5.4,
 				"color": chart.colors.getIndex(0)
 			},
 			{
 				"id": "ZM",
 				"name": "Zambia",
-				"value": 13474959,
+				"value": 4.5,
 				"color": chart.colors.getIndex(2)
 			},
 			{
 				"id": "ZW",
 				"name": "Zimbabwe",
-				"value": 12754378,
+				"value": 1.8,
 				"color": chart.colors.getIndex(2)
 			}
 		];
@@ -2059,21 +2060,22 @@ am4internal_webpackJsonp(["8593"],{d66p:function(c,t,e){"use strict";Object.defi
 				property: "opacity",
 				from: 1,
 				to: 0
-			}], 1500, am4core.ease.circleOut);
+			}], 2000, am4core.ease.circleOut);
 			animation.events.on("animationended", function (event) {
 				animateBullet(event.target.object);
 			})
 		}
+
 		/*
 		circle.tooltipHTML = "<b><span style='font-size:15px;'>{name}</span> <br><b>Population:</b> {pop}<br><b>African Diaspora: </b>{dias}<br><b>Percent:</b>{Pc}";
 		*/
 		circle.tooltipText = "{name}:[bold]{value}[/]";
-		circle.tooltipHTML = "<b><span style='font-size:15px;'>{name}</span><br><b>D Patients: {value}</b>";
+		circle.tooltipHTML = "<b><span style='font-size:15px;text-align:center;'>{name}</span><br><b>% Diabetes Population: {value}%</b>";
 
 		imageSeries.heatRules.push({
 			"target": circle,
 			"property": "radius",
-			"min": 4,
-			"max": 30,
+			"min": 1,
+			"max": 24,
 			"dataField": "value"
 		})

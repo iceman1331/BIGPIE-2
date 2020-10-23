@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no, shrink-to-fit=no" />
+	<title>iGEM 2020 || IISER_Bhopal Model</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.min.css" />
+
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="collab.css" />
+
+
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop src="../Common/T--IISER_Bhopal--Loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item navbar-nav mr-auto active">
+						<a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Team</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Supervisors</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosafety</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Safe by Design</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+
+	<main>
+		<div id="wrapper">
+
+			<div id="title">
+				<h2>Mathematical Modelling</h2>
+			</div>
+
+
+			<canvas id="canvas" width="1950px" height="800px"></canvas>
+			<canvas id="canvasbg" width="1950px" height="800px"></canvas>
+		</div>
+
+		<div class="blank"></div>
+
+		<!--
+		<div class="container text-center">
+			<div class="mockup mockup-macbook loaded opened">
+				<div class="part top">
+					<img src="https://2020.igem.org/wiki/images/9/9f/T--IISER_Bhopal--THEBIGPIE-Model_top.svg" alt="" class="top">
+					<img src="https://2020.igem.org/wiki/images/2/28/T--IISER_Bhopal--THEBIGPIE-Model_cover_1.svg" alt="" class="cover">
+
+					<video autoplay loop muted playesinline src="Laptopimg/support.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="part bottom">
+					<img src="https://2020.igem.org/wiki/images/2/28/T--IISER_Bhopal--THEBIGPIE-Model_cover_1.svg" alt="" class="cover">
+					<img src="https://2020.igem.org/wiki/images/c/c7/T--IISER_Bhopal--THEBIGPIE-Model_bottom.svg" alt="" class="bottom">
+				</div>
+			</div>
+		</div>
+		
+		
+		-->
+		<div class="container main-model text-center">
+		<h2>Modelling for THE BIGPIE</h2>
+		</div>
+
+		<div class="container main-model h-100">
+			<div class="topcard row align-middle">
+				<a class="" href="https://2020.igem.org/Team:IISER_Bhopal/Model_killSwitch">
+				<div class="col-md-6 col-lg-4 column">
+					<div class="card gr-1">
+						<div class="txt">
+							<h1>Kill Switch</h1>
+							<p>Mathematical modelling of the two kill switches that was designed for predicting the better approach.</p>
+						</div>
+						<a href="#">more</a>
+						<div class="ico-card">
+							<i class="fas fa-bacteria"></i>
+						</div>
+					</div>
+				</div>
+				</a>
+				<a href="https://2020.igem.org/Team:IISER_Bhopal/Model_structural_model">
+				<div class="col-md-6 col-lg-4 column">
+					<div class="card gr-2">
+						<div class="txt">
+							<h1>Structural modelling</h1>
+							<p>Prediction of the structures<br> of the transcription factors with peptide residues using <br>I-TASSER and it's interpretation.</p>
+						</div>
+						<a href="#">Know more</a>
+						<div class="ico-card">
+							<i class="fas fa-atom"></i>
+						</div>
+					</div>
+				</div>
+				</a>
+				<a href="https://2020.igem.org/Team:IISER_Bhopal/Model_CAT_Model">
+				<div class="col-md-6 col-lg-4 column">
+					<div class="card gr-3">
+						<div class="txt">
+							<h1>CAT model for<br> drug absorption</h1>
+							<p>Studying the absorption <br>trends of the microspheres in different compartments of<br> the intestine.</p>
+						</div>
+						<a href="#">more</a>
+						<div class="ico-card">
+							<i class="fa fa-empire"></i>
+						</div>
+					</div>
+				</div>
+				</a>
+
+			</div>
+		</div>
+
+
+
+	</main>
+
+	<div class="container-fluid prev-next">
+		<div class="buttons-coll">
+			<a href="..">
+				<button class="custom-btn btn-15">← Preliminary Research</button>
+			</a>
+			<a href="..">
+				<button class="custom-btn btn-14">Entrepreneurship → </button>
+			</a>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<a href="../Description/index.html">
+								<h3>Description</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-2">
+						<div class="ch-info">
+							<a href="#">
+								<h3>Design</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-3">
+						<div class="ch-info">
+							<h3>Parts</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-5">
+						<div class="ch-info">
+							<h3>Human Practices</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-6">
+						<div class="ch-info">
+							<h3>Model</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-4">
+						<div class="ch-info">
+							<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-7">
+						<div class="ch-info">
+							<h3>Patent <br>Law</h3>
+							<p>Read More...<a href="#">Read More</a></p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-8">
+						<div class="ch-info">
+							<a href="../Biosafety/index.html">
+								<h3>Safety</h3>
+								<p>Read More...<a href="#">Read More</a></p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+	</div>
+
+
+
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="collab.js"></script>
+	<script type="text/javascript" src="../Common/css3-animate-it.js"></script>
+</body>
+
+</html>

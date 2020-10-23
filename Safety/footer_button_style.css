@@ -1,0 +1,592 @@
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: #DEE1E5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	z-index: 9999;
+}
+
+.loader video {
+	height: 60%;
+	width: 60%;
+}
+
+@media(max-width:500px) {
+	.loader video {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.loader.hidden {
+	animation: fadeout 1.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+/*----prev-next buttons-------*/
+.prev-next {
+	display: block;
+	margin: 2% auto 5% auto;
+	padding: 2%
+}
+@media(max-width:500px) {
+	.prev-next {
+		display: none;
+	}
+}
+
+.buttons-coll {
+	width: 90%;
+	margin: 25px auto;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+button {
+	margin: 20px;
+	margin-bottom: 0;
+}
+
+.custom-btn {
+	padding: 10px 25px;
+	font-weight: 500;
+	background: transparent;
+	outline: none !important;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+/**** BTN No. 14 ****/
+
+.btn-14 {
+	float: right;
+	border: 1px solid #000;
+	z-index: 10;
+	border-radius: 2px;
+}
+.btn-14:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+.btn-14:hover {
+	color: #fff;
+}
+.btn-14:hover:after {
+	left: 0;
+	width: 100%;
+}
+.btn-14:active {
+	top: 2px;
+}
+
+/**** BTN No. 15 ****/
+
+.btn-15 {
+	float: left;
+	border: 1px solid #000;
+	z-index: 1;
+	border-radius: 2px;
+	content: "";
+}
+
+.btn-15:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	direction: rtl;
+	z-index: -1;
+	background: #000;
+	transition: all 0.3s ease;
+}
+.btn-15:hover {
+	color: #fff;
+}
+.btn-15:hover:after {
+	left: auto;
+	right: 0;
+	width: 100%;
+}
+.btn-15:active {
+	top: 2px;
+}
+
+
+
+
+
+
+
+
+
+/*----------footer buttons---------*/
+.pre-footer-button-container {
+	margin: 1%;	
+}
+
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+	display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 150%;
+	position: relative;
+	cursor: default;
+	box-shadow:
+		inset 0 0 0 16px rgba(255, 255, 255, 0.6),
+		0 1px 2px rgba(0, 0, 0, 0.5);
+
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.ch-img-1 {
+	background-image: url(https://2020.igem.org/wiki/images/d/df/T--IISER_Bhopal--THEBIGPIE-PreFooterDescription.png);
+	background-position: center;
+	background-origin: border-box;
+}
+
+.ch-img-2 {
+	background-image: url(https://2020.igem.org/wiki/images/d/d3/T--IISER_Bhopal--THEBIGPIE-PreFooterDesign.png);
+	background-position: center;
+	background-origin: border-box;
+}
+
+.ch-img-3 {
+	background-image: url(https://2020.igem.org/wiki/images/2/27/T--IISER_Bhopal--THEBIGPIE-PreFooterParts.png);
+	background-position: bottom;
+	background-origin: border-box;
+}
+
+.ch-img-4 {
+	background-image: url(https://2020.igem.org/wiki/images/f/f3/T--IISER_Bhopal--THEBIGPIE-PreFooterEntrepreneurship.png);
+	background-image: url(New-icons/entrepreneurship_c.png);
+	background-position: center;
+	background-origin: border-box;
+}
+
+.ch-img-5 {
+	background-image: url(https://2020.igem.org/wiki/images/6/63/T--IISER_Bhopal--THEBIGPIE-PreFooterHumanPractices.png);
+	background-position: center;
+	background-origin: border-box;
+}
+
+.ch-img-6 {
+	background-image: url(https://2020.igem.org/wiki/images/1/16/T--IISER_Bhopal--THEBIGPIE-PreFooterModelling.png);
+	background-position: right center;
+	background-repeat: repeat;
+	background-origin: border-box;
+}
+
+.ch-img-7 {
+	background-image: url(https://2020.igem.org/wiki/images/e/eb/T--IISER_Bhopal--THEBIGPIE-PreFooterPatentLaw.png);
+	background-position: top center;
+	background-origin: border-box;
+}
+
+.ch-img-8 {
+	background-image: url(https://2020.igem.org/wiki/images/c/c7/T--IISER_Bhopal--THEBIGPIE-PreFooterSafety.png);
+	background-position: center;
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	background-color: #ffff99;
+}
+
+.ch-img-9 {
+	background-image: url(https://2020.igem.org/wiki/images/7/7b/T--IISER_Bhopal--THEBIGPIE-PreFooterAttributors.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+}
+
+.ch-img-10 {
+	background-image: url(https://2020.igem.org/wiki/images/e/ec/T--IISER_Bhopal--THEBIGPIE-PreFooterBiosafety.png);
+	background-position: top center;
+	background-repeat: repeat;
+	background-origin: border-box;
+}
+
+.ch-img-11 {
+	background-image: url(https://2020.igem.org/wiki/images/9/9d/T--IISER_Bhopal--THEBIGPIE-PreFooterClinicalTrials.png);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+}
+
+.ch-img-12 {
+	background-image: url(https://2020.igem.org/wiki/images/f/fc/T--IISER_Bhopal--THEBIGPIE-PreFooterCollaborations.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+
+.ch-img-13 {
+	background-image: url(https://2020.igem.org/wiki/images/8/80/T--IISER_Bhopal--THEBIGPIE-PreFooterContributions.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-14 {
+	background-image: url(https://2020.igem.org/wiki/images/1/1f/T--IISER_Bhopal--THEBIGPIE-PreFooterDrugDelivery.png);
+	background-position: center right;
+	background-repeat: repeat;
+}
+.ch-img-15 {
+	background-image: url(https://2020.igem.org/wiki/images/b/b9/T--IISER_Bhopal--THEBIGPIE-PreFooterEducation.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-16 {
+	background-image: url(https://2020.igem.org/wiki/images/8/86/T--IISER_Bhopal--THEBIGPIE-PreFooterEngineeringSuccess.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-17 {
+	background-image: url(https://2020.igem.org/wiki/images/e/e4/T--IISER_Bhopal--THEBIGPIE-PreFooterImplementation.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-18 {
+	background-image: url(https://2020.igem.org/wiki/images/f/f5/T--IISER_Bhopal--THEBIGPIE-PreFooterSafeByDesign.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-19 {
+	background-image: url(https://2020.igem.org/wiki/images/5/58/T--IISER_Bhopal--THEBIGPIE-PreFooterTeam.png);
+	background-position: center center;
+	background-repeat: repeat;
+}
+.ch-img-20 {
+	background-image: url(https://2020.igem.org/wiki/images/e/ec/T--IISER_Bhopal--THEBIGPIE-PreFooterBiosafety.png);
+	background-position: top center;
+	background-repeat: repeat;
+}
+.ch-img-21 {
+	background-image: url(https://2020.igem.org/wiki/images/c/c1/T--IISER_Bhopal--THEBIGPIE-PreFooterBiosecurity.png);
+	background-position:center;
+	background-repeat: repeat;
+}
+
+.ch-info {
+	position: absolute;
+	background: rgba(63, 147, 147, 0.75);
+	width: inherit;
+	height: inherit;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-backface-visibility: hidden;
+}
+
+.ch-info a{
+	text-decoration: none;
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 20px;
+	padding: 85px 0 0 0;
+	height: 150px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow:
+		0 0 1px #fff,
+		0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ch-info p {
+	text-align: center;
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 0.9rem;
+	border-top: 2px solid rgba(255, 255, 255, 0.5);
+	opacity: 0;
+	-webkit-transition: all 1s ease-in-out 0.4s;
+	-moz-transition: all 1s ease-in-out 0.4s;
+	-o-transition: all 1s ease-in-out 0.4s;
+	-ms-transition: all 1s ease-in-out 0.4s;
+	transition: all 1s ease-in-out 0.4s;
+}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255, 255, 255, 0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 0.75rem;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	line-height: 1em;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255, 242, 34, 0.8);
+}
+
+.ch-item:hover {
+	box-shadow:
+		inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+		0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ch-item:hover .ch-info {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.ch-item:hover .ch-info p {
+	opacity: 1;
+}
+
+
+/*---------------FOOTER----------*/
+footer {
+	background: #16222A;
+	background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+	background: linear-gradient(59deg, #3A6073, #16222A);
+	color: white;
+	margin-top: 10px;
+	
+}
+
+.foot p {
+	color: #fff;
+	font-size: 1rem;
+	font-family: sans-serif;
+	padding-right: 25px;
+	text-align: start;
+}
+
+.foot h4 {
+	color: #fff;
+	font-size: 1.5rem;
+	font-family: sans-serif;
+}
+
+@media(max-width:500px){
+	.foot h4 {
+		text-align: center;
+	}
+	
+	footer{
+		text-align: center;
+	}
+}
+
+footer a {
+	color: #fff;
+	font-size: 1rem;
+	transition-duration: 0.2s;
+}
+
+footer a:hover {
+	color: #FA944B;
+	text-decoration: none;
+}
+
+.copy {
+	font-size: 1rem;
+	padding: 1%;
+	border-top: 1px solid #FFFFFF;
+	border-top-width: medium;
+	
+}
+
+.footer-middle {
+	padding-top: 2em;
+	color: white;
+	font-size: 1rem;
+	font-family: ;
+}
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left: 0 !important;
+	padding: 0;
+}
+
+ul.social-network li {
+	display: inline-block;
+	margin: 1% auto 1% auto;
+	
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+	background-color: #3B5998;
+}
+
+.social-network a.icoInstagram:hover {
+	background: #d6249f;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+}
+
+
+.social-network a.icoLinkedin:hover {
+	background-color: #007bb7;
+}
+
+.social-network a.icoGmail:hover {
+	background-color: #B23121;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoInstagram:hover i,
+.social-network a.icoGmail:hover i,
+.social-network a.icoLinkedin:hover i {
+	color: #fff;
+	transition: 0.5s all;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+	color: #44BCDD;
+}
+
+.social-circle li a {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 100%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	font-size: 32px;
+}
+
+.social-circle li i {
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+	-moz-transform: rotate(0);
+	-webkit-transform: rotate(0);
+	-ms--transform: rotate(0deg);
+	transform: rotate(0);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.social-circle i {
+	color: #595959;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.social-network a {
+	background-color: #F9F9F9;
+}
+
+
+
+.sponsers-footer{
+	width: 30%;
+}
+
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	background-color: #F5F5F5;
+	background-color: transparent;
+}
+::-webkit-scrollbar {
+	width: 13px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+
