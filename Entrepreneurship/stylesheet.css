@@ -384,6 +384,17 @@ div.img img {
 	box-shadow: 2px 0px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
+.dbbut{
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    left: 35%;
+    background-color: #000000;
+    padding: 10px 24px;
+    color:#ffffff;
+    border: none;
+}
+
 .guide-doc {
 	display: block;
 	margin: auto;
