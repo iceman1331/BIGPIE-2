@@ -17,7 +17,7 @@ body {
 	height: 600px;
 	background-attachment: fixed;
 	background-image: url(safety.png);
-	background-image: url(S4.png);
+	background-image: url(S3.png);
 	background-position: bottom right;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -72,8 +72,7 @@ body {
 
 .parallax {
 	height: auto;
-	background-color:  #75B8C8;
-
+	background-color:  #97c9d5;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
@@ -297,6 +296,13 @@ p {
 }
 .cdr2{
 	margin: 2% auto 5% auto;
+}
+
+.secbtn{
+    padding: 32px 16px;
+    width: 75%;
+    background-color: #97c9d5;
+    font-size: 40px;
 }
 
 .blank{
