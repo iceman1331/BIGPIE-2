@@ -5,7 +5,6 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 html,
 body {
 	margin: 0;
@@ -15,31 +14,28 @@ body {
 	box-sizing: border-box;
 	font-size: 100%;
 	font-family: 'Merriweather Sans', sans-serif;
-
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased !important;
 	-moz-font-smoothing: antialiased !important;
 	text-rendering: optimizelegibility !important;
 	position: relative;
 }
-
 body {
 	overflow-x: hidden;
 }
-
 #cta {
 	width: 100%;
 	height: 600px;
 	background-attachment: fixed;
 	background-image: url(team.png);
-	background-position: top left;
+	background-image: url(CTA.png);
+	background-position: bottom;
 	opacity: 1;
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: 1;
 	margin-bottom: 5%;
 }
-
 @media(max-width:600px) {
 	#cta {
 		height: auto;
@@ -49,7 +45,6 @@ body {
 		width: 100%;
 	}
 }
-
 .desc-title {
 	display: block;
 	width: 100%;
@@ -57,39 +52,71 @@ body {
 	margin: auto;
 	padding-top: 25%;
 }
-
 .desc-title h1 {
 	color: #fff;
 	font-size: 6rem;
 	font-weight: 100;
 	font-family: 'Lato', sans-serif;
 }
-
 @media(max-width:600px) {
 	.desc-title {
 		padding-top: 50%;
 	}
-
 	.desc-title h1 {
 		font-size: 2.25rem;
 		color: #ffff;
 		padding-bottom: 10%;
 	}
 }
-
 @media(max-width:360px) {
 	.desc-title h1 {
 		font-size: 3rem;
 	}
 }
-]
+
+.parallax {
+	height: auto;
+	background-color: #b8dbdb;
+	background-color: orange;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 9;
+	margin-bottom: 5%;
+	margin-top: 8%;
+}
+.parallax-inner {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	display: block;
+	margin-left: auto;
+	margin-top: auto;
+}
+.parallax-inner-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	overflow: hidden;
+}
+he1 {
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: 2rem;
+	color: #fff;
+	letter-spacing: 3px;
+}
+@media(max-width:400px) {
+	he1 {
+		font-size: 1rem;
+	}
+}
 
 
 .wrapper {
 	margin: 0 auto 100px auto;
 	max-width: 960px;
 }
-
 .stage {
 	list-style: none;
 	padding: 0;
@@ -104,15 +131,14 @@ Build the scene and rotate on hover
 	width: 260px;
 	height: 400px;
 	height: 400px;
-	margin-bottom: 15%;
+	margin-bottom: 20%;
 	float: left;
 	float: none;
-	margin: 2% 10% 2% 10%;
+	margin: auto;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
 	perspective: 1000px;
 }
-
 @media(max-width:500px) {
 	.scene {
 		display: inline-block;
@@ -121,7 +147,6 @@ Build the scene and rotate on hover
 		text-align: center;
 	}
 }
-
 .movie {
 	width: 260px;
 	height: 400px;
@@ -135,7 +160,6 @@ Build the scene and rotate on hover
 	-moz-transition: -moz-transform 350ms;
 	transition: transform 350ms;
 }
-
 .movie:hover {
 	-webkit-transform: rotateY(-90deg) translateZ(5px);
 	-moz-transform: rotateY(-90deg) translateZ(5px);
@@ -156,15 +180,15 @@ Transform and style the two planes
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-
 .movie .poster {
+	border: 1px solid grey;
+	border-radius: 10px;
 	-webkit-transform: translateZ(130px);
 	-moz-transform: translateZ(130px);
 	transform: translateZ(130px);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
 .movie .info {
 	-webkit-transform: rotateY(90deg) translateZ(130px);
 	-moz-transform: rotateY(90deg) translateZ(130px);
@@ -194,7 +218,6 @@ Shadow beneath the 3D object
 	-moz-transition: box-shadow 350ms;
 	transition: box-shadow 350ms;
 }
-
 .csstransforms3d .movie:hover::after {
 	box-shadow: 20px -5px 50px rgba(0, 0, 0, 0.3);
 }
@@ -214,24 +237,20 @@ Movie information
 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
 	margin: auto;
 }
-
 .info header h1 {
 	color: #fff;
 	text-align: center;
 }
-
 .info header .rating {
 	border: 1px solid #FFF;
 	padding: 0px 3px;
 }
-
 .info p {
 	padding: 1.2em 1.4em;
 	margin: 2px 0 0;
 	font-weight: 700;
 	color: #000;
 	line-height: 1.4em;
-
 }
 
 /*************************************
@@ -245,20 +264,16 @@ Generate "lighting" using box shadows
 	-moz-transition: box-shadow 350ms;
 	transition: box-shadow 350ms;
 }
-
 .csstransforms3d .movie .poster {
 	box-shadow: inset 0px 0px 40px rgba(255, 255, 255, 0);
 }
-
 .csstransforms3d .movie:hover .poster {
 	box-shadow: inset 300px 0px 40px rgba(255, 255, 255, 0.8);
 }
-
 .csstransforms3d .movie .info,
 .csstransforms3d .movie .info header {
 	box-shadow: inset -300px 0px 40px rgba(0, 0, 0, 0.5);
 }
-
 .csstransforms3d .movie:hover .info,
 .csstransforms3d .movie:hover .info header {
 	box-shadow: inset 0px 0px 40px rgba(0, 0, 0, 0);
@@ -267,7 +282,6 @@ Generate "lighting" using box shadows
 /*************************************
 Posters and still images
 **************************************/
-
 
 .scene .movie .poster {
 	background-position: bottom;
@@ -278,8 +292,6 @@ Posters and still images
 	vertical-align: baseline;
 }
 
-
-
 /*---------Full image-------*/
 
 .scene .info header {
@@ -289,10 +301,10 @@ Posters and still images
 	padding-top: 10%;
 }
 
-
 /*************************************
 Fallback
 **************************************/
+
 .no-csstransforms3d .movie .poster,
 .no-csstransforms3d .movie .info {
 	position: relative;
@@ -301,6 +313,7 @@ Fallback
 /*************************************
 Media Queries
 **************************************/
+
 @media screen and (max-width: 60.75em) {
 	.scene {
 		float: none;
@@ -310,32 +323,27 @@ Media Queries
 }
 
 /*------------------Modal box---------------*/
+
 .wrap {
 	padding: 15px;
 }
-
 h1 {
 	font-size: 28px;
 }
-
 h4,
 modal-title {
 	font-size: 18px;
 	font-weight: bold;
 }
-
 .no-borders {
 	border: 0px;
 }
-
 .body-message {
 	font-size: 18px;
 }
-
 .centered {
 	text-align: center;
 }
-
 .btn-primary {
 	background-color: #2086c1;
 	border-color: transparent;
@@ -344,16 +352,13 @@ modal-title {
 	font-size: 15px;
 	padding: 10px 25px;
 }
-
 .btn-primary:hover {
 	background-color: #2086c1;
 	border-color: transparent;
 }
-
 .btn-primary:focus {
 	outline: none;
 }
-
 .cards {
 	padding-bottom: 10%;
 	margin-bottom: 10%;
@@ -361,13 +366,14 @@ modal-title {
 
 /*----------Tabs---------------*/
 
+
 /*---Tabs end here---*/
+
+
 /*---Tabs end here---*/
+
+
 /*---Tabs end here---*/
-
-
-
-
 
 .nameMem {
 	font-size: 1rem;
@@ -387,53 +393,36 @@ modal-title {
 	animation-fill-mode: forwards;
 	margin: 1%;
 }
-
 .memdetails {
 	color: #000;
 	margin: 0;
 	text-align: center;
 }
-
-
 @keyframes animationgradienttitle {
 	0% {
 		background-position: 0 1600px;
 	}
-
 	100% {
 		background-position: 1600px 0;
 	}
 }
-
-
-
-
-
-
-
 .li {
 	color: #000;
 	font-size: 0.5rem;
 }
-
-
 .btn {
 	padding: 5px;
 	margin-top: 1%;
 }
-
-.wrapper h1{
+.wrapper h1 {
 	letter-spacing: 2px;
 	font-family: 'Lato', sans-serif;
 	margin-top: 2%;
-	
 }
-
 .primarynames {
 	margin: auto;
 	margin-top: 0;
 }
-
 .primarynames h1 {
 	margin: auto;
 	font-size: 1.5rem;
@@ -444,12 +433,10 @@ modal-title {
 	letter-spacing: 1px;
 	text-align: center;
 }
-
 .primarynames h3 {
 	font-size: 1rem;
 	text-transform: none;
 }
-
 .primarynames p {
 	font-size: 0.85rem;
 	margin: auto;
@@ -458,116 +445,95 @@ modal-title {
 	font-style: italic;
 	text-transform: none;
 }
-
 @media(max-width:600px) {
 	.poster {
 		margin-bottom: 14%;
 	}
-
 	.scene {
 		background-size: contain;
 	}
-
 	.primarynames h1 {
-			width: 100%;
-	margin-left: 12%;
-
+		width: 100%;
+		margin-left: 12%;
 	}
-
 	.primarynames h3 {}
-
 	.primarynames h3 {}
-
 	.primarynames p {
-		
-	width: 100%;
-	margin-left: 12%;
+		width: 100%;
+		margin-left: 12%;
 	}
-
 }
-
-
 .role {
 	margin: auto;
 	margin: 0;
 }
-
 .modal-title h5 {
 	margin: auto;
 	text-align: center;
 }
-
 .modal-body {
 	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
-
 .modal img {
 	width: 40%;
 }
-@media(max-width:500px){
-	.modal img{
+@media(max-width:500px) {
+	.modal img {
 		width: 60%;
 	}
 }
-
-.modal h5{
+.modal h5 {
 	text-transform: none;
 	letter-spacing: 2px;
 	font-size: 1.25rem;
 }
-
 .modal h4 {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
 }
-
 .modal ul {
 	text-align: left;
 }
+
 /*------modal animation--------*/
+
 .modal-backdrop {
 	background-color: #336699;
-	transition:opacity 0.15s;
+	transition: opacity 0.15s;
 }
-.modal-backdrop.fade{
+.modal-backdrop.fade {
 	transition: all 0.25s ease;
 }
 .modal-backdrop.show {
-    opacity: 0.95;
+	opacity: 0.95;
 }
-
 .close {
 	opacity: 0.5;
 	transition: all 0.2s ease;
 }
-
 .close:hover {
 	color: #000;
 }
-
 .social-block {
 	display: block;
 	margin: 0;
 	padding: 5px 0 10px 0;
 }
 
-
-
 /*social icons*/
+
 social-ico {
 	padding: 0;
 	width: 100%;
 	display: block;
 	margin: 0;
 }
-
 .hide-text {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 	display: block;
 }
-
 .ease-all {
 	-webkit-transition: all 400ms ease-in-out;
 	-moz-transition: all 400ms ease-in-out;
@@ -586,7 +552,6 @@ social-ico {
 	padding: 0;
 	text-align: center;
 }
-
 .social-ic li a {
 	display: block;
 	float: left;
@@ -596,38 +561,29 @@ social-ico {
 	margin-right: 1rem;
 	text-align: center;
 	padding-top: 8px;
-	font-size:1.5rem;
+	font-size: 1.5rem;
 	-webkit-border-radius: 50px;
 	-moz-border-radius: 50px;
 	-o-border-radius: 50px;
 	-ms-border-radius: 50px;
 	border-radius: 50px;
-
 	/*background-color: #222;*/
 	-webkit-box-shadow: inset 0 0 0 40px #222;
 	-moz-box-shadow: inset 0 0 0 40px #222;
 	-o-box-shadow: inset 0 0 0 40px #222;
 	-ms-box-shadow: inset 0 0 0 40px #222;
 	box-shadow: inset 0 0 0 40px #222;
-
 	color: #fff;
-
 }
-
 .social-ic li a:hover {
 	-webkit-box-shadow: inset 0 0 0 3px #222;
 	-moz-box-shadow: inset 0 0 0 3px #222;
 	-o-box-shadow: inset 0 0 0 3px #222;
 	-ms-box-shadow: inset 0 0 0 3px #222;
 	box-shadow: inset 0 0 0 3px #222;
-
 	color: #222;
 }
-
-
-
-
-.btn-light{
+.btn-light {
 	color: #000;
 	transition: 0.25s all ease;
 	background-color: transparent;
@@ -635,35 +591,27 @@ social-ico {
 	margin-bottom: 1%;
 	text-transform: none;
 }
-
-.btn-light:hover{
+.btn-light:hover {
 	color: #fff;
 	background-color: #000;
-	
 }
-
-
-
-.PI{
-	width:50%;
+.PI {
+	width: 50%;
 	text-align: center;
 	display: block;
 	margin: auto;
 }
-
-@media(max-width:500px){
-	.PI{
+@media(max-width:500px) {
+	.PI {
 		width: 100%;
 	}
 }
-
-.principle .primarynames h1{
+.principle .primarynames h1 {
 	margin: auto;
 	padding: 0;
 	text-align: center;
 }
-
-.principle .primarynames p{
+.principle .primarynames p {
 	margin: auto;
 	padding: 0;
 	text-align: center;
