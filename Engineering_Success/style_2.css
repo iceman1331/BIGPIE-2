@@ -40,22 +40,122 @@ body {
 	display: grid;
 	width: 95rem;
 	grid-gap: 3rem;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	align-items: start;
 }
 
-.grid-mod1 {
+/* .grid-mod1 {
 	grid-template-columns: repeat(3, 1fr);
-}
+} */
 
 .grid-mod6 {
 	grid-template-columns: repeat(3, 1fr);
 }
+@media screen and (min-width: 1180px) and (max-width: 1400px)  {
+	.grid {
+		justify-content: center;
+		align-content: center;
+		padding: 3rem 2rem 6rem 6rem;
+		display: inline-grid;
+		width: 75rem;
+		grid-gap: 2rem;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: start;
+	}
+  }
 
+@media screen and (min-width: 1070px) and (max-width: 1180px)  {
+	.grid {
+		justify-content: center;
+		align-content: center;
+		padding: 3rem 2rem 6rem 6rem;
+		display: inline-grid;
+		width: 71rem;
+		grid-gap: 2.5rem;
+		grid-template-columns: repeat(3, 1fr);
+		align-items: start;
+	}
+  }
+
+  @media screen and (min-width: 850px) and (max-width: 1070px)  {
+	.grid {
+		justify-content: center;
+		align-content: center;
+		padding: 3rem 2rem 6rem 6rem;
+		display: inline-grid;
+		width: 55rem;
+		grid-gap: 2rem;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: start;
+	}
+  }
+
+  @media screen and (min-width: 690px) and (max-width: 850px)  {
+	.grid {
+		justify-content: center;
+		align-content: center;
+		padding: 3rem 2rem 6rem 6rem;
+		display: inline-grid;
+		width: 45rem;
+		grid-gap: 1.7rem;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: start;
+	}
+  }
+
+  @media screen and (min-width: 550px) and (max-width: 690px)  {
+	.grid {
+		justify-content: center;
+		align-content: center;
+		padding: 3rem 2rem 6rem 6rem;
+		display: inline-grid;
+		width: 37rem;
+		grid-gap: 1.7rem;
+		grid-template-columns: repeat(1, 1fr);
+		align-items: start;
+	}
+	.img{
+		margin-left: -10px;
+	}
+  }
+
+  @media screen and (min-width: 404px) and (max-width: 550px)  {
+	.grid {
+		justify-content: center;
+		align-content: center;
+		padding: 3rem 2rem 6rem 6rem;
+		display: inline-grid;
+		width: 27rem;
+		grid-gap: 1.7rem;
+		grid-template-columns: repeat(1, 1fr);
+		align-items: start;
+	}
+	.module_img img {
+		max-width: 72%;
+	}
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 404px)  {
+	.grid {
+		justify-content: center;
+		align-content: center;
+		padding: 3rem 2rem 6rem 6rem;
+		display: inline-grid;
+		width: 23rem;
+		grid-gap: 1.7rem;
+		grid-template-columns: repeat(1, 1fr);
+		align-items: start;
+	}
+	.module_img img {
+		max-width: 86%;
+	}
+  }
+  
 @media (max-width: 60em) {
 	.grid {
 		grid-gap: 3rem;
 		padding: 3rem;
+		
 	}
 }
 
