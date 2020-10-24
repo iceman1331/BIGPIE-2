@@ -14,9 +14,6 @@ body {
 	background-color: red;
 }
 
-
-
-
 #cta {
 	width: 100%;
 	height: 600px;
@@ -130,7 +127,7 @@ body {
 	width: 1200px;
 	max-width: 100%;
 	height: auto;
-	border-style: none;	
+	border-style: none;
 }
 
 .ZeroTwo {
@@ -318,18 +315,8 @@ body {
 
 .container .video1 {
 	margin-top: 70px;
-	/*
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
-*/
 }
 
-/*
-.FourOne {
-	padding: 5% 0 0 0;
-}
-*/
 
 .FourOne img {
 	margin-top: -20px;
@@ -654,10 +641,6 @@ external_knowmore {
 	width: 100%;
 }
 
-.collapsible-containerAlt {
-	background-color: #0f4c5c;
-}
-
 .ref_collapsible {
 	background-color: #777;
 	color: white;
@@ -690,6 +673,7 @@ external_knowmore {
 	border-radius: 30px;
 	box-decoration-break: none;
 	border-color: #000;
+	border: none;
 	box-shadow: 0 10px 10px -5px;
 	overflow: hidden;
 	border-left: 1px solid #C5C6C6;
@@ -707,7 +691,7 @@ external_knowmore {
 
 .collapsible-coli {
 	background-color: rgba(39, 174, 96, 0.9);
-	color: #000;
+	color: #fff;
 	display: block;
 	margin: auto;
 	text-align: center;
@@ -722,17 +706,19 @@ external_knowmore {
 }
 
 .collapsible-coliAlt {
-	background-color: #0f4c5c;
+	background-color: rgba(39, 174, 96, 0.9);
+	transition: all 0.25s ease;
+}
+	
+.collapsible-coliAlt:hover {
 
+	background-color: #0f4c5c;
 }
 
 .collapsible-coliAltNarrow {
-	width: 60%;
+	width: 70%;
 }
 
-.collapsible-coliAlt:hover {
-	background-color: #0f4c5c;
-}
 
 .collapsible-coli:hover {
 	background-color: #0f4c5c;
@@ -781,7 +767,6 @@ external_knowmore {
 .collapsible-coli-large:hover {
 	background-color: #555;
 	border-radius: 10px;
-	background-image: url(1_1.jpg);
 	background-size: cover;
 	border: none;
 	width: 80%;
@@ -801,7 +786,7 @@ external_knowmore {
 .hr1 {
 	text-transform: uppercase;
 	animation: background-move 10s infinite;
-	background: url(Backgrounds/T--IISER_Bhopal--13.jpg);
+	background: url(https://2020.igem.org/wiki/images/c/cd/T--IISER_Bhopal--THEBIGPIE-Design_effect_bg.jpg);
 	font-weight: 1000;
 	background-clip: text;
 	-webkit-background-clip: text;
