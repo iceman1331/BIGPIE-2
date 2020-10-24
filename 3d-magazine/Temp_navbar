@@ -15,8 +15,8 @@
 							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Design">Design</a>
 							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Engineering">Engineering Success</a>
 							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Model">Modelling</a>
-							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Parts">Parts Collection</a>
-							<a class="dropdown-item active" href="https://2020.igem.org/Team:IISER_Bhopal/Contribution">Contribution</a>
+							<a class="dropdown-item active" href="https://2020.igem.org/Team:IISER_Bhopal/Parts">Parts Collection</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Contribution">Contribution</a>
 
 						</div>
 					</li>
@@ -114,7 +114,7 @@
 						<br>
 						<br>
 						<h4>Contact us</h4>
-						<p class="text-center"> igem@iiserb.ac.in</p>
+						<p class=""> igem@iiserb.ac.in</p>
 					</div>
 					<div class="col-sm-1"> </div>
 				</div>

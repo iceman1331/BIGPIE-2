@@ -23,7 +23,7 @@ body {
 	width: 100vw;
 	height: 90vh;
 	background-attachment: fixed;
-	background-image: url(e2.png);
+	background-image: url(https://2020.igem.org/wiki/images/d/dd/T--IISER_Bhopal--THEBIGPIE-entrepreneurship_CTA.png);
 	background-position: top left;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -37,7 +37,6 @@ body {
 		height: auto;
 		background-attachment: scroll;
 		background-position: center;
-		background-image: ;
 		width: 100%;
 	}
 }
@@ -53,6 +52,7 @@ body {
 .desc-title h1 {
 	color: #fff;
 	font-size: 6rem;
+	border: none;
 	font-weight: 500;
 	font-family: 'Lato', sans-serif;
 }
@@ -97,20 +97,14 @@ h4 {
 	letter-spacing: 1.4px;
 }
 
-/*
-p {
-	font-family: 'Lato', sans-serif;
-	text-align: justify;
-	line-height: 30px;
-	font-weight: 300;
-	color: #000;
-	font-size: 1.25rem;
-	line-height: 180%;
-	font-size: 20px;
-	font-weight: 100;
+.data-img{
+	width: 65%;
 }
-*/
-
+@media(max-width:500px){
+	.data-img{
+		width: 100%;
+	}
+}
 p {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 17.6px;
@@ -146,8 +140,7 @@ p {
 
 .parallax {
 	height: auto;
-	background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
-	
+	background-color:  #97c9d5;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
@@ -157,7 +150,6 @@ p {
 	padding-top: 3%;
 	padding-bottom: 3%;
 	display: block;
-	background-color: gray;
 	margin-left: auto;
 	margin-top: auto;
 }
@@ -186,9 +178,7 @@ he1 {
 	}
 }
 
-.patent-table{
-	
-}
+
 
 
 
@@ -440,36 +430,6 @@ h2{
 	margin-top: 8%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .chapter {
 	margin: 5% auto 1% auto;
 }
@@ -494,10 +454,5 @@ h2{
 	text-rendering: optimizelegibility !important;
 	letter-spacing: .03em;
 }
-
-
-
-
-
 
 

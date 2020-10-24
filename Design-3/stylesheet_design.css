@@ -372,7 +372,7 @@ body {
 
 .parallax {
 	height: auto;
-	background-image: linear-gradient(to right, #4d9eff, #3b9fff);
+	background-color:  #97c9d5;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
