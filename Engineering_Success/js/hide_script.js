@@ -1,5 +1,5 @@
 function dispFunc1() {
-    var x = document.getElementById("prot");
+    let x = document.getElementById('prot');
         if (x.style.display === "none") {
             x.style.display = "block";
         } else {
@@ -23,3 +23,13 @@ function dispFunc3() {
             z.style.display = "none";
     }
 } 
+
+
+function displayAndHide(ele) {
+    var id = document.getElementById(ele);
+    if (id.style.display === "none") {
+        id.style.display = "block";
+    } else {
+        id.style.display = "none";
+    }
+}
