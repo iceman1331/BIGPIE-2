@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
 	font-family: "Hp Simplified";
 	src: url(../Common/Font/hp-simplified.ttf) format("truetype");
 }
@@ -17,6 +17,7 @@
 	font-family: "Tommy";
 	src: url("Made%2520Tommy/MADE%20TOMMY%20ExtraBold_PERSONAL%20USE.otf") format("truetype");
 }
+*/
 
 html,
 body {
@@ -58,7 +59,8 @@ body {
 	overflow: hidden;
 	width: 100%;
 	height: 100%;
-	/*margin: 4% auto 4% auto;*/  /*if we ever bring back color*/
+	/*margin: 4% auto 4% auto;*/
+	/*if we ever bring back color*/
 	background-size: cover;
 }
 
@@ -452,8 +454,7 @@ ttext b:nth-child(6) {
 	margin: 5% auto 5% auto;
 }
 
-.caused h1{
-	font-family: 'Raleway', sans-serif;
+.caused h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 1000;
 	font-size-adjust: auto;
@@ -463,7 +464,7 @@ ttext b:nth-child(6) {
 }
 
 
-.diabetes-2{
+.diabetes-2 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
 	font-size: 2rem;
@@ -655,6 +656,7 @@ ttext b:nth-child(6) {
 	margin: auto;
 	text-align: center;
 }
+
 @media(max-width:600px) {
 	.solution-img {
 		width: 100%;
@@ -791,22 +793,29 @@ footer {
 	margin-top: 0;
 }
 
-/*Custom scroll bar*/
 
-::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-	border-radius: 5px;
-	background-color: #F5F5F5;
-	background-color: transparent;
+
+.ammap2 {
+	width: 100%;
+	display: block;
+	margin: auto;
+	font-size: 1rem;
 }
 
-::-webkit-scrollbar {
-	width: 13px;
-	background-color: #F5F5F5;
+#chartdiv {
+	width: 100%;
+	height: 500px;
+	cursor: pointer;
+	border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb {
-	border-radius: 0px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-	background-color: #555;
+@media(max-width:500px) {
+	.ammap2 h2 {
+		font-size: 1rem;
+	}
+
+	#chartdiv {
+		width: 100%;
+		height: 250px;
+	}
 }

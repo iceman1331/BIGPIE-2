@@ -10,14 +10,15 @@ body {
 
 body {
 	overflow-x: hidden;
+	position: relative;
 }
 
 #cta {
 	width: 100%;
 	height: 600px;
+	margin-top: 0;
 	background-attachment: fixed;
-	background-image: url(safety.png);
-	background-image: url(S3.png);
+	background-image: url(https://2020.igem.org/wiki/images/9/90/T--IISER_Bhopal--THEBIGPIE-Safety_CTA.png);
 	background-position: bottom right;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -41,24 +42,27 @@ body {
 	width: 100%;
 	text-align: center;
 	margin: auto;
-	padding-top: 25%;
+	padding-top: 15%;
+	padding-right: 50%;
 }
 
 .desc-title h1 {
 	color: #fff;
 	font-size: 6rem;
+	border: none;
 	font-weight: 100;
 	font-family: 'Lato', sans-serif;
 }
 
 @media(max-width:600px) {
 	.desc-title {
+		padding: 0;
 		padding-top: 50%;
 	}
 
 	.desc-title h1 {
 		font-size: 2.25rem;
-		color: #fff;
+		color: #000;
 		padding-bottom: 10%;
 	}
 }
@@ -72,7 +76,7 @@ body {
 
 .parallax {
 	height: auto;
-	background-color:  #97c9d5;
+	background-color: #97c9d5;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
@@ -110,16 +114,21 @@ he1 {
 	}
 }
 
-p {
-	font-family: 'Lato', sans-serif;
-	text-align: justify;
-	font-weight: 300;
+main p {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 17.6px;
+	font-weight: 400;
+	line-height: 30.8px;
+	color: rgb(61, 61, 61);
+	margin: auto;
+	margin: 2% auto 2% auto;
 	color: #000;
-	font-size: 1.25rem;
-	line-height: 150%;
-	font-size: 20px;
-	font-weight: 100;
-	letter-spacing: normal;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+	letter-spacing: .03em;
+
 }
 
 thead {
@@ -173,11 +182,12 @@ tbody .para {}
 	width: 10%;
 }
 */
-.image{
+.image {
 	margin-top: 0;
 	display: block;
 	width: 40%;
 }
+
 h2 {
 	text-transform: none;
 	color: #000;
@@ -252,7 +262,7 @@ p {
 }
 
 .collapsible {
-	background-color:;
+	background-color: ;
 	color: #000;
 	cursor: pointer;
 	padding: 18px;
@@ -266,7 +276,7 @@ p {
 
 .active,
 .collapsible:hover {
-	background-color:;
+	background-color: ;
 }
 
 .content {
@@ -278,33 +288,34 @@ p {
 	background-color: #fff;
 }
 
-.ldr{
+.ldr {
 	font-size: 1rem;
 	color: #000;
 	font-weight: 800;
 }
 
-.ldr2{
+.ldr2 {
 	font-size: 1rem;
 	color: #000;
 	font-weight: 800;
 	text-transform: none;
 }
 
-.cdr{
+.cdr {
 	margin: 5% auto 5% auto;
 }
-.cdr2{
+
+.cdr2 {
 	margin: 2% auto 5% auto;
 }
 
-.secbtn{
-    padding: 32px 16px;
-    width: 75%;
-    background-color: #97c9d5;
-    font-size: 40px;
+.secbtn {
+	padding: 32px 16px;
+	width: 75%;
+	background-color: #97c9d5;
+	font-size: 40px;
 }
 
-.blank{
+.blank {
 	padding: 5%;
 }

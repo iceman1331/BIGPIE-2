@@ -1,0 +1,60 @@
+
+
+
+
+
+5.Clip arts for Module 5 need to be updated
+
+
+
+
+
+
+1.Expand the flow chart horizontally. 
+2.Centrally align the first line under introduction.
+3.Put the below Heading for first 4 side tabs (below flowchart) :  
+  Technical Design Improvements 
+4.Redistribute the boxes under module 2 and make it into a 3+2 arrangement 
+6.Please make the entire card clickable 
+7.Minimise protocol and troubleshooting for every section. 
+8.Underline all hyperlinks which say “here”.8.Underline all hyperlinks which say “here”.
+9.In future work modules, instead of writing "module [number]”, can you just insert the thumbnail and center align it
+
+
+&nbsp;<a>
+							<div class="fa fa-chevron-down rotate " onclick="displayAndHide('prot5')"></div>
+						</a></h4>
+					<div id="prot5" style="display: none;">
+					
+
+
+
+
+
+
+					<h4 class="modal-title" id="myModalLabel">D. Transformation into Test Hosts</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<p>
+						The plasmid will be extracted and transformed into competent E. coli K-12, SIEC and SIEC-eLEE5
+						using the protocol described <a
+							href="https://jemi.microbiology.ubc.ca/sites/default/files/Chang%20et%20al%20JEMI-methods%20Vol%201%20pg%2022-25.pdf"
+							style="font-weight: bold; text-decoration: underline;">here</a>.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default btn-prev mr-auto 	fa fa-hand-o-left"
+						style="font-size:38px;color: rgb(49, 46, 46);"></button>
+					<button type="button" class="btn btn-default btn-next 	fa fa-hand-o-right"
+						style="font-size:38px; color: rgb(49, 46, 46);"></button>
+
+
+
+
+
+
+
+
+
