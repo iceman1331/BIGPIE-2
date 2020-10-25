@@ -58,6 +58,15 @@ p {
 	color: #000;
 	font-size: 18px;
 }
+#intro123{
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+	line-height: 30px;
+	font-weight: 300;
+	color: #000;
+	font-size: 18px;
+	display: contents;
+}
 
 ol {
 	font-family: 'Lato', sans-serif;
@@ -511,4 +520,8 @@ a:hover {
 
 .intro-img {
 	padding: 2% 0;
+}
+
+a:hover{
+	color: blue;
 }
