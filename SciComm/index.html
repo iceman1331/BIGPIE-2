@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no, shrink-to-fit=no" />
+	<title>iGEM 2020 || IISER_Bhopal Education</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/Bootstrap.css&action=raw&ctype=text/css" />
+	<link rel="stylesheet" href="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/flickity.css&action=raw&ctype=text/css" />
+	<link rel="stylesheet" href="https://2020.igem.org/wiki/index.php?title=Team:IISER_Bhopal/Education.css&action=raw&ctype=text/css" />
+
+	<script src="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/jquery-3.5.1.js&action=raw&ctype=text/javascript" charset="utf-8"></script>
+	<script src="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/bootstrap.js&action=raw&ctype=text/javascript" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/fancybox.css&action=raw&ctype=text/css" />
+	<script src="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/fancybox.js&action=raw&ctype=text/javascript" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/prefooter-buttons.css&action=raw&ctype=text/css" />
+	<link rel="stylesheet" href="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/custom-navbar.css&action=raw&ctype=text/css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop src="https://2020.igem.org/wiki/images/a/a7/T--IISER_Bhopal--THEBIGPIE-custom-loadscreen.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<a class="navbar-brand text-light mr-auto ml-auto active" href="https://2020.igem.org/Team:IISER_Bhopal"><img width="45px" src="https://2020.igem.org/wiki/images/2/2e/T--IISER_Bhopal--THEBIGPIE-LOGO.png">The BIGPIE</a>
+			<button class="navbar-toggler mb-auto mt-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mb-auto mt-auto ml-auto">
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item active" href="https://2020.igem.org/Team:IISER_Bhopal/Description">Description</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Design">Design</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Engineering">Engineering Success</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Model">Modelling</a>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Parts">Parts Collection</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Contribution">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Safety/Biosafety.html">Biosafety</a>
+							<a class="dropdown-item" href="../Safety/Biosecurity.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">Safe by Design</a>
+							<a class="dropdown-item" href="../Safety/Safe-by-design.html">GMO Policy</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Implementation">Overview</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Implementation_Clinical_trials">Drug Delivery</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Implementation_Drug_delivery">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Human_Practices">IHP</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Education">Education</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Collaborations">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Team">Team</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Attributions">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<script type="text/javascript" src="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/custom-navbar.js&action=raw&ctype=text/javascript"></script>
+
+	<main>
+		<div id="cta">
+			<div class="desc-title">
+				<h1> Education </h1>
+			</div>
+		</div>
+
+
+		<section class="parallax" style="opacity: 1;">
+			<div class="parallax-inner">
+				<he1>Extent of Outreach</he1>
+			</div>
+		</section>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 text-center">
+					<a href="https://2020.igem.org/wiki/images/9/9f/T--IISER_Bhopal--THEBIGPIE-Education-Extent.png" data-fancybox data-caption="Extent of our outreach">
+						<img class="img-fluid img-extent" src="https://2020.igem.org/wiki/images/9/9f/T--IISER_Bhopal--THEBIGPIE-Education-Extent.png">
+					</a>
+				</div>
+				<div class="col-sm-4"><p></p></div>
+			</div>
+		</div>
+
+		<!--
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="txtOne">
+						<p>
+							In order to generate awareness about synthetic biology, we aimed for diversity in our interactions and creating a SynBio narrative that our audience would enjoy tuning into.
+							<br>
+							Synthetic biology is a language that few people beyond academia can understand. We wanted to create an interest in synthetic biology from the ground up. With the pandemic and online education in every school across the country, we created interactive, informative and exciting content that students could try out all on their own, in the comfort of their homes.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6">
+
+
+					<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false,"freeScroll": true, "autoPlay": 1500,
+"wrapAround": true,"prevNextButtons": false, "contain": true  }'>
+						<img class="img-fluid" src="https://2020.igem.org/wiki/images/5/52/T--IISER_Bhopal--THEBIGPIE-sr11-scicom.png" style="height= 260px; width= auto;" />
+						<img class="img-fluid" src="https://2020.igem.org/wiki/images/c/c5/T--IISER_Bhopal--THEBIGPIE-sr17-sc.png" style="height= 260px; width= auto;" />
+						<img class="img-fluid" src="https://2020.igem.org/wiki/images/1/11/T--IISER_Bhopal--THEBIGPIE-sr4sc.png" alt="One World Trade" style="height= 260px; width= auto;" />
+						<img class="img-fluid" src="https://2020.igem.org/wiki/images/1/1e/T--IISER_Bhopal--THEBIGPIE-sr8sc.png" style="height= 260px; width= auto;" />
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+-->
+
+		<section class="parallax" style="opacity: 1;">
+			<div class="parallax-inner">
+				<he1>WEBINARS</he1>
+			</div>
+		</section>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-8">
+					<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false,"freeScroll": true, "autoPlay": 1500,
+"wrapAround": true,"prevNextButtons": false, "contain": true,"pageDots": false  }'>
+
+						<img src="https://2020.igem.org/wiki/images/c/cc/T--IISER_Bhopal--THEBIGPIE-sc2222sc.png" />
+						<img src="https://2020.igem.org/wiki/images/2/25/T--IISER_Bhopal--THEBIGPIE-10octsc.png" />
+						<img src="https://2020.igem.org/wiki/images/4/4b/T--IISER_Bhopal--THEBIGPIE-event3.jpeg" />
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+
+
+				<div class="col-sm-4 txtTwo">
+					<p>
+						We started with humble webinars. Conducting 1-1.5 hour live sessions online with schools, teaching them about synthetic biology. Doing hands-on Banana DNA extraction experiments that students could do along with us in their homes. We set up WhatsApp groups to answer every question students had before, during and even after the webinar. These direct interactions, questions and suggestions from students inspired us to keep creating content for these budding researchers.
+						We have conducted webinars with over 800 students from across India and beyond.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<section class="parallax" style="opacity: 1;">
+			<div class="parallax-inner">
+				<he1>WEBINARS</he1>
+			</div>
+		</section>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false,"freeScroll": true, "autoPlay": 1500,
+"wrapAround": true,"prevNextButtons": false, "contain": true  }'>
+
+						<img src="https://2020.igem.org/wiki/images/2/28/T--IISER_Bhopal--THEBIGPIE-sss.jpeg" />
+						<img src="https://2020.igem.org/wiki/images/3/37/T--IISER_Bhopal--THEBIGPIE-dfsdfs.jpg" />
+
+
+					</div>
+					<br>
+					<br>
+					<p>Synbio Quizzes and Synbio Themed Treasure Hunts were fun group activities with exciting incentives like prize money and appreciation posts on Instagram.</p>
+				</div>
+				<div class="col-sm-4">
+					<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false,"freeScroll": true, "autoPlay": 1500,
+"wrapAround": true,"prevNextButtons": false, "contain": true  }'>
+
+						<img src="https://2020.igem.org/wiki/images/d/de/T--IISER_Bhopal--THEBIGPIE-artwth.jpg" style="height: 100%; width: auto;" />
+
+						<img src="https://2020.igem.org/wiki/images/4/45/T--IISER_Bhopal--THEBIGPIE-crispr.jpg" style="height: 100%; width: auto;" />
+						<img src="https://2020.igem.org/wiki/images/2/21/T--IISER_Bhopal--THEBIGPIE-doc.jpg" />
+					</div>
+					<br>
+					<br>
+					<p>Syn-Esthesia our in-house Synthetic Biology Art and Poetry Competition with great cash prizes and Instagram posts was open to both school students and our widespread Instagram audience mainly comprising of college students.</p>
+				</div>
+				<div class="col-sm-4">
+					<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false,"freeScroll": true, "autoPlay": 1500,
+"wrapAround": true,"prevNextButtons": false, "contain": true  }'>
+
+						<img src="https://2020.igem.org/wiki/images/0/00/T--IISER_Bhopal--THEBIGPIE-gnos.jpeg" style="height: 100%; width: auto;" />
+						<img src="https://2020.igem.org/wiki/images/3/3e/T--IISER_Bhopal--THEBIGPIE-launch.png" />
+					</div>
+					<br>
+					<br>
+					<p>Our in-house e-Magazine ‘GENOS’ - Making a Difference One Transformation at a Time was filled with simple posts, stories, art pieces and videos that were widely circulated within our student WhatsApp groups to boost interest in Synthetic Biology. Turning Genos into a Science Communication Collaboration helped us get content from teams across the world like iGEM iBowu China, iGEM MRIIRS, iGEM TuDelft to these young curious minds.</p>
+				</div>
+			</div>
+
+		</div>
+
+
+		<section class="parallax" style="opacity: 1;">
+			<div class="parallax-inner">
+				<he1>Peek-a-Bio</he1>
+			</div>
+		</section>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 txt-pdf">
+					<p>
+						We created infographics and e-brochures to teach students about genetic engineering techniques like PCR, gel electrophoresis, cloning, transformations and traditional synthetic biology techniques that have transformed our labs.
+					</p>
+				</div>
+				<div class="col-sm-8">
+					<div class="container">
+						<embed src="https://2020.igem.org/wiki/images/0/0b/T--IISER_Bhopal--THEBIGPIE-igembroucher.pdf" />
+						<div class="pdfdownload"><a href="https://2020.igem.org/wiki/images/0/0b/T--IISER_Bhopal--THEBIGPIE-igembroucher.pdf">Peek-a-Bio </a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<section class="parallax" style="opacity: 1;">
+			<div class="parallax-inner">
+				<he1>SynBio Social Media</he1>
+			</div>
+		</section>
+
+
+		<div class="container" style="color: black;">
+			<div class="row">
+				<div class="col-sm-6">
+
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-color: inherit;">
+								<a href="https://www.youtube.com/channel/UCxlsOGARLp-7ezKq2p-2z1g" target="_blank"></a><img src="https://2020.igem.org/wiki/images/a/a9/T--IISER_Bhopal--THEBIGPIE-igemyt.png" style="width: 100% ; height: auto;"><br><br>
+								<b>Youtube</b>
+							</div>
+							<div class="flip-card-back">
+								We launched a DIY-Experiment Series for students at home where they can try out basic synthetic biology experiments all by themselves from DNA extraction with banana, to creating microbial cultures with gelatin plates, to checking pH with turmeric or just understanding how enzymes work with hands-on experiments.
+								<br> <br>
+								<a href="https://www.youtube.com/channel/UCxlsOGARLp-7ezKq2p-2z1g" target="_blank" style="color: blue;">Click Here!</a>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-color: inherit;">
+								<a href="https://medium.com/bitesized-biology" target="_blank"><img src="https://2020.igem.org/wiki/images/7/77/T--IISER_Bhopal--THEBIGPIE-medium.png" style="width: 100% ; height: auto;"></a><br><br><br><br>
+								<b>Medium</b>
+							</div>
+							<div>
+								<p>We had a team of ten active bloggers who published great quality content with up to three articles on Synthetic Biology per week which were shared widely on Medium, Whatsapp and promoted actively on Instagram. These articles were as dynamic as biosensors to vegan meat to biofactories or just luminescence. Wherever synthetic biology had a real-world application we spoke about it to keep our audience hooked.
+								</p><br><br>
+								<a href="https://medium.com/bitesized-biology" style="color: blue;" target="_blank"> Click Here!</a><br>
+							</div>
+						</div>
+					</div><br>
+				</div>
+				<div class="col-sm-6">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-color: inherit;">
+								<a href="https://www.instagram.com/igem_iiserb/" target="_blank"><img src="https://2020.igem.org/wiki/images/3/38/T--IISER_Bhopal--THEBIGPIE-debate.png" style="width: 100% ; height: auto;">
+								</a>
+								<br><br><br>
+								<b>Linkedin and Instagram</b>
+							</div>
+							<div class="flip-card-back">
+								<p>This being our most active hub had regular posts, videos and challenges on Synthetic Biology, iGEM and Diabetes awareness which is a major part of our project.</p>
+								<br> <br>
+								Linkedin:<a href="www.linkedin.com/in/igemiiserb" style="color: blue;"> Click Here!</a><br>
+								Instagram:<a href="https://www.instagram.com/igem_iiserb/" style="color: blue;" target="_blank"> Click Here!</a><br>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							<div class="flip-card-front" style="background-color: inherit;">
+								<a href="https://www.facebook.com/igemiiserites/" target="_blank">
+									<img src="https://2020.igem.org/wiki/images/1/12/T--IISER_Bhopal--THEBIGPIE-fb.jpg" style="width: 100% ; height: auto;"></a>
+								<br><br><br>
+								<b>Facebook</b>
+							</div>
+							<div class="flip-card-back">
+								<p>While our Facebook page joined the picture much later. We tried to gain traction through our various posts and videos. But most importantly through our International debate competition which helped us reach out to students in the global debating circuits.</p>
+								<br> <br>
+								<a href="https://www.facebook.com/igemiiserites/" style="color: blue;" target="_blank">Click Here!</a>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="parallax" style="opacity: 1;">
+			<div class="parallax-inner">
+				<he1>The Wider Audience Crusade</he1>
+			</div>
+		</section>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<p>
+						Exhibition Debate on GMOs: As part of science communication we organised an International Debate on GMO Policy with the best debaters in the world. This began conversations of synthetic biology in debating circuits from Europe, North America to India and China. Over a hundred of debaters from around the world attended the live stream of the debate surrounding GMOs which created major awareness about the impact of Synthetic Biology at a global scale.
+					</p>
+
+				</div>
+				<div class="col-sm-8">
+					<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false,"freeScroll": true, "autoPlay": 1500,
+				"wrapAround": true,"prevNextButtons": false, "contain": true }'>
+						<img src="https://2020.igem.org/wiki/images/0/0a/T--IISER_Bhopal--THEBIGPIE-Education-GMO_invite.jpeg" style="height: 100%; width: auto;" />
+						<img src="https://2020.igem.org/wiki/images/3/39/T--IISER_Bhopal--THEBIGPIE-Education_debate_panel.png" class="img-fluid" />
+						<img src="https://2020.igem.org/wiki/images/0/03/T--IISER_Bhopal--THEBIGPIE-Education-GMO.JPG" class="img-fluid" />
+
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false,"freeScroll": true, "autoPlay": 1500,
+				"wrapAround": true,"prevNextButtons": false, "contain": true }'>
+						<img src="https://2020.igem.org/wiki/images/b/b2/T--IISER_Bhopal--THEBIGPIE-manthan.png" style="height: 100%; width: auto;" />
+						<img src="https://2020.igem.org/wiki/images/6/6a/T--IISER_Bhopal--THEBIGPIE-qriusrhino.png" class="img-fluid" />
+						<img src="https://2020.igem.org/wiki/images/4/4f/T--IISER_Bhopal--THEBIGPIE-scithon.jpg" style="height: 100%; width: auto;" />
+
+					</div>
+
+				</div>
+
+				<div class="col-sm-4">
+					<p>
+						Synthetic Biology in Major magazines and Blogs: Our synthetic biology articles have been promoted by major science communication blo9gs in the country such as IISER Mohali’s e-Magazine Manthan, The QRIUS RHINO to name a few. We have also helped events with our in-house Science fest Singularity, hosting Synthetic Biology questions in the SciThon.
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="container-fluid prev-next">
+		<div class="buttons-coll">
+			<a href="..">
+				<button class="custom-btn btn-15">← IHP</button>
+			</a>
+			<a href="..">
+				<button class="custom-btn btn-14">Collaborations → </button>
+			</a>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<a href="https://2020.igem.org/Team:IISER_Bhopal/Description">
+								<h3>Description</h3>
+								<p>Read More...</p>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-4">
+						<div class="ch-info">
+							<a href="https://2020.igem.org/Team:IISER_Bhopal/Entrepreneurship">
+								<h3 style="font-size:0.75rem;">Entrepreneurship</h3>
+								<p>Read More...</p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-8">
+						<div class="ch-info">
+							<a href="https://2020.igem.org/Team:IISER_Bhopal/Safety_GMO_Policy">
+								<h3>GMO Policy</h3>
+								<p>Read More... </p>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-5">
+						<div class="ch-info">
+							<a href="https://2020.igem.org/Team:IISER_Bhopal/Human_Practices">
+								<h3>Human Practices</h3>
+								<p>Read More...</p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+	</div>
+
+
+
+
+	<footer style="margin-bottom: 0;" class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	<script src="https://2020.igem.org/wiki/index.php?title=Template:IISER_Bhopal/Common/flickity.js&action=raw&ctype=text/javascript"></script>
+
+</body></html>

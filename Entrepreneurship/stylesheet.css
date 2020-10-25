@@ -23,7 +23,7 @@ body {
 	width: 100vw;
 	height: 90vh;
 	background-attachment: fixed;
-	background-image: url(e2.png);
+	background-image: url(https://2020.igem.org/wiki/images/d/dd/T--IISER_Bhopal--THEBIGPIE-entrepreneurship_CTA.png);
 	background-position: top left;
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -37,7 +37,6 @@ body {
 		height: auto;
 		background-attachment: scroll;
 		background-position: center;
-		background-image: ;
 		width: 100%;
 	}
 }
@@ -53,6 +52,7 @@ body {
 .desc-title h1 {
 	color: #fff;
 	font-size: 6rem;
+	border: none;
 	font-weight: 500;
 	font-family: 'Lato', sans-serif;
 }
@@ -97,20 +97,14 @@ h4 {
 	letter-spacing: 1.4px;
 }
 
-/*
-p {
-	font-family: 'Lato', sans-serif;
-	text-align: justify;
-	line-height: 30px;
-	font-weight: 300;
-	color: #000;
-	font-size: 1.25rem;
-	line-height: 180%;
-	font-size: 20px;
-	font-weight: 100;
+.data-img{
+	width: 65%;
 }
-*/
-
+@media(max-width:500px){
+	.data-img{
+		width: 100%;
+	}
+}
 p {
 	font-family: 'Merriweather Sans', sans-serif;
 	font-size: 17.6px;
@@ -146,8 +140,7 @@ p {
 
 .parallax {
 	height: auto;
-	background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
-	
+	background-color:  #97c9d5;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 9;
@@ -157,7 +150,6 @@ p {
 	padding-top: 3%;
 	padding-bottom: 3%;
 	display: block;
-	background-color: gray;
 	margin-left: auto;
 	margin-top: auto;
 }
@@ -186,9 +178,7 @@ he1 {
 	}
 }
 
-.patent-table{
-	
-}
+
 
 
 
@@ -384,6 +374,17 @@ div.img img {
 	box-shadow: 2px 0px 5px 3px rgba(0, 0, 0, 0.5);
 }
 
+.dbbut{
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    left: 35%;
+    background-color: #000000;
+    padding: 10px 24px;
+    color:#ffffff;
+    border: none;
+}
+
 .guide-doc {
 	display: block;
 	margin: auto;
@@ -429,36 +430,6 @@ h2{
 	margin-top: 8%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .chapter {
 	margin: 5% auto 1% auto;
 }
@@ -484,130 +455,4 @@ h2{
 	letter-spacing: .03em;
 }
 
-
-
-
-
-
-
-
-.prev-next {
-	display: block;
-}
-
-@media(max-width:500px) {
-	.prev-next {
-		display: none;
-	}
-}
-
-.buttons-coll {
-	width: 90%;
-	margin: 25px auto;
-	margin-bottom: 0;
-	text-align: center;
-}
-
-button {
-	margin: 20px;
-	margin-bottom: 0;
-}
-
-.custom-btn {
-	padding: 10px 25px;
-	font-weight: 500;
-	background: transparent;
-	outline: none !important;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	position: relative;
-	display: inline-block;
-}
-
-/**** BTN No. 14 ****/
-
-.btn-14 {
-	float: right;
-	border: 2px solid #000;
-	z-index: 1;
-	border-radius: 2px;
-}
-
-.btn-14:after {
-	position: absolute;
-	content: "";
-	width: 0;
-	height: 100%;
-	top: 0;
-	right: 0;
-	z-index: -1;
-	background: #000;
-	transition: all 0.3s ease;
-}
-
-.btn-14:hover {
-	color: #fff;
-}
-
-.btn-14:hover:after {
-	left: 0;
-	width: 100%;
-}
-
-.btn-14:active {
-	top: 2px;
-}
-
-/**** BTN No. 15 ****/
-
-.btn-15 {
-	float: left;
-	border: 2px solid #000;
-	z-index: 1;
-	border-radius: 2px;
-	content: "";
-}
-
-.btn-15:after {
-	position: absolute;
-	content: "";
-	width: 0;
-	height: 100%;
-	top: 0;
-	left: 0;
-	direction: rtl;
-	z-index: -1;
-	background: #000;
-	transition: all 0.3s ease;
-}
-
-.btn-15:hover {
-	color: #fff;
-}
-
-.btn-15:hover:after {
-	left: auto;
-	right: 0;
-	width: 100%;
-}
-
-.btn-15:active {
-	top: 2px;
-}
-
-::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-	border-radius: 5px;
-	background-color: #F5F5F5;
-	background-color: transparent;
-}
-::-webkit-scrollbar {
-	width: 13px;
-	background-color: #F5F5F5;
-}
-::-webkit-scrollbar-thumb {
-	border-radius: 0px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-	background-color: #555;
-}
 

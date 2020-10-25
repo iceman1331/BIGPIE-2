@@ -1,0 +1,130 @@
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<a class="navbar-brand text-light mr-auto ml-auto active" href="https://2020.igem.org/Team:IISER_Bhopal"><img width="45px" src="https://2020.igem.org/wiki/images/2/2e/T--IISER_Bhopal--THEBIGPIE-LOGO.png"> The BIGPIE</a>
+			<button class="navbar-toggler mb-auto mt-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mb-auto mt-auto ml-auto">
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Description">Description</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Design">Design</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Engineering">Engineering Success</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Model">Modelling</a>
+							<a class="dropdown-item active" href="https://2020.igem.org/Team:IISER_Bhopal/Parts">Parts Collection</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Contribution">Contribution</a>
+
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Safety_BioSafety">Biosafety</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Safety_BioSecurity">Biosecurity</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Safety_Safe_by_design">Safe by Design</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Safety_GMO_Policy">GMO Policy</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Implementation">Overview</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Implementation_Clinical_trials">Drug Delivery</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Implementation_Drug_delivery">Clinical Trials</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Entrepreneurship">Entrepreneurship</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Human_Practices">IHP</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Education">Education</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Collaborations">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Team">Team</a>
+							<a class="dropdown-item" href="https://2020.igem.org/Team:IISER_Bhopal/Attributions">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="https://igem.org/2020_Judging_Form?id=3450" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="https://igem.org/2020_Judging_Form?id=3450">Judging Form</a>
+
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+
+
+
+
+
+
+
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row footerp">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-4">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>THE BIGPIE</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+
+					<div class="col-sm-3"></div>
+					<div class="col-sm-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="https://www.facebook.com/igemiiserites/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://instagram.com/igem_iiserb?igshid=wsn6f19zg45m" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://www.linkedin.com/company/igemiiserb" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://medium.com/bitesized-biology/about" class="icoGmail" title="Medium blogs"><i class="fab fa-medium"></i></a></li>
+						</ul>
+						<br>
+						<br>
+						<h4>Contact us</h4>
+						<p class=""> igem@iiserb.ac.in</p>
+					</div>
+					<div class="col-sm-1"> </div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>

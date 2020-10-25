@@ -95,6 +95,14 @@ body {
 	margin: 4% auto 1% auto;
 	text-transform: none;
 }
+.main-model h3{
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 4% auto 1% auto;
+	text-transform: none;
+	text-decoration: underline;
+}
 
 .main-model p{
 	font-family: 'Merriweather', serif;
@@ -119,3 +127,29 @@ body {
 	margin: 2% auto 3% auto;
 	color: rgb(61,61,61);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

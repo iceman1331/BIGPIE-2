@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#85C1E9">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#85C1E9">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#85C1E9">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable= no, shrink-to-fit=no" />
+	<title>iGEM 2020 || IISER_Bhopal Kill Switch</title>
+	<link rel="preload" href="../T--IISER_Bhopal--loader.mp4" as="video" type="video/mp4">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<script src="https://kit.fontawesome.com/df7451b09d.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../Common/bootstrap.min.css" />
+	<link rel="stylesheet" href="../Common/animations.min.css" />
+	<link rel="stylesheet" href="stylesheet.css" />
+
+	<script src="../Common/NavBar/jquery-3.5.1.min.js" charset="utf-8"></script>
+	<script src="../Common/NavBar/bootstrap.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="../Common/jquery.fancybox.min.css" />
+	<script src="../Common/jquery.fancybox.min.js" charset="utf-8"></script>
+
+	<link rel="stylesheet" href="../Common/Pre-footer_buttons/footer_button_style.css" />
+	<link rel="stylesheet" href="../Common/NavBar/custom-navbar.css" />
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="loader">
+		<video autoplay muted loop src="../Common/T--IISER_Bhopal--Loader.mp4"></video>
+	</div>
+
+	<!--Loader-->
+	<script type="text/javascript">
+		window.addEventListener("load", function() {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // new class = "loader hidden"
+		});
+
+	</script>
+
+	<header>
+		<nav class="navbar smart-scroll fixed-top navbar-expand-lg navbar-dark scrolling-navbar py-0" id="mynav">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse justify-content-between navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item navbar-nav mr-auto active">
+						<a class="nav-link" href="../index.html"> <i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-project-diagram"></i> Project
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Description/index.html">Description</a>
+							<a class="dropdown-item" href="../Design/index.html">Design</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Modelling</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Engineering Success</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-puzzle-piece"></i> Parts
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Parts/Parts.html">Parts Collection</a>
+							<a class="dropdown-item" href="../Contributions/index.html">Contribution</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-handshake"></i> Human Practices
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">IHP</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Education</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Collaborations</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-users"></i> About Us
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Team</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Supervisors</a>
+							<a class="dropdown-item" href="../Collaborations/index.html">Attributors</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-biohazard"></i> Safety
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosafety</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Biosecurity</a>
+							<a class="dropdown-item" href="../Biosafety/index.html">Safe by Design</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-gavel"></i> Judging Forms
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cog"></i> Implementation
+						</a>
+						<div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Overview</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Preliminary Research</a>
+							<a class="dropdown-item" href="../coming_soon/coming_soon.html">Clinical Trials</a>
+							<a class="dropdown-item" href="../Entrepreneurship/index.html">Entrepreneurship</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<script type="text/javascript" src="../Common/NavBar/custom-navbar.js"></script>
+
+	<main>
+		<div id="cta">
+			<div class="desc-title">
+				<h1> Kill Switch </h1>
+			</div>
+		</div>
+
+		<div class="container main-model">
+			<h2>Description</h2>
+			<p>
+				The kill switch will get activated at low inorganic phosphate (Pi) concentration. Pi concentration is high in the small intestine (0.5-17.5 mM)<sup>1</sup> and in standard wastewater, Pi concentration is around 5 mg/L (approximately 53μM)<sup>2</sup>. While going through literature, we came across a research paper in which a control model was developed for the Pho regulon and it was fit into experimental data to obtain the parameters corresponding to a particular external Pi concentration (Pex). Here, the plots were fit into data corresponding to 200μM and 50μM. As it is experimentally proven that the expression always decreases with increase in Pext, it would be valid to say that if the kill switch is inactive at 200μM, it will be inactive at higher concentration. Two different approaches for the kill switch are modelled here. The experimental data in (2) which was used to fit the control models was when pPhoA was cloned in a low copy number plasmid ( approximately 20). Assuming that the transcription rate is in a linear relationship with the copy number, we have multiplied the transcription rates of the promoters of the toxin and antitoxin by 20 so that the relative amount will be the same, because the model developed here is for chromosomal insert of the probiotic. Although by qualitative analysis of the Pho regulon system, we can say that the amount obtained by linear correlation would be an underestimation<sup>3</sup>.
+			</p>
+
+			<h2>Variables for the control model.</h2>
+			<div class="container text-center">
+				<img src="https://2020.igem.org/wiki/images/d/db/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchT1.png" class="img-fluid">
+			</div>
+
+			<h2>Reactions for the control model</h2>
+			<div class="container text-center">
+				<img src="https://2020.igem.org/wiki/images/c/c8/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchRxn1.png" class="img-fluid">
+				<img src="https://2020.igem.org/wiki/images/0/04/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchRxn2.png" class="img-fluid">
+			</div>
+
+			<h2>Differential equations for the control model</h2>
+			<div class="container text-center">
+				
+				<img src="https://2020.igem.org/wiki/images/f/f0/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchDeqCombined.jpg" class="img-fluid">
+				
+			</div>
+
+			<h2>Parameters for the control model</h2>
+			<p>
+				As the parameters were obtained by fitting experimental data into the control model, k<sub>14</sub> and k<sub>12</sub> are varied to fit the final protein concentration corresponding to a particular Pext. After contacting one of the authors of (2), we were able to obtain the values of k<sub>14</sub> and k<sub>12</sub> corresponding to Pext=200μM and 50μM (k<sub>14</sub> = k<sub>12</sub> = 0 and 0.023 s<sup>-1</sup> respectively).
+			</p>
+
+			<div class="container text-center">
+				<img src="https://2020.igem.org/wiki/images/6/6b/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchT3.png" class="img-fluid">
+			</div>
+
+			<h2>Variables for the Toxin-Antitoxin system</h2>
+			<div class="container text-center">
+				<img src="https://2020.igem.org/wiki/images/9/96/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchT4.png" class="img-fluid">
+			</div>
+
+			<h3>Case I</h3>
+			<p>
+				Our initial approach was to express an antisense RNA complementary to mRNA of IM2, so that it will get repressed at lower Pi concentrations. Hence increasing the activity of the toxin.
+			</p>
+
+			<p>
+				<b>Differential equations:-</b>
+				<br> So, d[Ma]/dt becomes,
+			</p>
+			<div class="container text-center">
+				<img src="https://2020.igem.org/wiki/images/1/1b/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchDeq5.png" class="img-fluid">
+			</div>
+			<p>The ODEs were solved and plots were generated using Wolfram Mathematica.</p>
+
+			<div class="row text-center">
+				<div class="col-sm-12">
+					<div class="container">
+						<img src="https://2020.igem.org/wiki/images/d/d2/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchG1.png" class="img-fluid">
+						<div class="img-desc">Figure 1: Concentration of E2 vs time graph for the antisense RNA based kill switch</div>
+					</div>
+				</div>
+			</div>
+
+			<p>
+				As we can observe from this graph, the toxin concentration is not increasing and hence this kill switch is predicted to be ineffective at 50μM and 200μM concentration. But for our system, the kill switch should be activated at 50μM.
+			</p>
+
+			<h3>Case II</h3>
+			<p>
+				Downstream of PphoA, cI protein is expressed (Hence, [cI] = [A]). cI will act as a repressor for the constitutively active promoter cIlam after dimerisation. cIlam will be expressing the antitoxin (IM2) which will form a complex with the toxin (E2) which is being expressed using a constitutively active promoter (BBa_J23100) thereby repressing its activity. At lower Pi concentrations, cI will be expressed hence repressing the antitoxin. This will cause the concentration of the toxin to increase, hence promoting it’s DNase activity.
+			</p>
+
+			<div class="container text-center">
+				<img src="https://2020.igem.org/wiki/images/2/2a/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchT10.png" class="img-fluid">
+			</div>
+			<p>The ODEs were solved and plots were generated using Wolfram Mathematica.</p>
+
+
+
+
+			<div class="row text-center">
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="https://2020.igem.org/wiki/images/1/13/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchG3.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="https://2020.igem.org/wiki/images/7/70/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchG4.jpg" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+
+
+			<div class="row text-center">
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="https://2020.igem.org/wiki/images/6/6a/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchG5.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="https://2020.igem.org/wiki/images/d/d5/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchG6.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="img-desc text-center" style="margin: auto;">Figure 2: Concentration of E2 and IM2 vs time graph for the repressor based kill switch</div>
+			</div>
+
+			<p>
+				For optimising the kill switch for better results, Minicolicin (BBa_K1976027) (134 aa) which is the DNAse domain of E2 is a good alternative as it is a protein with much less molecular weight compared to E2 and thus has a higher rate of translation. As the complex formation with IM2 is also done via the DNAse domain and this domain alone has a very high binding affinity<sup>4</sup>, at lower concentration it's safe to assume that at lower ( μMs and mMs) the binding kinetics is similar to that between IM2 (86 aa) and E2 (581 aa).
+			</p>
+
+			<p>
+				In the case of minicolicin (miniE2), k<sub>TE</sub> = 0.127 s<sup>-1</sup>.
+				<br> Therefore plots are generated in the case of miniE2,
+			</p>
+
+			<div class="row text-center">
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="https://2020.igem.org/wiki/images/b/b6/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchG7.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="https://2020.igem.org/wiki/images/a/a8/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchG8.jpg" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row text-center">
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="https://2020.igem.org/wiki/images/7/74/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchG9.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="https://2020.igem.org/wiki/images/1/10/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchG10.jpg" class="img-fluid">
+					</div>
+				</div>
+				<div class="img-desc" style="margin: auto;"> Figure 3: Concentration of miniE2 and IM2 vs time graph for the repressor based kill switch</div>
+			</div>
+
+			<p>
+				From Figure 2 and 3, we can say that the kill switch containing miniE2 instead of E2 activates faster and the toxin increases at a higher rate. One should also note that the time difference in activation predicted in this model is an underestimation as the transcription rate of the miniE2 mRNA is also less compared to E2. Even Though we could not quantify the exact difference, this proves the point that using minicolicin (miniE2) would give a better result.
+			</p>
+
+			<h2>Parameter values for the toxin-antitoxin system</h2>
+			<div class="container text-center">
+				<img src="https://2020.igem.org/wiki/images/8/8e/T--IISER_Bhopal--THEBIGPIE-Model_killSwitchT15.jpg" class="img-fluid">
+			</div>
+			
+			<h2>Conclusion</h2>
+			
+			<p>
+				As one can notice, the amount of antisense RNA produced predicted via this model is an underestimation and it would be difficult to predict it unless experimental studies are performed. There are considerable uncertainties in the parameters of this model. As we could not perform experiments, the purpose of this model was to predict which kill switch can be used more confidently even after incorporating all these uncertainties. From the predictions, we could predict that the repressor based kill switch (Case II) with minicolicin as the toxin gave more promising results compared to other approaches.
+			</p>
+			
+			<h3>References</h3>
+			
+			<ul>
+				<li>R Todd Alexander Intestinal phosphate absorption: The paracellular pathway predominates?https://doi.org/10.1177/1535370219831220</li>
+				<li>General Standards For Discharge Of Environmental Pollutants Part – A : Effluents Sl. No. Parameter Standards Inland surface</li>
+				<li>Van Dien, S. J. & Keasling, J. D. A dynamic model of the Escherichia coli phosphate-starvation response. J. Theor. Biol 190, 37–49 (1997)</li>
+				<li>C Kleanthous.Structure of the Ultra-High-Affinity Colicin E2 DNase-Im2 Complex.(2012) J Mol Biol 417: 79-94</li>
+				<li>Bremer, H., and Dennis, P. P. (2008) Modulation of Chemical Composition and Other Parameters of the Cell at Different Exponential Growth Rates. EcoSal Plus 3.</li>
+				<li>C Kleanthous. (2004). Highly Discriminating Protein–Protein Interaction Specificities in the Context of a Conserved Binding Energy Hotspot. Journal of Molecular Biology, 337(3), 743–759. doi:10.1016/j.jmb.2004.02.005.</li>
+				<li>Team:IISER-Pune-India/Model/regulatory</li>
+				<li>Team:Sydney Australia/InternalCellular</li>
+				<li>Average mRNA degradation time - Bacteria Escherichia coli - BNID 106253</li>
+				<li>https://2018.igem.org/Team:Edinburgh_UG/Degradation_Switch</li>
+			</ul>
+
+
+
+
+
+
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="" class="img-fluid">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="container">
+						<img src="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div class="container">
+				<img src="" class="img-fluid">
+			</div>
+
+		</div>
+	</main>
+
+	<div class="container-fluid prev-next">
+		<div class="buttons-coll">
+			<a href="..">
+				<button class="custom-btn btn-15">← Engineering Success</button>
+			</a>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<section class="pre-footer-button-container">
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-16">
+						<div class="ch-info">
+							<h3>Engineering success</h3>
+							<p>Read More...</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-14">
+						<div class="ch-info">
+							<a href="">
+								<h3>Drug Delivery</h3>
+								<p>Read More... </p>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-18">
+						<div class="ch-info">
+							<a href="">
+								<h3>Safe by design</h3>
+								<p>Read More... </p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="ch-item ch-img-19">
+						<div class="ch-info">
+							<a href="">
+								<h3>Team</h3>
+								<p>Read More... </p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+	</div>
+
+
+
+	<footer class="mainfooter" role="contentinfo">
+		<div class="footer-middle">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>BigPie</h4>
+							<p>A project by Indian Institute of Science Education and Research Bhopal.</p>
+							<p>iGEM 2020 team.</p>
+
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!--Column1-->
+						<div class="footer-pad foot">
+							<h4>Sponsers</h4>
+							<ul class="list-unstyled">
+								<li><a href="#">A</a></li>
+								<li><a href="#">B</a></li>
+								<li><a href="#">C</a></li>
+								<li><a href="#">Disclaimer</a></li>
+								<li><a href="#">E</a></li>
+								<li><a href="#">FAQs</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<div class="col-md-3 col-sm-6">
+
+					</div>
+					-->
+					<div class="col-md-3 foot">
+						<h4>Follow Us</h4>
+						<ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoGmail" title="Gmail"><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 copy foot">
+						<p class="text-center">BIGPIE 2020</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="../Common/css3-animate-it.js"></script>
+</body>
+
+</html>
